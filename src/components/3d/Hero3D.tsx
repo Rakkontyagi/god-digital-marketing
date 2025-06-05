@@ -1,8 +1,10 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
-import { Box, Sphere, Torus, Dodecahedron, Text } from '@react-three/drei';
+import { Box, Sphere, Torus, Dodecahedron, Environment } from '@react-three/drei'; // Removed Text
 import * as THREE from 'three';
 import { MeshPhysicalMaterialProps } from '@react-three/fiber'; // For types
+import { EffectComposer, Bloom, DepthOfField } from '@react-three/postprocessing';
+import { KernelSize } from 'postprocessing'; // KernelSize is used for Bloom effect
 
 // Helper to create a transmissive material config
 const getTransmissionMaterialProps = (): Partial<MeshPhysicalMaterialProps> => ({
@@ -24,6 +26,7 @@ const AnimatedShape: React.FC<{
   isTransmissive?: boolean;
 }> = ({ position, initialRotation = [0,0,0], color, shapeType, animationParams, isTransmissive = false }) => {
   const meshRef = useRef<THREE.Mesh>(null!);
+  const [hovered, setHovered] = useState(false);
 
   useFrame(({ clock }) => {
     if (meshRef.current) {
@@ -55,7 +58,14 @@ const AnimatedShape: React.FC<{
   }
 
   return (
-    <mesh ref={meshRef} position={position} rotation={initialRotation}>
+    <mesh
+      ref={meshRef}
+      position={position}
+      rotation={initialRotation}
+      onPointerOver={(event) => { event.stopPropagation(); setHovered(true); }}
+      onPointerOut={(event) => setHovered(false)}
+      scale={hovered ? 1.1 : 1} // Apply scale effect
+    >
       {geometry}
       {isTransmissive ? (
         <meshPhysicalMaterial
@@ -73,8 +83,10 @@ const Hero3D: React.FC = () => {
   return (
     // Canvas is positioned absolutely by HeroSection's styling for Hero3D wrapper
     // zIndex is also handled by HeroSection's wrapper for Hero3D component
-    <Canvas camera={{ position: [0, 1, 7], fov: 50 }}>
-      <ambientLight intensity={0.8} />
+    <Canvas camera={{ position: [0, 1, 7], fov: 50 }} gl={{ antialias: true, pixelRatio: window.devicePixelRatio }}>
+      {/* Original scene elements */}
+      <ambientLight intensity={0.5} />
+      <hemisphereLight intensity={0.3} groundColor="black" />
       <directionalLight position={[5, 8, 5]} intensity={1.2} castShadow />
       <pointLight position={[-5, -3, 2]} intensity={0.7} color="#FFFFFF" />
 
@@ -84,7 +96,7 @@ const Hero3D: React.FC = () => {
         initialRotation={[0.2,0.5,0]}
         color="#f97316" // god-orange-DEFAULT
         shapeType="dodecahedron"
-        animationParams={{ rotX: 0.002, rotY: 0.003, bobSpeed: 0.8 }}
+        animationParams={{ rotX: 0.0025, rotY: 0.0035, bobSpeed: 0.7 }}
       />
 
       {/* A secondary color shape, potentially transmissive */}
@@ -93,7 +105,7 @@ const Hero3D: React.FC = () => {
         initialRotation={[0.5,0.2,0.1]}
         color="#3b82f6" // god-blue-light
         shapeType="sphere"
-        animationParams={{ rotX: 0.003, rotY: 0.002, bobSpeed: 0.6 }}
+        animationParams={{ rotX: 0.0035, rotY: 0.0025, bobSpeed: 0.5 }}
         isTransmissive={true} // Try transmission here
       />
 
@@ -103,7 +115,7 @@ const Hero3D: React.FC = () => {
         initialRotation={[0.1,0.8,0.3]}
         color="#FFFFFF" // White or a very light accent
         shapeType="torus"
-        animationParams={{ rotX: 0.001, rotY: -0.004, bobSpeed: 1 }}
+        animationParams={{ rotX: 0.0015, rotY: -0.0045, bobSpeed: 0.9 }}
       />
 
       {/* Another accent shape, different type */}
@@ -112,10 +124,27 @@ const Hero3D: React.FC = () => {
         initialRotation={[0.6,0.1,0.7]}
         color="#DC143C" // delhi-red
         shapeType="box"
-        animationParams={{ rotX: -0.002, rotY: 0.001, bobSpeed: 0.7 }}
+        animationParams={{ rotX: -0.0025, rotY: 0.0015, bobSpeed: 0.6 }}
       />
 
-      {/* Optional: Add <Environment preset="sunset" /> from drei if transmission looks flat */}
+      {/* "city" preset provides good ambient reflections for metallic/glassy surfaces and general scenes. */}
+      <Environment preset="city" />
+
+      {/* Post-processing effects are applied here */}
+      <EffectComposer>
+        <Bloom
+          intensity={0.6}
+          kernelSize={KernelSize.SMALL}
+          luminanceThreshold={0.7}
+          luminanceSmoothing={0.025}
+        />
+        <DepthOfField
+          focusDistance={0.02} // Distance to the point of focus
+          focalLength={0.05} // Focal length of the virtual camera
+          bokehScale={1.5} // Size of the bokeh blur
+          height={480} // Resolution of the DoF effect, lower for performance
+        />
+      </EffectComposer>
       {/* <OrbitControls /> */}
     </Canvas>
   );

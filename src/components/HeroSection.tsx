@@ -41,7 +41,7 @@ const HeroSection: React.FC = () => {
         </div>
       </div>
       {/* Optional: Add some subtle overlay or gradient if needed to enhance text readability over 3D */}
-      <div className="absolute inset-0 bg-black opacity-10 z-0"></div>
+      <div className="absolute inset-0 bg-black opacity-20 z-0"></div>
     </section>
   );
 };
