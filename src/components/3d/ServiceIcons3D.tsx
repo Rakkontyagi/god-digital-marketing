@@ -91,7 +91,7 @@ const ServiceIcons3D: React.FC = () => {
 
   return (
     <div style={{ height: '350px', width: '100%' }}>
-      <Canvas camera={{ position: [0, 0.5, 5], fov: 50 }} gl={{ antialias: true, pixelRatio: window.devicePixelRatio }}>
+      <Canvas camera={{ position: [0, 0.5, 5], fov: 50 }} gl={{ antialias: true, pixelRatio: (typeof window !== 'undefined' ? window.devicePixelRatio : 1) }}>
         <ambientLight intensity={0.4} />
         <directionalLight position={[3, 5, 5]} intensity={0.8} />
         <pointLight position={[-3, -2, 4]} intensity={0.8} color="white" />

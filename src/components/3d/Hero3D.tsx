@@ -83,7 +83,7 @@ const Hero3D: React.FC = () => {
   return (
     // Canvas is positioned absolutely by HeroSection's styling for Hero3D wrapper
     // zIndex is also handled by HeroSection's wrapper for Hero3D component
-    <Canvas camera={{ position: [0, 1, 7], fov: 50 }} gl={{ antialias: true, pixelRatio: window.devicePixelRatio }}>
+    <Canvas camera={{ position: [0, 1, 7], fov: 50 }} gl={{ antialias: true, pixelRatio: (typeof window !== 'undefined' ? window.devicePixelRatio : 1) }}>
       {/* Original scene elements */}
       <ambientLight intensity={0.5} />
       <hemisphereLight intensity={0.3} groundColor="black" />

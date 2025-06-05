@@ -65,7 +65,10 @@ const Particles: React.FC<ParticleBackgroundProps> = ({
 const ParticleBackground: React.FC<ParticleBackgroundProps> = (props) => {
   return (
     <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: -1 }}> {/* Ensure it's behind other content */}
-      <Canvas camera={{ position: [0, 0, 1], fov: 75 }}> {/* Camera looking down Z, particles are around origin */}
+      <Canvas
+        camera={{ position: [0, 0, 1], fov: 75 }}
+        gl={{ antialias: true, pixelRatio: (typeof window !== 'undefined' ? window.devicePixelRatio : 1) }}
+      >
         <Particles {...props} />
       </Canvas>
     </div>

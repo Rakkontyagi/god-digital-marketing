@@ -73,7 +73,7 @@ const DelhiMarker: React.FC = () => {
 const DelhiMap3D: React.FC = () => {
   return (
     <div style={{ height: '450px', width: '100%', background: 'transparent' }}>
-      <Canvas camera={{ position: [0, 0.5, 3.5], fov: 50 }} gl={{ antialias: true, pixelRatio: window.devicePixelRatio }}>
+      <Canvas camera={{ position: [0, 0.5, 3.5], fov: 50 }} gl={{ antialias: true, pixelRatio: (typeof window !== 'undefined' ? window.devicePixelRatio : 1) }}>
         <ambientLight intensity={0.3} />
         <directionalLight position={[5, 5, 5]} intensity={0.6} />
         {/* "dawn" preset provides soft, neutral lighting suitable for a map display. */}
