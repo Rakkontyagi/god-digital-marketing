@@ -1,4 +1,10 @@
 import React from 'react';
+import dynamic from 'next/dynamic';
+
+const ServiceIcons3D = dynamic(() => import('./3d/ServiceIcons3D'), {
+  ssr: false,
+  loading: () => <div style={{ height: '300px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white' }}>Loading 3D Icons...</div>,
+});
 
 interface ServiceItemProps {
   title: string;
@@ -49,6 +55,7 @@ const ServicesSection: React.FC = () => {
             focusing on delivering exceptional results for businesses in Delhi.
           </p>
         </div>
+        <ServiceIcons3D />
         <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8 md:gap-10">
           {services.map((service, index) => (
             <ServiceItem

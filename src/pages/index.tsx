@@ -4,6 +4,7 @@ import Navigation from '../components/Navigation';
 import Hero from '../components/HeroSection';
 import ServicesSection from '../components/ServiceSection';
 import AboutSection from '../components/AboutSection';
+import IndiaMapSection from '../components/IndiaMapSection';
 import ContactSection from '../components/ContactSection';
 import Footer from '../components/Footer';
 
@@ -53,6 +54,7 @@ const HomePage: React.FC = () => {
           <Hero />
           <ServicesSection />
           <AboutSection />
+          <IndiaMapSection />
           <ContactSection />
         </main>
         <Footer />

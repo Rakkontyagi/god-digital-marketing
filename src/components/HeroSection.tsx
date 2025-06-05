@@ -1,11 +1,24 @@
 import React from 'react';
-import Hero3D from './3d/Hero3D'; // Assuming Hero3D is in a subfolder
+import dynamic from 'next/dynamic';
+
+const Hero3D = dynamic(() => import('./3d/Hero3D'), {
+  ssr: false,
+  loading: () => <div style={{ height: '100%', width: '100%', position: 'absolute', background: 'transparent' }} />, // Minimal loader for Hero3D
+});
+
+const ParticleBackground = dynamic(() => import('./3d/ParticleBackground'), {
+  ssr: false,
+  loading: () => null, // No specific loader, it's a background element
+});
 
 const HeroSection: React.FC = () => {
   return (
     <section id="home" className="relative flex items-center justify-center h-screen bg-gradient-to-br from-blue-900 via-blue-700 to-indigo-900 text-white overflow-hidden">
-      {/* 3D Background - ensure it's loaded dynamically if client-side only */}
-      {typeof window !== 'undefined' && <Hero3D />}
+      <ParticleBackground count={3000} color="#FFFFFF" size={0.02} speed={0.05} />
+      {/* Wrapper for Hero3D to ensure correct layering and full coverage */}
+      <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: 0 }}>
+        <Hero3D />
+      </div>
 
       <div className="relative z-10 container mx-auto px-6 text-center flex flex-col items-center">
         <h1 className="text-5xl md:text-7xl font-bold font-display mb-6 leading-tight">
