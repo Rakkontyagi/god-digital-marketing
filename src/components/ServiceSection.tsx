@@ -9,9 +9,9 @@ interface ServiceItemProps {
 const ServiceItem: React.FC<ServiceItemProps> = ({ title, description, icon }) => {
   return (
     <div className="bg-white/10 backdrop-blur-md rounded-xl p-6 md:p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-white/20">
-      {icon && <div className="text-orange-400 mb-4">{icon}</div>}
-      <h3 className="text-2xl font-semibold text-white mb-3">{title}</h3>
-      <p className="text-blue-200 leading-relaxed">{description}</p>
+      {icon && <div className="text-god-orange-DEFAULT mb-4">{icon}</div>}
+      <h3 className="text-2xl font-semibold font-display text-white mb-3">{title}</h3>
+      <p className="text-god-blue-light leading-relaxed">{description}</p>
     </div>
   );
 };
@@ -41,10 +41,10 @@ const ServicesSection: React.FC = () => {
     <section id="services" className="py-16 md:py-24 bg-gradient-to-b from-blue-800 to-blue-900">
       <div className="container mx-auto px-6">
         <div className="text-center mb-12 md:mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Our <span className="text-orange-400">Signature</span> Services
+          <h2 className="text-4xl md:text-5xl font-bold font-display text-white mb-4">
+            Our <span className="text-god-orange-DEFAULT">Signature</span> Services
           </h2>
-          <p className="text-xl text-blue-200 max-w-3xl mx-auto">
+          <p className="text-xl text-god-blue-light max-w-3xl mx-auto">
             We craft bespoke digital marketing solutions that blend innovation with strategy,
             focusing on delivering exceptional results for businesses in Delhi.
           </p>

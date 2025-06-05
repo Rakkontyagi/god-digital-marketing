@@ -8,21 +8,21 @@ const HeroSection: React.FC = () => {
       {typeof window !== 'undefined' && <Hero3D />}
 
       <div className="relative z-10 container mx-auto px-6 text-center flex flex-col items-center">
-        <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-          <span className="text-orange-400">God</span>{' '}
+        <h1 className="text-5xl md:text-7xl font-bold font-display mb-6 leading-tight">
+          <span className="text-god-orange-DEFAULT">God</span>{' '}
           <span className="text-white">Digital</span><br />
-          <span className="text-blue-300">Marketing</span>
+          <span className="text-god-blue-light">Marketing</span>
         </h1>
         <p className="text-xl md:text-2xl mb-8 max-w-3xl">
           Premier Digital Marketing Agency in{' '}
-          <span className="text-red-400 font-semibold">Delhi</span><br />
+          <span className="text-delhi-red font-semibold">Delhi</span><br />
           Driving Business Growth with 3D Innovation & Proven Strategies.
         </p>
         <div className="flex flex-col sm:flex-row gap-4">
-          <button className="px-8 py-4 bg-orange-500 hover:bg-orange-600 text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl">
+          <button className="px-8 py-4 bg-god-orange-DEFAULT hover:bg-god-orange-dark text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl">
             Get Free Consultation
           </button>
-          <button className="px-8 py-4 border-2 border-white text-white hover:bg-white hover:text-blue-900 font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl">
+          <button className="px-8 py-4 border-2 border-white text-white hover:bg-white hover:text-god-blue-dark font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl">
             View Our Work
           </button>
         </div>

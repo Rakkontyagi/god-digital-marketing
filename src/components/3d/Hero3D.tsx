@@ -13,7 +13,7 @@ const SpinningMesh: React.FC = () => {
 
   return (
     <Box ref={meshRef} args={[2, 2, 2]}>
-      <meshStandardMaterial color="orange" />
+      <meshStandardMaterial color="#f97316" />
     </Box>
   );
 };

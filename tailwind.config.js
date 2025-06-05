@@ -3,56 +3,35 @@ module.exports = {
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    // './src/app/**/*.{js,ts,jsx,tsx,mdx}', // If using App Router
   ],
   theme: {
     extend: {
       colors: {
         'god-blue': {
-          50: '#eff6ff',
-          100: '#dbeafe',
-          200: '#bfdbfe',
-          300: '#93c5fd',
-          400: '#60a5fa',
-          500: '#3b82f6',
-          600: '#2563eb',
-          700: '#1d4ed8',
-          800: '#1e40af',
-          900: '#1e3a8a',
+          light: '#3b82f6', // Example light shade
+          DEFAULT: '#1e3a8a', // Example default shade
+          dark: '#1e293b',  // Example dark shade
         },
         'god-orange': {
-          50: '#fff7ed',
-          100: '#ffedd5',
-          200: '#fed7aa',
-          300: '#fdba74',
-          400: '#fb923c',
-          500: '#f97316',
-          600: '#ea580c',
-          700: '#c2410c',
-          800: '#9a3412',
-          900: '#7c2d12',
+          light: '#fb923c', // Example light shade
+          DEFAULT: '#f97316', // Example default shade
+          dark: '#ea580c',   // Example dark shade
         },
-        'delhi-red': '#DC143C',
+        'delhi-red': '#DC143C', // Crimson
         'india-green': '#138808',
         'saffron': '#FF9933',
       },
       fontFamily: {
-        'sans': ['Inter', 'system-ui', 'sans-serif'],
-        'display': ['Poppins', 'system-ui', 'sans-serif'],
+        sans: ['Inter', 'system-ui', 'sans-serif'], // Default sans-serif
+        display: ['Poppins', 'Inter', 'system-ui', 'sans-serif'], // For headings
       },
-      animation: {
-        'float': 'float 6s ease-in-out infinite',
-        'spin-slow': 'spin 8s linear infinite',
-        'pulse-slow': 'pulse 4s ease-in-out infinite',
-        'bounce-slow': 'bounce 3s infinite',
-      },
-      keyframes: {
-        float: {
-          '0%, 100%': { transform: 'translateY(0px)' },
-          '50%': { transform: 'translateY(-20px)' },
-        }
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+        'gradient-conic':
+          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
     },
   },
   plugins: [],
-}
+};
