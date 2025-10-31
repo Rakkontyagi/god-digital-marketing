@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Online Reputation Management (ORM) services in India. Protect, monitor, and enhance your digital reputation. Crisis management, review management, and brand protection.">
+    <title>Online Reputation Management Services India | ORM Agency & Brand Protection</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-purple: #7C3AED;
+            --secondary-blue: #2563EB;
+            --accent-amber: #F59E0B;
+            --dark-bg: #0F172A;
+            --card-bg: rgba(255, 255, 255, 0.05);
+            --text-primary: #F8FAFC;
+            --text-secondary: #94A3B8;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: var(--dark-bg);
+            color: var(--text-primary);
+            line-height: 1.7;
+        }
+
+        header {
+            background: rgba(15, 23, 42, 0.95);
+            backdrop-filter: blur(10px);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(124, 58, 237, 0.2);
+        }
+
+        nav {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.2rem 2rem;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            background: linear-gradient(135deg, var(--primary-purple), var(--secondary-blue));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-menu a {
+            color: var(--text-primary);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .nav-menu a:hover {
+            color: var(--primary-purple);
+        }
+
+        .breadcrumb {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .breadcrumb a {
+            color: var(--text-secondary);
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            color: var(--primary-purple);
+        }
+
+        .hero {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, var(--primary-purple), var(--secondary-blue), var(--accent-amber));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            line-height: 1.2;
+        }
+
+        .hero-subtitle {
+            font-size: 1.3rem;
+            color: var(--text-secondary);
+            max-width: 900px;
+            margin: 0 auto 2rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            background: linear-gradient(135deg, var(--primary-purple), var(--secondary-blue));
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(124, 58, 237, 0.4);
+        }
+
+        .content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .section {
+            margin-bottom: 4rem;
+        }
+
+        h2 {
+            font-size: 2.2rem;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, var(--primary-purple), var(--secondary-blue));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        h3 {
+            font-size: 1.6rem;
+            margin: 2rem 0 1rem;
+            color: var(--text-primary);
+        }
+
+        p {
+            margin-bottom: 1.2rem;
+            color: var(--text-secondary);
+            font-size: 1.05rem;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .service-card {
+            background: var(--card-bg);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(124, 58, 237, 0.2);
+            border-radius: 12px;
+            padding: 2rem;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary-purple);
+        }
+
+        .service-card h4 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+
+        .service-card i {
+            color: var(--accent-amber);
+            margin-right: 0.5rem;
+        }
+
+        .case-study {
+            background: linear-gradient(135deg, rgba(124, 58, 237, 0.1), rgba(37, 99, 235, 0.1));
+            border-left: 4px solid var(--primary-purple);
+            border-radius: 8px;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+
+        .case-study h3 {
+            color: var(--accent-amber);
+            margin-top: 0;
+        }
+
+        ul, ol {
+            margin: 1rem 0 1rem 2rem;
+            color: var(--text-secondary);
+        }
+
+        li {
+            margin-bottom: 0.8rem;
+            line-height: 1.6;
+        }
+
+        .stat-highlight {
+            display: inline-block;
+            background: rgba(245, 158, 11, 0.1);
+            color: var(--accent-amber);
+            padding: 0.2rem 0.6rem;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+
+        .process-step {
+            background: var(--card-bg);
+            backdrop-filter: blur(10px);
+            border-left: 3px solid var(--secondary-blue);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .process-step h4 {
+            color: var(--secondary-blue);
+            margin-bottom: 0.8rem;
+        }
+
+        .crisis-alert {
+            background: linear-gradient(135deg, rgba(239, 68, 68, 0.1), rgba(220, 38, 38, 0.1));
+            border-left: 4px solid #EF4444;
+            border-radius: 8px;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+
+        .platform-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .platform-card {
+            background: var(--card-bg);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(37, 99, 235, 0.2);
+            border-radius: 10px;
+            padding: 1.5rem;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .platform-card:hover {
+            transform: translateY(-3px);
+            border-color: var(--secondary-blue);
+        }
+
+        footer {
+            background: rgba(15, 23, 42, 0.95);
+            border-top: 1px solid rgba(124, 58, 237, 0.2);
+            margin-top: 4rem;
+            padding: 3rem 2rem 2rem;
+        }
+
+        .footer-grid {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .footer-section h3 {
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .footer-section ul {
+            list-style: none;
+            margin: 0;
+        }
+
+        .footer-section li {
+            margin-bottom: 0.6rem;
+        }
+
+        .footer-section a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section a:hover {
+            color: var(--primary-purple);
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .nav-menu {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .service-grid,
+            .platform-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav style="max-width:1400px;margin:0 auto;padding:1.2rem 2rem">
+            <a href="../../index.html" style="font-size:1.5rem;font-weight:bold;background:linear-gradient(135deg,#7C3AED,#2563EB);-webkit-background-clip:text;-webkit-text-fill-color:transparent;text-decoration:none">God Digital</a>
+            <div style="display:flex;gap:2rem;align-items:center">
+                <a href="../seo-services/index.html" style="color:#F8FAFC;text-decoration:none">SEO</a>
+                <a href="../ppc-advertising/index.html" style="color:#F8FAFC;text-decoration:none">PPC</a>
+                <a href="../social-media-marketing/index.html" style="color:#F8FAFC;text-decoration:none">Social Media</a>
+                <a href="../content-marketing/index.html" style="color:#F8FAFC;text-decoration:none">Content Marketing</a>
+                <a href="../email-marketing/index.html" style="color:#F8FAFC;text-decoration:none">Email Marketing</a>
+                <a href="../web-design-development/index.html" style="color:#F8FAFC;text-decoration:none">Web Design</a>
+                <a href="../conversion-optimization/index.html" style="color:#F8FAFC;text-decoration:none">CRO</a>
+                <a href="../../contact-us.html" style="display:inline-block;padding:0.6rem 1.5rem;background:linear-gradient(135deg,#7C3AED,#2563EB);color:#fff;text-decoration:none;border-radius:6px">Get Quote</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="breadcrumb">
+        <a href="../../index.html">Home</a> /
+        <a href="../index.html">Services</a> /
+        <span>Online Reputation Management</span>
+    </div>
+
+    <section class="hero">
+        <h1>Online Reputation Management</h1>
+        <p class="hero-subtitle">Your reputation exists online whether you manage it or not. In 20 years, we've protected and rebuilt reputations for 800+ clients—containing crises, suppressing negative content, and building positive digital footprints that shape how customers, partners, and talent perceive your brand.</p>
+        <a href="../../contact-us.html" class="cta-button">Protect Your Reputation</a>
+    </section>
+
+    <div class="content">
+        <section class="section">
+            <h2>The New Reality of Online Reputation</h2>
+            <p>Ninety-three percent of consumers read online reviews before purchasing. The first page of Google search results for your brand name shapes perception more than your marketing messages. A single viral negative experience can cost millions in lost revenue. Your reputation isn't what you say about yourself—it's what Google says about you when someone searches your name.</p>
+
+            <p>Here's what two decades of reputation management has taught us: Most businesses only think about reputation when crisis hits. By then, damage control costs 10x more than proactive reputation building. A restaurant that ignored Zomato reviews for two years saw ratings drop to 2.8 stars, watching revenue decline 42% as customers chose competitors. By the time they hired us, recovery required 18 months of intensive work. The same effort invested proactively would have prevented the crisis entirely.</p>
+
+            <p>The businesses that thrive understand reputation as a strategic asset requiring ongoing investment—not a problem to address when things go wrong. They monitor mentions continuously, respond to feedback systematically, create positive content consistently, and build defensive moats of favorable search results before negative content appears.</p>
+
+            <p>We've seen reputations destroyed in 24 hours and rebuilt over 24 months. We've suppressed defamatory content, managed executive reputation crises, recovered from viral social media disasters, and transformed companies from "brands to avoid" into trusted market leaders. Reputation management isn't magic; it's systematic work applying proven principles of search engine behavior, social psychology, and strategic content creation.</p>
+        </section>
+
+        <section class="section">
+            <h2>Our Reputation Management Process</h2>
+
+            <div class="process-step" data-aos="fade-up">
+                <h4>Step 1: Comprehensive Reputation Audit</h4>
+                <p>We start by understanding your current reputation reality across all platforms where opinions form and spread. This means analyzing your presence on Google search results, review platforms (Google My Business, Justdial, Zomato, MakeMyTrip, etc.), social media (Facebook, Twitter, LinkedIn, Instagram), news sites, forums, and blogs.</p>
+                <p>Our audit identifies existing reputation risks, damaging content in search results, review patterns across platforms, social media sentiment, brand mention volume and context, and competitor positioning. Most importantly, we assess vulnerability—how easily could negative content rank for your brand searches?</p>
+                <p>We also evaluate your defensive position. Do you own page one of Google for your brand name? If a crisis hit tomorrow, what positive content exists to balance negative news? Most businesses have weak defensive positions—only their homepage and maybe LinkedIn rank for their brand, leaving 8 of 10 first-page results vacant for whoever creates content about them next.</p>
+            </div>
+
+            <div class="process-step" data-aos="fade-up">
+                <h4>Step 2: Strategic Reputation Blueprint</h4>
+                <p>Based on audit findings, we develop a comprehensive reputation strategy addressing three timeframes: immediate threats requiring urgent action, medium-term opportunities to strengthen reputation, and long-term infrastructure building defensive moats.</p>
+                <p>This blueprint prioritizes actions by impact and effort. Sometimes the highest-impact move is responding to angry customers on review platforms. Other times it's creating positive content to push negative search results to page two. Each strategy is customized to your specific situation, industry dynamics, and business objectives.</p>
+                <p>We also establish reputation KPIs—metrics that let us measure progress. This might include positive sentiment percentage, average review ratings, first-page Google ownership, negative content suppression success, and response time to negative mentions. Clear metrics enable accountability and continuous optimization.</p>
+            </div>
+
+            <div class="process-step" data-aos="fade-up">
+                <h4>Step 3: Proactive Reputation Building</h4>
+                <p>The best defense is offense. We create positive content that ranks for your brand name, occupying first-page Google real estate before negative content appears. This includes optimizing owned properties (website, blog, social profiles), creating and optimizing third-party profiles (industry directories, professional networks), developing positive news coverage and PR, publishing thought leadership content, and building review volume on key platforms.</p>
+                <p>This proactive approach makes it extremely difficult for negative content to rank prominently. When you own 8-9 of 10 first-page results with strongly optimized positive content, a negative blog post struggles to break through. And even if it does, it's surrounded by positive context that shapes overall perception.</p>
+            </div>
+
+            <div class="process-step" data-aos="fade-up">
+                <h4>Step 4: Review & Feedback Management</h4>
+                <p>Online reviews directly impact revenue. We implement systematic review generation encouraging satisfied customers to share experiences, review monitoring alerting you to new reviews across all platforms, and response protocols addressing both positive and negative reviews appropriately.</p>
+                <p>Negative reviews aren't disasters when handled correctly. A thoughtful, professional response demonstrates accountability and customer service commitment. We've seen restaurants turn 1-star reviewers into advocates through genuine problem resolution publicly visible to thousands of potential customers. The response often matters more than the initial complaint.</p>
+                <p>We also coach your team on internal processes preventing negative reviews. Most poor reviews stem from fixable operational issues. Addressing root causes reduces negative feedback while improving customer experience—solving the real problem rather than just managing perception.</p>
+            </div>
+
+            <div class="process-step" data-aos="fade-up">
+                <h4>Step 5: Continuous Monitoring & Rapid Response</h4>
+                <p>Reputation management requires vigilance. We implement monitoring systems tracking brand mentions across the web, social media conversations, new review submissions, search result changes, and emerging reputation threats.</p>
+                <p>When issues arise, speed matters tremendously. Viral negative content spreads fastest in the first 24-48 hours. Early intervention—whether through direct response, content creation, or platform reporting—dramatically reduces potential damage. Our monitoring alerts ensure you know about reputation threats within hours, not days or weeks.</p>
+                <p>We also monitor for opportunities. When influencers mention your brand positively, that's a chance to amplify. When industry publications need sources, that's a chance for positive coverage. Proactive monitoring turns reputation management from defensive to strategic.</p>
+            </div>
+
+            <div class="process-step" data-aos="fade-up">
+                <h4>Step 6: Crisis Management & Negative Content Suppression</h4>
+                <p>When crisis hits or damaging content appears, we execute proven crisis protocols. For search engine issues, this means rapidly creating and optimizing positive content to push negative results down in rankings. For social media crises, it means strategic response, stakeholder communication, and sometimes paid amplification of clarifying messages.</p>
+                <p>We handle content removal when appropriate—contacting site owners, filing platform violations reports, pursuing legal remedies when content is defamatory or illegal. However, removal is often unrealistic. Our focus is typically suppression through superior SEO and volume of positive content.</p>
+                <p>Crisis management also involves internal communication, ensuring your team, partners, and stakeholders understand the situation and maintain consistent messaging. Reputation crises damage stakeholder confidence as much as customer perception. Managing both audiences is critical.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Key ORM Services We Provide</h2>
+
+            <div class="service-grid">
+                <div class="service-card" data-aos="fade-up">
+                    <h4><i class="fas fa-search"></i> Search Result Management</h4>
+                    <p><strong>Focus:</strong> Control what appears when people search your brand on Google</p>
+                    <p><strong>Goal:</strong> Own 8-10 of first-page results with positive, credible content</p>
+                    <p>We create and optimize content specifically designed to rank for your brand name—social profiles, directory listings, articles, press releases, videos, and more. This defensive positioning prevents negative content from gaining prominent visibility while showcasing your best reputation.</p>
+                </div>
+
+                <div class="service-card" data-aos="fade-up">
+                    <h4><i class="fas fa-star"></i> Review Management</h4>
+                    <p><strong>Platforms:</strong> Google, Facebook, Justdial, Zomato, Trustpilot, industry-specific sites</p>
+                    <p><strong>Services:</strong> Review generation, monitoring, response, negative review mitigation</p>
+                    <p>We help you build volume of positive reviews through systematic customer outreach while responding professionally to negative feedback. Our review recovery strategies often transform complainers into advocates through genuine problem resolution.</p>
+                </div>
+
+                <div class="service-card" data-aos="fade-up">
+                    <h4><i class="fas fa-chart-line"></i> Social Media Reputation</h4>
+                    <p><strong>Focus:</strong> Monitor and manage brand perception across social platforms</p>
+                    <p><strong>Services:</strong> Social listening, response management, crisis mitigation, positive engagement</p>
+                    <p>Social media amplifies both praise and criticism. We monitor conversations about your brand, engage positively with supporters, address concerns professionally, and contain negative situations before they spiral into full crises.</p>
+                </div>
+
+                <div class="service-card" data-aos="fade-up">
+                    <h4><i class="fas fa-exclamation-triangle"></i> Crisis Management</h4>
+                    <p><strong>Coverage:</strong> Viral complaints, negative press, executive scandals, product recalls</p>
+                    <p><strong>Response:</strong> 24/7 crisis response team, strategic communications, stakeholder management</p>
+                    <p>When reputation crises hit, every hour matters. Our crisis protocols include rapid assessment, stakeholder communication plans, response strategy, and multi-channel reputation recovery. We've managed crises from product failures to executive controversies.</p>
+                </div>
+
+                <div class="service-card" data-aos="fade-up">
+                    <h4><i class="fas fa-shield-alt"></i> Negative Content Suppression</h4>
+                    <p><strong>Methods:</strong> Search engine optimization, content creation, legal approaches when applicable</p>
+                    <p><strong>Goal:</strong> Push negative content to page 2+ where 95% of people never look</p>
+                    <p>When damaging content ranks for your brand, we create and optimize superior positive content that outranks it. This suppression approach is often more effective and faster than pursuing removal, though we use both strategies appropriately.</p>
+                </div>
+
+                <div class="service-card" data-aos="fade-up">
+                    <h4><i class="fas fa-user-tie"></i> Executive Reputation Management</h4>
+                    <p><strong>For:</strong> CEOs, founders, executives, board members, public figures</p>
+                    <p><strong>Focus:</strong> Personal brand building, Google search control, crisis protection</p>
+                    <p>Executive reputation affects company valuation, partnerships, and talent recruitment. We build positive digital presence for leadership through thought leadership content, media coverage, speaking engagements, and strategic social media positioning.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Platform-Specific Reputation Management</h2>
+
+            <div class="platform-grid">
+                <div class="platform-card" data-aos="fade-up">
+                    <h4><i class="fab fa-google"></i> Google My Business</h4>
+                    <p><strong>Critical for:</strong> Local businesses, retail, restaurants, service providers</p>
+                    <p>GMB reviews appear prominently in Google search and Maps, directly influencing customer decisions. We optimize GMB profiles, generate reviews, respond to feedback, and manage Q&A sections to ensure your Google presence drives business rather than deterring it.</p>
+                </div>
+
+                <div class="platform-card" data-aos="fade-up">
+                    <h4><i class="fas fa-utensils"></i> Food & Hospitality Platforms</h4>
+                    <p><strong>Platforms:</strong> Zomato, Swiggy, EazeeDiner, TripAdvisor, MakeMyTrip</p>
+                    <p>Restaurant and hotel reputations live and die on these platforms. We help you build rating momentum, respond to negative feedback strategically, and encourage satisfied customers to share experiences that balance inevitable complaints.</p>
+                </div>
+
+                <div class="platform-card" data-aos="fade-up">
+                    <h4><i class="fab fa-facebook"></i> Social Media Platforms</h4>
+                    <p><strong>Focus:</strong> Facebook, Instagram, Twitter, LinkedIn</p>
+                    <p>Social media conversations shape perception, especially among younger demographics. We monitor brand mentions, engage with your community, address complaints before they escalate, and amplify positive user-generated content.</p>
+                </div>
+
+                <div class="platform-card" data-aos="fade-up">
+                    <h4><i class="fas fa-newspaper"></i> News & Media</h4>
+                    <p><strong>Management:</strong> Press relations, crisis communications, positive media cultivation</p>
+                    <p>News coverage ranks prominently for brand searches. We cultivate positive media relationships, secure favorable coverage through thought leadership, and manage crisis communications when negative news breaks.</p>
+                </div>
+
+                <div class="platform-card" data-aos="fade-up">
+                    <h4><i class="fas fa-briefcase"></i> Industry-Specific Platforms</h4>
+                    <p><strong>Examples:</strong> Glassdoor (employer reputation), Practo (doctors), LegalRaasta (lawyers)</p>
+                    <p>Industry-specific platforms influence your target audience directly. We manage profiles, generate positive reviews, respond to feedback, and ensure your industry reputation supports business development.</p>
+                </div>
+
+                <div class="platform-card" data-aos="fade-up">
+                    <h4><i class="fab fa-youtube"></i> Video Platforms</h4>
+                    <p><strong>Platforms:</strong> YouTube, Instagram Reels, TikTok</p>
+                    <p>Video content can go viral—for better or worse. We monitor video mentions, respond to video complaints or reviews, create positive video content, and optimize video platforms as part of overall reputation strategy.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Reputation Management Across Industries</h2>
+
+            <h3>Healthcare & Medical Practices</h3>
+            <p>Patient reviews heavily influence medical practice reputation. A single negative review can cost a doctor hundreds of potential patients. We help healthcare providers generate positive reviews (within compliance guidelines), respond professionally to complaints, and build authoritative online presence through medical content and credentials highlighting.</p>
+            <p>Healthcare ORM requires special sensitivity. We never respond publicly with patient information, encourage satisfied patients to share experiences, and address concerns through appropriate channels. Our strategies comply with medical privacy regulations while protecting practitioner reputations.</p>
+
+            <h3>Restaurants & Hospitality</h3>
+            <p>Restaurant reputation lives on Zomato, Google, and social media. One viral food poisoning claim can devastate business. We help restaurants maintain high ratings, respond to negative reviews constructively, encourage photo and review sharing from satisfied customers, and manage crisis situations when they inevitably occur.</p>
+            <p>Most negative restaurant reviews stem from fixable operational issues—slow service, order mistakes, cleanliness concerns. We help identify patterns in complaints enabling operational improvements that prevent future negative reviews while managing existing reputation.</p>
+
+            <h3>Real Estate Developers & Agents</h3>
+            <p>Real estate involves high-stakes transactions where reputation determines deal closure. Buyers extensively research developers and agents online before committing. We build positive reputation through customer testimonials, project success showcases, industry recognition, and professional credibility signals.</p>
+            <p>Real estate ORM also involves managing controversy around delayed projects, quality issues, or legal disputes. We handle these situations through transparent communication, stakeholder updates, and positive content that provides context around challenges.</p>
+
+            <h3>E-Commerce & Retail</h3>
+            <p>Online sellers live and die by reviews. Amazon, Flipkart, and standalone e-commerce site reviews directly affect sales. We help e-commerce businesses generate review volume, respond to product complaints, manage return/refund reputation, and build overall trust that converts browsers into buyers.</p>
+
+            <h3>Professional Services (Legal, Consulting, Accounting)</h3>
+            <p>Professional service reputation is built on credibility, expertise, and results. We position professionals through thought leadership content, case study publishing, industry recognition, speaking engagements, and positive client testimonials that demonstrate capabilities without violating professional standards.</p>
+
+            <h3>Technology & SaaS Companies</h3>
+            <p>Software reputation forms on review platforms like G2, Capterra, and Trustpilot, plus social media and tech forums. We help tech companies generate product reviews, respond to user complaints, manage feature request expectations, and position leadership as industry experts through strategic content.</p>
+        </section>
+
+        <section class="section">
+            <h2>Crisis Scenarios We've Managed</h2>
+
+            <div class="crisis-alert" data-aos="fade-up">
+                <h3><i class="fas fa-virus"></i> Product/Service Failure Going Viral</h3>
+                <p><strong>Scenario:</strong> A customer posts video of your product failing spectacularly, gaining millions of views and damaging brand perception.</p>
+                <p><strong>Our Approach:</strong> Immediate public response acknowledging the issue, direct customer resolution, root cause communication, corrective action announcement, paid amplification of response to ensure visibility, and positive content creation to balance search results. Speed is critical—responding within 6-12 hours contains viral damage.</p>
+            </div>
+
+            <div class="crisis-alert" data-aos="fade-up">
+                <h3><i class="fas fa-user-slash"></i> Executive Personal Scandal</h3>
+                <p><strong>Scenario:</strong> Company leadership involved in personal controversy that threatens corporate reputation.</p>
+                <p><strong>Our Approach:</strong> Immediate crisis assessment determining appropriate response level (ignore, address, separate), stakeholder communication (board, investors, employees, customers), public statement when necessary, search result management to add context, and long-term reputation rebuilding through positive achievements and contributions.</p>
+            </div>
+
+            <div class="crisis-alert" data-aos="fade-up">
+                <h3><i class="fas fa-angry"></i> Coordinated Negative Review Attack</h3>
+                <p><strong>Scenario:</strong> Competitors or disgruntled individuals post multiple fake negative reviews attempting to damage reputation.</p>
+                <p><strong>Our Approach:</strong> Document review patterns showing coordination, report violations to platform support, respond publicly noting suspicious activity, accelerate legitimate positive review generation, and pursue legal action if malicious intent is provable. Platforms increasingly combat fake reviews when evidence is presented.</p>
+            </div>
+
+            <div class="crisis-alert" data-aos="fade-up">
+                <h3><i class="fas fa-newspaper"></i> Negative Media Coverage</h3>
+                <p><strong>Scenario:</strong> News outlet publishes critical article that ranks prominently for your brand name.</p>
+                <p><strong>Our Approach:</strong> Assess accuracy and consider response (correction request if inaccurate, rebuttal content if biased, acceptance if fair criticism), create positive content optimized for same keywords, secure additional media coverage telling your side, optimize existing properties to rank higher, and implement long-term SEO strategy ensuring negative article drops in rankings over time.</p>
+            </div>
+
+            <div class="crisis-alert" data-aos="fade-up">
+                <h3><i class="fas fa-shield-alt"></i> Data Breach or Security Incident</h3>
+                <p><strong>Scenario:</strong> Your business experiences data breach affecting customer information.</p>
+                <p><strong>Our Approach:</strong> Immediate transparent communication with affected parties, clear explanation of breach scope and remediation, ongoing updates showing security improvements, proactive media outreach controlling narrative, long-term trust rebuilding through demonstrated security commitment, and search result management ensuring breach doesn't define your brand forever.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Case Studies: Reputation Transformation</h2>
+
+            <div class="case-study" data-aos="fade-up">
+                <h3>Multi-Location Restaurant Chain, Tier 1 Cities</h3>
+                <p><strong>Challenge:</strong> Restaurant chain expanded rapidly without maintaining quality consistency. Zomato rating dropped from 4.2 to 2.9 across multiple locations. Customer complaints about food quality, service delays, and hygiene went viral on social media. Revenue declined 38% in six months as customers chose competitors with better ratings. Franchise partners threatened to exit due to damaged brand reputation.</p>
+
+                <p style="margin-top: 15px;"><strong>Our Reputation Recovery Strategy:</strong></p>
+                <ul>
+                    <li>Conducted comprehensive audit revealing 240+ negative reviews across platforms with common complaint themes</li>
+                    <li>Worked with operations team to address root causes—standardized recipes, improved staff training, enhanced quality control</li>
+                    <li>Implemented systematic review response strategy—personally addressed every negative review with accountability and specific resolution</li>
+                    <li>Created "satisfaction guarantee" program encouraging dissatisfied customers to report issues for immediate resolution</li>
+                    <li>Launched review generation campaign targeting satisfied customers through post-visit SMS, email, and on-premise QR codes</li>
+                    <li>Trained staff in customer service recovery, empowering them to resolve issues before customers left unhappy</li>
+                    <li>Created positive social media content showcasing food preparation, hygiene standards, and happy customer experiences</li>
+                    <li>Engaged food bloggers and influencers for honest reviews after confirming quality improvements</li>
+                </ul>
+
+                <p style="margin-top: 15px;"><strong>Results in 14 months:</strong></p>
+                <ul>
+                    <li><strong>Zomato rating recovered: 2.9 → 4.3 average</strong> across all locations</li>
+                    <li><strong>Review volume increased 520%</strong> (1,200 reviews to 7,440), diluting old negative reviews</li>
+                    <li><strong>Negative review percentage: 42% → 8%</strong> through operational improvements</li>
+                    <li><strong>Revenue recovered fully</strong> and exceeded pre-crisis levels by 22%</li>
+                    <li><strong>Customer retention improved 67%</strong> as quality consistency was maintained</li>
+                    <li><strong>Franchise satisfaction restored</strong> with three locations expanding and two new franchises signed</li>
+                    <li><strong>Social media sentiment: 68% negative → 81% positive</strong></li>
+                </ul>
+
+                <p style="margin-top: 15px;"><em>"Our reputation crisis was self-inflicted—we expanded faster than we could maintain quality. God Digital Marketing didn't just manage our online reputation; they forced us to fix the real problems causing negative reviews. The systematic response strategy showed customers we cared, while operational improvements ensured we had something worth reviewing positively. The satisfaction guarantee was initially terrifying—what if everyone complained? Instead, it gave unhappy customers constructive outlet and allowed us to fix problems before they became reviews. Reputation recovery required both better operations and better communication. We needed both."</em> — COO, Restaurant Chain</p>
+            </div>
+
+            <div class="case-study" data-aos="fade-up">
+                <h3>Real Estate Developer, Metro City</h3>
+                <p><strong>Challenge:</strong> Residential project experienced construction delays pushing possession by 18 months. Angry buyers created Facebook groups, filed consumer complaints, and generated negative media coverage. "Developer Name Scam" and "Developer Name Fraud" appeared as Google autocomplete suggestions. Website traffic dropped 72%, and new project pre-sales stalled completely as buyers researched the company and discovered controversy.</p>
+
+                <p style="margin-top: 15px;"><strong>Our Reputation Management Strategy:</strong></p>
+                <ul>
+                    <li>Immediate crisis response acknowledging delays transparently with clear updated timelines and compensation offers</li>
+                    <li>Created dedicated project update portal providing weekly construction progress with photos, videos, and explanations</li>
+                    <li>Established direct communication channels with buyer groups addressing concerns proactively rather than defensively</li>
+                    <li>Produced comprehensive content explaining delay causes (regulatory approvals, contractor issues) with documentation</li>
+                    <li>Secured positive media coverage about company's previous successful projects and community contributions</li>
+                    <li>Created extensive positive content (press releases, articles, social profiles, directories) optimized for company name</li>
+                    <li>Published case studies of satisfied customers from other projects providing balanced perspective</li>
+                    <li>Implemented SEO strategy to push negative content and autocomplete suggestions down in prominence</li>
+                </ul>
+
+                <p style="margin-top: 15px;"><strong>Results in 12 months:</strong></p>
+                <ul>
+                    <li><strong>Google first page: 9 of 10 results controlled</strong> with positive or neutral company-owned content</li>
+                    <li><strong>Negative autocomplete suggestions removed</strong> through positive search volume and content optimization</li>
+                    <li><strong>Website traffic recovered to 94%</strong> of pre-crisis levels</li>
+                    <li><strong>New project pre-sales resumed</strong> with 67% of units sold in first quarter after reputation recovery</li>
+                    <li><strong>Consumer complaints withdrawn</strong> after fair compensation and transparent communication</li>
+                    <li><strong>Media coverage shifted</strong> from "delayed project scandal" to "developer honors commitments despite challenges"</li>
+                    <li><strong>Buyer group sentiment transformed</strong> from adversarial to cautiously supportive as updates proved reliable</strong></li>
+                </ul>
+
+                <p style="margin-top: 15px;"><em>"The delay was our fault, and initial instinct was to hide from angry buyers and negative media. God Digital Marketing convinced us transparency was the only path forward. The weekly project updates felt risky—what if we missed another deadline? But consistent communication rebuilt trust even when news wasn't perfect. The reputation management wasn't about spinning the story or burying negative content through tricks. It was about taking accountability, providing context, demonstrating commitment to resolution, and ensuring prospective buyers found balanced information rather than just complaints. Most importantly, it forced us to actually solve the problem rather than just managing perception. Reputation work and operational work had to happen simultaneously."</em> — Managing Director, Real Estate Developer</p>
+            </div>
+
+            <div class="case-study" data-aos="fade-up">
+                <h3>Healthcare Clinic, Multi-Specialty</h3>
+                <p><strong>Challenge:</strong> Single patient had extremely negative experience due to misdiagnosis that required corrective treatment. Patient posted detailed negative reviews on Google, Practo, Facebook, and created YouTube video warning others. Reviews mentioned doctor names, described experience as "medical negligence," and urged people to avoid the clinic. Online reputation suffered catastrophically—Google rating dropped to 2.1 stars, appointment bookings declined 58%, and competitor clinics explicitly advertised against them ("Don't trust [Clinic Name] - Choose us instead").</p>
+
+                <p style="margin-top: 15px;"><strong>Our Reputation Recovery Strategy:</strong></p>
+                <ul>
+                    <li>Addressed patient's concerns directly and privately, offering full refund, apology, and covered corrective treatment costs</li>
+                    <li>Could not remove reviews (they were honest experiences), so focused on response strategy showing accountability</li>
+                    <li>Responded publicly to negative reviews with genuine apology, explanation of improvements made, and invitation to discuss further</li>
+                    <li>Implemented patient satisfaction follow-up system to identify and address concerns before they became reviews</li>
+                    <li>Created systematic review generation program requesting feedback from satisfied patients</li>
+                    <li>Published doctor credentials, specializations, and positive patient outcomes through blog content and social media</li>
+                    <li>Secured positive patient testimonial videos (with permission) showcasing successful treatments</li>
+                    <li>Optimized clinic profiles across all platforms with comprehensive information and positive content</li>
+                </ul>
+
+                <p style="margin-top: 15px;"><strong>Results in 10 months:</strong></p>
+                <ul>
+                    <li><strong>Google rating recovered: 2.1 → 4.4 stars</strong> through volume of positive reviews</li>
+                    <li><strong>Total review count: 23 → 340</strong>, diluting impact of negative experiences</li>
+                    <li><strong>Negative review percentage: 61% → 12%</strong> (industry average is 15-18%)</li>
+                    <li><strong>Appointment bookings recovered to 112%</strong> of pre-crisis levels</li>
+                    <li><strong>Patient retention improved 44%</strong> as satisfaction tracking prevented issues from escalating</li>
+                    <li><strong>Original negative patient updated reviews</strong> acknowledging clinic's professional response and resolution</li>
+                    <li><strong>Competitor attack ads stopped</strong> as reputation improved beyond attack viability</li>
+                </ul>
+
+                <p style="margin-top: 15px;"><em>"The negative reviews were devastating—and deserved. We made a mistake that hurt a patient. God Digital Marketing's approach wasn't about hiding or suppressing; it was about accountability and demonstrating commitment to improvement. The public response to negative reviews felt scary—admitting fault publicly goes against every instinct. But it showed other prospective patients that we take concerns seriously and make things right. More importantly, the patient satisfaction follow-up system prevents future mistakes from becoming crises. We now address concerns immediately rather than discovering them when angry patients post reviews. Reputation management transformed our patient care process. The online work mattered, but the operational improvements mattered more."</em> — Director, Healthcare Clinic</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Reputation Management Investment</h2>
+
+            <h3>Proactive Reputation Management (Prevention)</h3>
+            <p><strong>Monthly Investment:</strong> ₹50,000 - ₹2,00,000 depending on business size, review volume, and platforms monitored.</p>
+            <p><strong>Includes:</strong> Continuous monitoring, review management, proactive content creation, SEO optimization, monthly reporting.</p>
+            <p><strong>Best for:</strong> Businesses wanting to build strong reputation infrastructure before crises occur.</p>
+
+            <h3>Reputation Recovery (Crisis Response)</h3>
+            <p><strong>Project Investment:</strong> ₹2,00,000 - ₹15,00,000 depending on crisis severity, damage extent, and recovery timeline.</p>
+            <p><strong>Includes:</strong> Crisis assessment, immediate response, negative content suppression, positive content creation, stakeholder communication, ongoing recovery work for 3-12 months.</p>
+            <p><strong>Best for:</strong> Businesses facing active reputation crises requiring urgent intervention.</p>
+
+            <h3>Executive Reputation Management</h3>
+            <p><strong>Monthly Investment:</strong> ₹75,000 - ₹3,00,000 depending on executive visibility, crisis risk, and brand-building goals.</p>
+            <p><strong>Includes:</strong> Personal brand strategy, thought leadership content, media relations, search result management, social media positioning, crisis preparedness.</p>
+            <p><strong>Best for:</strong> CEOs, founders, and executives whose personal reputation affects company valuation.</p>
+
+            <h3>ROI of Reputation Management</h3>
+            <p>Reputation directly impacts revenue. Studies show one-star rating improvement can increase revenue 5-9%. Negative first-page Google results can reduce conversions 20-40%. While ROI is difficult to measure precisely, businesses consistently report that reputation improvement leads to increased sales, easier recruitment, better partnership terms, and reduced marketing costs (as word-of-mouth improves).</p>
+        </section>
+
+        <section class="section">
+            <h2>Why Choose God Digital Marketing for ORM?</h2>
+
+            <p><strong>20 Years Managing Reputations Across Industries:</strong> We've handled every reputation scenario—viral crises, sustained negative campaigns, executive scandals, product failures, and competitive attacks. This experience means we know what works and what doesn't when reputations are at stake.</p>
+
+            <p><strong>Proactive Strategy, Not Just Crisis Response:</strong> While we excel at crisis management, our real value is building defensive reputation infrastructure preventing crises from causing catastrophic damage. We position clients to weather reputation storms before they hit.</p>
+
+            <p><strong>Ethical, Transparent Approaches:</strong> We never create fake reviews, post misleading content, or use black-hat tactics that risk platform penalties. Our reputation strategies are sustainable, ethical, and focused on addressing real issues while amplifying genuine positive experiences.</p>
+
+            <p><strong>Multi-Channel Expertise:</strong> Reputation exists across search engines, review platforms, social media, news sites, and industry-specific channels. We manage all these simultaneously, ensuring comprehensive reputation control rather than fragmented efforts.</p>
+
+            <p><strong>Technical SEO + Psychology Understanding:</strong> Effective ORM requires both technical search engine optimization skills and deep understanding of human psychology, decision-making, and perception. We combine both disciplines for maximum impact.</p>
+
+            <p><strong>24/7 Crisis Response Capability:</strong> When reputation crises hit, every hour matters. Our team provides emergency response services ensuring rapid assessment and strategic action when time is critical.</p>
+        </section>
+
+        <section class="section">
+            <h2>Frequently Asked Questions</h2>
+
+            <h3>Can you remove negative reviews?</h3>
+            <p>Sometimes. If reviews violate platform policies (fake, defamatory, contain personal information, profanity), we can often get them removed through proper reporting. However, honest negative reviews—even unfair ones—typically cannot be removed. Our approach focuses on responding professionally, generating positive review volume to dilute negative ones, and addressing root causes preventing future complaints.</p>
+
+            <h3>How long does reputation recovery take?</h3>
+            <p>Depends on damage severity and your current position. Minor reputation issues (few negative reviews, no crisis) can improve in 2-4 months. Moderate damage (poor ratings, some negative search results) typically requires 6-12 months. Severe reputation crises (viral negative content, sustained attacks, prominent negative news) may take 12-24 months for substantial recovery. We provide realistic timelines after assessing your situation.</p>
+
+            <h3>What if negative content is true?</h3>
+            <p>Truth doesn't prevent reputation management—it changes the approach. Rather than suppression or removal, we focus on context, accountability, and demonstrated improvement. A restaurant that had food safety issues can't erase that fact, but can show corrective actions, new standards, inspection results, and time-proven quality restoration. Most people forgive past mistakes when genuine improvement is demonstrated.</p>
+
+            <h3>How do you measure ORM success?</h3>
+            <p>Multiple metrics: Average review ratings across platforms, percentage of positive vs. negative reviews, first-page Google ownership for brand name searches, negative content visibility (page position), social media sentiment analysis, and most importantly—business outcomes like sales, bookings, and inquiries. Reputation improvement should correlate with business performance improvement.</p>
+
+            <h3>Should we respond to negative reviews?</h3>
+            <p>Almost always, yes. Professional responses show prospective customers that you take feedback seriously and address concerns. Even when reviews are unfair, thoughtful responses demonstrate customer service commitment. The exception? When reviewers are clearly trolling or reviews are abusive—sometimes silence is better than engaging. We help you determine appropriate response strategies case-by-case.</p>
+
+            <h3>Can competitors sabotage our reputation?</h3>
+            <p>Unfortunately, yes. Competitors sometimes post fake negative reviews or amplify minor complaints. However, platforms increasingly detect and remove fake reviews through algorithmic patterns. When we identify coordinated attacks, we document evidence, report to platforms, accelerate positive review generation, and sometimes pursue legal action for defamation or tortious interference.</p>
+
+            <h3>Is reputation management expensive?</h3>
+            <p>Far less expensive than lost revenue from poor reputation. A restaurant losing 40% revenue due to bad reviews loses far more than reputation management costs. The businesses that find ORM "expensive" are typically those who neglected reputation proactively and now face expensive crisis recovery. Proactive reputation building is remarkably affordable compared to crisis management after damage occurs.</p>
+        </section>
+
+        <section class="section" style="text-align: center; padding: 3rem 0;">
+            <h2>Protect Your Most Valuable Asset</h2>
+            <p style="max-width: 800px; margin: 0 auto 2rem; font-size: 1.1rem;">Your reputation determines whether customers choose you or competitors, whether talent wants to work for you, and whether partners trust you. Don't wait for a crisis to invest in reputation management. Let's build your defensive infrastructure today.</p>
+            <a href="../../contact-us.html" class="cta-button">Get Reputation Audit</a>
+            <p style="margin-top: 2rem; color: var(--text-secondary);">
+                <i class="fas fa-phone"></i> <a href="tel:+918708577598" style="color: var(--text-secondary); text-decoration: none;">+91 8708577598</a> |
+                <i class="fas fa-envelope"></i> <a href="mailto:nitin@goddigitalmarketing.com" style="color: var(--text-secondary); text-decoration: none;">nitin@goddigitalmarketing.com</a>
+            </p>
+        </section>
+    </div>
+
+    <footer style="background:rgba(15,23,42,0.5);backdrop-filter:blur(10px);border-top:1px solid rgba(255,255,255,0.1);padding:60px 20px 20px">
+        <div class="container" style="max-width:1400px;margin:0 auto">
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:40px;margin-bottom:40px">
+                <div><h3 style="color:#F8FAFC;margin-bottom:1rem;font-size:1.1rem">Digital Marketing Services</h3><ul style="list-style:none;margin:0;padding:0">
+                    <li style="margin-bottom:0.6rem"><a href="../seo-services/index.html" style="color:#94A3B8;text-decoration:none">SEO Services</a></li>
+                    <li style="margin-bottom:0.6rem"><a href="../ppc-advertising/index.html" style="color:#94A3B8;text-decoration:none">PPC Advertising</a></li>
+                    <li style="margin-bottom:0.6rem"><a href="../social-media-marketing/index.html" style="color:#94A3B8;text-decoration:none">Social Media Marketing</a></li>
+                    <li style="margin-bottom:0.6rem"><a href="../content-marketing/index.html" style="color:#94A3B8;text-decoration:none">Content Marketing</a></li>
+                    <li style="margin-bottom:0.6rem"><a href="../email-marketing/index.html" style="color:#94A3B8;text-decoration:none">Email Marketing</a></li>
+                    <li style="margin-bottom:0.6rem"><a href="../web-design-development/index.html" style="color:#94A3B8;text-decoration:none">Web Design & Development</a></li>
+                    <li style="margin-bottom:0.6rem"><a href="../brand-strategy/index.html" style="color:#94A3B8;text-decoration:none">Brand Strategy</a></li>
+                    <li style="margin-bottom:0.6rem"><a href="../analytics-reporting/index.html" style="color:#94A3B8;text-decoration:none">Analytics & Reporting</a></li>
+                    <li style="margin-bottom:0.6rem"><a href="../influencer-marketing/index.html" style="color:#94A3B8;text-decoration:none">Influencer Marketing</a></li>
+                    <li style="margin-bottom:0.6rem"><a href="../video-marketing/index.html" style="color:#94A3B8;text-decoration:none">Video Marketing</a></li>
+                    <li style="margin-bottom:0.6rem"><a href="../conversion-optimization/index.html" style="color:#94A3B8;text-decoration:none">Conversion Rate Optimization</a></li>
+                    <li style="margin-bottom:0.6rem"><a href="index.html" style="color:#94A3B8;text-decoration:none">Online Reputation Management</a></li>
+                </ul></div>
+                <div><h3 style="color:#F8FAFC;margin-bottom:1rem;font-size:1.1rem">Industries We Serve</h3><ul style="list-style:none;margin:0;padding:0">
+                    <li style="margin-bottom:0.6rem"><a href="../../industries/ecommerce/index.html" style="color:#94A3B8;text-decoration:none">E-commerce</a></li>
+                    <li style="margin-bottom:0.6rem"><a href="../../industries/healthcare/index.html" style="color:#94A3B8;text-decoration:none">Healthcare</a></li>
+                    <li style="margin-bottom:0.6rem"><a href="../../industries/real-estate/index.html" style="color:#94A3B8;text-decoration:none">Real Estate</a></li>
+                    <li style="margin-bottom:0.6rem"><a href="../../industries/education/index.html" style="color:#94A3B8;text-decoration:none">Education</a></li>
+                    <li style="margin-bottom:0.6rem"><a href="../../industries/legal-services/index.html" style="color:#94A3B8;text-decoration:none">Legal Services</a></li>
+                    <li style="margin-bottom:0.6rem"><a href="../../industries/hospitality/index.html" style="color:#94A3B8;text-decoration:none">Hospitality</a></li>
+                    <li style="margin-bottom:0.6rem"><a href="../../industries/technology/index.html" style="color:#94A3B8;text-decoration:none">Technology</a></li>
+                    <li style="margin-bottom:0.6rem"><a href="../../industries/manufacturing/index.html" style="color:#94A3B8;text-decoration:none">Manufacturing</a></li>
+                    <li style="margin-bottom:0.6rem"><a href="../../industries/retail/index.html" style="color:#94A3B8;text-decoration:none">Retail</a></li>
+                    <li style="margin-bottom:0.6rem"><a href="../../industries/professional-services/index.html" style="color:#94A3B8;text-decoration:none">Professional Services</a></li>
+                </ul></div>
+                <div><h3 style="color:#F8FAFC;margin-bottom:1rem;font-size:1.1rem">Major Cities SEO</h3><ul style="list-style:none;margin:0;padding:0">
+                    <li style="margin-bottom:0.6rem"><a href="../seo/mumbai/index.html" style="color:#94A3B8;text-decoration:none">Mumbai SEO Services</a></li>
+                    <li style="margin-bottom:0.6rem"><a href="../seo/delhi/index.html" style="color:#94A3B8;text-decoration:none">Delhi SEO Services</a></li>
+                    <li style="margin-bottom:0.6rem"><a href="../seo/bangalore/index.html" style="color:#94A3B8;text-decoration:none">Bangalore SEO Services</a></li>
+                    <li style="margin-bottom:0.6rem"><a href="../seo/hyderabad/index.html" style="color:#94A3B8;text-decoration:none">Hyderabad SEO Services</a></li>
+                    <li style="margin-bottom:0.6rem"><a href="../seo/chennai/index.html" style="color:#94A3B8;text-decoration:none">Chennai SEO Services</a></li>
+                    <li style="margin-bottom:0.6rem"><a href="../seo/kolkata/index.html" style="color:#94A3B8;text-decoration:none">Kolkata SEO Services</a></li>
+                    <li style="margin-bottom:0.6rem"><a href="../seo/pune/index.html" style="color:#94A3B8;text-decoration:none">Pune SEO Services</a></li>
+                    <li style="margin-bottom:0.6rem"><a href="../seo/ahmedabad/index.html" style="color:#94A3B8;text-decoration:none">Ahmedabad SEO Services</a></li>
+                    <li style="margin-bottom:0.6rem"><a href="../seo/jaipur/index.html" style="color:#94A3B8;text-decoration:none">Jaipur SEO Services</a></li>
+                    <li style="margin-bottom:0.6rem"><a href="../seo/lucknow/index.html" style="color:#94A3B8;text-decoration:none">Lucknow SEO Services</a></li>
+                </ul></div>
+                <div><h3 style="color:#F8FAFC;margin-bottom:1rem;font-size:1.1rem">Email Marketing</h3><ul style="list-style:none;margin:0;padding:0">
+                    <li style="margin-bottom:0.6rem"><a href="../email-marketing/index.html" style="color:#94A3B8;text-decoration:none">Email Marketing Services</a></li>
+                    <li style="margin-bottom:0.6rem"><a href="../email-marketing/bangalore/index.html" style="color:#94A3B8;text-decoration:none">Bangalore Email Marketing</a></li>
+                    <li style="margin-bottom:0.6rem"><a href="../email-marketing/delhi/index.html" style="color:#94A3B8;text-decoration:none">Delhi Email Marketing</a></li>
+                    <li style="margin-bottom:0.6rem"><a href="../email-marketing/mumbai/index.html" style="color:#94A3B8;text-decoration:none">Mumbai Email Marketing</a></li>
+                    <li style="margin-bottom:0.6rem"><a href="../email-marketing/pune/index.html" style="color:#94A3B8;text-decoration:none">Pune Email Marketing</a></li>
+                    <li style="margin-bottom:0.6rem"><a href="../email-marketing/hyderabad/index.html" style="color:#94A3B8;text-decoration:none">Hyderabad Email Marketing</a></li>
+                    <li style="margin-bottom:0.6rem"><a href="../email-marketing/chennai/index.html" style="color:#94A3B8;text-decoration:none">Chennai Email Marketing</a></li>
+                    <li style="margin-bottom:0.6rem"><a href="../email-marketing/kolkata/index.html" style="color:#94A3B8;text-decoration:none">Kolkata Email Marketing</a></li>
+                    <li style="margin-bottom:0.6rem"><a href="../email-marketing/ahmedabad/index.html" style="color:#94A3B8;text-decoration:none">Ahmedabad Email Marketing</a></li>
+                    <li style="margin-bottom:0.6rem"><a href="../email-marketing/jaipur/index.html" style="color:#94A3B8;text-decoration:none">Jaipur Email Marketing</a></li>
+                </ul></div>
+                <div><h3 style="color:#F8FAFC;margin-bottom:1rem;font-size:1.1rem">Resources & Company</h3><ul style="list-style:none;margin:0;padding:0">
+                    <li style="margin-bottom:0.6rem"><a href="../../about-us.html" style="color:#94A3B8;text-decoration:none">About Us</a></li>
+                    <li style="margin-bottom:0.6rem"><a href="../../blog/index.html" style="color:#94A3B8;text-decoration:none">Blog</a></li>
+                    <li style="margin-bottom:0.6rem"><a href="../../case-studies/index.html" style="color:#94A3B8;text-decoration:none">Case Studies</a></li>
+                    <li style="margin-bottom:0.6rem"><a href="../../testimonials.html" style="color:#94A3B8;text-decoration:none">Client Testimonials</a></li>
+                    <li style="margin-bottom:0.6rem"><a href="../../portfolio.html" style="color:#94A3B8;text-decoration:none">Portfolio</a></li>
+                    <li style="margin-bottom:0.6rem"><a href="../../careers.html" style="color:#94A3B8;text-decoration:none">Careers</a></li>
+                    <li style="margin-bottom:0.6rem"><a href="../../contact-us.html" style="color:#94A3B8;text-decoration:none">Contact Us</a></li>
+                    <li style="margin-bottom:0.6rem"><a href="../../privacy-policy.html" style="color:#94A3B8;text-decoration:none">Privacy Policy</a></li>
+                    <li style="margin-bottom:0.6rem"><a href="../../terms-and-conditions.html" style="color:#94A3B8;text-decoration:none">Terms & Conditions</a></li>
+                    <li style="margin-bottom:0.6rem"><a href="../../sitemap.html" style="color:#94A3B8;text-decoration:none">Sitemap</a></li>
+                </ul></div>
+            </div>
+            <div style="text-align:center;padding-top:30px;border-top:1px solid rgba(255,255,255,0.1)">
+                <p style="color:#94A3B8">&copy; 2025 God Digital Marketing. All rights reserved. |
+                <a href="../seo-services/index.html" style="color:#94A3B8;text-decoration:none">SEO</a> |
+                <a href="../ppc-advertising/index.html" style="color:#94A3B8;text-decoration:none">PPC</a> |
+                <a href="../social-media-marketing/index.html" style="color:#94A3B8;text-decoration:none">Social Media</a> |
+                <a href="../content-marketing/index.html" style="color:#94A3B8;text-decoration:none">Content</a> |
+                <a href="../email-marketing/index.html" style="color:#94A3B8;text-decoration:none">Email</a> |
+                <a href="../web-design-development/index.html" style="color:#94A3B8;text-decoration:none">Web Design</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Social Media Marketing services in Karnataka. Expert SMM for Bangalore, Mysore, Mangalore businesses. Tech-savvy strategies for India's Silicon Valley and beyond.">
+    <title>Social Media Marketing Services Karnataka | SMM Agency Bangalore, Mysore</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-purple: #7C3AED;
+            --secondary-blue: #2563EB;
+            --accent-amber: #F59E0B;
+            --dark-bg: #0F172A;
+            --card-bg: rgba(255, 255, 255, 0.05);
+            --text-primary: #F8FAFC;
+            --text-secondary: #94A3B8;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: var(--dark-bg);
+            color: var(--text-primary);
+            line-height: 1.7;
+        }
+
+        header {
+            background: rgba(15, 23, 42, 0.95);
+            backdrop-filter: blur(10px);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(124, 58, 237, 0.2);
+        }
+
+        nav {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.2rem 2rem;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            background: linear-gradient(135deg, var(--primary-purple), var(--secondary-blue));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-menu a {
+            color: var(--text-primary);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .nav-menu a:hover {
+            color: var(--primary-purple);
+        }
+
+        .breadcrumb {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .breadcrumb a {
+            color: var(--text-secondary);
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            color: var(--primary-purple);
+        }
+
+        .hero {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, var(--primary-purple), var(--secondary-blue), var(--accent-amber));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            line-height: 1.2;
+        }
+
+        .hero-subtitle {
+            font-size: 1.3rem;
+            color: var(--text-secondary);
+            max-width: 900px;
+            margin: 0 auto 2rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            background: linear-gradient(135deg, var(--primary-purple), var(--secondary-blue));
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(124, 58, 237, 0.4);
+        }
+
+        .content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .section {
+            margin-bottom: 4rem;
+        }
+
+        h2 {
+            font-size: 2.2rem;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, var(--primary-purple), var(--secondary-blue));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        h3 {
+            font-size: 1.6rem;
+            margin: 2rem 0 1rem;
+            color: var(--text-primary);
+        }
+
+        p {
+            margin-bottom: 1.2rem;
+            color: var(--text-secondary);
+            font-size: 1.05rem;
+        }
+
+        .city-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .city-card {
+            background: var(--card-bg);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(124, 58, 237, 0.2);
+            border-radius: 12px;
+            padding: 2rem;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .city-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary-purple);
+        }
+
+        .city-card h4 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+
+        .city-card i {
+            color: var(--accent-amber);
+            margin-right: 0.5rem;
+        }
+
+        .industry-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .industry-card {
+            background: var(--card-bg);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(37, 99, 235, 0.2);
+            border-radius: 10px;
+            padding: 1.5rem;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .industry-card:hover {
+            transform: translateY(-3px);
+            border-color: var(--secondary-blue);
+        }
+
+        .case-study {
+            background: linear-gradient(135deg, rgba(124, 58, 237, 0.1), rgba(37, 99, 235, 0.1));
+            border-left: 4px solid var(--primary-purple);
+            border-radius: 8px;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+
+        .case-study h3 {
+            color: var(--accent-amber);
+            margin-top: 0;
+        }
+
+        ul, ol {
+            margin: 1rem 0 1rem 2rem;
+            color: var(--text-secondary);
+        }
+
+        li {
+            margin-bottom: 0.8rem;
+            line-height: 1.6;
+        }
+
+        .platform-highlight {
+            background: var(--card-bg);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(124, 58, 237, 0.2);
+            border-radius: 10px;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+
+        footer {
+            background: rgba(15, 23, 42, 0.95);
+            border-top: 1px solid rgba(124, 58, 237, 0.2);
+            margin-top: 4rem;
+            padding: 3rem 2rem 2rem;
+        }
+
+        .footer-grid {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .footer-section h3 {
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .footer-section ul {
+            list-style: none;
+            margin: 0;
+        }
+
+        .footer-section li {
+            margin-bottom: 0.6rem;
+        }
+
+        .footer-section a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section a:hover {
+            color: var(--primary-purple);
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .nav-menu {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .city-grid,
+            .industry-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header style="background:rgba(15,23,42,0.95);backdrop-filter:blur(10px);position:sticky;top:0;z-index:1000;border-bottom:1px solid rgba(124,58,237,0.2)">
+        <nav style="max-width:1400px;margin:0 auto;padding:1.2rem 2rem;display:flex;justify-content:space-between;align-items:center">
+            <a href="../../../index.html" style="font-size:1.5rem;font-weight:bold;background:linear-gradient(135deg,#7C3AED,#2563EB);-webkit-background-clip:text;-webkit-text-fill-color:transparent;text-decoration:none">God Digital</a>
+            <div style="display:flex;gap:2rem;align-items:center">
+                <a href="../../seo-services/index.html" style="color:#F8FAFC;text-decoration:none">SEO</a>
+                <a href="../../ppc/index.html" style="color:#F8FAFC;text-decoration:none">PPC</a>
+                <a href="../index.html" style="color:#F8FAFC;text-decoration:none">Social Media</a>
+                <a href="../../content-marketing/index.html" style="color:#F8FAFC;text-decoration:none">Content Marketing</a>
+                <a href="../../email-marketing/index.html" style="color:#F8FAFC;text-decoration:none">Email Marketing</a>
+                <a href="../../web-design-development/index.html" style="color:#F8FAFC;text-decoration:none">Web Design</a>
+                <a href="../../conversion-optimization/index.html" style="color:#F8FAFC;text-decoration:none">CRO</a>
+                <a href="../../../contact-us.html" style="display:inline-block;padding:0.6rem 1.5rem;background:linear-gradient(135deg,#7C3AED,#2563EB);color:#fff;text-decoration:none;border-radius:6px">Get Quote</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="breadcrumb">
+        <a href="../../../index.html">Home</a> /
+        <a href="../../index.html">Services</a> /
+        <a href="../index.html">Social Media Marketing</a> /
+        <span>Karnataka</span>
+    </div>
+
+    <section class="hero">
+        <h1>Social Media Marketing Services in Karnataka</h1>
+        <p class="hero-subtitle">Karnataka's tech-savvy ecosystem—from Bangalore's startup culture to Mysore's heritage tourism to Mangalore's coastal commerce—demands social strategies as innovative as the state itself. We craft data-driven campaigns that resonate with India's Silicon Valley and beyond.</p>
+        <a href="../../../contact-us.html" class="cta-button">Launch Your Campaign</a>
+    </section>
+
+    <div class="content">
+        <section class="section">
+            <h2>Karnataka's Unique Social Media Ecosystem</h2>
+            <p>Karnataka, especially Bangalore, represents India's most digitally sophisticated market. With the highest concentration of tech professionals, startups, and early adopters, Karnataka audiences consume social media differently than rest of India. They're skeptical of obvious marketing, value authentic storytelling over sales pitches, and expect brands to demonstrate genuine expertise rather than just promotional messaging.</p>
+
+            <p>In our 20 years managing Karnataka social campaigns, we've learned that what works in other markets often fails here. Bangalore's audiences spot inauthentic influencer partnerships immediately. They mock brands trying too hard to be trendy. They value substance over style—though they expect both. Success requires balancing professional polish with genuine authenticity, data-driven precision with creative storytelling, and tech-savvy innovation with human connection.</p>
+
+            <p>Karnataka's diversity extends beyond Bangalore. Mysore's heritage tourism sector requires different social approaches than Mangalore's coastal commerce. Hubballi-Dharwad's manufacturing belt engages differently than Belgaum's agricultural markets. Manipal's student population has distinct behaviors from Bangalore's corporate professionals. Effective Karnataka social media marketing requires understanding these regional, demographic, and psychographic differences.</p>
+        </section>
+
+        <section class="section">
+            <h2>Social Media Marketing Across Karnataka's Key Markets</h2>
+
+            <div class="city-grid">
+                <div class="city-card" data-aos="fade-up">
+                    <h4><i class="fas fa-laptop-code"></i> Bangalore Social Media Marketing</h4>
+                    <p><strong>Market characteristics:</strong> Tech-savvy, startup culture, young professionals, high disposable income</p>
+                    <p><strong>Platform preferences:</strong> LinkedIn (B2B), Twitter (tech discourse), Instagram (lifestyle)</p>
+                    <p>Bangalore dominates Karnataka's social media landscape. India's IT capital hosts incredibly sophisticated audiences who expect innovation and authenticity. LinkedIn thrives here—more professionals, more B2B activity, more thought leadership than anywhere else in India. Twitter serves as the tech community's discussion platform where industry conversations happen in real-time.</p>
+                    <p>Instagram captures Bangalore's lifestyle aspirations—food scene, fitness culture, travel enthusiasts, fashion. But Bangalore Instagram differs from Mumbai or Delhi—less flashy, more substance-focused, valuing experiences over displays of wealth. Content that emphasizes unique experiences, sustainability, innovation, and authenticity performs best.</p>
+                    <p>Bangalore's startup ecosystem creates unique opportunities. Founders, investors, and early employees actively engage on social platforms, making it ideal territory for B2B tech marketing, SaaS growth, and talent recruitment campaigns.</p>
+                    <p><a href="../../social-media-marketing/bangalore/index.html" style="color: var(--accent-amber);">Learn more about Bangalore Social Media Marketing →</a></p>
+                </div>
+
+                <div class="city-card" data-aos="fade-up">
+                    <h4><i class="fas fa-gopuram"></i> Mysore Social Media Marketing</h4>
+                    <p><strong>Market characteristics:</strong> Heritage tourism, education hub, traditional commerce</p>
+                    <p><strong>Platform preferences:</strong> Facebook (broad reach), Instagram (tourism visual content), YouTube</p>
+                    <p>Mysore's social media landscape blends heritage tourism, educational institutions, and traditional business. Tourism businesses need visually-rich Instagram content showcasing palaces, festivals, and cultural experiences. Facebook works well for local businesses serving residents and domestic tourists.</p>
+                    <p>Kannada language content resonates strongly in Mysore—more than cosmopolitan Bangalore. Cultural authenticity and heritage pride drive engagement. Educational institutions leverage social media for student recruitment, showcasing campus life and academic excellence.</p>
+                    <p>Mysore's smaller-city dynamics mean community-focused content performs better than pure brand messaging. Businesses benefit from showing local connections, participation in cultural events, and genuine community relationships.</p>
+                </div>
+
+                <div class="city-card" data-aos="fade-up">
+                    <h4><i class="fas fa-ship"></i> Mangalore Social Media Marketing</h4>
+                    <p><strong>Market characteristics:</strong> Coastal commerce, port city, diverse cultures, education center</p>
+                    <p><strong>Platform preferences:</strong> Facebook (community), Instagram (lifestyle/food), WhatsApp (business)</p>
+                    <p>Mangalore's coastal location and cultural diversity create interesting social media dynamics. Food content performs exceptionally—unique coastal cuisine, seafood specialties, and fusion experiments. Tourism content showcasing beaches, temples, and coastal experiences attracts both domestic and international audiences.</p>
+                    <p>Multilingual strategies work well—mixing Kannada, Tulu, Konkani, and English depending on target audience. Educational institutions, healthcare facilities, and hospitality businesses form significant social media presence.</p>
+                    <p>WhatsApp plays bigger role in Mangalore business communication than metros. Community groups, customer service channels, and direct marketing work effectively through the platform.</p>
+                </div>
+
+                <div class="city-card" data-aos="fade-up">
+                    <h4><i class="fas fa-industry"></i> Hubballi-Dharwad SMM</h4>
+                    <p><strong>Market characteristics:</strong> Twin cities, manufacturing, commerce, growing IT presence</p>
+                    <p><strong>Platform preferences:</strong> Facebook (primary), YouTube (information), LinkedIn (B2B)</p>
+                    <p>Hubballi-Dharwad represents tier-2 Karnataka with growing digital adoption. Facebook dominates social media usage across demographics. Video content on YouTube performs well for information-seeking audiences—product tutorials, business information, local news.</p>
+                    <p>Manufacturing and B2B sectors benefit from LinkedIn presence showcasing capabilities, certifications, and professional expertise. However, adoption lags Bangalore, requiring more educational approach to B2B social marketing.</p>
+                    <p>Local language content (Kannada) connects more powerfully than English-only strategies. Community-focused campaigns highlighting local pride and regional identity generate strong engagement.</p>
+                </div>
+
+                <div class="city-card" data-aos="fade-up">
+                    <h4><i class="fas fa-graduation-cap"></i> Manipal Social Media Marketing</h4>
+                    <p><strong>Market characteristics:</strong> University town, student population, medical education, young demographics</p>
+                    <p><strong>Platform preferences:</strong> Instagram (dominant), Snapchat (students), YouTube (education)</p>
+                    <p>Manipal's student-dominated demographics create youth-focused social media environment. Instagram dominates completely among students—campus life, food spots, events, fashion. Snapchat maintains relevance among younger students more than other Indian markets.</p>
+                    <p>Content targeting students needs authentic youth culture understanding—meme marketing, trend participation, relatable humor. But educational institutions and healthcare providers need professional LinkedIn and Facebook presence for broader stakeholder communication.</p>
+                    <p>Seasonal patterns matter—social activity peaks during academic year, drops during summer breaks. Smart brands adjust content calendars to student presence patterns.</p>
+                </div>
+
+                <div class="city-card" data-aos="fade-up">
+                    <h4><i class="fas fa-map-marked-alt"></i> Belgaum Social Media Marketing</h4>
+                    <p><strong>Market characteristics:</strong> Border city, diverse cultures, agriculture, growing commerce</p>
+                    <p><strong>Platform preferences:</strong> Facebook (broad reach), YouTube (entertainment/info), WhatsApp</p>
+                    <p>Belgaum's border location creates unique cultural blend—Marathi, Kannada, and English mixing in social conversations. Facebook serves as primary platform across demographics. Agricultural businesses, retail, and services use social media increasingly for customer engagement and business development.</p>
+                    <p>Video content performs well—both entertainment and informational. YouTube channels covering local news, events, and business information attract engaged audiences. WhatsApp community groups facilitate local business communication and customer relationships.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Industry-Specific Social Strategies for Karnataka</h2>
+
+            <div class="industry-grid">
+                <div class="industry-card" data-aos="fade-up">
+                    <h4><i class="fas fa-rocket"></i> Startups & Tech Companies</h4>
+                    <p>Bangalore's startup ecosystem thrives on social media—LinkedIn for B2B networking and thought leadership, Twitter for industry discourse and building founder personal brands, Instagram for employer branding showcasing team culture. We help tech companies balance technical depth with accessible communication that attracts customers, investors, and talent simultaneously.</p>
+                </div>
+
+                <div class="industry-card" data-aos="fade-up">
+                    <h4><i class="fas fa-stethoscope"></i> Healthcare & Medical Services</h4>
+                    <p>Karnataka's healthcare sector—from Bangalore's specialty hospitals to Manipal's medical institutions—uses social media for patient education, doctor positioning, and healthcare awareness. We create compliant, credible content that builds trust while navigating medical advertising regulations and patient privacy requirements.</p>
+                </div>
+
+                <div class="industry-card" data-aos="fade-up">
+                    <h4><i class="fas fa-graduation-cap"></i> Education & Training</h4>
+                    <p>Educational institutions leverage Instagram for student life showcases, Facebook for parent communication, LinkedIn for placement highlights, and YouTube for educational content. We help education brands balance promotional messaging with genuine value delivery to multiple stakeholder groups—students, parents, alumni, employers.</p>
+                </div>
+
+                <div class="industry-card" data-aos="fade-up">
+                    <h4><i class="fas fa-building"></i> Real Estate</h4>
+                    <p>Bangalore's booming real estate market uses Instagram for property showcases, Facebook for community building, and LinkedIn for luxury segment targeting. Virtual tours, neighborhood highlights, investment insights, and lifestyle content drive engagement. We help developers and brokers create social presence that shortens consideration cycles and builds trust.</p>
+                </div>
+
+                <div class="industry-card" data-aos="fade-up">
+                    <h4><i class="fas fa-utensils"></i> Food & Hospitality</h4>
+                    <p>Karnataka's diverse food culture—from Bangalore's cosmopolitan dining to Mangalore's coastal cuisine to Mysore's traditional specialties—thrives on Instagram and Facebook. Food photography, chef stories, customer experiences, and behind-the-scenes content drive engagement. We help restaurants build communities of regulars through strategic social presence.</p>
+                </div>
+
+                <div class="industry-card" data-aos="fade-up">
+                    <h4><i class="fas fa-shopping-cart"></i> E-Commerce & Retail</h4>
+                    <p>Online sellers targeting Karnataka leverage Instagram Shopping, Facebook dynamic ads, and influencer partnerships. Bangalore's high disposable income and digital adoption make it India's top e-commerce market per capita. We create social commerce strategies that turn followers into customers through shoppable content and strategic retargeting.</p>
+                </div>
+
+                <div class="industry-card" data-aos="fade-up">
+                    <h4><i class="fas fa-dumbbell"></i> Fitness & Wellness</h4>
+                    <p>Bangalore leads India in fitness consciousness and wellness spending. Instagram dominates for transformation content, workout demonstrations, nutrition education, and motivational messaging. We help fitness brands build communities through challenges, user-generated content, and authentic coaching relationships that extend beyond gym walls.</p>
+                </div>
+
+                <div class="industry-card" data-aos="fade-up">
+                    <h4><i class="fas fa-landmark"></i> Tourism & Travel</h4>
+                    <p>Karnataka tourism—from Hampi's heritage to Coorg's hill stations to coastal beaches—leverages Instagram's visual storytelling. Travel inspiration, destination showcases, cultural experiences, and traveler testimonials drive bookings. We help tourism businesses create content calendars aligned with travel seasons and emerging destination trends.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Platform Strategies for Karnataka Audiences</h2>
+
+            <div class="platform-highlight" data-aos="fade-up">
+                <h3><i class="fab fa-linkedin"></i> LinkedIn Marketing in Karnataka</h3>
+                <p>Karnataka, especially Bangalore, represents India's most active LinkedIn market. The concentration of tech professionals, startup founders, investors, and corporate decision-makers creates unmatched B2B opportunities.</p>
+
+                <p><strong>What works in Karnataka:</strong></p>
+                <ul>
+                    <li><strong>Founder/CEO thought leadership:</strong> Personal brands of leadership team significantly impact company perception and business development</li>
+                    <li><strong>Technical depth:</strong> Karnataka audiences appreciate substance—detailed technical posts, architectural insights, and problem-solving approaches resonate</li>
+                    <li><strong>Startup ecosystem engagement:</strong> Participating in conversations about funding, growth, product development builds community presence</li>
+                    <li><strong>Employer branding:</strong> Showcasing team culture, engineering challenges, growth opportunities attracts talent in competitive hiring market</li>
+                    <li><strong>Customer success stories:</strong> Detailed case studies with specific metrics and business outcomes drive B2B pipeline</li>
+                    <li><strong>Event participation:</strong> Tech conferences, meetups, and industry events provide content opportunities and networking</li>
+                </ul>
+
+                <p>We've helped Karnataka B2B companies generate 200-500 qualified leads quarterly through systematic LinkedIn strategies. The key? Consistent, valuable content that demonstrates expertise rather than constant product promotion.</p>
+            </div>
+
+            <div class="platform-highlight" data-aos="fade-up">
+                <h3><i class="fab fa-twitter"></i> Twitter Marketing in Karnataka</h3>
+                <p>Twitter serves as Karnataka's—particularly Bangalore's—tech community discussion platform. Founders, developers, investors, and tech professionals engage in real-time conversations about industry trends, product launches, and technology debates.</p>
+
+                <p><strong>What works in Karnataka:</strong></p>
+                <ul>
+                    <li><strong>Real-time engagement:</strong> Participating in trending tech discussions, industry news, and community conversations</li>
+                    <li><strong>Product updates:</strong> Tech community expects companies to share development updates, feature releases, and roadmap insights</li>
+                    <li><strong>Founder personal brands:</strong> Startup founders building authentic personal presence through honest insights and industry commentary</li>
+                    <li><strong>Customer support:</strong> Quick, public problem resolution demonstrates customer commitment and builds trust</li>
+                    <li><strong>Community building:</strong> Twitter Spaces, threads, and ongoing conversations foster community around brands and movements</li>
+                    <li><strong>Authentic voice:</strong> Karnataka Twitter values substance over polish, authenticity over perfection, insights over marketing</li>
+                </ul>
+
+                <p>Twitter in Karnataka works best for tech companies, founders building personal brands, and businesses serving tech-savvy audiences. It's less effective for mass consumer marketing but powerful for community building within innovation ecosystem.</p>
+            </div>
+
+            <div class="platform-highlight" data-aos="fade-up">
+                <h3><i class="fab fa-instagram"></i> Instagram Marketing in Karnataka</h3>
+                <p>Instagram captures Karnataka's lifestyle aspirations—from Bangalore's cosmopolitan culture to Mysore's heritage tourism to coastal Karnataka's natural beauty. Visual storytelling, authentic experiences, and community building drive success.</p>
+
+                <p><strong>What works in Karnataka:</strong></p>
+                <ul>
+                    <li><strong>Experience over opulence:</strong> Karnataka Instagram values unique experiences, sustainability, and authenticity over pure luxury displays</li>
+                    <li><strong>Food culture:</strong> Culinary diversity from traditional Karnataka cuisine to global fusion creates endless content opportunities</li>
+                    <li><strong>Travel and exploration:</strong> Weekend getaways, hidden gems, and adventure experiences resonate with Bangalore's travel-enthusiastic population</li>
+                    <li><strong>Fitness and wellness:</strong> Workout content, nutrition education, transformation stories engage health-conscious audiences</li>
+                    <li><strong>Local influencer partnerships:</strong> Bangalore has mature influencer ecosystem across niches—tech, lifestyle, food, fitness</li>
+                    <li><strong>Reels domination:</strong> Short-form video gets 3-5x engagement versus static posts; trending audio and creative concepts perform best</li>
+                </ul>
+
+                <p>Karnataka Instagram strategies require balancing professional polish with authentic storytelling. Overly staged content fails; genuine experiences showcased beautifully succeed.</p>
+            </div>
+
+            <div class="platform-highlight" data-aos="fade-up">
+                <h3><i class="fab fa-youtube"></i> YouTube Marketing in Karnataka</h3>
+                <p>YouTube serves Karnataka audiences seeking in-depth information, entertainment, and education. Tech tutorials, startup stories, food explorations, travel guides, and educational content attract engaged viewership.</p>
+
+                <p><strong>What works in Karnataka:</strong></p>
+                <ul>
+                    <li><strong>Educational content:</strong> Technical tutorials, career advice, skill development attract Karnataka's learning-focused audiences</li>
+                    <li><strong>Startup stories:</strong> Founder journeys, product development behind-the-scenes, and business insights resonate with entrepreneurial community</li>
+                    <li><strong>Tech reviews:</strong> Detailed product reviews, comparisons, and technical analyses serve research-oriented buyers</li>
+                    <li><strong>Food exploration:</strong> Restaurant reviews, cuisine deep-dives, cooking tutorials showcase Karnataka's food diversity</li>
+                    <li><strong>Travel content:</strong> Destination guides, travel vlogs, experience showcases inspire and inform travel decisions</li>
+                    <li><strong>Kannada content:</strong> Regional language YouTube channels serve audiences beyond English-speaking metros</li>
+                </ul>
+
+                <p>YouTube requires commitment—quality production, consistent uploads, and patience as content compounds over time. But successful channels generate sustained traffic and authority for years after videos publish.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Case Studies: Karnataka Social Media Success</h2>
+
+            <div class="case-study" data-aos="fade-up">
+                <h3>SaaS Startup, Bangalore</h3>
+                <p><strong>Challenge:</strong> Early-stage SaaS company with innovative product but zero brand awareness. Competing against established international competitors with massive marketing budgets. Limited marketing resources meant every rupee needed measurable ROI. Needed to build credibility and generate pipeline without burning through funding on expensive ads.</p>
+
+                <p style="margin-top: 15px;"><strong>Our Social Media Strategy:</strong></p>
+                <ul>
+                    <li>Positioned founder as thought leader on LinkedIn through consistent, valuable content about product management challenges</li>
+                    <li>Created Twitter presence sharing product development insights, industry news, and authentic startup journey</li>
+                    <li>Published in-depth LinkedIn articles on workflow optimization, team collaboration, and remote work productivity</li>
+                    <li>Engaged actively in relevant LinkedIn groups and Twitter conversations where target customers discussed challenges</li>
+                    <li>Developed customer success video series showcasing how different companies solved specific problems using the product</li>
+                    <li>Encouraged employee advocacy—entire team sharing insights, product updates, and company culture content</li>
+                    <li>Launched private community for early users fostering peer learning and creating advocates</li>
+                    <li>Created YouTube tutorial channel providing value regardless of which tool people used</li>
+                </ul>
+
+                <p style="margin-top: 15px;"><strong>Results in 14 months:</strong></p>
+                <ul>
+                    <li><strong>Founder LinkedIn following: 1,200 → 48,000</strong> through consistent thought leadership</li>
+                    <li><strong>820 qualified demo requests</strong> directly attributed to social media engagement</li>
+                    <li><strong>Lead conversion rate: 28%</strong> for social-sourced leads vs. 9% from paid ads</li>
+                    <li><strong>Sales cycle reduced 45%</strong> as prospects arrived educated and pre-sold on approach</li>
+                    <li><strong>₹6.8 crore in new ARR</strong> from customers who discovered company through social channels</li>
+                    <li><strong>Customer acquisition cost: 70% lower</strong> than paid channels</li>
+                    <li><strong>Series A funding secured</strong> with investors citing strong community and brand as key differentiators</li>
+                    <li><strong>Engineering talent applications increased 8x</strong> from employer brand visibility</li>
+                </ul>
+
+                <p style="margin-top: 15px;"><em>"As a bootstrap startup, we couldn't afford to compete on paid advertising with funded competitors spending millions. Social media—specifically LinkedIn thought leadership—became our growth engine. The founder's consistent, valuable content built credibility that turned into qualified pipeline. What surprised us was the multiplier effect: as employees shared and engaged, our reach extended far beyond what we could achieve through brand channels alone. Social didn't just generate leads; it created movement around our approach to solving problems. Investors specifically mentioned our engaged community as a competitive moat during fundraising."</em> — Co-Founder & CEO</p>
+            </div>
+
+            <div class="case-study" data-aos="fade-up">
+                <h3>Fitness Studio Chain, Bangalore</h3>
+                <p><strong>Challenge:</strong> Premium boutique fitness studios facing intense competition from established gyms and emerging fitness apps. Needed to fill class capacity consistently while building membership base. Customer acquisition through Google and Facebook ads was expensive (₹2,800 per member). Required community-building approach that created loyal members and word-of-mouth growth.</p>
+
+                <p style="margin-top: 15px;"><strong>Our Social Media Strategy:</strong></p>
+                <ul>
+                    <li>Instagram-first strategy showcasing transformation stories, workout demonstrations, and community culture</li>
+                    <li>Created daily Reels featuring quick workouts, fitness tips, and motivational content</li>
+                    <li>Launched 30-day fitness challenges encouraging user-generated content with branded hashtags</li>
+                    <li>Partnered with Bangalore fitness influencers for authentic studio experiences and honest reviews</li>
+                    <li>Developed Instagram Stories showing behind-the-scenes trainer preparations and member spotlights</li>
+                    <li>Implemented referral incentives specifically promoted through social channels to existing members</li>
+                    <li>Created private Facebook Group for members fostering community and accountability</li>
+                    <li>Used geo-targeted Instagram and Facebook ads retargeting people who engaged with content</li>
+                </ul>
+
+                <p style="margin-top: 15px;"><strong>Results in 9 months:</strong></p>
+                <ul>
+                    <li><strong>Instagram following: 4,800 → 94,000</strong> across brand and location accounts</li>
+                    <li><strong>New member acquisitions increased 340%</strong> year-over-year</li>
+                    <li><strong>Customer acquisition cost dropped to ₹680</strong> from ₹2,800 as organic social supplemented paid ads</li>
+                    <li><strong>Member retention improved 56%</strong> through community engagement and accountability</li>
+                    <li><strong>Referrals accounted for 42% of new members</strong> vs. 12% before community building</li>
+                    <li><strong>₹2.4 crore in additional annual revenue</strong> from membership growth and improved retention</li>
+                    <li><strong>8,600+ user-generated workout posts</strong> created authentic social proof</li>
+                    <li><strong>Class capacity utilization: 58% → 89%</strong> through consistent filling of available slots</li>
+                </ul>
+
+                <p style="margin-top: 15px;"><em>"Premium fitness is about community, not just facilities. Social media—especially Instagram—allowed us to showcase the transformative community we'd built, not just equipment and classes. The fitness challenges created momentum; people wanted to participate in what their friends were doing. User-generated content became our most powerful marketing—seeing real members achieving real transformations resonated far more than any professional photoshoot could. The private Facebook group created accountability that improved retention; people stayed not just for workouts but for community. Social media transformed us from 'a gym' to 'a fitness community' in members' minds."</em> — Founder, Fitness Studios</p>
+            </div>
+
+            <div class="case-study" data-aos="fade-up">
+                <h3>Heritage Resort, Coorg</h3>
+                <p><strong>Challenge:</strong> Boutique heritage property in Coorg struggling with inconsistent bookings and high dependency on OTA commissions (30-40% to MakeMyTrip, Booking.com). Beautiful property but limited brand awareness beyond immediate region. Needed to build direct booking channel and attract high-value guests willing to pay premium rates for unique experiences.</p>
+
+                <p style="margin-top: 15px;"><strong>Our Social Media Strategy:</strong></p>
+                <ul>
+                    <li>Instagram strategy showcasing property's unique character—heritage architecture, nature surroundings, cultural experiences</li>
+                    <li>Created stunning visual content professional photography of property, landscapes, cuisine, and guest experiences</li>
+                    <li>Developed Instagram Reels featuring coffee plantation walks, bird watching, local culture, seasonal highlights</li>
+                    <li>Partnered with travel influencers and bloggers for authentic property experiences and destination content</li>
+                    <li>Launched Facebook campaigns targeting Bangalore's weekend getaway market with specific travel packages</li>
+                    <li>Created user-generated content campaign encouraging guests to share experiences with branded hashtag</li>
+                    <li>Implemented Instagram Stories showcasing daily property life, chef preparations, nature discoveries</li>
+                    <li>Used geo-targeted ads reaching people searching Coorg and Karnataka tourism content</li>
+                </ul>
+
+                <p style="margin-top: 15px;"><strong>Results in 11 months:</strong></p>
+                <ul>
+                    <li><strong>Instagram following: 1,100 → 52,000</strong> with highly engaged travel-focused audience</li>
+                    <li><strong>Direct bookings increased from 22% to 61% of total</strong> reducing OTA dependency</li>
+                    <li><strong>Average booking value increased 48%</strong> as direct bookings commanded premium rates</li>
+                    <li><strong>Occupancy rate: 52% → 78% year-round</strong> with peak weekend bookings at 95%</li>
+                    <li><strong>₹1.2 crore in additional annual revenue</strong> from increased bookings and reduced commissions</li>
+                    <li><strong>Guest satisfaction scores improved</strong> as social presence set accurate expectations and attracted right-fit guests</li>
+                    <li><strong>1,200+ guest-created posts</strong> provided authentic content and ongoing marketing</li>
+                    <li><strong>Wedding and event bookings increased 5x</strong> from couples discovering property through Instagram</li>
+                </ul>
+
+                <p style="margin-top: 15px;"><em>"Heritage properties struggle with online marketing—how do you showcase soul and character through digital channels? Instagram solved this beautifully. The visual storytelling captured our property's essence in ways website descriptions never could. Influencer partnerships brought credibility; when trusted travel creators shared genuine experiences, their audiences listened. Most impactfully, social media allowed us to communicate directly with guests, setting proper expectations and attracting people who valued our unique offering rather than just seeking cheap accommodation. Direct bookings through social eliminated the OTA commission burden while bringing guests who became advocates, creating compounding word-of-mouth growth."</em> — Owner, Heritage Resort</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Why Choose God Digital Marketing for Karnataka SMM?</h2>
+
+            <p><strong>Deep Karnataka Market Expertise:</strong> We've managed social campaigns across Bangalore's tech ecosystem, Mysore's tourism sector, Mangalore's coastal markets, and Karnataka's broader economy for 20 years. This local knowledge ensures strategies resonate with Karnataka's unique audience behaviors and cultural nuances.</p>
+
+            <p><strong>Tech-Savvy Innovation:</strong> Karnataka audiences, especially in Bangalore, expect digital sophistication. We leverage latest platform features, emerging trends, and data-driven optimization that matches the innovation expectations of India's Silicon Valley.</p>
+
+            <p><strong>B2B & B2C Excellence:</strong> Whether you're a SaaS startup targeting enterprise clients or a consumer brand building community, we craft appropriate strategies. Karnataka's diverse economy requires versatile social expertise across business models.</p>
+
+            <p><strong>Content Production Capabilities:</strong> From professional photography for tourism brands to technical content for tech companies to lifestyle videos for consumer businesses—we handle complete content creation ensuring consistent, quality output.</p>
+
+            <p><strong>Community Building Focus:</strong> We understand that Karnataka audiences value authentic communities over transactional relationships. Our strategies prioritize building engaged communities that generate sustainable, organic growth beyond paid advertising.</p>
+
+            <p><strong>Measurable ROI:</strong> Every campaign includes comprehensive tracking—from engagement metrics to lead generation to sales attribution. You'll always know exactly what business results your social media investment delivers.</p>
+        </section>
+
+        <section class="section" style="text-align: center; padding: 3rem 0;">
+            <h2>Ready to Build Your Karnataka Social Presence?</h2>
+            <p style="max-width: 800px; margin: 0 auto 2rem; font-size: 1.1rem;">Whether you're targeting Bangalore's tech ecosystem, building tourism presence across Karnataka, or growing consumer brand awareness, we'll develop social strategies that resonate with Karnataka's sophisticated digital audiences.</p>
+            <a href="../../../contact-us.html" class="cta-button">Launch Your Campaign</a>
+            <p style="margin-top: 2rem; color: var(--text-secondary);">
+                <i class="fas fa-phone"></i> <a href="tel:+918708577598" style="color: var(--text-secondary); text-decoration: none;">+91 8708577598</a> |
+                <i class="fas fa-envelope"></i> <a href="mailto:nitin@goddigitalmarketing.com" style="color: var(--text-secondary); text-decoration: none;">nitin@goddigitalmarketing.com</a>
+            </p>
+        </section>
+    </div>
+
+    <footer style="background:rgba(15,23,42,0.5);backdrop-filter:blur(10px);border-top:1px solid rgba(255,255,255,0.1);padding:60px 20px 20px">
+        <div style="max-width:1400px;margin:0 auto">
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:40px;margin-bottom:40px">
+                <div><h3 style="color:#F8FAFC;margin-bottom:1rem;font-size:1.1rem">Digital Marketing Services</h3><ul style="list-style:none;margin:0;padding:0"><li style="margin-bottom:0.6rem"><a href="../../seo-services/index.html" style="color:#94A3B8;text-decoration:none">SEO Services</a></li><li style="margin-bottom:0.6rem"><a href="../../seo-services/local-seo/index.html" style="color:#94A3B8;text-decoration:none">Local SEO</a></li><li style="margin-bottom:0.6rem"><a href="../../ppc/index.html" style="color:#94A3B8;text-decoration:none">PPC Advertising</a></li><li style="margin-bottom:0.6rem"><a href="../index.html" style="color:#94A3B8;text-decoration:none">Social Media Marketing</a></li><li style="margin-bottom:0.6rem"><a href="../../content-marketing/index.html" style="color:#94A3B8;text-decoration:none">Content Marketing</a></li><li style="margin-bottom:0.6rem"><a href="../../email-marketing/index.html" style="color:#94A3B8;text-decoration:none">Email Marketing</a></li><li style="margin-bottom:0.6rem"><a href="../../web-design-development/index.html" style="color:#94A3B8;text-decoration:none">Web Design & Development</a></li><li style="margin-bottom:0.6rem"><a href="../../conversion-optimization/index.html" style="color:#94A3B8;text-decoration:none">Conversion Rate Optimization</a></li><li style="margin-bottom:0.6rem"><a href="../../online-reputation-management/index.html" style="color:#94A3B8;text-decoration:none">Online Reputation Management</a></li><li style="margin-bottom:0.6rem"><a href="../../video-marketing/index.html" style="color:#94A3B8;text-decoration:none">Video Marketing</a></li><li style="margin-bottom:0.6rem"><a href="../../influencer-marketing/index.html" style="color:#94A3B8;text-decoration:none">Influencer Marketing</a></li></ul></div>
+                <div><h3 style="color:#F8FAFC;margin-bottom:1rem;font-size:1.1rem">Industries We Serve</h3><ul style="list-style:none;margin:0;padding:0"><li style="margin-bottom:0.6rem"><a href="../../../industries/healthcare/index.html" style="color:#94A3B8;text-decoration:none">Healthcare Digital Marketing</a></li><li style="margin-bottom:0.6rem"><a href="../../../industries/real-estate/index.html" style="color:#94A3B8;text-decoration:none">Real Estate Marketing</a></li><li style="margin-bottom:0.6rem"><a href="../../../industries/ecommerce/index.html" style="color:#94A3B8;text-decoration:none">E-commerce Marketing</a></li><li style="margin-bottom:0.6rem"><a href="../../../industries/legal/index.html" style="color:#94A3B8;text-decoration:none">Legal Marketing</a></li><li style="margin-bottom:0.6rem"><a href="../../../industries/technology/index.html" style="color:#94A3B8;text-decoration:none">Technology Marketing</a></li><li style="margin-bottom:0.6rem"><a href="../../../industries/automotive/index.html" style="color:#94A3B8;text-decoration:none">Automotive Marketing</a></li><li style="margin-bottom:0.6rem"><a href="../../../industries/education/index.html" style="color:#94A3B8;text-decoration:none">Education Marketing</a></li><li style="margin-bottom:0.6rem"><a href="../../../industries/hospitality/index.html" style="color:#94A3B8;text-decoration:none">Hospitality Marketing</a></li><li style="margin-bottom:0.6rem"><a href="../../../industries/finance/index.html" style="color:#94A3B8;text-decoration:none">Financial Services Marketing</a></li><li style="margin-bottom:0.6rem"><a href="../../../industries/manufacturing/index.html" style="color:#94A3B8;text-decoration:none">Manufacturing Marketing</a></li></ul></div>
+                <div><h3 style="color:#F8FAFC;margin-bottom:1rem;font-size:1.1rem">Social Media Marketing by City</h3><ul style="list-style:none;margin:0;padding:0"><li style="margin-bottom:0.6rem"><a href="../mumbai/index.html" style="color:#94A3B8;text-decoration:none">Mumbai Social Media Marketing</a></li><li style="margin-bottom:0.6rem"><a href="../delhi/index.html" style="color:#94A3B8;text-decoration:none">Delhi Social Media Marketing</a></li><li style="margin-bottom:0.6rem"><a href="../bangalore/index.html" style="color:#94A3B8;text-decoration:none">Bangalore Social Media Marketing</a></li><li style="margin-bottom:0.6rem"><a href="../hyderabad/index.html" style="color:#94A3B8;text-decoration:none">Hyderabad Social Media Marketing</a></li><li style="margin-bottom:0.6rem"><a href="../chennai/index.html" style="color:#94A3B8;text-decoration:none">Chennai Social Media Marketing</a></li><li style="margin-bottom:0.6rem"><a href="../kolkata/index.html" style="color:#94A3B8;text-decoration:none">Kolkata Social Media Marketing</a></li><li style="margin-bottom:0.6rem"><a href="../pune/index.html" style="color:#94A3B8;text-decoration:none">Pune Social Media Marketing</a></li><li style="margin-bottom:0.6rem"><a href="../ahmedabad/index.html" style="color:#94A3B8;text-decoration:none">Ahmedabad Social Media Marketing</a></li><li style="margin-bottom:0.6rem"><a href="../maharashtra/index.html" style="color:#94A3B8;text-decoration:none">Maharashtra Social Media Marketing</a></li><li style="margin-bottom:0.6rem"><a href="../karnataka/index.html" style="color:#94A3B8;text-decoration:none">Karnataka Social Media Marketing</a></li></ul></div>
+                <div><h3 style="color:#F8FAFC;margin-bottom:1rem;font-size:1.1rem">Email Marketing</h3><ul style="list-style:none;margin:0;padding:0"><li style="margin-bottom:0.6rem"><a href="../../email-marketing/index.html" style="color:#94A3B8;text-decoration:none">Email Marketing Services</a></li><li style="margin-bottom:0.6rem"><a href="../../email-marketing/automation/index.html" style="color:#94A3B8;text-decoration:none">Email Automation</a></li><li style="margin-bottom:0.6rem"><a href="../../email-marketing/newsletter/index.html" style="color:#94A3B8;text-decoration:none">Newsletter Services</a></li><li style="margin-bottom:0.6rem"><a href="../../email-marketing/drip-campaigns/index.html" style="color:#94A3B8;text-decoration:none">Drip Campaigns</a></li><li style="margin-bottom:0.6rem"><a href="../../email-marketing/ecommerce/index.html" style="color:#94A3B8;text-decoration:none">E-commerce Email Marketing</a></li><li style="margin-bottom:0.6rem"><a href="../../email-marketing/b2b/index.html" style="color:#94A3B8;text-decoration:none">B2B Email Marketing</a></li><li style="margin-bottom:0.6rem"><a href="../../email-marketing/list-building/index.html" style="color:#94A3B8;text-decoration:none">List Building Services</a></li><li style="margin-bottom:0.6rem"><a href="../../email-marketing/segmentation/index.html" style="color:#94A3B8;text-decoration:none">Email Segmentation</a></li><li style="margin-bottom:0.6rem"><a href="../../email-marketing/analytics/index.html" style="color:#94A3B8;text-decoration:none">Email Analytics</a></li><li style="margin-bottom:0.6rem"><a href="../../email-marketing/design/index.html" style="color:#94A3B8;text-decoration:none">Email Design Services</a></li></ul></div>
+                <div><h3 style="color:#F8FAFC;margin-bottom:1rem;font-size:1.1rem">Resources & Company</h3><ul style="list-style:none;margin:0;padding:0"><li style="margin-bottom:0.6rem"><a href="../../../about.html" style="color:#94A3B8;text-decoration:none">About God Digital Marketing</a></li><li style="margin-bottom:0.6rem"><a href="../../../case-studies/index.html" style="color:#94A3B8;text-decoration:none">Case Studies</a></li><li style="margin-bottom:0.6rem"><a href="../../../blog/index.html" style="color:#94A3B8;text-decoration:none">Digital Marketing Blog</a></li><li style="margin-bottom:0.6rem"><a href="../../../resources/index.html" style="color:#94A3B8;text-decoration:none">Free Resources</a></li><li style="margin-bottom:0.6rem"><a href="../../../tools/index.html" style="color:#94A3B8;text-decoration:none">Marketing Tools</a></li><li style="margin-bottom:0.6rem"><a href="../../../careers.html" style="color:#94A3B8;text-decoration:none">Careers</a></li><li style="margin-bottom:0.6rem"><a href="../../../partners/index.html" style="color:#94A3B8;text-decoration:none">Partner Program</a></li><li style="margin-bottom:0.6rem"><a href="../../../contact-us.html" style="color:#94A3B8;text-decoration:none">Contact Us</a></li><li style="margin-bottom:0.6rem"><a href="../../../privacy.html" style="color:#94A3B8;text-decoration:none">Privacy Policy</a></li><li style="margin-bottom:0.6rem"><a href="../../../terms.html" style="color:#94A3B8;text-decoration:none">Terms of Service</a></li></ul></div>
+            </div>
+            <div style="border-top:1px solid rgba(255,255,255,0.1);padding-top:30px;text-align:center">
+                <div style="display:flex;justify-content:center;gap:2rem;margin-bottom:1.5rem;flex-wrap:wrap">
+                    <a href="../../seo-services/index.html" style="color:#94A3B8;text-decoration:none;font-size:0.9rem">SEO</a>
+                    <a href="../../ppc/index.html" style="color:#94A3B8;text-decoration:none;font-size:0.9rem">PPC</a>
+                    <a href="../index.html" style="color:#94A3B8;text-decoration:none;font-size:0.9rem">Social Media</a>
+                    <a href="../../content-marketing/index.html" style="color:#94A3B8;text-decoration:none;font-size:0.9rem">Content</a>
+                    <a href="../../email-marketing/index.html" style="color:#94A3B8;text-decoration:none;font-size:0.9rem">Email</a>
+                    <a href="../../web-design-development/index.html" style="color:#94A3B8;text-decoration:none;font-size:0.9rem">Web Design</a>
+                </div>
+                <p style="color:#64748B;font-size:0.9rem;margin:0">&copy; 2025 God Digital Marketing. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+    </script>
+</body>
+</html>

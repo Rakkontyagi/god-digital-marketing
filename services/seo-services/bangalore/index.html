@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SEO Services in Bangalore - Dominate local search results. Expert SEO strategies for Bangalore businesses. Increase organic traffic, rankings, and revenue. Call +91 8708577598">
+    <meta name="keywords" content="SEO services Bangalore, SEO company Bangalore, search engine optimization Bangalore, SEO agency Bangalore, Bangalore SEO expert">
+    <title>SEO Services Bangalore | Top SEO Company in Bangalore | God Digital</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --primary-purple: #6B46C1;
+            --secondary-blue: #2563EB;
+            --accent-amber: #F59E0B;
+            --dark-slate: #0F172A;
+            --light-cloud: #F8FAFC;
+            --gradient-main: linear-gradient(135deg, #6B46C1 0%, #2563EB 100%);
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--dark-slate);
+            color: var(--light-cloud);
+            line-height: 1.7;
+        }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        nav {
+            background: rgba(15, 23, 42, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .logo {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 28px;
+            font-weight: 700;
+            background: var(--gradient-main);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-decoration: none;
+        }
+        .breadcrumb {
+            padding: 20px 0;
+            font-size: 14px;
+        }
+        .breadcrumb a {
+            color: var(--accent-amber);
+            text-decoration: none;
+        }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .gradient-text {
+            background: var(--gradient-main);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero {
+            padding: 80px 20px 60px;
+            text-align: center;
+            background: linear-gradient(135deg, rgba(107, 70, 193, 0.1) 0%, rgba(37, 99, 235, 0.1) 100%);
+        }
+        .hero h1 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: clamp(36px, 6vw, 56px);
+            margin-bottom: 20px;
+            font-weight: 800;
+        }
+        section { padding: 80px 20px; }
+        .section-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: clamp(32px, 4vw, 42px);
+            margin-bottom: 30px;
+            font-weight: 700;
+        }
+        .content-section {
+            max-width: 900px;
+            margin: 0 auto 60px;
+        }
+        .content-section p {
+            margin-bottom: 20px;
+            font-size: 18px;
+            line-height: 1.8;
+            color: rgba(248, 250, 252, 0.9);
+        }
+        .content-section ul, .content-section ol {
+            margin: 20px 0 20px 30px;
+        }
+        .content-section li {
+            margin-bottom: 12px;
+            font-size: 17px;
+            line-height: 1.7;
+        }
+        .highlight-box {
+            background: rgba(245, 158, 11, 0.1);
+            border-left: 4px solid var(--accent-amber);
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 8px;
+        }
+        .location-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin: 40px 0;
+        }
+        .location-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 25px;
+            transition: all 0.3s ease;
+        }
+        .location-card:hover {
+            transform: translateY(-8px);
+            border-color: rgba(107, 70, 193, 0.5);
+            box-shadow: 0 15px 50px rgba(107, 70, 193, 0.3);
+        }
+        .location-card h4 {
+            color: var(--accent-amber);
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+        .case-study {
+            background: rgba(37, 99, 235, 0.1);
+            border-left: 4px solid var(--secondary-blue);
+            padding: 30px;
+            margin: 30px 0;
+            border-radius: 8px;
+        }
+        .case-study h3 {
+            color: var(--accent-amber);
+            margin-bottom: 15px;
+            font-size: 22px;
+        }
+        .cta-section {
+            background: linear-gradient(135deg, rgba(107, 70, 193, 0.2) 0%, rgba(37, 99, 235, 0.2) 100%);
+            padding: 60px 20px;
+            text-align: center;
+            border-radius: 20px;
+            margin: 40px 0;
+        }
+        .cta-button {
+            display: inline-block;
+            padding: 18px 45px;
+            background: var(--gradient-main);
+            border-radius: 50px;
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 18px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(107, 70, 193, 0.4);
+        }
+        footer {
+            background: rgba(15, 23, 42, 0.5);
+            backdrop-filter: blur(10px);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 40px 20px 20px;
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            .location-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <nav style="background:rgba(15,23,42,0.95);backdrop-filter:blur(10px);padding:0;position:sticky;top:0;z-index:1000;box-shadow:0 4px 20px rgba(0,0,0,0.3)">
+        <div style="max-width:1400px;margin:0 auto;padding:1.2rem 2rem;display:flex;justify-content:space-between;align-items:center">
+            <a href="../../../index.html" style="font-size:1.5rem;font-weight:bold;background:linear-gradient(135deg,#7C3AED,#2563EB);-webkit-background-clip:text;-webkit-text-fill-color:transparent;text-decoration:none">God Digital</a>
+            <div style="display:flex;gap:2rem;align-items:center">
+                <a href="../index.html" style="color:#F8FAFC;text-decoration:none;transition:color 0.3s ease">SEO</a>
+                <a href="../../ppc-advertising/index.html" style="color:#F8FAFC;text-decoration:none;transition:color 0.3s ease">PPC</a>
+                <a href="../../social-media-marketing/index.html" style="color:#F8FAFC;text-decoration:none;transition:color 0.3s ease">Social Media</a>
+                <a href="../../content-marketing/index.html" style="color:#F8FAFC;text-decoration:none;transition:color 0.3s ease">Content Marketing</a>
+                <a href="../../email-marketing/index.html" style="color:#F8FAFC;text-decoration:none;transition:color 0.3s ease">Email Marketing</a>
+                <a href="../../web-design-development/index.html" style="color:#F8FAFC;text-decoration:none;transition:color 0.3s ease">Web Design</a>
+                <a href="../../conversion-optimization/index.html" style="color:#F8FAFC;text-decoration:none;transition:color 0.3s ease">CRO</a>
+                <a href="../../../contact-us.html" style="display:inline-block;padding:0.6rem 1.5rem;background:linear-gradient(135deg,#7C3AED,#2563EB);color:#fff;text-decoration:none;border-radius:6px;transition:transform 0.3s ease">Get Quote</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="breadcrumb">
+            <a href="../../../index.html">Home</a> &gt;
+            <a href="../../index.html">Services</a> &gt;
+            <a href="../index.html">SEO Services</a> &gt;
+            Bangalore
+        </div>
+    </div>
+
+    <section class="hero">
+        <div class="container">
+            <h1 data-aos="fade-up">SEO Services in <span class="gradient-text">Bangalore</span></h1>
+            <p style="font-size: 20px; color: rgba(248, 250, 252, 0.8); max-width: 800px; margin: 20px auto;" data-aos="fade-up" data-aos-delay="100">Dominate local search results in India's Silicon Valley. Expert SEO strategies that drive traffic, leads, and revenue for Bangalore businesses.</p>
+            <p style="font-size: 18px; margin-top: 20px;"><i class="fas fa-phone" style="color: var(--accent-amber);"></i> <a href="tel:+918708577598" style="color: var(--light-cloud); text-decoration: none;">+91 8708577598</a></p>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="content-section">
+                <h2 class="section-title" data-aos="fade-up">SEO in Bangalore: The Most Competitive Market in India</h2>
+
+                <p>Bangalore—India's tech capital, startup hub, and home to over 12 million people. If you're running a business here, you already know the competition is fierce.</p>
+
+                <p>Whether you're a SaaS startup in Koramangala, a restaurant in Indiranagar, a healthcare clinic in Whitefield, or a professional service in MG Road—your potential customers are searching for you right now on Google. The question is: are they finding you, or your competitors?</p>
+
+                <p>In Bangalore's hypercompetitive digital landscape, ranking on page 2 might as well be ranking on page 200. Over 75% of searchers never scroll past the first page. If you're not in those top positions for your key search terms, you're invisible.</p>
+
+                <div class="highlight-box">
+                    <strong>The Bangalore SEO challenge:</strong> High digital literacy means fierce competition. Tech-savvy customers do extensive online research before buying. Local search intent is strong—people search for "near me" constantly. Multiple languages (English, Kannada, Hindi) add complexity. And the market evolves fast—what worked six months ago might not work today.
+                </div>
+
+                <h2 class="section-title" style="margin-top: 60px;" data-aos="fade-up">Why Bangalore Businesses Need Local SEO</h2>
+
+                <p>Generic SEO strategies don't work in Bangalore. You need hyperlocal optimization that targets specific neighborhoods, understands local search patterns, and connects with Bangalore's unique audience.</p>
+
+                <p><strong>Here's what makes Bangalore SEO unique:</strong></p>
+                <ul>
+                    <li><strong>Neighborhood-specific search:</strong> People don't search for "restaurants in Bangalore"—they search for "restaurants in Koramangala" or "cafes near HSR Layout"</li>
+                    <li><strong>Tech-savvy audience:</strong> Bangalore users research extensively, read reviews, and compare options before deciding</li>
+                    <li><strong>High commercial intent:</strong> The city has spending power—customers are ready to buy if you're positioned right</li>
+                    <li><strong>Multilingual search:</strong> Need to optimize for English, Kannada, and sometimes Hindi queries</li>
+                    <li><strong>Mobile-first:</strong> Over 70% of local searches happen on mobile devices</li>
+                </ul>
+
+                <h2 class="section-title" style="margin-top: 60px;" data-aos="fade-up">Areas We Serve in Bangalore</h2>
+                <p>We provide specialized SEO services across all major Bangalore localities:</p>
+            </div>
+
+            <div class="location-grid">
+                <div class="location-card" data-aos="fade-up">
+                    <h4><i class="fas fa-map-marker-alt"></i> Central Bangalore</h4>
+                    <p>MG Road, Brigade Road, Cubbon Park, Shivajinagar, Vasanth Nagar, Ulsoor, Richmond Town</p>
+                    <p style="font-size: 14px; margin-top: 10px; color: rgba(248, 250, 252, 0.7);">Business districts and retail hubs</p>
+                </div>
+
+                <div class="location-card" data-aos="fade-up" data-aos-delay="100">
+                    <h4><i class="fas fa-map-marker-alt"></i> South Bangalore</h4>
+                    <p>Koramangala, HSR Layout, BTM Layout, Jayanagar, JP Nagar, Bannerghatta Road, Banashankari</p>
+                    <p style="font-size: 14px; margin-top: 10px; color: rgba(248, 250, 252, 0.7);">Startup ecosystem and residential areas</p>
+                </div>
+
+                <div class="location-card" data-aos="fade-up" data-aos-delay="200">
+                    <h4><i class="fas fa-map-marker-alt"></i> East Bangalore</h4>
+                    <p>Whitefield, Marathahalli, Bellandur, Sarjapur Road, Varthur, Kundalahalli, Kadugodi</p>
+                    <p style="font-size: 14px; margin-top: 10px; color: rgba(248, 250, 252, 0.7);">IT corridor and tech parks</p>
+                </div>
+
+                <div class="location-card" data-aos="fade-up">
+                    <h4><i class="fas fa-map-marker-alt"></i> North Bangalore</h4>
+                    <p>Hebbal, Yelahanka, Manyata Tech Park, Sahakara Nagar, Hennur, Banaswadi, RT Nagar</p>
+                    <p style="font-size: 14px; margin-top: 10px; color: rgba(248, 250, 252, 0.7);">Emerging tech hubs and residential zones</p>
+                </div>
+
+                <div class="location-card" data-aos="fade-up" data-aos-delay="100">
+                    <h4><i class="fas fa-map-marker-alt"></i> West Bangalore</h4>
+                    <p>Rajajinagar, Malleshwaram, Basaveshwaranagar, Yeshwanthpur, Peenya, Jalahalli</p>
+                    <p style="font-size: 14px; margin-top: 10px; color: rgba(248, 250, 252, 0.7);">Industrial and traditional residential areas</p>
+                </div>
+            </div>
+
+            <div class="content-section" style="margin-top: 80px;">
+                <h2 class="section-title" data-aos="fade-up">Our Bangalore-Specific SEO Approach</h2>
+
+                <h3 style="font-size: 24px; margin: 30px 0 15px;">Google My Business Optimization for Bangalore</h3>
+                <p>Local search starts with Google My Business. We optimize your GMB profile for maximum local visibility:</p>
+                <ul>
+                    <li>Complete profile setup with Bangalore address and service areas</li>
+                    <li>Neighborhood-specific keyword optimization</li>
+                    <li>High-quality photos of your Bangalore location</li>
+                    <li>Regular posts about local events and offers</li>
+                    <li>Review generation and management strategy</li>
+                    <li>Q&A optimization for common local queries</li>
+                </ul>
+
+                <h3 style="font-size: 24px; margin: 30px 0 15px;">Hyperlocal Content Creation</h3>
+                <p>We create content targeting specific Bangalore neighborhoods and search intents:</p>
+                <ul>
+                    <li>Area-specific service pages (e.g., "Dental Clinic in Koramangala")</li>
+                    <li>Neighborhood guides and local resources</li>
+                    <li>Blog posts addressing Bangalore-specific concerns</li>
+                    <li>Landing pages for each service area</li>
+                    <li>Location-based case studies and testimonials</li>
+                </ul>
+
+                <h3 style="font-size: 24px; margin: 30px 0 15px;">Local Link Building</h3>
+                <p>Quality backlinks from Bangalore-based websites boost local authority:</p>
+                <ul>
+                    <li>Bangalore business directory listings</li>
+                    <li>Local news and media coverage</li>
+                    <li>Partnerships with complementary Bangalore businesses</li>
+                    <li>Sponsorships of local events and causes</li>
+                    <li>Guest posts on Bangalore-focused blogs</li>
+                </ul>
+
+                <h3 style="font-size: 24px; margin: 30px 0 15px;">Technical SEO for Bangalore Mobile Users</h3>
+                <p>With 70%+ mobile searches, technical performance is critical:</p>
+                <ul>
+                    <li>Mobile page speed optimization (under 2 seconds)</li>
+                    <li>Mobile-first design and UX</li>
+                    <li>Click-to-call functionality</li>
+                    <li>Easy-to-use mobile forms</li>
+                    <li>Location-based schema markup</li>
+                </ul>
+
+                <h2 class="section-title" style="margin-top: 60px;" data-aos="fade-up">Case Studies: Bangalore SEO Success</h2>
+
+                <div class="case-study">
+                    <h3>SaaS Startup, Koramangala</h3>
+                    <p><strong>Challenge:</strong> A project management SaaS with Bangalore office needed to rank for "project management software India" and related B2B keywords. They had great product but zero organic visibility.</p>
+
+                    <p style="margin-top: 15px;"><strong>Our Strategy:</strong></p>
+                    <ul style="font-size: 16px;">
+                        <li>Created comprehensive product comparison pages</li>
+                        <li>Built authority through thought leadership content</li>
+                        <li>Targeted bottom-funnel keywords (alternatives, vs competitors)</li>
+                        <li>Optimized for local B2B searches in Bangalore</li>
+                        <li>Implemented technical SEO for SaaS site architecture</li>
+                    </ul>
+
+                    <p style="margin-top: 15px;"><strong>Results in 10 months:</strong></p>
+                    <ul style="font-size: 16px;">
+                        <li><strong>320% increase in organic traffic</strong></li>
+                        <li><strong>180 keywords ranking on page 1</strong></li>
+                        <li><strong>420 organic trial signups</strong> from SEO</li>
+                        <li><strong>62% reduction in CAC</strong> (vs paid channels)</li>
+                        <li><strong>₹48 lakhs ARR</strong> from SEO-driven customers</li>
+                    </ul>
+                </div>
+
+                <div class="case-study">
+                    <h3>Multi-Location Restaurant Chain</h3>
+                    <p><strong>Challenge:</strong> A restaurant chain with locations in Indiranagar, Koramangala, and Whitefield was losing customers to aggregator apps and needed direct traffic.</p>
+
+                    <p style="margin-top: 15px;"><strong>Our Strategy:</strong></p>
+                    <ul style="font-size: 16px;">
+                        <li>Optimized separate GMB profiles for each location</li>
+                        <li>Created location-specific landing pages</li>
+                        <li>Built local citations and directory listings</li>
+                        <li>Generated authentic customer reviews</li>
+                        <li>Targeted "near me" and neighborhood-specific searches</li>
+                    </ul>
+
+                    <p style="margin-top: 15px;"><strong>Results in 5 months:</strong></p>
+                    <ul style="font-size: 16px;">
+                        <li><strong>850% increase in "directions" clicks</strong> from Google</li>
+                        <li><strong>2,800+ monthly phone calls</strong> from GMB</li>
+                        <li><strong>1,200+ table reservations</strong> through website</li>
+                        <li><strong>35% reduction in aggregator dependency</strong></li>
+                        <li><strong>Ranking #1-3 for all target neighborhoods</strong></li>
+                    </ul>
+                </div>
+
+                <div class="case-study">
+                    <h3>Healthcare Clinic, Whitefield</h3>
+                    <p><strong>Challenge:</strong> A specialty clinic in Whitefield needed to attract patients from surrounding IT corridor (Marathahalli, Bellandur, Sarjapur) but had no online presence.</p>
+
+                    <p style="margin-top: 15px;"><strong>Our Strategy:</strong></p>
+                    <ul style="font-size: 16px;">
+                        <li>Created service-specific pages for all treatments</li>
+                        <li>Optimized for healthcare keywords + location</li>
+                        <li>Built comprehensive resource center with health articles</li>
+                        <li>Implemented appointment booking integration</li>
+                        <li>Generated patient reviews and testimonials</li>
+                    </ul>
+
+                    <p style="margin-top: 15px;"><strong>Results in 8 months:</strong></p>
+                    <ul style="font-size: 16px;">
+                        <li><strong>42,000+ monthly website visits</strong></li>
+                        <li><strong>380 appointment bookings monthly</strong> from organic search</li>
+                        <li><strong>Ranking #1 for 15+ treatment keywords</strong></li>
+                        <li><strong>4.8/5 Google rating</strong> with 280+ reviews</li>
+                        <li><strong>₹32 lakhs monthly revenue</strong> from SEO leads</li>
+                    </ul>
+                </div>
+
+                <h2 class="section-title" style="margin-top: 60px;" data-aos="fade-up">Industries We Serve in Bangalore</h2>
+                <p>Our SEO expertise spans all major Bangalore industries:</p>
+                <ul>
+                    <li><strong>Technology & SaaS:</strong> Startups, software companies, IT services</li>
+                    <li><strong>Healthcare:</strong> Hospitals, clinics, dental practices, specialty centers</li>
+                    <li><strong>Education:</strong> Coaching centers, professional training, online courses</li>
+                    <li><strong>Real Estate:</strong> Developers, brokers, property management</li>
+                    <li><strong>Hospitality:</strong> Restaurants, cafes, hotels, event venues</li>
+                    <li><strong>Professional Services:</strong> Legal, accounting, consulting, agencies</li>
+                    <li><strong>E-commerce:</strong> Online retailers, D2C brands, marketplaces</li>
+                    <li><strong>Automotive:</strong> Dealerships, service centers, spare parts</li>
+                </ul>
+            </div>
+
+            <div class="cta-section" style="margin-top: 80px;">
+                <h2 style="font-size: 38px; margin-bottom: 20px;" data-aos="fade-up">Ready to Dominate Bangalore Search Results?</h2>
+                <p style="font-size: 19px; max-width: 700px; margin: 0 auto 35px;" data-aos="fade-up" data-aos-delay="100">Let's discuss your Bangalore SEO strategy. Free consultation, competitive analysis, and honest recommendations.</p>
+                <a href="tel:+918708577598" class="cta-button" data-aos="fade-up" data-aos-delay="200">Call +91 8708577598</a>
+            </div>
+
+            <div class="content-section" style="margin-top: 80px;">
+                <h2 class="section-title">Related Services</h2>
+                <p>Complete digital marketing for Bangalore businesses:</p>
+                <ul style="font-size: 17px; margin-top: 20px;">
+                    <li><a href="../../ppc-advertising/index.html" style="color: var(--accent-amber);">PPC Advertising Bangalore</a> - Instant visibility with Google Ads</li>
+                    <li><a href="../../social-media-marketing/index.html" style="color: var(--accent-amber);">Social Media Marketing</a> - Build community and engagement</li>
+                    <li><a href="../../web-design-development/index.html" style="color: var(--accent-amber);">Website Design Bangalore</a> - Conversion-optimized websites</li>
+                    <li><a href="../../content-marketing/index.html" style="color: var(--accent-amber);">Content Marketing</a> - Authority-building content</li>
+                    <li><a href="../index.html" style="color: var(--accent-amber);">Complete SEO Services</a> - Full SEO methodology</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer style="background:rgba(15,23,42,0.5);backdrop-filter:blur(10px);border-top:1px solid rgba(255,255,255,0.1);padding:60px 20px 20px">
+        <div class="container" style="max-width:1400px;margin:0 auto">
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:40px;margin-bottom:40px">
+                <div>
+                    <h3 style="color:#F8FAFC;margin-bottom:1rem;font-size:1.1rem">Digital Marketing Services</h3>
+                    <ul style="list-style:none;margin:0;padding:0">
+                        <li style="margin-bottom:0.6rem"><a href="../index.html" style="color:#94A3B8;text-decoration:none;transition:color 0.3s ease">SEO Services</a></li>
+                        <li style="margin-bottom:0.6rem"><a href="../../ppc-advertising/index.html" style="color:#94A3B8;text-decoration:none">PPC Advertising</a></li>
+                        <li style="margin-bottom:0.6rem"><a href="../../social-media-marketing/index.html" style="color:#94A3B8;text-decoration:none">Social Media Marketing</a></li>
+                        <li style="margin-bottom:0.6rem"><a href="../../content-marketing/index.html" style="color:#94A3B8;text-decoration:none">Content Marketing</a></li>
+                        <li style="margin-bottom:0.6rem"><a href="../../email-marketing/index.html" style="color:#94A3B8;text-decoration:none">Email Marketing</a></li>
+                        <li style="margin-bottom:0.6rem"><a href="../../web-design-development/index.html" style="color:#94A3B8;text-decoration:none">Web Design & Development</a></li>
+                        <li style="margin-bottom:0.6rem"><a href="../../influencer-marketing/index.html" style="color:#94A3B8;text-decoration:none">Influencer Marketing</a></li>
+                        <li style="margin-bottom:0.6rem"><a href="../../video-marketing/index.html" style="color:#94A3B8;text-decoration:none">Video Marketing</a></li>
+                        <li style="margin-bottom:0.6rem"><a href="../../conversion-optimization/index.html" style="color:#94A3B8;text-decoration:none">Conversion Rate Optimization</a></li>
+                        <li style="margin-bottom:0.6rem"><a href="../../online-reputation-management/index.html" style="color:#94A3B8;text-decoration:none">Online Reputation Management</a></li>
+                        <li style="margin-bottom:0.6rem"><a href="../../analytics-reporting/index.html" style="color:#94A3B8;text-decoration:none">Analytics & Reporting</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 style="color:#F8FAFC;margin-bottom:1rem;font-size:1.1rem">Industries We Serve</h3>
+                    <ul style="list-style:none;margin:0;padding:0">
+                        <li style="margin-bottom:0.6rem"><a href="../../../industries/ecommerce/index.html" style="color:#94A3B8;text-decoration:none">E-commerce</a></li>
+                        <li style="margin-bottom:0.6rem"><a href="../../../industries/healthcare/index.html" style="color:#94A3B8;text-decoration:none">Healthcare</a></li>
+                        <li style="margin-bottom:0.6rem"><a href="../../../industries/real-estate/index.html" style="color:#94A3B8;text-decoration:none">Real Estate</a></li>
+                        <li style="margin-bottom:0.6rem"><a href="../../../industries/education/index.html" style="color:#94A3B8;text-decoration:none">Education</a></li>
+                        <li style="margin-bottom:0.6rem"><a href="../../../industries/legal-services/index.html" style="color:#94A3B8;text-decoration:none">Legal Services</a></li>
+                        <li style="margin-bottom:0.6rem"><a href="../../../industries/hospitality/index.html" style="color:#94A3B8;text-decoration:none">Hospitality</a></li>
+                        <li style="margin-bottom:0.6rem"><a href="../../../industries/technology/index.html" style="color:#94A3B8;text-decoration:none">Technology</a></li>
+                        <li style="margin-bottom:0.6rem"><a href="../../../industries/manufacturing/index.html" style="color:#94A3B8;text-decoration:none">Manufacturing</a></li>
+                        <li style="margin-bottom:0.6rem"><a href="../../../industries/retail/index.html" style="color:#94A3B8;text-decoration:none">Retail</a></li>
+                        <li style="margin-bottom:0.6rem"><a href="../../../industries/professional-services/index.html" style="color:#94A3B8;text-decoration:none">Professional Services</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 style="color:#F8FAFC;margin-bottom:1rem;font-size:1.1rem">SEO Services by City</h3>
+                    <ul style="list-style:none;margin:0;padding:0">
+                        <li style="margin-bottom:0.6rem"><a href="../mumbai/index.html" style="color:#94A3B8;text-decoration:none">SEO Services Mumbai</a></li>
+                        <li style="margin-bottom:0.6rem"><a href="index.html" style="color:#94A3B8;text-decoration:none">SEO Services Bangalore</a></li>
+                        <li style="margin-bottom:0.6rem"><a href="../delhi/index.html" style="color:#94A3B8;text-decoration:none">SEO Services Delhi</a></li>
+                        <li style="margin-bottom:0.6rem"><a href="../pune/index.html" style="color:#94A3B8;text-decoration:none">SEO Services Pune</a></li>
+                        <li style="margin-bottom:0.6rem"><a href="../hyderabad/index.html" style="color:#94A3B8;text-decoration:none">SEO Services Hyderabad</a></li>
+                        <li style="margin-bottom:0.6rem"><a href="../chennai/index.html" style="color:#94A3B8;text-decoration:none">SEO Services Chennai</a></li>
+                        <li style="margin-bottom:0.6rem"><a href="../kolkata/index.html" style="color:#94A3B8;text-decoration:none">SEO Services Kolkata</a></li>
+                        <li style="margin-bottom:0.6rem"><a href="../ahmedabad/index.html" style="color:#94A3B8;text-decoration:none">SEO Services Ahmedabad</a></li>
+                        <li style="margin-bottom:0.6rem"><a href="../maharashtra/index.html" style="color:#94A3B8;text-decoration:none">SEO Services Maharashtra</a></li>
+                        <li style="margin-bottom:0.6rem"><a href="../karnataka/index.html" style="color:#94A3B8;text-decoration:none">SEO Services Karnataka</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 style="color:#F8FAFC;margin-bottom:1rem;font-size:1.1rem">Email Marketing</h3>
+                    <ul style="list-style:none;margin:0;padding:0">
+                        <li style="margin-bottom:0.6rem"><a href="../../email-marketing/bulk-email-marketing.html" style="color:#94A3B8;text-decoration:none">Bulk Email Marketing</a></li>
+                        <li style="margin-bottom:0.6rem"><a href="../../email-marketing/promotional-email-campaigns.html" style="color:#94A3B8;text-decoration:none">Promotional Email Campaigns</a></li>
+                        <li style="margin-bottom:0.6rem"><a href="../../email-marketing/transactional-emails.html" style="color:#94A3B8;text-decoration:none">Transactional Emails</a></li>
+                        <li style="margin-bottom:0.6rem"><a href="../../email-marketing/email-newsletters.html" style="color:#94A3B8;text-decoration:none">Email Newsletters</a></li>
+                        <li style="margin-bottom:0.6rem"><a href="../../email-marketing/drip-campaigns.html" style="color:#94A3B8;text-decoration:none">Drip Campaigns</a></li>
+                        <li style="margin-bottom:0.6rem"><a href="../../email-marketing/cart-abandonment-emails.html" style="color:#94A3B8;text-decoration:none">Cart Abandonment Emails</a></li>
+                        <li style="margin-bottom:0.6rem"><a href="../../email-marketing/welcome-email-series.html" style="color:#94A3B8;text-decoration:none">Welcome Email Series</a></li>
+                        <li style="margin-bottom:0.6rem"><a href="../../email-marketing/re-engagement-campaigns.html" style="color:#94A3B8;text-decoration:none">Re-engagement Campaigns</a></li>
+                        <li style="margin-bottom:0.6rem"><a href="../../email-marketing/seasonal-email-campaigns.html" style="color:#94A3B8;text-decoration:none">Seasonal Email Campaigns</a></li>
+                        <li style="margin-bottom:0.6rem"><a href="../../email-marketing/email-automation.html" style="color:#94A3B8;text-decoration:none">Email Automation</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 style="color:#F8FAFC;margin-bottom:1rem;font-size:1.1rem">Resources & Company</h3>
+                    <ul style="list-style:none;margin:0;padding:0">
+                        <li style="margin-bottom:0.6rem"><a href="../../../about-us.html" style="color:#94A3B8;text-decoration:none">About Us</a></li>
+                        <li style="margin-bottom:0.6rem"><a href="../../../contact-us.html" style="color:#94A3B8;text-decoration:none">Contact Us</a></li>
+                        <li style="margin-bottom:0.6rem"><a href="../../../blog/index.html" style="color:#94A3B8;text-decoration:none">Blog</a></li>
+                        <li style="margin-bottom:0.6rem"><a href="../../../case-studies/index.html" style="color:#94A3B8;text-decoration:none">Case Studies</a></li>
+                        <li style="margin-bottom:0.6rem"><a href="../../../testimonials.html" style="color:#94A3B8;text-decoration:none">Testimonials</a></li>
+                        <li style="margin-bottom:0.6rem"><a href="../../../careers.html" style="color:#94A3B8;text-decoration:none">Careers</a></li>
+                        <li style="margin-bottom:0.6rem"><a href="../../../privacy-policy.html" style="color:#94A3B8;text-decoration:none">Privacy Policy</a></li>
+                        <li style="margin-bottom:0.6rem"><a href="../../../terms-of-service.html" style="color:#94A3B8;text-decoration:none">Terms of Service</a></li>
+                        <li style="margin-bottom:0.6rem"><a href="../../../sitemap.html" style="color:#94A3B8;text-decoration:none">Sitemap</a></li>
+                        <li style="margin-bottom:0.6rem"><a href="../../../faq.html" style="color:#94A3B8;text-decoration:none">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div style="border-top:1px solid rgba(255,255,255,0.1);padding-top:30px;text-align:center">
+                <div style="display:flex;justify-content:center;gap:2rem;margin-bottom:1.5rem;flex-wrap:wrap">
+                    <a href="../index.html" style="color:#94A3B8;text-decoration:none;font-size:0.9rem">SEO</a>
+                    <a href="../../ppc-advertising/index.html" style="color:#94A3B8;text-decoration:none;font-size:0.9rem">PPC</a>
+                    <a href="../../social-media-marketing/index.html" style="color:#94A3B8;text-decoration:none;font-size:0.9rem">Social Media</a>
+                    <a href="../../content-marketing/index.html" style="color:#94A3B8;text-decoration:none;font-size:0.9rem">Content Marketing</a>
+                    <a href="../../email-marketing/index.html" style="color:#94A3B8;text-decoration:none;font-size:0.9rem">Email Marketing</a>
+                    <a href="../../web-design-development/index.html" style="color:#94A3B8;text-decoration:none;font-size:0.9rem">Web Design</a>
+                </div>
+                <p style="color:#64748B;font-size:0.9rem;margin:0">&copy; 2024 God Digital Marketing. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({ duration: 1000, once: true });</script>
+</body>
+</html>

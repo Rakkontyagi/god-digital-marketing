@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEO Services in Karnataka | Leading Digital Marketing Agency for Bangalore, Mysore & Beyond</title>
+    <meta name="description" content="Top-rated SEO agency serving Karnataka. Specialized search optimization for Bangalore, Mysore, Mangalore, Hubli & state-wide businesses. Drive revenue through strategic SEO.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-purple: #7C3AED;
+            --secondary-blue: #2563EB;
+            --accent-amber: #F59E0B;
+            --dark-bg: #0F172A;
+            --card-bg: rgba(255, 255, 255, 0.05);
+            --text-primary: #F8FAFC;
+            --text-secondary: #94A3B8;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
+            color: var(--text-primary);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: rgba(15, 23, 42, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(124, 58, 237, 0.2);
+        }
+
+        nav {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--primary-purple), var(--secondary-blue));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-menu a {
+            color: var(--text-primary);
+            text-decoration: none;
+            transition: color 0.3s ease;
+            font-weight: 500;
+        }
+
+        .nav-menu a:hover {
+            color: var(--primary-purple);
+        }
+
+        .hero {
+            padding: 80px 2rem;
+            text-align: center;
+            background: radial-gradient(circle at 50% 50%, rgba(124, 58, 237, 0.15) 0%, transparent 50%);
+        }
+
+        .breadcrumb {
+            max-width: 1200px;
+            margin: 0 auto 2rem;
+            display: flex;
+            gap: 0.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        .breadcrumb a {
+            color: var(--primary-purple);
+            text-decoration: none;
+        }
+
+        .hero h1 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, #ffffff 0%, var(--primary-purple) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            max-width: 800px;
+            margin: 0 auto 2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        .content-section {
+            margin-bottom: 4rem;
+        }
+
+        .content-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, var(--primary-purple), var(--secondary-blue));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .content-section h3 {
+            font-size: 1.8rem;
+            margin: 2rem 0 1rem;
+            color: var(--accent-amber);
+        }
+
+        .content-section p {
+            font-size: 1.05rem;
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+
+        .content-section ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .content-section ul li {
+            padding: 0.8rem 0;
+            padding-left: 2rem;
+            position: relative;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+
+        .content-section ul li:before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: var(--accent-amber);
+            font-weight: bold;
+        }
+
+        .city-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .city-card {
+            background: var(--card-bg);
+            backdrop-filter: blur(10px);
+            padding: 2rem;
+            border-radius: 12px;
+            border: 1px solid rgba(124, 58, 237, 0.2);
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .city-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary-purple);
+        }
+
+        .city-card h4 {
+            color: var(--accent-amber);
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, var(--primary-purple), var(--secondary-blue));
+            padding: 3rem;
+            border-radius: 16px;
+            text-align: center;
+            margin: 4rem 0;
+        }
+
+        .cta-section h2 {
+            color: white;
+            margin-bottom: 1rem;
+            background: none;
+            -webkit-text-fill-color: white;
+        }
+
+        .cta-section p {
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: white;
+            color: var(--primary-purple);
+            padding: 1rem 2.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        footer {
+            background: rgba(15, 23, 42, 0.95);
+            padding: 3rem 2rem 1.5rem;
+            border-top: 1px solid rgba(124, 58, 237, 0.2);
+        }
+
+        .footer-grid {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h3 {
+            color: var(--primary-purple);
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-section ul li a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color 0.3s ease;
+            font-size: 0.95rem;
+        }
+
+        .footer-section ul li a:hover {
+            color: var(--primary-purple);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(124, 58, 237, 0.2);
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        a {
+            color: var(--primary-purple);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: var(--secondary-blue);
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+
+            .hero {
+                padding: 40px 1rem;
+            }
+
+            .container {
+                padding: 2rem 1rem;
+            }
+
+            .content-section h2 {
+                font-size: 2rem;
+            }
+
+            .content-section h3 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header style="background:rgba(15,23,42,0.95);backdrop-filter:blur(10px);padding:0;position:sticky;top:0;z-index:1000;border-bottom:1px solid rgba(124,58,237,0.2)">
+        <nav style="max-width:1400px;margin:0 auto;padding:1.2rem 2rem;display:flex;justify-content:space-between;align-items:center">
+            <a href="../../../index.html" style="font-size:1.5rem;font-weight:bold;background:linear-gradient(135deg,#7C3AED,#2563EB);-webkit-background-clip:text;-webkit-text-fill-color:transparent;text-decoration:none">God Digital</a>
+            <div style="display:flex;gap:2rem;align-items:center">
+                <a href="../index.html" style="color:#F8FAFC;text-decoration:none;transition:color 0.3s ease">SEO</a>
+                <a href="../../ppc-advertising/index.html" style="color:#F8FAFC;text-decoration:none;transition:color 0.3s ease">PPC</a>
+                <a href="../../social-media-marketing/index.html" style="color:#F8FAFC;text-decoration:none;transition:color 0.3s ease">Social Media</a>
+                <a href="../../content-marketing/index.html" style="color:#F8FAFC;text-decoration:none;transition:color 0.3s ease">Content Marketing</a>
+                <a href="../../email-marketing/index.html" style="color:#F8FAFC;text-decoration:none;transition:color 0.3s ease">Email Marketing</a>
+                <a href="../../web-design-development/index.html" style="color:#F8FAFC;text-decoration:none;transition:color 0.3s ease">Web Design</a>
+                <a href="../../conversion-optimization/index.html" style="color:#F8FAFC;text-decoration:none;transition:color 0.3s ease">CRO</a>
+                <a href="../../../contact-us.html" style="display:inline-block;padding:0.6rem 1.5rem;background:linear-gradient(135deg,#7C3AED,#2563EB);color:#fff;text-decoration:none;border-radius:6px;transition:transform 0.3s ease">Get Quote</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="breadcrumb">
+            <a href="../../../index.html">Home</a> /
+            <a href="../../index.html">Services</a> /
+            <a href="../index.html">SEO Services</a> /
+            <span>Karnataka</span>
+        </div>
+        <h1>SEO Services Across Karnataka That Drive Business Growth</h1>
+        <p>Expert search engine optimization for businesses throughout Karnataka. From Bangalore's tech ecosystem to Mysore's heritage tourism, Mangalore's port commerce to Hubli's industrial growth—we help Karnataka businesses dominate online search.</p>
+    </section>
+
+    <div class="container">
+        <div class="content-section">
+            <h2>Why Karnataka's Digital Landscape Demands Specialized SEO</h2>
+            <p>Karnataka leads India in technology adoption, startup culture, and digital transformation. It's home to India's Silicon Valley, thriving beyond just IT into deep tech, biotech, aerospace, and manufacturing. The state's businesses face unique opportunities and challenges that require specialized <a href="../index.html">SEO strategies</a> tailored to Karnataka's diverse markets.</p>
+
+            <p>We've worked with over 180+ Karnataka businesses across Bangalore, Mysore, Mangalore, Hubli-Dharwad, Belgaum, and Gulbarga. From SaaS startups in Koramangala to manufacturing companies in Peenya, from tourism businesses in Mysore to educational institutions in Manipal—we understand Karnataka's economic diversity and what it takes to succeed online in each market segment.</p>
+
+            <p>Karnataka's digital users are among India's most sophisticated—high education levels, strong English proficiency, early technology adoption, and active online research before purchasing. This educated, digitally savvy audience researches extensively on Google, compares multiple options, reads reviews carefully, and expects detailed information. If your business isn't visible during these critical research moments, you're losing customers to competitors who've invested in strategic <a href="../../index.html">digital marketing</a>.</p>
+
+            <p>What works for a <a href="../bangalore/index.html">Bangalore tech company</a> differs completely from what works for a Mysore tourism business or a Hubli manufacturing firm. We develop city-specific, industry-specific strategies that account for local competition, customer behavior, seasonal patterns, and market maturity through integrated services including <a href="../../ppc-advertising/index.html">PPC advertising</a>, <a href="../../social-media-marketing/index.html">social media</a>, and <a href="../../content-marketing/index.html">content marketing</a>.</p>
+        </div>
+
+        <div class="content-section">
+            <h2>Cities We Serve Across Karnataka</h2>
+
+            <div class="city-grid">
+                <div class="city-card" data-aos="fade-up">
+                    <h4><i class="fas fa-laptop-code"></i> Bangalore SEO Services</h4>
+                    <p>India's IT capital and startup hub. Specialized SEO for tech companies, startups, SaaS businesses, IT services, BPOs, and the thriving ecosystem across Koramangala, Indiranagar, Whitefield, and Electronic City.</p>
+                    <p style="margin-top: 10px;"><a href="../bangalore/index.html">Learn more about Bangalore SEO →</a></p>
+                </div>
+
+                <div class="city-card" data-aos="fade-up">
+                    <h4><i class="fas fa-monument"></i> Mysore SEO Services</h4>
+                    <p>Heritage city and tourism center. SEO for tourism businesses, hospitality, educational institutions, silk industry, sandalwood products, and the growing IT presence. Balance tradition with modern digital reach.</p>
+                    <p style="margin-top: 10px;"><a href="../index.html">Explore Mysore SEO solutions →</a></p>
+                </div>
+
+                <div class="city-card" data-aos="fade-up">
+                    <h4><i class="fas fa-ship"></i> Mangalore SEO Services</h4>
+                    <p>Major port city and education hub. Specialized SEO for port-related businesses, import-export, educational institutions (medical, engineering), hospitality, and coastal tourism. Multilingual Tulu, Kannada, and English optimization.</p>
+                    <p style="margin-top: 10px;"><a href="../index.html">Discover Mangalore SEO →</a></p>
+                </div>
+
+                <div class="city-card" data-aos="fade-up">
+                    <h4><i class="fas fa-industry"></i> Hubli-Dharwad SEO Services</h4>
+                    <p>Commercial and educational twin cities. SEO for manufacturing, trading businesses, educational institutions, agricultural commerce, and the growing services sector. Strong B2B and industrial focus for North Karnataka.</p>
+                    <p style="margin-top: 10px;"><a href="../index.html">View Hubli-Dharwad SEO →</a></p>
+                </div>
+
+                <div class="city-card" data-aos="fade-up">
+                    <h4><i class="fas fa-university"></i> Belgaum (Belagavi) SEO</h4>
+                    <p>Border city with diverse economy. SEO for military-related businesses, sugar industry, educational institutions, healthcare, and cross-border commerce. Strategic location drives unique SEO opportunities.</p>
+                    <p style="margin-top: 10px;"><a href="../index.html">Explore Belgaum SEO →</a></p>
+                </div>
+
+                <div class="city-card" data-aos="fade-up">
+                    <h4><i class="fas fa-graduation-cap"></i> Manipal SEO Services</h4>
+                    <p>Education and healthcare city. Specialized SEO for educational institutions, healthcare services, student-focused businesses, and the unique economy built around Manipal's academic reputation. Student market expertise.</p>
+                    <p style="margin-top: 10px;"><a href="../index.html">Manipal SEO solutions →</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>Industries We Serve Across Karnataka</h2>
+            <p>Karnataka's economy spans traditional industries to cutting-edge technology. Here's how we approach some of the state's major sectors:</p>
+
+            <h3>Information Technology & Software Services</h3>
+            <p>Bangalore is India's undisputed IT capital, but tech businesses also thrive in Mysore, Mangalore, and Hubli. We specialize in B2B tech SEO for IT services, product companies, SaaS startups, and technology consultancies. Our approach focuses on technical content, thought leadership, enterprise lead generation, and global reach while maintaining local authority.</p>
+
+            <h3>Startups & Venture-Backed Companies</h3>
+            <p>Karnataka, especially Bangalore, leads India in startup activity. We help startups achieve rapid visibility in crowded markets, establish thought leadership early, generate qualified leads cost-effectively, and scale SEO as they grow. Our startup-focused approach balances aggressive growth with sustainable foundations.</p>
+
+            <h3>Manufacturing & Engineering</h3>
+            <p>From aerospace in Bangalore to machine tools in Hubli, Karnataka has diverse manufacturing. We specialize in B2B manufacturing SEO that reaches procurement managers, targets technical specifications and certifications, optimizes for industrial buyer keywords, and generates qualified B2B inquiries. Strong focus on technical accuracy and industry expertise.</p>
+
+            <h3>Biotechnology & Pharmaceuticals</h3>
+            <p>Karnataka is India's biotech capital with major pharma and biotech clusters. Our <a href="../healthcare/index.html">healthcare-focused SEO</a> helps biotech companies reach investors and partners, pharma manufacturers attract B2B buyers, clinical research organizations generate study participants, and healthcare startups establish market presence—all while maintaining regulatory compliance.</p>
+
+            <h3>Education & Training</h3>
+            <p>Karnataka has premier institutions from IISc to Manipal to hundreds of engineering colleges. Our <a href="../education/index.html">education SEO</a> helps institutions attract quality students nationally and internationally, showcase programs effectively during admission seasons, compete in crowded education markets, and build long-term institutional reputation online.</p>
+
+            <h3>Tourism & Hospitality</h3>
+            <p>From Bangalore's business hotels to Coorg's resorts, Mysore's heritage tourism to coastal Karnataka's beaches—tourism is vital. We optimize for domestic and international travelers, seasonal tourism patterns, experience-focused keywords, and booking intent that drives actual reservations and revenue.</p>
+
+            <h3>Real Estate & Construction</h3>
+            <p>Bangalore's real estate market is among India's most dynamic, with growth across Karnataka. Our <a href="../real-estate/index.html">real estate SEO</a> helps developers showcase projects effectively, brokers capture buyer searches, property portals scale organically, and investors reach motivated buyers at every decision stage.</p>
+
+            <h3>E-commerce & D2C Brands</h3>
+            <p>Karnataka's high digital adoption makes it ideal for e-commerce. Our <a href="../e-commerce/index.html">e-commerce SEO</a> helps online retailers compete effectively, D2C brands build sustainable channels, marketplaces scale efficiently, and product pages rank where buyers actually search.</p>
+        </div>
+
+        <div class="content-section">
+            <h2>Our Karnataka-Specific SEO Approach</h2>
+
+            <h3>1. Tech-Savvy Audience Optimization</h3>
+            <p>Karnataka's digitally sophisticated audience expects depth. We create comprehensive, technical content that satisfies educated searchers, provide detailed specifications and comparisons, use data and evidence effectively, and optimize for long-tail, specific searches that indicate genuine interest and buying intent.</p>
+
+            <h3>2. Bangalore Startup Ecosystem Integration</h3>
+            <p>For Bangalore startups, visibility in the ecosystem matters. We optimize for investor discovery, build thought leadership through strategic content, generate media mentions and backlinks, establish founder/company authority, and create buzz that extends beyond traditional SEO into broader brand building.</p>
+
+            <h3>3. Multi-City Coverage Strategy</h3>
+            <p>If you operate across Karnataka cities, we create location-specific optimization for each market. A Bangalore SaaS company needs different content than a Mangalore education institution. We optimize for city-specific search behavior while maintaining brand consistency across your Karnataka presence.</p>
+
+            <h3>4. Competitive Tech Market Strategies</h3>
+            <p>Karnataka, especially Bangalore, has intense digital competition. We conduct thorough competitive intelligence, identify gaps competitors miss, develop differentiation strategies, and sometimes challenge market leaders directly—sometimes target underserved niches. Our approach depends on your position, resources, and goals.</p>
+
+            <h3>5. Integration with Full Digital Ecosystem</h3>
+            <p>SEO works best integrated with other channels. We coordinate with your <a href="../../social-media-marketing/index.html">social media</a>, <a href="../../ppc-advertising/index.html">paid campaigns</a>, <a href="../../email-marketing/index.html">email marketing</a>, content initiatives, and PR to create cohesive strategies that work across all touchpoints and amplify results.</p>
+        </div>
+
+        <div class="content-section">
+            <h2>Why Karnataka Businesses Choose Us</h2>
+
+            <h3>Deep Karnataka Market Understanding</h3>
+            <p>We've worked throughout Karnataka for 6+ years across diverse industries and cities. We understand Bangalore's pace and global outlook, Mysore's heritage tourism dynamics, Mangalore's multilingual market, and Hubli's commercial characteristics. This local knowledge informs every strategy we develop.</p>
+
+            <h3>Tech Industry Expertise</h3>
+            <p>Working extensively with Karnataka's tech sector, we understand SaaS marketing, B2B tech sales cycles, startup growth strategies, enterprise buyer behavior, and the unique challenges of marketing technical products and services. This tech fluency ensures we speak your industry's language.</p>
+
+            <h3>Startup-Friendly Engagement Models</h3>
+            <p>We work with startups through various growth stages with flexible engagement models, performance-focused pricing, scalable services that grow with you, and strategic guidance beyond just SEO execution. Many of our early-stage startup clients have grown into established businesses while working with us.</p>
+
+            <h3>Measurable Business Impact</h3>
+            <p>We track what matters—not just rankings and traffic, but qualified leads, sales pipeline contribution, customer acquisition costs, and actual revenue impact. You know exactly how SEO investment translates to business growth through our <a href="../../analytics-reporting/index.html">comprehensive analytics</a> and transparent reporting.</p>
+
+            <h3>Long-Term Partnership Approach</h3>
+            <p>Most Karnataka clients work with us for 2-3+ years because we focus on sustainable growth, adapt as businesses evolve, continuously optimize based on results, and genuinely care about your long-term success. We grow alongside you.</p>
+        </div>
+
+        <div class="cta-section" data-aos="fade-up">
+            <h2>Ready to Dominate Search Across Karnataka?</h2>
+            <p>Let's discuss your business, target markets, and growth objectives. We'll show you exactly how we'd approach your Karnataka SEO and what results you can expect.</p>
+            <a href="../../../contact-us.html" class="cta-button">Schedule Your Free Karnataka SEO Consultation</a>
+        </div>
+
+        <div class="content-section">
+            <h2>Contact Our Karnataka SEO Team</h2>
+            <p>Serving businesses throughout Karnataka with comprehensive SEO and digital marketing services.</p>
+
+            <p><strong>Phone:</strong> <a href="tel:+918708577598">+91 8708577598</a></p>
+            <p><strong>Email:</strong> <a href="mailto:nitin@goddigitalmarketing.com">nitin@goddigitalmarketing.com</a></p>
+            <p><strong>Office:</strong> EF-64 (Ground Floor), TDI Espania, Sector-19, Sonipat, Haryana, India</p>
+
+            <p style="margin-top: 2rem;">We serve Karnataka businesses with full-service <a href="../../index.html">digital marketing</a> including <a href="../index.html">SEO</a>, <a href="../../ppc-advertising/index.html">PPC</a>, <a href="../../social-media-marketing/index.html">social media</a>, <a href="../../content-marketing/index.html">content</a>, <a href="../../web-design-development/index.html">web design</a>, and <a href="../../analytics-reporting/index.html">analytics</a>.</p>
+        </div>
+    </div>
+
+    <footer style="background:rgba(15,23,42,0.5);backdrop-filter:blur(10px);border-top:1px solid rgba(255,255,255,0.1);padding:60px 20px 20px">
+        <div style="max-width:1400px;margin:0 auto">
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:40px;margin-bottom:40px">
+                <div><h3 style="color:#F8FAFC;margin-bottom:1rem;font-size:1.1rem">Digital Marketing Services</h3><ul style="list-style:none;margin:0;padding:0"><li style="margin-bottom:0.6rem"><a href="../index.html" style="color:#94A3B8;text-decoration:none">SEO Services</a></li><li style="margin-bottom:0.6rem"><a href="../../ppc-advertising/index.html" style="color:#94A3B8;text-decoration:none">PPC Advertising</a></li><li style="margin-bottom:0.6rem"><a href="../../social-media-marketing/index.html" style="color:#94A3B8;text-decoration:none">Social Media Marketing</a></li><li style="margin-bottom:0.6rem"><a href="../../content-marketing/index.html" style="color:#94A3B8;text-decoration:none">Content Marketing</a></li><li style="margin-bottom:0.6rem"><a href="../../email-marketing/index.html" style="color:#94A3B8;text-decoration:none">Email Marketing</a></li><li style="margin-bottom:0.6rem"><a href="../../web-design-development/index.html" style="color:#94A3B8;text-decoration:none">Web Design</a></li><li style="margin-bottom:0.6rem"><a href="../../conversion-optimization/index.html" style="color:#94A3B8;text-decoration:none">Conversion Optimization</a></li><li style="margin-bottom:0.6rem"><a href="../../analytics-reporting/index.html" style="color:#94A3B8;text-decoration:none">Analytics & Reporting</a></li><li style="margin-bottom:0.6rem"><a href="../../brand-strategy/index.html" style="color:#94A3B8;text-decoration:none">Brand Strategy</a></li><li style="margin-bottom:0.6rem"><a href="../../video-marketing/index.html" style="color:#94A3B8;text-decoration:none">Video Marketing</a></li><li style="margin-bottom:0.6rem"><a href="../../local-seo/index.html" style="color:#94A3B8;text-decoration:none">Local SEO</a></li></ul></div>
+                <div><h3 style="color:#F8FAFC;margin-bottom:1rem;font-size:1.1rem">Industries We Serve</h3><ul style="list-style:none;margin:0;padding:0"><li style="margin-bottom:0.6rem"><a href="../../../industries/healthcare/index.html" style="color:#94A3B8;text-decoration:none">Healthcare</a></li><li style="margin-bottom:0.6rem"><a href="../../../industries/e-commerce/index.html" style="color:#94A3B8;text-decoration:none">E-commerce</a></li><li style="margin-bottom:0.6rem"><a href="../../../industries/real-estate/index.html" style="color:#94A3B8;text-decoration:none">Real Estate</a></li><li style="margin-bottom:0.6rem"><a href="../../../industries/education/index.html" style="color:#94A3B8;text-decoration:none">Education</a></li><li style="margin-bottom:0.6rem"><a href="../../../industries/legal-services/index.html" style="color:#94A3B8;text-decoration:none">Legal Services</a></li><li style="margin-bottom:0.6rem"><a href="../../../industries/hospitality/index.html" style="color:#94A3B8;text-decoration:none">Hospitality</a></li><li style="margin-bottom:0.6rem"><a href="../../../industries/technology/index.html" style="color:#94A3B8;text-decoration:none">Technology</a></li><li style="margin-bottom:0.6rem"><a href="../../../industries/manufacturing/index.html" style="color:#94A3B8;text-decoration:none">Manufacturing</a></li><li style="margin-bottom:0.6rem"><a href="../../../industries/retail/index.html" style="color:#94A3B8;text-decoration:none">Retail</a></li><li style="margin-bottom:0.6rem"><a href="../../../industries/professional-services/index.html" style="color:#94A3B8;text-decoration:none">Professional Services</a></li></ul></div>
+                <div><h3 style="color:#F8FAFC;margin-bottom:1rem;font-size:1.1rem">SEO Services by City</h3><ul style="list-style:none;margin:0;padding:0"><li style="margin-bottom:0.6rem"><a href="../mumbai/index.html" style="color:#94A3B8;text-decoration:none">Mumbai</a></li><li style="margin-bottom:0.6rem"><a href="../bangalore/index.html" style="color:#94A3B8;text-decoration:none">Bangalore</a></li><li style="margin-bottom:0.6rem"><a href="../delhi/index.html" style="color:#94A3B8;text-decoration:none">Delhi</a></li><li style="margin-bottom:0.6rem"><a href="../pune/index.html" style="color:#94A3B8;text-decoration:none">Pune</a></li><li style="margin-bottom:0.6rem"><a href="../hyderabad/index.html" style="color:#94A3B8;text-decoration:none">Hyderabad</a></li><li style="margin-bottom:0.6rem"><a href="../chennai/index.html" style="color:#94A3B8;text-decoration:none">Chennai</a></li><li style="margin-bottom:0.6rem"><a href="../kolkata/index.html" style="color:#94A3B8;text-decoration:none">Kolkata</a></li><li style="margin-bottom:0.6rem"><a href="../ahmedabad/index.html" style="color:#94A3B8;text-decoration:none">Ahmedabad</a></li><li style="margin-bottom:0.6rem"><a href="../maharashtra/index.html" style="color:#94A3B8;text-decoration:none">Maharashtra</a></li><li style="margin-bottom:0.6rem"><a href="../karnataka/index.html" style="color:#94A3B8;text-decoration:none">Karnataka</a></li></ul></div>
+                <div><h3 style="color:#F8FAFC;margin-bottom:1rem;font-size:1.1rem">Email Marketing</h3><ul style="list-style:none;margin:0;padding:0"><li style="margin-bottom:0.6rem"><a href="../../email-marketing/automation/index.html" style="color:#94A3B8;text-decoration:none">Email Automation</a></li><li style="margin-bottom:0.6rem"><a href="../../email-marketing/campaigns/index.html" style="color:#94A3B8;text-decoration:none">Email Campaigns</a></li><li style="margin-bottom:0.6rem"><a href="../../email-marketing/newsletters/index.html" style="color:#94A3B8;text-decoration:none">Newsletters</a></li><li style="margin-bottom:0.6rem"><a href="../../email-marketing/drip-campaigns/index.html" style="color:#94A3B8;text-decoration:none">Drip Campaigns</a></li><li style="margin-bottom:0.6rem"><a href="../../email-marketing/lead-nurturing/index.html" style="color:#94A3B8;text-decoration:none">Lead Nurturing</a></li><li style="margin-bottom:0.6rem"><a href="../../email-marketing/segmentation/index.html" style="color:#94A3B8;text-decoration:none">List Segmentation</a></li><li style="margin-bottom:0.6rem"><a href="../../email-marketing/ab-testing/index.html" style="color:#94A3B8;text-decoration:none">A/B Testing</a></li><li style="margin-bottom:0.6rem"><a href="../../email-marketing/templates/index.html" style="color:#94A3B8;text-decoration:none">Email Templates</a></li><li style="margin-bottom:0.6rem"><a href="../../email-marketing/analytics/index.html" style="color:#94A3B8;text-decoration:none">Email Analytics</a></li><li style="margin-bottom:0.6rem"><a href="../../email-marketing/deliverability/index.html" style="color:#94A3B8;text-decoration:none">Deliverability</a></li></ul></div>
+                <div><h3 style="color:#F8FAFC;margin-bottom:1rem;font-size:1.1rem">Resources & Company</h3><ul style="list-style:none;margin:0;padding:0"><li style="margin-bottom:0.6rem"><a href="../../../about-us.html" style="color:#94A3B8;text-decoration:none">About Us</a></li><li style="margin-bottom:0.6rem"><a href="../../../blog/index.html" style="color:#94A3B8;text-decoration:none">Blog</a></li><li style="margin-bottom:0.6rem"><a href="../../../case-studies/index.html" style="color:#94A3B8;text-decoration:none">Case Studies</a></li><li style="margin-bottom:0.6rem"><a href="../../../testimonials/index.html" style="color:#94A3B8;text-decoration:none">Testimonials</a></li><li style="margin-bottom:0.6rem"><a href="../../../faq/index.html" style="color:#94A3B8;text-decoration:none">FAQ</a></li><li style="margin-bottom:0.6rem"><a href="../../../careers/index.html" style="color:#94A3B8;text-decoration:none">Careers</a></li><li style="margin-bottom:0.6rem"><a href="../../../contact-us.html" style="color:#94A3B8;text-decoration:none">Contact</a></li><li style="margin-bottom:0.6rem"><a href="../../../privacy-policy.html" style="color:#94A3B8;text-decoration:none">Privacy Policy</a></li><li style="margin-bottom:0.6rem"><a href="../../../terms-and-conditions.html" style="color:#94A3B8;text-decoration:none">Terms & Conditions</a></li><li style="margin-bottom:0.6rem"><a href="../../../sitemap.html" style="color:#94A3B8;text-decoration:none">Sitemap</a></li></ul></div>
+            </div>
+            <div style="border-top:1px solid rgba(255,255,255,0.1);padding-top:30px;text-align:center">
+                <div style="display:flex;justify-content:center;gap:2rem;margin-bottom:1.5rem;flex-wrap:wrap">
+                    <a href="../index.html" style="color:#94A3B8;text-decoration:none;font-size:0.9rem">SEO</a>
+                    <a href="../../ppc-advertising/index.html" style="color:#94A3B8;text-decoration:none;font-size:0.9rem">PPC</a>
+                    <a href="../../social-media-marketing/index.html" style="color:#94A3B8;text-decoration:none;font-size:0.9rem">Social Media</a>
+                    <a href="../../content-marketing/index.html" style="color:#94A3B8;text-decoration:none;font-size:0.9rem">Content Marketing</a>
+                    <a href="../../email-marketing/index.html" style="color:#94A3B8;text-decoration:none;font-size:0.9rem">Email Marketing</a>
+                    <a href="../../web-design-development/index.html" style="color:#94A3B8;text-decoration:none;font-size:0.9rem">Web Design</a>
+                </div>
+                <p style="color:#64748B;font-size:0.9rem;margin:0">&copy; 2025 God Digital Marketing. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
+</body>
+</html>

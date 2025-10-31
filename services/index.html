@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Comprehensive digital marketing services in India. SEO, Social Media, PPC, Content Marketing, Web Design, and more. Expert strategies that drive real business growth.">
+    <meta name="keywords" content="digital marketing services, SEO services, social media marketing, PPC advertising, content marketing, web design">
+    <title>Digital Marketing Services India | God Digital Marketing</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --primary-purple: #6B46C1;
+            --secondary-blue: #2563EB;
+            --accent-amber: #F59E0B;
+            --dark-slate: #0F172A;
+            --light-cloud: #F8FAFC;
+            --gradient-main: linear-gradient(135deg, #6B46C1 0%, #2563EB 100%);
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--dark-slate);
+            color: var(--light-cloud);
+            line-height: 1.7;
+        }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        nav {
+            background: rgba(15, 23, 42, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .logo {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 28px;
+            font-weight: 700;
+            background: var(--gradient-main);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-decoration: none;
+        }
+        .gradient-text {
+            background: var(--gradient-main);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero {
+            padding: 120px 20px 80px;
+            text-align: center;
+            background: linear-gradient(135deg, rgba(107, 70, 193, 0.1) 0%, rgba(37, 99, 235, 0.1) 100%);
+        }
+        .hero h1 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: clamp(36px, 6vw, 56px);
+            margin-bottom: 20px;
+            font-weight: 800;
+        }
+        section { padding: 80px 20px; }
+        .section-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: clamp(32px, 4vw, 42px);
+            margin-bottom: 50px;
+            font-weight: 700;
+            text-align: center;
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        .service-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 40px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: block;
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+            border-color: rgba(107, 70, 193, 0.5);
+            box-shadow: 0 20px 60px rgba(107, 70, 193, 0.3);
+        }
+        .service-icon {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background: var(--gradient-main);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+            margin-bottom: 25px;
+            transition: transform 0.4s ease;
+        }
+        .service-card:hover .service-icon { transform: rotateY(360deg); }
+        .service-card h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            font-weight: 600;
+            color: var(--light-cloud);
+        }
+        .service-card p {
+            color: rgba(248, 250, 252, 0.7);
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+        .service-link {
+            color: var(--accent-amber);
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+        footer {
+            background: rgba(15, 23, 42, 0.5);
+            backdrop-filter: blur(10px);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 40px 20px 20px;
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            .services-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="../index.html" class="logo">God Digital</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <h1 data-aos="fade-up">Our <span class="gradient-text">Digital Marketing Services</span></h1>
+            <p style="font-size: 20px; color: rgba(248, 250, 252, 0.8); max-width: 800px; margin: 20px auto;" data-aos="fade-up" data-aos-delay="100">Comprehensive digital marketing solutions designed to grow your business. From SEO to social media, PPC to content marketing—we deliver results that matter.</p>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="services-grid">
+                <a href="seo-services/index.html" class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon"><i class="fas fa-search"></i></div>
+                    <h3>SEO Services</h3>
+                    <p>Dominate search results with data-driven SEO strategies. Increase organic traffic, rankings, and revenue through white-hat optimization techniques.</p>
+                    <span class="service-link">Learn More <i class="fas fa-arrow-right"></i></span>
+                </a>
+
+                <a href="social-media-marketing/index.html" class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon"><i class="fas fa-share-nodes"></i></div>
+                    <h3>Social Media Marketing</h3>
+                    <p>Build engaged communities and drive conversions across Facebook, Instagram, LinkedIn, and Twitter with strategic social media management.</p>
+                    <span class="service-link">Learn More <i class="fas fa-arrow-right"></i></span>
+                </a>
+
+                <a href="ppc-advertising/index.html" class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon"><i class="fas fa-bullseye"></i></div>
+                    <h3>PPC Advertising</h3>
+                    <p>Maximize ROI with precision-targeted Google Ads and Facebook campaigns. Pay only for results with expert bid management and optimization.</p>
+                    <span class="service-link">Learn More <i class="fas fa-arrow-right"></i></span>
+                </a>
+
+                <a href="content-marketing/index.html" class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon"><i class="fas fa-pen-fancy"></i></div>
+                    <h3>Content Marketing</h3>
+                    <p>Create compelling content that attracts, engages, and converts. From blog posts to videos, we craft content that drives business growth.</p>
+                    <span class="service-link">Learn More <i class="fas fa-arrow-right"></i></span>
+                </a>
+
+                <a href="email-marketing/index.html" class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon"><i class="fas fa-envelope"></i></div>
+                    <h3>Email Marketing</h3>
+                    <p>Nurture leads and drive sales with targeted email campaigns. Automation, segmentation, and personalization that converts.</p>
+                    <span class="service-link">Learn More <i class="fas fa-arrow-right"></i></span>
+                </a>
+
+                <a href="web-design-development/index.html" class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon"><i class="fas fa-code"></i></div>
+                    <h3>Web Design & Development</h3>
+                    <p>Beautiful, fast, conversion-optimized websites built on modern tech stacks. Responsive design that works on every device.</p>
+                    <span class="service-link">Learn More <i class="fas fa-arrow-right"></i></span>
+                </a>
+
+                <a href="brand-strategy/index.html" class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon"><i class="fas fa-lightbulb"></i></div>
+                    <h3>Brand Strategy</h3>
+                    <p>Build memorable brands that resonate. Logo design, brand guidelines, positioning, and messaging that sets you apart.</p>
+                    <span class="service-link">Learn More <i class="fas fa-arrow-right"></i></span>
+                </a>
+
+                <a href="analytics-reporting/index.html" class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3>Analytics & Reporting</h3>
+                    <p>Turn data into actionable insights. Comprehensive tracking, analysis, and reporting that guides strategic decisions.</p>
+                    <span class="service-link">Learn More <i class="fas fa-arrow-right"></i></span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section style="background: linear-gradient(135deg, rgba(107, 70, 193, 0.1) 0%, rgba(37, 99, 235, 0.1) 100%); padding: 80px 20px; text-align: center;">
+        <div class="container">
+            <h2 style="font-size: 36px; margin-bottom: 20px;">Ready to Grow Your Business?</h2>
+            <p style="font-size: 18px; max-width: 600px; margin: 0 auto 30px;">Let's discuss which services will deliver the best results for your specific goals and budget.</p>
+            <a href="../contact-us.html" style="display: inline-block; padding: 16px 40px; background: var(--gradient-main); border-radius: 50px; color: white; text-decoration: none; font-weight: 600;">Get Free Consultation</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p style="color: rgba(248, 250, 252, 0.6); font-size: 14px;">
+                &copy; 2024 God Digital Marketing. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({ duration: 1000, once: true });</script>
+</body>
+</html>

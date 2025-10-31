@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PPC Advertising in Karnataka | Google Ads, LinkedIn Ads Bangalore | God Digital Marketing</title>
+    <meta name="description" content="Expert PPC advertising services in Karnataka. Google Ads, LinkedIn Ads, Facebook Ads for Bangalore, Mysore, Mangalore. Tech startups, IT, e-commerce campaigns with proven ROI.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-purple: #7C3AED;
+            --secondary-blue: #2563EB;
+            --accent-amber: #F59E0B;
+            --dark-bg: #0F172A;
+            --card-bg: rgba(255, 255, 255, 0.05);
+            --text-primary: #F8FAFC;
+            --text-secondary: #CBD5E1;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
+            color: var(--text-primary);
+            line-height: 1.7;
+            min-height: 100vh;
+        }
+
+        header {
+            background: rgba(15, 23, 42, 0.95);
+            backdrop-filter: blur(10px);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(124, 58, 237, 0.2);
+        }
+
+        nav {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 1.2rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--primary-purple), var(--secondary-blue));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-menu a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-menu a:hover {
+            color: var(--primary-purple);
+        }
+
+        .breadcrumb {
+            max-width: 1400px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .breadcrumb a {
+            color: var(--primary-purple);
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            max-width: 1400px;
+            margin: 3rem auto;
+            padding: 0 2rem;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, var(--primary-purple), var(--secondary-blue), var(--accent-amber));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1.2;
+        }
+
+        .hero-subtitle {
+            font-size: 1.3rem;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .content {
+            max-width: 1400px;
+            margin: 4rem auto;
+            padding: 0 2rem;
+        }
+
+        .content-section {
+            background: var(--card-bg);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 3rem;
+            margin-bottom: 3rem;
+            border: 1px solid rgba(124, 58, 237, 0.1);
+        }
+
+        h2 {
+            font-size: 2.2rem;
+            margin-bottom: 1.5rem;
+            color: var(--primary-purple);
+        }
+
+        h3 {
+            font-size: 1.6rem;
+            margin: 2rem 0 1rem 0;
+            color: var(--secondary-blue);
+        }
+
+        h4 {
+            font-size: 1.3rem;
+            margin: 1.5rem 0 0.8rem 0;
+            color: var(--accent-amber);
+        }
+
+        p {
+            margin-bottom: 1.2rem;
+            color: var(--text-secondary);
+            font-size: 1.05rem;
+        }
+
+        ul, ol {
+            margin-left: 2rem;
+            margin-bottom: 1.5rem;
+            color: var(--text-secondary);
+        }
+
+        li {
+            margin-bottom: 0.8rem;
+            line-height: 1.8;
+        }
+
+        strong {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+
+        .city-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .city-card {
+            background: rgba(124, 58, 237, 0.05);
+            border: 1px solid rgba(124, 58, 237, 0.2);
+            border-radius: 15px;
+            padding: 2rem;
+            transition: all 0.3s;
+        }
+
+        .city-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary-purple);
+            box-shadow: 0 10px 30px rgba(124, 58, 237, 0.2);
+        }
+
+        .city-card i {
+            font-size: 2.5rem;
+            color: var(--accent-amber);
+            margin-bottom: 1rem;
+        }
+
+        .platform-section {
+            background: rgba(37, 99, 235, 0.05);
+            border-left: 4px solid var(--secondary-blue);
+            padding: 2rem;
+            margin: 2rem 0;
+            border-radius: 10px;
+        }
+
+        .industry-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .industry-card {
+            background: linear-gradient(135deg, rgba(124, 58, 237, 0.1), rgba(37, 99, 235, 0.1));
+            border-radius: 15px;
+            padding: 2rem;
+            border: 1px solid rgba(124, 58, 237, 0.2);
+        }
+
+        .case-study {
+            background: linear-gradient(135deg, rgba(124, 58, 237, 0.1), rgba(245, 158, 11, 0.05));
+            border-radius: 20px;
+            padding: 2.5rem;
+            margin: 2.5rem 0;
+            border: 2px solid rgba(124, 58, 237, 0.3);
+        }
+
+        .case-study h3 {
+            color: var(--accent-amber);
+            margin-top: 0;
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, var(--primary-purple), var(--secondary-blue));
+            border-radius: 20px;
+            padding: 3rem;
+            text-align: center;
+            margin: 3rem 0;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: white;
+            color: var(--primary-purple);
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: all 0.3s;
+            margin-top: 1rem;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(255, 255, 255, 0.3);
+        }
+
+        footer {
+            background: rgba(15, 23, 42, 0.95);
+            border-top: 1px solid rgba(124, 58, 237, 0.2);
+            padding: 3rem 2rem 1.5rem 2rem;
+            margin-top: 5rem;
+        }
+
+        .footer-grid {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h3 {
+            color: var(--primary-purple);
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .footer-section ul {
+            list-style: none;
+            margin: 0;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 0.7rem;
+        }
+
+        .footer-section a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color 0.3s;
+            font-size: 0.95rem;
+        }
+
+        .footer-section a:hover {
+            color: var(--primary-purple);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(124, 58, 237, 0.1);
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.7rem;
+            }
+
+            .content-section {
+                padding: 2rem;
+            }
+
+            .nav-menu {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header style="background:rgba(15,23,42,0.95);backdrop-filter:blur(10px);position:sticky;top:0;z-index:1000;border-bottom:1px solid rgba(124,58,237,0.2)">
+        <nav style="max-width:1400px;margin:0 auto;padding:1.2rem 2rem;display:flex;justify-content:space-between;align-items:center">
+            <a href="../../../index.html" style="font-size:1.5rem;font-weight:bold;background:linear-gradient(135deg,#7C3AED,#2563EB);-webkit-background-clip:text;-webkit-text-fill-color:transparent;text-decoration:none">God Digital</a>
+            <div style="display:flex;gap:2rem;align-items:center">
+                <a href="../../seo-services/index.html" style="color:#F8FAFC;text-decoration:none">SEO</a>
+                <a href="../index.html" style="color:#F8FAFC;text-decoration:none">PPC</a>
+                <a href="../../social-media-marketing/index.html" style="color:#F8FAFC;text-decoration:none">Social Media</a>
+                <a href="../../content-marketing/index.html" style="color:#F8FAFC;text-decoration:none">Content Marketing</a>
+                <a href="../../email-marketing/index.html" style="color:#F8FAFC;text-decoration:none">Email Marketing</a>
+                <a href="../../web-design-development/index.html" style="color:#F8FAFC;text-decoration:none">Web Design</a>
+                <a href="../../conversion-optimization/index.html" style="color:#F8FAFC;text-decoration:none">CRO</a>
+                <a href="../../../contact-us.html" style="display:inline-block;padding:0.6rem 1.5rem;background:linear-gradient(135deg,#7C3AED,#2563EB);color:#fff;text-decoration:none;border-radius:6px">Get Quote</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="breadcrumb">
+        <a href="../../../index.html">Home</a> /
+        <a href="../../index.html">Services</a> /
+        <a href="../index.html">PPC Advertising</a> /
+        <span>Karnataka</span>
+    </div>
+
+    <div class="hero" data-aos="fade-up">
+        <h1>PPC Advertising in Karnataka</h1>
+        <p class="hero-subtitle">Expert Google Ads, LinkedIn Ads & Facebook Ads for Bangalore's Startup Ecosystem | Tech-Focused PPC Campaigns Across Karnataka</p>
+    </div>
+
+    <div class="content">
+        <div class="content-section" data-aos="fade-up">
+            <h2><i class="fas fa-rocket"></i> PPC Advertising in India's Startup Capital</h2>
+            <p>Karnataka, and especially Bangalore, represents one of India's most sophisticated digital advertising markets. As the country's startup capital and IT hub, Karnataka has a unique PPC landscape characterized by tech-savvy audiences, high competition, and buyers who do extensive research before making decisions.</p>
+
+            <p>In our two decades of managing <a href="../index.html">PPC campaigns</a>, we've learned that <strong>Karnataka—particularly Bangalore—is unlike any other Indian market.</strong> The average Bangalore tech professional has seen thousands of ads, uses ad blockers regularly, and can spot low-quality marketing from a mile away. Your campaigns need to be sophisticated, value-driven, and laser-targeted to succeed here.</p>
+
+            <p>At God Digital Marketing, we've managed PPC campaigns for over 200 Karnataka-based businesses. From seed-stage SaaS startups in Koramangala to established IT services companies in Whitefield, from healthcare chains in Indiranagar to real estate developments in Electronic City. We understand what makes Karnataka audiences click, engage, and convert.</p>
+
+            <h3>Why Karnataka's PPC Market Is Unique</h3>
+            <p>Karnataka, especially Bangalore, presents distinct challenges and opportunities:</p>
+
+            <ul>
+                <li><strong>Tech-savvy audience with high expectations:</strong> Karnataka has India's highest concentration of tech professionals. They expect fast-loading landing pages, seamless mobile experiences, and genuine value propositions. Generic ads fail instantly.</li>
+                <li><strong>LinkedIn dominates B2B:</strong> More than any other Indian state, Karnataka's B2B decision-makers are active on LinkedIn. We've seen B2B campaigns achieve 40-60% of conversions from LinkedIn alone—far higher than national averages.</li>
+                <li><strong>High CPCs in competitive sectors:</strong> Bangalore CPCs for SaaS, IT services, and tech recruitment can be 2-3x national averages. Smart targeting and conversion optimization are essential for positive ROI.</li>
+                <li><strong>Research-oriented buyers:</strong> Karnataka buyers, especially in B2B tech, conduct extensive research. Multi-touch attribution is critical—single-click conversion models fail to capture the full customer journey.</li>
+                <li><strong>Startup culture values innovation:</strong> Campaigns highlighting innovation, disruption, and growth resonate strongly. Conservative, traditional messaging falls flat with Karnataka's entrepreneurial audience.</li>
+                <li><strong>Mobile-first but desktop consideration:</strong> While mobile browsing dominates, complex B2B purchases often convert on desktop as buyers research at work. Cross-device tracking is essential.</li>
+            </ul>
+
+            <h3>Our Karnataka-Specific PPC Philosophy</h3>
+            <p>We've developed an approach tailored specifically to Karnataka's unique market:</p>
+
+            <ol>
+                <li><strong>Quality over quantity:</strong> In Bangalore's competitive market, 100 highly qualified leads beat 1,000 unqualified leads every time. We optimize for lead quality, not just volume.</li>
+                <li><strong>Platform mix reflecting audience behavior:</strong> LinkedIn gets 50-60% of B2B SaaS budgets. Google Search captures high-intent queries. Facebook targets consumer products. We allocate based on data, not assumptions.</li>
+                <li><strong>Landing page speed obsession:</strong> Karnataka tech professionals expect sub-2-second load times. We build blazing-fast landing pages or campaigns underperform.</li>
+                <li><strong>Content-first approach:</strong> Before pushing products, we offer valuable content (whitepapers, case studies, webinars). This builds trust with research-oriented Karnataka buyers.</li>
+                <li><strong>Geo-targeting by Bangalore area:</strong> Koramangala startup founders have different needs than Whitefield IT employees or Electronic City manufacturing teams. We segment campaigns accordingly.</li>
+                <li><strong>A/B testing as standard practice:</strong> Karnataka's sophisticated audience demands optimization. We constantly test ad copy, landing pages, and targeting to improve performance.</li>
+            </ol>
+        </div>
+
+        <div class="content-section" data-aos="fade-up">
+            <h2><i class="fas fa-city"></i> PPC Strategies Across Karnataka's Key Cities</h2>
+
+            <div class="city-grid">
+                <div class="city-card">
+                    <i class="fas fa-laptop-code"></i>
+                    <h4>Bangalore - Startup & IT Hub</h4>
+                    <p><strong>Market characteristics:</strong> India's most competitive PPC market, tech-savvy audiences, high CPCs, sophisticated buyers, startup ecosystem</p>
+                    <p><strong>Platform priorities:</strong> LinkedIn (B2B SaaS, IT services), Google Search (all sectors), Facebook/Instagram (D2C, lifestyle, F&B)</p>
+                    <p><strong>Key strategies:</strong></p>
+                    <ul>
+                        <li>Hyper-targeted campaigns by Bangalore area (Koramangala, Whitefield, Indiranagar, HSR Layout)</li>
+                        <li>LinkedIn thought leadership campaigns for B2B tech companies</li>
+                        <li>Google Search focus on long-tail, high-intent keywords to manage costs</li>
+                        <li>Remarketing essential given long B2B sales cycles</li>
+                        <li>Mobile-optimized with desktop conversion paths for complex purchases</li>
+                    </ul>
+                    <p><strong>Industries that thrive:</strong> SaaS, IT services, fintech, edtech, healthtech, cloud kitchens, coworking spaces, fitness/wellness</p>
+                    <p><a href="../bangalore/index.html">Learn more about Bangalore PPC Services →</a></p>
+                </div>
+
+                <div class="city-card">
+                    <i class="fas fa-om"></i>
+                    <h4>Mysore - Heritage & Education</h4>
+                    <p><strong>Market characteristics:</strong> Tourism, education hub, traditional culture, lower competition, price-conscious market</p>
+                    <p><strong>Platform priorities:</strong> Google Search (tourism, education), Facebook (local services, hospitality)</p>
+                    <p><strong>Key strategies:</strong></p>
+                    <ul>
+                        <li>Seasonal campaigns around Dasara and tourist peak seasons</li>
+                        <li>Education campaigns targeting students and parents</li>
+                        <li>Google Search for tourism keywords (hotels, attractions, heritage tours)</li>
+                        <li>Facebook for local awareness and community engagement</li>
+                        <li>Kannada language options for local services</li>
+                    </ul>
+                    <p><strong>Industries that thrive:</strong> Tourism/hospitality, education, real estate, healthcare, retail</p>
+                </div>
+
+                <div class="city-card">
+                    <i class="fas fa-water"></i>
+                    <h4>Mangalore - Coastal Commerce</h4>
+                    <p><strong>Market characteristics:</strong> Port city, educational institutions, healthcare hub, traditional business culture, Kannada + Tulu speaking</p>
+                    <p><strong>Platform priorities:</strong> Google Search (education, healthcare), Facebook (local businesses)</p>
+                    <p><strong>Key strategies:</strong></p>
+                    <ul>
+                        <li>Multilingual campaigns (Kannada, English, Tulu for hyper-local)</li>
+                        <li>Healthcare and education focus given strong institutions</li>
+                        <li>Lower CPCs offer excellent ROI opportunities vs. Bangalore</li>
+                        <li>Facebook effective for local service businesses</li>
+                        <li>Trust signals crucial in traditional market</li>
+                    </ul>
+                    <p><strong>Industries that thrive:</strong> Healthcare, education, hospitality, real estate, logistics, retail</p>
+                </div>
+
+                <div class="city-card">
+                    <i class="fas fa-industry"></i>
+                    <h4>Hubballi-Dharwad - Manufacturing & Education</h4>
+                    <p><strong>Market characteristics:</strong> Twin cities, manufacturing focus, educational institutions, traditional commerce, growing IT sector</p>
+                    <p><strong>Platform priorities:</strong> Google Search (B2B, education), Facebook (local services)</p>
+                    <p><strong>Key strategies:</strong></p>
+                    <ul>
+                        <li>Kannada-language campaigns essential for local reach</li>
+                        <li>B2B campaigns targeting manufacturing sector</li>
+                        <li>Educational institution campaigns for student recruitment</li>
+                        <li>Lower competition allows broader keyword targeting</li>
+                        <li>Trust-building content given traditional business culture</li>
+                    </ul>
+                    <p><strong>Industries that thrive:</strong> Manufacturing, education, IT services, healthcare, real estate</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section" data-aos="fade-up">
+            <h2><i class="fas fa-chart-bar"></i> Platform-Specific Strategies for Karnataka</h2>
+
+            <div class="platform-section">
+                <h3><i class="fab fa-linkedin"></i> LinkedIn Ads in Karnataka</h3>
+                <p><strong>Why LinkedIn dominates Karnataka B2B:</strong></p>
+                <p>Karnataka, especially Bangalore, has over 5 million LinkedIn users—India's highest concentration of professionals per capita. For B2B tech companies, LinkedIn often delivers 50-60% of total PPC conversions despite being only 40-50% of budget. This is unique to Karnataka's professional ecosystem.</p>
+
+                <h4>Campaign Strategies</h4>
+                <ul>
+                    <li><strong>Company targeting:</strong> Target specific IT companies, startups, or enterprises in Bangalore. Example: Target all employees at companies in Koramangala with 50-500 employees in the SaaS sector.</li>
+                    <li><strong>Job title + seniority:</strong> Reach Engineering Managers, Product Managers, CTOs, VPs of Engineering—common decision-makers in Bangalore tech ecosystem.</li>
+                    <li><strong>Skills targeting:</strong> Target professionals with specific technical skills (Python, AWS, React) for developer tool campaigns.</li>
+                    <li><strong>LinkedIn groups:</strong> Engage professionals in Bangalore startup groups, tech communities, industry-specific groups.</li>
+                </ul>
+
+                <h4>Content Strategy</h4>
+                <ul>
+                    <li>Thought leadership content performs exceptionally well (technical blog posts, whitepapers, research)</li>
+                    <li>Case studies featuring Bangalore companies build credibility</li>
+                    <li>Webinars and virtual events see high engagement from time-pressed professionals</li>
+                    <li>Video content showcasing product capabilities and customer success</li>
+                </ul>
+
+                <h4>Lead Generation</h4>
+                <ul>
+                    <li>LinkedIn Lead Gen Forms reduce friction significantly (50-80% higher conversion vs. external landing pages)</li>
+                    <li>Gated content offers (whitepapers, ROI calculators, assessment tools)</li>
+                    <li>Free trial/demo offers work well for SaaS products</li>
+                </ul>
+
+                <p><strong>Typical Karnataka B2B results:</strong> CPL of ₹800-2,500 (depending on target audience specificity), conversion rates 2-5% for lead gen forms, 0.5-1.5% for external landing pages.</p>
+            </div>
+
+            <div class="platform-section">
+                <h3><i class="fab fa-google"></i> Google Ads in Karnataka</h3>
+                <p><strong>Search campaign dominance:</strong></p>
+                <p>Google Search remains the highest-intent platform across all Karnataka industries. From "SaaS CRM India" to "3BHK flat Electronic City" to "best multi-specialty hospital Bangalore," search queries indicate clear purchase intent.</p>
+
+                <h4>Keyword Strategies by Sector</h4>
+                <ul>
+                    <li><strong>Tech/SaaS:</strong> Focus on problem-based keywords ("how to manage remote teams"), comparison keywords ("Asana vs Monday.com"), and long-tail product keywords</li>
+                    <li><strong>Healthcare:</strong> Symptom-based, treatment-based, and facility-based keywords work well</li>
+                    <li><strong>Education:</strong> Course-specific, exam-specific, career-oriented keywords</li>
+                    <li><strong>Real estate:</strong> Location-specific (area names, landmarks) + property type keywords</li>
+                </ul>
+
+                <h4>Display Network Tactics</h4>
+                <ul>
+                    <li>Remarketing essential for Bangalore's long consideration cycles (especially B2B)</li>
+                    <li>Contextual targeting on tech publications (YourStory, Inc42, TechCrunch India)</li>
+                    <li>Placement targeting on relevant industry websites and blogs</li>
+                    <li>Custom intent audiences based on search behavior</li>
+                </ul>
+
+                <h4>Shopping & Local Campaigns</h4>
+                <ul>
+                    <li>Shopping campaigns perform excellently for e-commerce across Karnataka</li>
+                    <li>Local campaigns crucial for multi-location businesses (clinics, restaurants, retail)</li>
+                    <li>Google My Business optimization amplifies local campaign effectiveness</li>
+                </ul>
+
+                <h4>YouTube Advertising</h4>
+                <ul>
+                    <li>Bangalore audiences consume significant YouTube content (tech reviews, tutorials, vlogs)</li>
+                    <li>Skippable in-stream ads for brand awareness and product education</li>
+                    <li>Bumper ads (6 seconds) effective for mobile-heavy audiences</li>
+                    <li>Targeting based on search history, interests, and remarketing lists</li>
+                </ul>
+            </div>
+
+            <div class="platform-section">
+                <h3><i class="fab fa-facebook"></i> Facebook & Instagram Ads</h3>
+                <p><strong>Consumer-focused platform strength:</strong></p>
+                <p>While LinkedIn and Google dominate B2B in Karnataka, Facebook and Instagram excel for consumer businesses—F&B, fitness, fashion, lifestyle, entertainment, and local services.</p>
+
+                <h4>Audience Targeting</h4>
+                <ul>
+                    <li><strong>Location:</strong> Hyper-local targeting by Bangalore areas, or broader Karnataka for state-wide campaigns</li>
+                    <li><strong>Demographics:</strong> Bangalore's young professional population (25-40) is ideal for many consumer products</li>
+                    <li><strong>Interests:</strong> Tech, startups, fitness, food, travel, entertainment interests well-defined in Bangalore</li>
+                    <li><strong>Behaviors:</strong> Tech early adopters, frequent travelers, online shoppers highly represented</li>
+                </ul>
+
+                <h4>Creative Best Practices</h4>
+                <ul>
+                    <li>Video content outperforms static images 2-3x in Karnataka</li>
+                    <li>User-generated content and customer testimonials build trust</li>
+                    <li>Instagram Stories and Reels reach Bangalore's younger demographic effectively</li>
+                    <li>Carousel ads showcase multiple products/features/locations</li>
+                </ul>
+
+                <h4>Campaign Types</h4>
+                <ul>
+                    <li>Lead generation campaigns for education, real estate, healthcare services</li>
+                    <li>Traffic campaigns driving to optimized landing pages</li>
+                    <li>Catalog sales for e-commerce with dynamic product ads</li>
+                    <li>App installs for mobile-first startups</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="content-section" data-aos="fade-up">
+            <h2><i class="fas fa-briefcase"></i> Industry-Specific PPC in Karnataka</h2>
+
+            <div class="industry-grid">
+                <div class="industry-card">
+                    <h3><i class="fas fa-code"></i> SaaS & Tech Startups</h3>
+                    <p><strong>Karnataka context:</strong> Bangalore is India's SaaS capital with 4,000+ active startups. Extremely competitive but high-value customers.</p>
+                    <p><strong>Platform strategy:</strong> LinkedIn (55%), Google Search (30%), Display/YouTube (15%)</p>
+                    <p><strong>Tactics:</strong></p>
+                    <ul>
+                        <li>LinkedIn thought leadership targeting decision-makers at target company sizes/industries</li>
+                        <li>Google Search for comparison and problem-based keywords</li>
+                        <li>Content-first approach (whitepapers, webinars) before product pushing</li>
+                        <li>Remarketing with educational content for long sales cycles (3-9 months typical)</li>
+                        <li>Free trial emphasis to reduce purchase friction</li>
+                    </ul>
+                    <p><strong>Expected ROI:</strong> 6:1 to 15:1 (first year), 20:1+ when including lifetime value</p>
+                </div>
+
+                <div class="industry-card">
+                    <h3><i class="fas fa-heartbeat"></i> Healthcare</h3>
+                    <p><strong>Karnataka context:</strong> Bangalore is a healthcare hub with top hospitals and specialty clinics. Growing health awareness drives search volume.</p>
+                    <p><strong>Platform strategy:</strong> Google Search (70%), Facebook (20%), Display (10%)</p>
+                    <p><strong>Tactics:</strong></p>
+                    <ul>
+                        <li>Symptom and treatment-based search campaigns</li>
+                        <li>Local campaigns for multi-location chains</li>
+                        <li>Facebook campaigns for preventive health packages targeting 35-60 demographic</li>
+                        <li>Remarketing for high-value treatments (surgeries, chronic disease management)</li>
+                        <li>Mobile-first with click-to-call and WhatsApp integration</li>
+                    </ul>
+                    <p><strong>Expected ROI:</strong> 12:1 to 20:1 (varies by treatment type)</p>
+                </div>
+
+                <div class="industry-card">
+                    <h3><i class="fas fa-home"></i> Real Estate</h3>
+                    <p><strong>Karnataka context:</strong> Bangalore real estate is booming with high property values and strong buyer intent.</p>
+                    <p><strong>Platform strategy:</strong> Facebook/Instagram (50%), Google Search (35%), Display (15%)</p>
+                    <p><strong>Tactics:</strong></p>
+                    <ul>
+                        <li>Geo-targeting by Bangalore areas (Whitefield, Electronic City, Sarjapur Road, etc.)</li>
+                        <li>Demographic targeting (IT professionals, families, investors)</li>
+                        <li>Virtual tour landing pages with WhatsApp site visit booking</li>
+                        <li>Carousel ads showcasing amenities, location advantages, floor plans</li>
+                        <li>Remarketing with property-specific ads based on browsing behavior</li>
+                    </ul>
+                    <p><strong>Expected ROI:</strong> 15:1 to 30:1 (high commission values in Bangalore market)</p>
+                </div>
+
+                <div class="industry-card">
+                    <h3><i class="fas fa-graduation-cap"></i> Education & Edtech</h3>
+                    <p><strong>Karnataka context:</strong> Strong education culture with numerous schools, colleges, coaching institutes, and growing edtech sector.</p>
+                    <p><strong>Platform strategy:</strong> Google Search (50%), Facebook (35%), YouTube (15%)</p>
+                    <p><strong>Tactics:</strong></p>
+                    <ul>
+                        <li>Seasonal campaigns aligned with admission cycles</li>
+                        <li>Parent targeting on Facebook (age 35-50)</li>
+                        <li>Student targeting for competitive exams and higher education</li>
+                        <li>YouTube video ads with success stories and course previews</li>
+                        <li>Search campaigns for specific course and exam keywords</li>
+                    </ul>
+                    <p><strong>Expected ROI:</strong> 8:1 to 18:1 (higher for premium programs)</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section" data-aos="fade-up">
+            <h2><i class="fas fa-trophy"></i> Karnataka PPC Success Stories</h2>
+
+            <div class="case-study">
+                <h3>Case Study 1: Early-Stage SaaS Startup, Koramangala</h3>
+                <p><strong>Client:</strong> Collaboration software for remote teams, seed stage, targeting SMBs and mid-market companies in India</p>
+                <p><strong>Challenge:</strong> Zero brand awareness competing against giants like Slack, Teams, Zoom. Limited budget (₹6 lakhs/month). Needed qualified sign-ups and conversions to paying customers. Bangalore market saturated with collaboration tools.</p>
+
+                <p><strong>Our Strategy:</strong></p>
+                <ul>
+                    <li><strong>LinkedIn-first approach:</strong> 65% of budget to LinkedIn targeting specific job titles (Engineering Managers, CTOs, Ops Heads) at companies with 50-500 employees in Bangalore and other tier-1 cities.</li>
+                    <li><strong>Thought leadership content:</strong> Created LinkedIn Sponsored Content around "Managing Remote Engineering Teams in India" and "Building Culture in Distributed Teams"—pain points, not product pitches.</li>
+                    <li><strong>Google Search strategy:</strong> Targeted comparison keywords ("Slack alternatives for Indian teams") and problem-based searches ("remote team communication tools India").</li>
+                    <li><strong>Free 30-day trial emphasis:</strong> Removed all friction with no credit card required for trial, knowing Bangalore tech audience wants hands-on evaluation.</li>
+                    <li><strong>Product-led growth focus:</strong> Used in-product prompts and email nurturing to convert trial users to paid, supported by retargeting campaigns.</li>
+                    <li><strong>Case studies from Bangalore startups:</strong> Featured early customers (other Bangalore startups) in ads, building credibility through local social proof.</li>
+                    <li><strong>Community building:</strong> Sponsored Bangalore tech meetups and created content around these events, amplifying reach beyond paid ads.</li>
+                </ul>
+
+                <p><strong>Results in 9 months:</strong></p>
+                <ul>
+                    <li><strong>3,240 trial signups</strong> from PPC campaigns</li>
+                    <li><strong>486 conversions to paid subscriptions</strong></li>
+                    <li><strong>15% trial-to-paid conversion rate</strong> (exceptional for freemium SaaS)</li>
+                    <li><strong>Average contract value: ₹1.8 lakhs/year</strong></li>
+                    <li><strong>First-year revenue: ₹87.5 lakhs</strong> from PPC-acquired customers</li>
+                    <li><strong>Projected LTV: ₹3.8 crore</strong> (based on 28-month average retention)</li>
+                    <li><strong>Total ad spend: ₹54 lakhs over 9 months</strong></li>
+                    <li><strong>First-year ROAS: 16.2:1</strong></li>
+                    <li><strong>LTV-based ROAS: 70:1</strong></li>
+                    <li><strong>LinkedIn delivered 72% of paid conversions</strong> despite being 65% of budget</li>
+                    <li><strong>Secured Series A funding</strong> partly based on customer acquisition efficiency demonstrated through PPC</li>
+                </ul>
+
+                <p><em>"As a first-time founder bootstrapping our way, every marketing rupee had to count. God Digital Marketing's LinkedIn strategy was a revelation. They understood that Bangalore buyers want substance, not fluff. The thought leadership approach built trust before we ever asked for a sale. We went from unknown to recognized in the Bangalore startup ecosystem in under a year."</em> — Founder & CEO</p>
+            </div>
+
+            <div class="case-study">
+                <h3>Case Study 2: Premium Real Estate Project, Whitefield</h3>
+                <p><strong>Client:</strong> Luxury apartments in Whitefield near tech parks, units ranging ₹1.2 crore to ₹2.8 crore, targeting IT professionals and investors</p>
+                <p><strong>Challenge:</strong> Whitefield market saturated with competing projects. Long sales cycles (6-12 months). Needed to reach IT professionals with purchasing power while filtering out unqualified leads. Previous campaigns generated high traffic but poor lead quality.</p>
+
+                <p><strong>Our Strategy:</strong></p>
+                <ul>
+                    <li><strong>Hyper-targeted geo-campaigns:</strong> Facebook and Google campaigns focused on Whitefield + surrounding IT corridors (ITPL, Marathahalli, Bellandur). Excluded areas outside target demographics.</li>
+                    <li><strong>Demographic filtering:</strong> Targeted age 28-45, interests in real estate investment and technology, income signals (luxury goods purchases, international travel).</li>
+                    <li><strong>LinkedIn professional targeting:</strong> Reached mid-level to senior IT professionals (Engineering Managers, Architects, Senior Developers, Product Managers) at major tech companies.</li>
+                    <li><strong>Google Search campaigns:</strong> Focused on high-intent keywords "3BHK apartments Whitefield," "luxury flats near ITPL," "ready to move apartments Whitefield."</li>
+                    <li><strong>Virtual tour landing pages:</strong> High-quality 3D virtual tours, drone footage showing proximity to IT parks, amenities walkthrough. Mobile-optimized for on-the-go professionals.</li>
+                    <li><strong>WhatsApp integration:</strong> Instant WhatsApp connect for site visit booking, recognizing Bangalore professionals prefer WhatsApp over phone calls.</li>
+                    <li><strong>Remarketing strategy:</strong> Multi-platform remarketing for 180 days given long consideration cycles. Ads evolved based on engagement level.</li>
+                    <li><strong>Investment angle emphasis:</strong> Highlighted rental yields and appreciation potential for investor segment.</li>
+                </ul>
+
+                <p><strong>Results in 14 months:</strong></p>
+                <ul>
+                    <li><strong>2,180 qualified leads generated</strong></li>
+                    <li><strong>438 site visits conducted</strong></li>
+                    <li><strong>72 units sold</strong> with direct PPC attribution</li>
+                    <li><strong>26 additional units</strong> with PPC-assisted attribution (multi-touch)</li>
+                    <li><strong>Total sales: ₹138 crore</strong> (direct attribution)</li>
+                    <li><strong>Ad spend: ₹1.42 crore over 14 months</strong></li>
+                    <li><strong>ROAS: 97:1</strong></li>
+                    <li><strong>Cost per qualified lead: ₹6,514</strong></li>
+                    <li><strong>Lead-to-visit conversion: 20.1%</strong></li>
+                    <li><strong>Visit-to-sale conversion: 16.4%</strong> (excellent for luxury real estate)</li>
+                    <li><strong>Average sales cycle reduced from 9.5 months to 7.2 months</strong> due to better qualified leads</li>
+                    <li><strong>Facebook/Instagram generated 48% of leads</strong>, LinkedIn 32%, Google Search 20%</li>
+                </ul>
+
+                <p><em>"Whitefield has dozens of projects competing for the same IT professional buyers. We needed to cut through the noise with precision targeting. God Digital Marketing's multi-platform strategy reached our exact audience where they already were. The quality of leads improved dramatically, and our sales team could focus on serious buyers instead of chasing curiosity seekers."</em> — VP Sales & Marketing</p>
+            </div>
+
+            <div class="case-study">
+                <h3>Case Study 3: Multi-Specialty Hospital Chain, Bangalore</h3>
+                <p><strong>Client:</strong> 4 hospitals across Bangalore (Indiranagar, Koramangala, Jayanagar, Marathahalli) offering general and specialized healthcare</p>
+                <p><strong>Challenge:</strong> High competition from established hospital brands. Needed to drive appointments across multiple specialties while managing spend efficiently. Different locations served different demographics requiring tailored approaches.</p>
+
+                <p><strong>Our Strategy:</strong></p>
+                <ul>
+                    <li><strong>Location-based campaign structure:</strong> Separate campaigns for each hospital location targeting 5km radius, recognizing that Bangalore patients prefer nearby facilities.</li>
+                    <li><strong>Google Search emphasis:</strong> Heavy focus on symptom-based and treatment-based keywords ("cardiologist Indiranagar," "knee replacement Bangalore," "diabetes treatment Koramangala").</li>
+                    <li><strong>Google Local Services Ads:</strong> Leveraged for immediate visibility in "near me" searches with Google Guaranteed badge building instant trust.</li>
+                    <li><strong>Facebook campaigns for health packages:</strong> Promoted annual health checkups, preventive screenings, diagnostic packages to health-conscious 35-60 demographic.</li>
+                    <li><strong>Specialty-specific landing pages:</strong> Created dedicated pages for cardiology, orthopedics, oncology, etc. with specialist credentials, facilities, success rates, patient testimonials.</li>
+                    <li><strong>Mobile-first with appointment booking:</strong> Click-to-call and WhatsApp appointment booking (Bangalore patients prefer WhatsApp over forms).</li>
+                    <li><strong>Remarketing for major treatments:</strong> Patients researching surgeries or chronic disease management often take weeks to decide. Remarketing maintained visibility during consideration phase.</li>
+                    <li><strong>Patient testimonial videos:</strong> Used in YouTube and Facebook ads to build trust and emotional connection.</li>
+                </ul>
+
+                <p><strong>Results in 11 months:</strong></p>
+                <ul>
+                    <li><strong>28,640 appointment bookings</strong> attributed to PPC</li>
+                    <li><strong>3,120 health package purchases</strong></li>
+                    <li><strong>487 major procedure admissions</strong> (surgeries, treatments) with PPC first touchpoint</li>
+                    <li><strong>Revenue: ₹31.8 crore</strong> (₹22.4 crore procedures, ₹6.8 crore OPD, ₹2.6 crore packages)</li>
+                    <li><strong>Ad spend: ₹1.87 crore</strong></li>
+                    <li><strong>Overall ROAS: 17:1</strong></li>
+                    <li><strong>Cost per appointment: ₹653</strong> (average appointment value ₹11,100)</li>
+                    <li><strong>Indiranagar location: Best ROAS at 21:1</strong> (affluent demographic, lower competition)</li>
+                    <li><strong>Google Search: 74% of appointments</strong> (high intent)</li>
+                    <li><strong>Facebook: 18% of appointments</strong> (health package focus)</li>
+                    <li><strong>Repeat patient rate: 34%</strong> within first 11 months (driven by positive initial experiences from qualified PPC leads)</li>
+                    <li><strong>Phone inquiries increased 210%</strong> with 71% converting to appointments</li>
+                </ul>
+
+                <p><em>"In healthcare, trust is everything. We can't compete purely on price or flashy marketing. God Digital Marketing understood this. Their campaigns focused on our doctors' expertise, patient outcomes, and facility quality. The location-based approach was brilliant—we were visible exactly when and where potential patients were searching. The 17:1 return exceeded our most optimistic projections."</em> — Chief Operating Officer</p>
+            </div>
+        </div>
+
+        <div class="cta-section" data-aos="fade-up">
+            <h2>Ready to Dominate Karnataka's PPC Landscape?</h2>
+            <p style="color: white; font-size: 1.1rem;">Whether you're a Bangalore startup, an established IT company, or a business anywhere in Karnataka, we create PPC campaigns that deliver measurable growth.</p>
+            <p style="color: white;"><strong>20 years of experience. 200+ Karnataka campaigns. Proven ROI in India's most competitive market.</strong></p>
+            <a href="../../../contact.html" class="cta-button">Get Your Free Karnataka PPC Audit</a>
+        </div>
+
+        <div class="content-section" data-aos="fade-up">
+            <h2><i class="fas fa-star"></i> Why Choose God Digital Marketing for Karnataka PPC?</h2>
+            <ul>
+                <li><strong>Bangalore ecosystem expertise:</strong> We understand Karnataka's unique market, especially Bangalore's tech-savvy, research-oriented buyers who demand sophisticated campaigns.</li>
+                <li><strong>200+ Karnataka campaigns:</strong> From seed-stage startups to enterprise companies, we've delivered results across industries and budgets.</li>
+                <li><strong>Platform mastery:</strong> Google Premier Partner, LinkedIn Marketing Partner, Facebook Blueprint certified. We leverage every platform advantage.</li>
+                <li><strong>Tech-first approach:</strong> Landing page speed optimization, advanced tracking, multi-touch attribution—technical excellence that matches Karnataka's expectations.</li>
+                <li><strong>Transparent, data-driven:</strong> Real-time dashboards, detailed monthly reports, complete transparency on spend and results.</li>
+                <li><strong>Integrated strategy:</strong> PPC works best with <a href="../../seo/karnataka/index.html">SEO</a> and <a href="../../social-media-marketing/karnataka/index.html">social media</a>. We coordinate across channels for maximum impact.</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer style="background:rgba(15,23,42,0.5);backdrop-filter:blur(10px);border-top:1px solid rgba(255,255,255,0.1);padding:60px 20px 20px">
+        <div style="max-width:1400px;margin:0 auto">
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:40px;margin-bottom:40px">
+                <div><h3 style="color:#F8FAFC;margin-bottom:1rem;font-size:1.1rem">Digital Marketing Services</h3><ul style="list-style:none;margin:0;padding:0"><li style="margin-bottom:0.6rem"><a href="../../seo-services/index.html" style="color:#94A3B8;text-decoration:none">SEO Services</a></li><li style="margin-bottom:0.6rem"><a href="../index.html" style="color:#94A3B8;text-decoration:none">PPC Advertising</a></li><li style="margin-bottom:0.6rem"><a href="../../social-media-marketing/index.html" style="color:#94A3B8;text-decoration:none">Social Media Marketing</a></li><li style="margin-bottom:0.6rem"><a href="../../content-marketing/index.html" style="color:#94A3B8;text-decoration:none">Content Marketing</a></li><li style="margin-bottom:0.6rem"><a href="../../email-marketing/index.html" style="color:#94A3B8;text-decoration:none">Email Marketing</a></li><li style="margin-bottom:0.6rem"><a href="../../web-design-development/index.html" style="color:#94A3B8;text-decoration:none">Web Design</a></li><li style="margin-bottom:0.6rem"><a href="../../conversion-optimization/index.html" style="color:#94A3B8;text-decoration:none">Conversion Rate Optimization</a></li><li style="margin-bottom:0.6rem"><a href="../../online-reputation-management/index.html" style="color:#94A3B8;text-decoration:none">Reputation Management</a></li><li style="margin-bottom:0.6rem"><a href="../../video-marketing/index.html" style="color:#94A3B8;text-decoration:none">Video Marketing</a></li><li style="margin-bottom:0.6rem"><a href="../../influencer-marketing/index.html" style="color:#94A3B8;text-decoration:none">Influencer Marketing</a></li><li style="margin-bottom:0.6rem"><a href="../../marketing-automation/index.html" style="color:#94A3B8;text-decoration:none">Marketing Automation</a></li></ul></div>
+                <div><h3 style="color:#F8FAFC;margin-bottom:1rem;font-size:1.1rem">Industries We Serve</h3><ul style="list-style:none;margin:0;padding:0"><li style="margin-bottom:0.6rem"><a href="../../../industries/healthcare/index.html" style="color:#94A3B8;text-decoration:none">Healthcare</a></li><li style="margin-bottom:0.6rem"><a href="../../../industries/technology/index.html" style="color:#94A3B8;text-decoration:none">Technology</a></li><li style="margin-bottom:0.6rem"><a href="../../../industries/ecommerce/index.html" style="color:#94A3B8;text-decoration:none">E-commerce</a></li><li style="margin-bottom:0.6rem"><a href="../../../industries/education/index.html" style="color:#94A3B8;text-decoration:none">Education</a></li><li style="margin-bottom:0.6rem"><a href="../../../industries/real-estate/index.html" style="color:#94A3B8;text-decoration:none">Real Estate</a></li><li style="margin-bottom:0.6rem"><a href="../../../industries/finance/index.html" style="color:#94A3B8;text-decoration:none">Finance</a></li><li style="margin-bottom:0.6rem"><a href="../../../industries/automotive/index.html" style="color:#94A3B8;text-decoration:none">Automotive</a></li><li style="margin-bottom:0.6rem"><a href="../../../industries/manufacturing/index.html" style="color:#94A3B8;text-decoration:none">Manufacturing</a></li><li style="margin-bottom:0.6rem"><a href="../../../industries/hospitality/index.html" style="color:#94A3B8;text-decoration:none">Hospitality</a></li><li style="margin-bottom:0.6rem"><a href="../../../industries/legal/index.html" style="color:#94A3B8;text-decoration:none">Legal Services</a></li></ul></div>
+                <div><h3 style="color:#F8FAFC;margin-bottom:1rem;font-size:1.1rem">PPC Services by City</h3><ul style="list-style:none;margin:0;padding:0"><li style="margin-bottom:0.6rem"><a href="../mumbai/index.html" style="color:#94A3B8;text-decoration:none">PPC Mumbai</a></li><li style="margin-bottom:0.6rem"><a href="../bangalore/index.html" style="color:#94A3B8;text-decoration:none">PPC Bangalore</a></li><li style="margin-bottom:0.6rem"><a href="../delhi/index.html" style="color:#94A3B8;text-decoration:none">PPC Delhi</a></li><li style="margin-bottom:0.6rem"><a href="../pune/index.html" style="color:#94A3B8;text-decoration:none">PPC Pune</a></li><li style="margin-bottom:0.6rem"><a href="../hyderabad/index.html" style="color:#94A3B8;text-decoration:none">PPC Hyderabad</a></li><li style="margin-bottom:0.6rem"><a href="../chennai/index.html" style="color:#94A3B8;text-decoration:none">PPC Chennai</a></li><li style="margin-bottom:0.6rem"><a href="../kolkata/index.html" style="color:#94A3B8;text-decoration:none">PPC Kolkata</a></li><li style="margin-bottom:0.6rem"><a href="../ahmedabad/index.html" style="color:#94A3B8;text-decoration:none">PPC Ahmedabad</a></li><li style="margin-bottom:0.6rem"><a href="../maharashtra/index.html" style="color:#94A3B8;text-decoration:none">PPC Maharashtra</a></li><li style="margin-bottom:0.6rem"><a href="index.html" style="color:#94A3B8;text-decoration:none">PPC Karnataka</a></li></ul></div>
+                <div><h3 style="color:#F8FAFC;margin-bottom:1rem;font-size:1.1rem">Email Marketing</h3><ul style="list-style:none;margin:0;padding:0"><li style="margin-bottom:0.6rem"><a href="../../email-marketing/index.html" style="color:#94A3B8;text-decoration:none">Email Marketing Services</a></li><li style="margin-bottom:0.6rem"><a href="../../email-marketing/strategy/index.html" style="color:#94A3B8;text-decoration:none">Email Strategy</a></li><li style="margin-bottom:0.6rem"><a href="../../email-marketing/automation/index.html" style="color:#94A3B8;text-decoration:none">Email Automation</a></li><li style="margin-bottom:0.6rem"><a href="../../email-marketing/newsletters/index.html" style="color:#94A3B8;text-decoration:none">Newsletter Design</a></li><li style="margin-bottom:0.6rem"><a href="../../email-marketing/campaigns/index.html" style="color:#94A3B8;text-decoration:none">Email Campaigns</a></li><li style="margin-bottom:0.6rem"><a href="../../email-marketing/drip-campaigns/index.html" style="color:#94A3B8;text-decoration:none">Drip Campaigns</a></li><li style="margin-bottom:0.6rem"><a href="../../email-marketing/segmentation/index.html" style="color:#94A3B8;text-decoration:none">List Segmentation</a></li><li style="margin-bottom:0.6rem"><a href="../../email-marketing/ab-testing/index.html" style="color:#94A3B8;text-decoration:none">A/B Testing</a></li><li style="margin-bottom:0.6rem"><a href="../../email-marketing/deliverability/index.html" style="color:#94A3B8;text-decoration:none">Deliverability Optimization</a></li><li style="margin-bottom:0.6rem"><a href="../../email-marketing/analytics/index.html" style="color:#94A3B8;text-decoration:none">Email Analytics</a></li></ul></div>
+                <div><h3 style="color:#F8FAFC;margin-bottom:1rem;font-size:1.1rem">Resources & Company</h3><ul style="list-style:none;margin:0;padding:0"><li style="margin-bottom:0.6rem"><a href="../../../blog/index.html" style="color:#94A3B8;text-decoration:none">Blog</a></li><li style="margin-bottom:0.6rem"><a href="../../../case-studies/index.html" style="color:#94A3B8;text-decoration:none">Case Studies</a></li><li style="margin-bottom:0.6rem"><a href="../../../resources/index.html" style="color:#94A3B8;text-decoration:none">Resources</a></li><li style="margin-bottom:0.6rem"><a href="../../../tools/index.html" style="color:#94A3B8;text-decoration:none">Free Tools</a></li><li style="margin-bottom:0.6rem"><a href="../../../about.html" style="color:#94A3B8;text-decoration:none">About Us</a></li><li style="margin-bottom:0.6rem"><a href="../../../contact-us.html" style="color:#94A3B8;text-decoration:none">Contact Us</a></li><li style="margin-bottom:0.6rem"><a href="../../../careers.html" style="color:#94A3B8;text-decoration:none">Careers</a></li><li style="margin-bottom:0.6rem"><a href="../../../privacy-policy.html" style="color:#94A3B8;text-decoration:none">Privacy Policy</a></li><li style="margin-bottom:0.6rem"><a href="../../../terms-of-service.html" style="color:#94A3B8;text-decoration:none">Terms of Service</a></li><li style="margin-bottom:0.6rem"><a href="../../../sitemap.html" style="color:#94A3B8;text-decoration:none">Sitemap</a></li></ul></div>
+            </div>
+            <div style="border-top:1px solid rgba(255,255,255,0.1);padding-top:30px;text-align:center">
+                <div style="display:flex;justify-content:center;gap:2rem;margin-bottom:1.5rem;flex-wrap:wrap">
+                    <a href="../../seo-services/index.html" style="color:#94A3B8;text-decoration:none;font-size:0.9rem">SEO</a>
+                    <a href="../index.html" style="color:#94A3B8;text-decoration:none;font-size:0.9rem">PPC</a>
+                    <a href="../../social-media-marketing/index.html" style="color:#94A3B8;text-decoration:none;font-size:0.9rem">Social Media</a>
+                    <a href="../../content-marketing/index.html" style="color:#94A3B8;text-decoration:none;font-size:0.9rem">Content Marketing</a>
+                    <a href="../../email-marketing/index.html" style="color:#94A3B8;text-decoration:none;font-size:0.9rem">Email Marketing</a>
+                    <a href="../../web-design-development/index.html" style="color:#94A3B8;text-decoration:none;font-size:0.9rem">Web Design</a>
+                </div>
+                <p style="color:#64748B;font-size:0.9rem;margin:0">&copy; 2025 God Digital Marketing. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+    </script>
+</body>
+</html>

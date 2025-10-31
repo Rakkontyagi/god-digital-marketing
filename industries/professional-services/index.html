@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Services Digital Marketing | SEO & Lead Generation for Consultants</title>
+    <meta name="description" content="Specialized digital marketing for professional services firms, consultants, and advisory businesses. Generate high-quality leads with SEO, PPC, content marketing, and LinkedIn strategies.">
+    <style>
+        :root {
+            --primary-purple: #7C3AED;
+            --secondary-blue: #2563EB;
+            --accent-amber: #F59E0B;
+            --dark-bg: #0F172A;
+            --card-bg: rgba(255, 255, 255, 0.05);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
+            color: #F8FAFC;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 20px 80px;
+            background: radial-gradient(circle at top, rgba(124, 58, 237, 0.15), transparent 70%);
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, #7C3AED, #2563EB, #F59E0B);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-subtitle {
+            font-size: 1.3rem;
+            color: #CBD5E1;
+            max-width: 900px;
+            margin: 0 auto 2rem;
+            line-height: 1.8;
+        }
+
+        .hero-subtitle a {
+            color: #F59E0B;
+            text-decoration: none;
+            border-bottom: 1px solid rgba(245, 158, 11, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .hero-subtitle a:hover {
+            border-bottom-color: #F59E0B;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            background: linear-gradient(135deg, #7C3AED, #2563EB);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(124, 58, 237, 0.4);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            padding: 60px 20px;
+        }
+
+        .service-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 2rem;
+            transition: all 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(124, 58, 237, 0.5);
+            box-shadow: 0 10px 40px rgba(124, 58, 237, 0.2);
+        }
+
+        .service-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #F59E0B;
+        }
+
+        .service-card p {
+            color: #CBD5E1;
+            margin-bottom: 1rem;
+            line-height: 1.7;
+        }
+
+        .service-card a {
+            color: #7C3AED;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .service-card a:hover {
+            color: #F59E0B;
+        }
+
+        .content-section {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .content-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            background: linear-gradient(135deg, #7C3AED, #F59E0B);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .content-section h3 {
+            font-size: 1.8rem;
+            margin: 2rem 0 1rem;
+            color: #F59E0B;
+        }
+
+        .content-section p {
+            color: #CBD5E1;
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .content-section ul {
+            margin: 1.5rem 0;
+            padding-left: 2rem;
+        }
+
+        .content-section li {
+            color: #CBD5E1;
+            margin-bottom: 0.8rem;
+            line-height: 1.7;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav style="background:rgba(15,23,42,0.8);backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,0.1);position:sticky;top:0;z-index:1000;padding:0">
+        <div style="max-width:1400px;margin:0 auto;padding:1.2rem 2rem;display:flex;justify-content:space-between;align-items:center">
+            <a href="../../index.html" style="font-size:1.5rem;font-weight:bold;background:linear-gradient(135deg,#7C3AED,#2563EB);-webkit-background-clip:text;-webkit-text-fill-color:transparent;text-decoration:none">God Digital</a>
+            <div style="display:flex;gap:2rem;align-items:center">
+                <a href="../../services/seo-services/index.html" style="color:#F8FAFC;text-decoration:none;transition:color 0.3s ease">SEO</a>
+                <a href="../../services/ppc-advertising/index.html" style="color:#F8FAFC;text-decoration:none;transition:color 0.3s ease">PPC</a>
+                <a href="../../services/social-media-marketing/index.html" style="color:#F8FAFC;text-decoration:none;transition:color 0.3s ease">Social Media</a>
+                <a href="../../services/content-marketing/index.html" style="color:#F8FAFC;text-decoration:none;transition:color 0.3s ease">Content Marketing</a>
+                <a href="../../services/email-marketing/index.html" style="color:#F8FAFC;text-decoration:none;transition:color 0.3s ease">Email Marketing</a>
+                <a href="../../services/web-design-development/index.html" style="color:#F8FAFC;text-decoration:none;transition:color 0.3s ease">Web Design</a>
+                <a href="../../services/conversion-optimization/index.html" style="color:#F8FAFC;text-decoration:none;transition:color 0.3s ease">CRO</a>
+                <a href="../../contact-us.html" style="display:inline-block;padding:0.6rem 1.5rem;background:linear-gradient(135deg,#7C3AED,#2563EB);color:#fff;text-decoration:none;border-radius:6px;transition:transform 0.3s ease">Get Quote</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h1>Professional Services Digital Marketing</h1>
+        <p class="hero-subtitle">Generate high-quality leads for consultants and professional firms with specialized <a href="../../services/seo-services/index.html">thought leadership SEO</a>, targeted <a href="../../services/ppc-advertising/index.html">LinkedIn advertising</a>, authoritative <a href="../../services/content-marketing/index.html">content marketing</a>, and <a href="../../services/web-design-development/index.html">credibility-building websites</a> that attract decision-makers and C-suite executives.</p>
+        <a href="../../contact-us.html" class="cta-button">Grow Your Practice</a>
+    </section>
+
+    <div class="container">
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>Professional Services SEO</h3>
+                <p>Build authority with specialized <a href="../../services/seo-services/index.html">SEO for consultants</a> and <a href="../../services/seo-services/index.html">professional firms</a>. Our strategies target <a href="../../services/seo-services/index.html">thought leadership keywords</a>, <a href="../../services/seo-services/index.html">expertise-based searches</a>, and <a href="../../services/seo-services/index.html">local professional services</a> to position your firm as the industry authority clients seek.</p>
+                <p>We optimize for <a href="../../services/seo-services/index.html">service-specific queries</a>, <a href="../../services/seo-services/index.html">industry + expertise combinations</a>, <a href="../../services/seo-services/index.html">problem-solution searches</a>, and <a href="../../services/seo-services/index.html">best practices content</a> that demonstrates deep knowledge. Our approach includes <a href="../../services/seo-services/index.html">E-E-A-T optimization</a> (Experience, Expertise, Authoritativeness, Trustworthiness) critical for professional services.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>LinkedIn Marketing for Professionals</h3>
+                <p>Reach decision-makers with <a href="../../services/social-media-marketing/index.html">LinkedIn marketing for professional services</a>. We manage <a href="../../services/social-media-marketing/index.html">executive LinkedIn profiles</a>, <a href="../../services/social-media-marketing/index.html">company pages</a>, <a href="../../services/social-media-marketing/index.html">thought leadership posting</a>, and <a href="../../services/ppc-advertising/index.html">LinkedIn Sponsored Content</a> targeting C-suite executives, VPs, and decision-makers by title, company, and industry.</p>
+                <p>Our strategy includes <a href="../../services/social-media-marketing/index.html">employee advocacy programs</a>, <a href="../../services/social-media-marketing/index.html">LinkedIn articles</a>, <a href="../../services/social-media-marketing/index.html">industry participation</a>, <a href="../../services/social-media-marketing/index.html">LinkedIn Groups engagement</a>, <a href="../../services/influencer-marketing/index.html">executive branding</a>, and <a href="../../services/ppc-advertising/index.html">InMail campaigns</a> for direct outreach to prospects.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>Thought Leadership Content Marketing</h3>
+                <p>Establish expertise with <a href="../../services/content-marketing/index.html">thought leadership content</a> including <a href="../../services/content-marketing/index.html">white papers</a>, <a href="../../services/content-marketing/index.html">research reports</a>, <a href="../../services/content-marketing/index.html">industry insights</a>, <a href="../../services/content-marketing/index.html">expert guides</a>, and <a href="../../services/content-marketing/index.html">case studies</a> demonstrating proven results for clients across industries.</p>
+                <p>We create <a href="../../services/content-marketing/index.html">original research</a>, <a href="../../services/content-marketing/index.html">data-driven insights</a>, <a href="../../services/content-marketing/index.html">industry trend analysis</a>, <a href="../../services/content-marketing/index.html">best practice frameworks</a>, <a href="../../services/content-marketing/index.html">executive perspectives</a>, and <a href="../../services/content-marketing/index.html">methodology documentation</a> that positions your firm as the go-to authority in your field.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>Professional Services PPC</h3>
+                <p>Generate qualified inquiries with <a href="../../services/ppc-advertising/index.html">professional services advertising</a> on <a href="../../services/ppc-advertising/index.html">Google Ads</a> and <a href="../../services/ppc-advertising/index.html">LinkedIn</a>. We target high-intent searches like "hire [service] consultant," "[problem] consulting services," and "best [industry] advisory firm" with <a href="../../services/ppc-advertising/index.html">consultation-focused landing pages</a>.</p>
+                <p>Our campaigns include <a href="../../services/ppc-advertising/index.html">remarketing to engaged visitors</a>, <a href="../../services/ppc-advertising/index.html">competitive conquesting</a>, <a href="../../services/ppc-advertising/index.html">geographic targeting</a> for local firms, <a href="../../services/ppc-advertising/index.html">industry vertical targeting</a>, and <a href="../../services/ppc-advertising/index.html">account-based advertising</a> for targeting specific companies and decision-makers.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>Professional Firm Website Design</h3>
+                <p>Build credibility with <a href="../../services/web-design-development/index.html">professional services website design</a> featuring <a href="../../services/web-design-development/index.html">team bios with credentials</a>, <a href="../../services/web-design-development/index.html">service offering pages</a>, <a href="../../services/web-design-development/index.html">case study showcases</a>, <a href="../../services/web-design-development/index.html">client testimonials</a>, and <a href="../../services/web-design-development/index.html">thought leadership resource centers</a>.</p>
+                <p>We design sites with <a href="../../services/web-design-development/index.html">professional aesthetics</a>, <a href="../../services/web-design-development/index.html">credential displays</a> (certifications, awards, publications), <a href="../../services/web-design-development/index.html">client logo showcases</a>, <a href="../../services/web-design-development/index.html">industry recognition</a>, <a href="../../services/web-design-development/index.html">consultation booking systems</a>, and <a href="../../services/web-design-development/index.html">secure client portals</a> for document sharing.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>Lead Generation & Nurture for Consultants</h3>
+                <p>Convert prospects into clients with <a href="../../services/conversion-optimization/index.html">professional services conversion optimization</a>. We create <a href="../../services/conversion-optimization/index.html">consultation request forms</a>, <a href="../../services/content-marketing/index.html">downloadable research reports</a>, <a href="../../services/email-marketing/index.html">educational email sequences</a>, and <a href="../../services/conversion-optimization/index.html">webinar registration systems</a> that move prospects through the consideration process.</p>
+                <p>Our approach includes <a href="../../services/email-marketing/index.html">multi-touch nurture campaigns</a>, <a href="../../services/content-marketing/index.html">problem-solution content journeys</a>, <a href="../../services/email-marketing/index.html">personalized follow-up sequences</a>, <a href="../../services/conversion-optimization/index.html">qualification forms</a>, <a href="../../services/analytics-reporting/index.html">lead scoring</a>, and <a href="../../services/email-marketing/index.html">CRM integration</a> for seamless handoff to your business development team.</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="content-section">
+        <h2>Digital Marketing for Professional Services Types</h2>
+
+        <h3>Management Consulting Firms</h3>
+        <p>Generate client inquiries for <a href="../../services/seo-services/index.html">management consultants</a> with <a href="../../services/seo-services/index.html">strategy consulting SEO</a>, <a href="../../services/content-marketing/index.html">business transformation content</a>, and <a href="../../services/ppc-advertising/index.html">C-suite targeted advertising</a>. We help <a href="../../services/seo-services/index.html">strategy firms</a>, <a href="../../services/seo-services/index.html">operations consultants</a>, <a href="../../services/seo-services/index.html">change management experts</a>, and <a href="../../services/seo-services/index.html">organizational development consultants</a> attract enterprise clients.</p>
+        <p>Our approach emphasizes <a href="../../services/content-marketing/index.html">industry-specific expertise</a>, <a href="../../services/content-marketing/index.html">transformation case studies</a>, <a href="../../services/content-marketing/index.html">ROI frameworks</a>, <a href="../../services/social-media-marketing/index.html">LinkedIn executive branding</a>, <a href="../../services/content-marketing/index.html">speaking engagement promotion</a>, and <a href="../../services/email-marketing/index.html">relationship nurturing</a> for long sales cycles typical in consulting.</p>
+
+        <h3>Accounting & Financial Services</h3>
+        <p>Drive new client acquisition for <a href="../../services/seo-services/index.html">accounting firms</a> with <a href="../../services/seo-services/index.html">local SEO for CPAs</a>, <a href="../../services/content-marketing/index.html">tax planning content</a>, and <a href="../../services/ppc-advertising/index.html">seasonal tax advertising</a>. We help <a href="../../services/seo-services/index.html">tax advisors</a>, <a href="../../services/seo-services/index.html">audit firms</a>, <a href="../../services/seo-services/index.html">financial planners</a>, and <a href="../../services/seo-services/index.html">bookkeeping services</a> attract business and individual clients.</p>
+        <p>Our strategies include <a href="../../services/content-marketing/index.html">tax deadline content calendars</a>, <a href="../../services/email-marketing/index.html">quarterly tax planning reminders</a>, <a href="../../services/content-marketing/index.html">regulatory change updates</a>, <a href="../../services/web-design-development/index.html">secure document portals</a>, <a href="../../services/ppc-advertising/index.html">year-end planning campaigns</a>, and <a href="../../services/online-reputation-management/index.html">trust-building review management</a>.</p>
+
+        <h3>Engineering & Technical Consulting</h3>
+        <p>Win projects for <a href="../../services/seo-services/index.html">engineering consultants</a> with <a href="../../services/seo-services/index.html">technical SEO</a>, <a href="../../services/content-marketing/index.html">engineering white papers</a>, and <a href="../../services/ppc-advertising/index.html">B2B advertising</a>. We help <a href="../../services/seo-services/index.html">civil engineers</a>, <a href="../../services/seo-services/index.html">structural consultants</a>, <a href="../../services/seo-services/index.html">environmental engineers</a>, and <a href="../../services/seo-services/index.html">MEP consultants</a> attract commercial and government clients.</p>
+        <p>Our approach features <a href="../../services/content-marketing/index.html">technical capability documentation</a>, <a href="../../services/content-marketing/index.html">project portfolio showcases</a>, <a href="../../services/content-marketing/index.html">certification highlighting</a> (PE, LEED, etc.), <a href="../../services/web-design-development/index.html">project case studies</a>, <a href="../../services/ppc-advertising/index.html">RFP response marketing</a>, and <a href="../../services/social-media-marketing/index.html">LinkedIn technical content</a>.</p>
+
+        <h3>IT & Technology Consulting</h3>
+        <p>Generate leads for <a href="../../services/seo-services/index.html">IT consultants</a> with <a href="../../services/seo-services/index.html">technology consulting SEO</a>, <a href="../../services/content-marketing/index.html">digital transformation content</a>, and <a href="../../services/ppc-advertising/index.html">enterprise IT advertising</a>. We help <a href="../../services/seo-services/index.html">cybersecurity consultants</a>, <a href="../../services/seo-services/index.html">cloud migration experts</a>, <a href="../../services/seo-services/index.html">ERP consultants</a>, and <a href="../../services/seo-services/index.html">IT strategy advisors</a> reach CIOs and IT directors.</p>
+        <p>Our strategies include <a href="../../services/content-marketing/index.html">technology stack expertise content</a>, <a href="../../services/content-marketing/index.html">security best practices</a>, <a href="../../services/content-marketing/index.html">migration case studies</a>, <a href="../../services/ppc-advertising/index.html">LinkedIn targeting of IT leaders</a>, <a href="../../services/video-marketing/index.html">demo videos</a>, and <a href="../../services/email-marketing/index.html">technology education campaigns</a>.</p>
+
+        <h3>HR & Talent Consulting</h3>
+        <p>Attract clients for <a href="../../services/seo-services/index.html">HR consultants</a> with <a href="../../services/seo-services/index.html">human resources SEO</a>, <a href="../../services/content-marketing/index.html">talent management content</a>, and <a href="../../services/social-media-marketing/index.html">LinkedIn HR networking</a>. We help <a href="../../services/seo-services/index.html">executive recruiters</a>, <a href="../../services/seo-services/index.html">organizational development consultants</a>, <a href="../../services/seo-services/index.html">compensation advisors</a>, and <a href="../../services/seo-services/index.html">training firms</a> connect with HR leaders.</p>
+        <p>Our approach includes <a href="../../services/content-marketing/index.html">workforce trends analysis</a>, <a href="../../services/content-marketing/index.html">compliance updates</a>, <a href="../../services/content-marketing/index.html">talent acquisition best practices</a>, <a href="../../services/social-media-marketing/index.html">HR community engagement</a>, <a href="../../services/email-marketing/index.html">HR newsletter publishing</a>, and <a href="../../services/ppc-advertising/index.html">targeted advertising to CHROs</a>.</p>
+    </section>
+
+    <section class="content-section">
+        <h2>Advanced Professional Services Marketing</h2>
+
+        <h3>Speaking & Conference Marketing</h3>
+        <p>Amplify thought leadership with <a href="../../services/content-marketing/index.html">speaking engagement promotion</a>, <a href="../../services/social-media-marketing/index.html">conference presence amplification</a>, <a href="../../services/video-marketing/index.html">keynote recordings</a>, <a href="../../services/content-marketing/index.html">presentation content repurposing</a>, and <a href="../../services/email-marketing/index.html">attendee follow-up campaigns</a>. We help consultants maximize ROI from conference participation and speaking opportunities.</p>
+
+        <h3>Book Publishing & Authority Building</h3>
+        <p>Leverage published works with <a href="../../services/content-marketing/index.html">book launch campaigns</a>, <a href="../../services/seo-services/index.html">author SEO optimization</a>, <a href="../../services/social-media-marketing/index.html">book promotion on LinkedIn</a>, <a href="../../services/email-marketing/index.html">reader engagement campaigns</a>, and <a href="../../services/ppc-advertising/index.html">thought leadership advertising</a> using book credentials to attract consulting clients.</p>
+
+        <h3>Referral & Partnership Marketing</h3>
+        <p>Build strategic networks with <a href="../../services/email-marketing/index.html">referral partner communications</a>, <a href="../../services/content-marketing/index.html">co-marketing content</a>, <a href="../../services/social-media-marketing/index.html">professional network engagement</a>, <a href="../../services/web-design-development/index.html">partner portals</a>, and <a href="../../services/email-marketing/index.html">relationship nurturing campaigns</a> for complementary professional services.</p>
+
+        <h3>Webinar & Virtual Event Marketing</h3>
+        <p>Generate leads with <a href="../../services/content-marketing/index.html">educational webinars</a>, <a href="../../services/ppc-advertising/index.html">webinar promotion campaigns</a>, <a href="../../services/email-marketing/index.html">registration nurture sequences</a>, <a href="../../services/video-marketing/index.html">on-demand webinar libraries</a>, <a href="../../services/email-marketing/index.html">attendee follow-up automation</a>, and <a href="../../services/conversion-optimization/index.html">consultation conversion funnels</a> post-webinar.</p>
+
+        <h3>Research & Data-Driven Marketing</h3>
+        <p>Differentiate with <a href="../../services/content-marketing/index.html">proprietary research</a>, <a href="../../services/content-marketing/index.html">industry benchmarking studies</a>, <a href="../../services/content-marketing/index.html">annual trend reports</a>, <a href="../../services/ppc-advertising/index.html">research promotion campaigns</a>, <a href="../../services/online-reputation-management/index.html">media coverage amplification</a>, and <a href="../../services/email-marketing/index.html">research distribution strategies</a> that position your firm as the industry data authority.</p>
+    </section>
+
+    <footer style="background:rgba(15,23,42,0.5);backdrop-filter:blur(10px);border-top:1px solid rgba(255,255,255,0.1);padding:60px 20px 20px">
+        <div class="container" style="max-width:1400px;margin:0 auto">
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:40px;margin-bottom:40px">
+                <div>
+                    <h3 style="color:#F8FAFC;margin-bottom:1rem;font-size:1.1rem">Digital Marketing Services</h3>
+                    <ul style="list-style:none;margin:0;padding:0">
+                        <li style="margin-bottom:0.6rem"><a href="../../services/seo-services/index.html" style="color:#94A3B8;text-decoration:none;transition:color 0.3s ease">SEO Services</a></li>
+                        <li style="margin-bottom:0.6rem"><a href="../../services/ppc-advertising/index.html" style="color:#94A3B8;text-decoration:none">PPC Advertising</a></li>
+                        <li style="margin-bottom:0.6rem"><a href="../../services/social-media-marketing/index.html" style="color:#94A3B8;text-decoration:none">Social Media Marketing</a></li>
+                        <li style="margin-bottom:0.6rem"><a href="../../services/content-marketing/index.html" style="color:#94A3B8;text-decoration:none">Content Marketing</a></li>
+                        <li style="margin-bottom:0.6rem"><a href="../../services/email-marketing/index.html" style="color:#94A3B8;text-decoration:none">Email Marketing</a></li>
+                        <li style="margin-bottom:0.6rem"><a href="../../services/web-design-development/index.html" style="color:#94A3B8;text-decoration:none">Web Design & Development</a></li>
+                        <li style="margin-bottom:0.6rem"><a href="../../services/influencer-marketing/index.html" style="color:#94A3B8;text-decoration:none">Influencer Marketing</a></li>
+                        <li style="margin-bottom:0.6rem"><a href="../../services/video-marketing/index.html" style="color:#94A3B8;text-decoration:none">Video Marketing</a></li>
+                        <li style="margin-bottom:0.6rem"><a href="../../services/conversion-optimization/index.html" style="color:#94A3B8;text-decoration:none">Conversion Rate Optimization</a></li>
+                        <li style="margin-bottom:0.6rem"><a href="../../services/online-reputation-management/index.html" style="color:#94A3B8;text-decoration:none">Online Reputation Management</a></li>
+                        <li style="margin-bottom:0.6rem"><a href="../../services/analytics-reporting/index.html" style="color:#94A3B8;text-decoration:none">Analytics & Reporting</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 style="color:#F8FAFC;margin-bottom:1rem;font-size:1.1rem">Industries We Serve</h3>
+                    <ul style="list-style:none;margin:0;padding:0">
+                        <li style="margin-bottom:0.6rem"><a href="../ecommerce/index.html" style="color:#94A3B8;text-decoration:none">E-commerce</a></li>
+                        <li style="margin-bottom:0.6rem"><a href="../healthcare/index.html" style="color:#94A3B8;text-decoration:none">Healthcare</a></li>
+                        <li style="margin-bottom:0.6rem"><a href="../real-estate/index.html" style="color:#94A3B8;text-decoration:none">Real Estate</a></li>
+                        <li style="margin-bottom:0.6rem"><a href="../education/index.html" style="color:#94A3B8;text-decoration:none">Education</a></li>
+                        <li style="margin-bottom:0.6rem"><a href="../legal-services/index.html" style="color:#94A3B8;text-decoration:none">Legal Services</a></li>
+                        <li style="margin-bottom:0.6rem"><a href="../hospitality/index.html" style="color:#94A3B8;text-decoration:none">Hospitality</a></li>
+                        <li style="margin-bottom:0.6rem"><a href="../technology/index.html" style="color:#94A3B8;text-decoration:none">Technology</a></li>
+                        <li style="margin-bottom:0.6rem"><a href="../manufacturing/index.html" style="color:#94A3B8;text-decoration:none">Manufacturing</a></li>
+                        <li style="margin-bottom:0.6rem"><a href="../retail/index.html" style="color:#94A3B8;text-decoration:none">Retail</a></li>
+                        <li style="margin-bottom:0.6rem"><a href="index.html" style="color:#94A3B8;text-decoration:none">Professional Services</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 style="color:#F8FAFC;margin-bottom:1rem;font-size:1.1rem">Major Cities SEO</h3>
+                    <ul style="list-style:none;margin:0;padding:0">
+                        <li style="margin-bottom:0.6rem"><a href="../../services/seo-services/new-york.html" style="color:#94A3B8;text-decoration:none">SEO Services New York</a></li>
+                        <li style="margin-bottom:0.6rem"><a href="../../services/seo-services/los-angeles.html" style="color:#94A3B8;text-decoration:none">SEO Services Los Angeles</a></li>
+                        <li style="margin-bottom:0.6rem"><a href="../../services/seo-services/chicago.html" style="color:#94A3B8;text-decoration:none">SEO Services Chicago</a></li>
+                        <li style="margin-bottom:0.6rem"><a href="../../services/seo-services/houston.html" style="color:#94A3B8;text-decoration:none">SEO Services Houston</a></li>
+                        <li style="margin-bottom:0.6rem"><a href="../../services/seo-services/phoenix.html" style="color:#94A3B8;text-decoration:none">SEO Services Phoenix</a></li>
+                        <li style="margin-bottom:0.6rem"><a href="../../services/seo-services/philadelphia.html" style="color:#94A3B8;text-decoration:none">SEO Services Philadelphia</a></li>
+                        <li style="margin-bottom:0.6rem"><a href="../../services/seo-services/san-antonio.html" style="color:#94A3B8;text-decoration:none">SEO Services San Antonio</a></li>
+                        <li style="margin-bottom:0.6rem"><a href="../../services/seo-services/san-diego.html" style="color:#94A3B8;text-decoration:none">SEO Services San Diego</a></li>
+                        <li style="margin-bottom:0.6rem"><a href="../../services/seo-services/dallas.html" style="color:#94A3B8;text-decoration:none">SEO Services Dallas</a></li>
+                        <li style="margin-bottom:0.6rem"><a href="../../services/seo-services/san-jose.html" style="color:#94A3B8;text-decoration:none">SEO Services San Jose</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 style="color:#F8FAFC;margin-bottom:1rem;font-size:1.1rem">Email Marketing</h3>
+                    <ul style="list-style:none;margin:0;padding:0">
+                        <li style="margin-bottom:0.6rem"><a href="../../services/email-marketing/bulk-email-marketing.html" style="color:#94A3B8;text-decoration:none">Bulk Email Marketing</a></li>
+                        <li style="margin-bottom:0.6rem"><a href="../../services/email-marketing/promotional-email-campaigns.html" style="color:#94A3B8;text-decoration:none">Promotional Email Campaigns</a></li>
+                        <li style="margin-bottom:0.6rem"><a href="../../services/email-marketing/transactional-emails.html" style="color:#94A3B8;text-decoration:none">Transactional Emails</a></li>
+                        <li style="margin-bottom:0.6rem"><a href="../../services/email-marketing/email-newsletters.html" style="color:#94A3B8;text-decoration:none">Email Newsletters</a></li>
+                        <li style="margin-bottom:0.6rem"><a href="../../services/email-marketing/drip-campaigns.html" style="color:#94A3B8;text-decoration:none">Drip Campaigns</a></li>
+                        <li style="margin-bottom:0.6rem"><a href="../../services/email-marketing/cart-abandonment-emails.html" style="color:#94A3B8;text-decoration:none">Cart Abandonment Emails</a></li>
+                        <li style="margin-bottom:0.6rem"><a href="../../services/email-marketing/welcome-email-series.html" style="color:#94A3B8;text-decoration:none">Welcome Email Series</a></li>
+                        <li style="margin-bottom:0.6rem"><a href="../../services/email-marketing/re-engagement-campaigns.html" style="color:#94A3B8;text-decoration:none">Re-engagement Campaigns</a></li>
+                        <li style="margin-bottom:0.6rem"><a href="../../services/email-marketing/seasonal-email-campaigns.html" style="color:#94A3B8;text-decoration:none">Seasonal Email Campaigns</a></li>
+                        <li style="margin-bottom:0.6rem"><a href="../../services/email-marketing/email-automation.html" style="color:#94A3B8;text-decoration:none">Email Automation</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 style="color:#F8FAFC;margin-bottom:1rem;font-size:1.1rem">Resources & Company</h3>
+                    <ul style="list-style:none;margin:0;padding:0">
+                        <li style="margin-bottom:0.6rem"><a href="../../about-us.html" style="color:#94A3B8;text-decoration:none">About Us</a></li>
+                        <li style="margin-bottom:0.6rem"><a href="../../contact-us.html" style="color:#94A3B8;text-decoration:none">Contact Us</a></li>
+                        <li style="margin-bottom:0.6rem"><a href="../../blog/index.html" style="color:#94A3B8;text-decoration:none">Blog</a></li>
+                        <li style="margin-bottom:0.6rem"><a href="../../case-studies/index.html" style="color:#94A3B8;text-decoration:none">Case Studies</a></li>
+                        <li style="margin-bottom:0.6rem"><a href="../../testimonials.html" style="color:#94A3B8;text-decoration:none">Testimonials</a></li>
+                        <li style="margin-bottom:0.6rem"><a href="../../careers.html" style="color:#94A3B8;text-decoration:none">Careers</a></li>
+                        <li style="margin-bottom:0.6rem"><a href="../../privacy-policy.html" style="color:#94A3B8;text-decoration:none">Privacy Policy</a></li>
+                        <li style="margin-bottom:0.6rem"><a href="../../terms-of-service.html" style="color:#94A3B8;text-decoration:none">Terms of Service</a></li>
+                        <li style="margin-bottom:0.6rem"><a href="../../sitemap.html" style="color:#94A3B8;text-decoration:none">Sitemap</a></li>
+                        <li style="margin-bottom:0.6rem"><a href="../../faq.html" style="color:#94A3B8;text-decoration:none">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div style="border-top:1px solid rgba(255,255,255,0.1);padding-top:30px;text-align:center">
+                <div style="display:flex;justify-content:center;gap:2rem;margin-bottom:1.5rem;flex-wrap:wrap">
+                    <a href="../../services/seo-services/index.html" style="color:#94A3B8;text-decoration:none;font-size:0.9rem">SEO</a>
+                    <a href="../../services/ppc-advertising/index.html" style="color:#94A3B8;text-decoration:none;font-size:0.9rem">PPC</a>
+                    <a href="../../services/social-media-marketing/index.html" style="color:#94A3B8;text-decoration:none;font-size:0.9rem">Social Media</a>
+                    <a href="../../services/content-marketing/index.html" style="color:#94A3B8;text-decoration:none;font-size:0.9rem">Content Marketing</a>
+                    <a href="../../services/email-marketing/index.html" style="color:#94A3B8;text-decoration:none;font-size:0.9rem">Email Marketing</a>
+                    <a href="../../services/web-design-development/index.html" style="color:#94A3B8;text-decoration:none;font-size:0.9rem">Web Design</a>
+                </div>
+                <p style="color:#64748B;font-size:0.9rem;margin:0">&copy; 2024 God Digital Marketing. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Social Media Marketing services in Mumbai. Expert Instagram, Facebook, LinkedIn strategies for India's financial capital. Drive engagement, leads, and sales through data-driven SMM.">
+    <title>Social Media Marketing Services Mumbai | SMM Agency India's Financial Capital</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-purple: #7C3AED;
+            --secondary-blue: #2563EB;
+            --accent-amber: #F59E0B;
+            --dark-bg: #0F172A;
+            --card-bg: rgba(255, 255, 255, 0.05);
+            --text-primary: #F8FAFC;
+            --text-secondary: #94A3B8;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: var(--dark-bg);
+            color: var(--text-primary);
+            line-height: 1.7;
+        }
+
+        header {
+            background: rgba(15, 23, 42, 0.95);
+            backdrop-filter: blur(10px);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(124, 58, 237, 0.2);
+        }
+
+        nav {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.2rem 2rem;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            background: linear-gradient(135deg, var(--primary-purple), var(--secondary-blue));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-menu a {
+            color: var(--text-primary);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .nav-menu a:hover {
+            color: var(--primary-purple);
+        }
+
+        .breadcrumb {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .breadcrumb a {
+            color: var(--text-secondary);
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            color: var(--primary-purple);
+        }
+
+        .hero {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, var(--primary-purple), var(--secondary-blue), var(--accent-amber));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            line-height: 1.2;
+        }
+
+        .hero-subtitle {
+            font-size: 1.3rem;
+            color: var(--text-secondary);
+            max-width: 900px;
+            margin: 0 auto 2rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            background: linear-gradient(135deg, var(--primary-purple), var(--secondary-blue));
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(124, 58, 237, 0.4);
+        }
+
+        .content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .section {
+            margin-bottom: 4rem;
+        }
+
+        h2 {
+            font-size: 2.2rem;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, var(--primary-purple), var(--secondary-blue));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        h3 {
+            font-size: 1.6rem;
+            margin: 2rem 0 1rem;
+            color: var(--text-primary);
+        }
+
+        p {
+            margin-bottom: 1.2rem;
+            color: var(--text-secondary);
+            font-size: 1.05rem;
+        }
+
+        .area-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .area-card {
+            background: var(--card-bg);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(124, 58, 237, 0.2);
+            border-radius: 10px;
+            padding: 1.5rem;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .area-card:hover {
+            transform: translateY(-3px);
+            border-color: var(--primary-purple);
+        }
+
+        .area-card h4 {
+            font-size: 1.2rem;
+            margin-bottom: 0.8rem;
+            color: var(--text-primary);
+        }
+
+        .industry-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .industry-card {
+            background: var(--card-bg);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(37, 99, 235, 0.2);
+            border-radius: 12px;
+            padding: 2rem;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .industry-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--secondary-blue);
+        }
+
+        .case-study {
+            background: linear-gradient(135deg, rgba(124, 58, 237, 0.1), rgba(37, 99, 235, 0.1));
+            border-left: 4px solid var(--primary-purple);
+            border-radius: 8px;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+
+        .case-study h3 {
+            color: var(--accent-amber);
+            margin-top: 0;
+        }
+
+        ul, ol {
+            margin: 1rem 0 1rem 2rem;
+            color: var(--text-secondary);
+        }
+
+        li {
+            margin-bottom: 0.8rem;
+            line-height: 1.6;
+        }
+
+        .platform-section {
+            background: var(--card-bg);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(124, 58, 237, 0.2);
+            border-radius: 10px;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+
+        footer {
+            background: rgba(15, 23, 42, 0.95);
+            border-top: 1px solid rgba(124, 58, 237, 0.2);
+            margin-top: 4rem;
+            padding: 3rem 2rem 2rem;
+        }
+
+        .footer-grid {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .footer-section h3 {
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .footer-section ul {
+            list-style: none;
+            margin: 0;
+        }
+
+        .footer-section li {
+            margin-bottom: 0.6rem;
+        }
+
+        .footer-section a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section a:hover {
+            color: var(--primary-purple);
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .nav-menu {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .area-grid,
+            .industry-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header style="background:rgba(15,23,42,0.95);backdrop-filter:blur(10px);position:sticky;top:0;z-index:1000;border-bottom:1px solid rgba(124,58,237,0.2)">
+        <nav style="max-width:1400px;margin:0 auto;padding:1.2rem 2rem;display:flex;justify-content:space-between;align-items:center">
+            <a href="../../../index.html" style="font-size:1.5rem;font-weight:bold;background:linear-gradient(135deg,#7C3AED,#2563EB);-webkit-background-clip:text;-webkit-text-fill-color:transparent;text-decoration:none">God Digital</a>
+            <div style="display:flex;gap:2rem;align-items:center">
+                <a href="../../seo-services/index.html" style="color:#F8FAFC;text-decoration:none">SEO</a>
+                <a href="../../ppc/index.html" style="color:#F8FAFC;text-decoration:none">PPC</a>
+                <a href="../index.html" style="color:#F8FAFC;text-decoration:none">Social Media</a>
+                <a href="../../content-marketing/index.html" style="color:#F8FAFC;text-decoration:none">Content Marketing</a>
+                <a href="../../email-marketing/index.html" style="color:#F8FAFC;text-decoration:none">Email Marketing</a>
+                <a href="../../web-design-development/index.html" style="color:#F8FAFC;text-decoration:none">Web Design</a>
+                <a href="../../conversion-optimization/index.html" style="color:#F8FAFC;text-decoration:none">CRO</a>
+                <a href="../../../contact-us.html" style="display:inline-block;padding:0.6rem 1.5rem;background:linear-gradient(135deg,#7C3AED,#2563EB);color:#fff;text-decoration:none;border-radius:6px">Get Quote</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="breadcrumb">
+        <a href="../../../index.html">Home</a> /
+        <a href="../../index.html">Services</a> /
+        <a href="../index.html">Social Media Marketing</a> /
+        <span>Mumbai</span>
+    </div>
+
+    <section class="hero">
+        <h1>Social Media Marketing Services in Mumbai</h1>
+        <p class="hero-subtitle">India's financial capital never sleeps, and neither does its social media. From South Mumbai's luxury brands to BKC's corporate giants to Andheri's entertainment industry—we create platform-specific strategies that cut through Mumbai's noise and drive real business results.</p>
+        <a href="../../../contact-us.html" class="cta-button">Grow Your Mumbai Presence</a>
+    </section>
+
+    <div class="content">
+        <section class="section">
+            <h2>Why Mumbai Social Media Marketing Is Different</h2>
+            <p>Mumbai operates at a pace unmatched anywhere in India. Your social media strategy needs to keep up. In two decades managing Mumbai campaigns, we've learned that Mumbaikars scroll faster, judge quicker, and have higher standards than audiences elsewhere. They're bombarded with premium brands, celebrity content, and sophisticated marketing daily. Standing out requires exceptional creativity, flawless execution, and genuine value delivery.</p>
+
+            <p>Mumbai's diversity demands nuanced approaches. South Mumbai's old money responds differently than Bandra's nouveau riche. BKC's finance professionals engage differently than Andheri's film industry. Thane's growing middle class has different priorities than Worli's luxury condo residents. Successful Mumbai social media marketing requires understanding these micro-segments and crafting messages that resonate with specific audiences.</p>
+
+            <p>Time is Mumbai's scarcest resource. Content needs to deliver value in seconds—the time between Churchgate and Marine Lines, the wait at a Bandra traffic signal, the lunch break at a Nariman Point office. We've generated ₹45+ crore in tracked revenue for Mumbai clients through social campaigns optimized for this attention economy—content so compelling it stops scrolling thumbs despite endless competing stimuli.</p>
+        </section>
+
+        <section class="section">
+            <h2>Social Media Strategies by Mumbai Location</h2>
+
+            <div class="area-grid">
+                <div class="area-card" data-aos="fade-up">
+                    <h4><i class="fas fa-building"></i> South Mumbai (SoBo)</h4>
+                    <p><strong>Characteristics:</strong> Heritage, luxury, old money, cultural institutions</p>
+                    <p>South Mumbai audiences appreciate sophistication and heritage. Instagram content showcasing timeless elegance, cultural events, and exclusive experiences resonates. LinkedIn works for professional services targeting established business families. Avoid overly trendy or flashy content—refined authenticity performs best.</p>
+                </div>
+
+                <div class="area-card" data-aos="fade-up">
+                    <h4><i class="fas fa-briefcase"></i> Bandra Kurla Complex (BKC)</h4>
+                    <p><strong>Characteristics:</strong> Corporate, finance, modern, professional</p>
+                    <p>BKC's corporate concentration makes LinkedIn dominant for B2B marketing. Finance, consulting, and professional services thrive here. Content needs professional polish with data-driven insights. Instagram captures BKC's lifestyle—upscale dining, fitness, networking events. B2B lunch-hour targeting works exceptionally well.</p>
+                </div>
+
+                <div class="area-card" data-aos="fade-up">
+                    <h4><i class="fas fa-film"></i> Andheri & Versova</h4>
+                    <p><strong>Characteristics:</strong> Entertainment industry, creative professionals, trendy</p>
+                    <p>Bollywood's home base creates unique social dynamics. Instagram dominates with fashion, entertainment, and celebrity culture. Creative content, behind-the-scenes glimpses, and trend participation perform well. Entertainment businesses, production houses, and talent agencies find engaged audiences here.</p>
+                </div>
+
+                <div class="area-card" data-aos="fade-up">
+                    <h4><i class="fas fa-glass-martini"></i> Bandra & Juhu</h4>
+                    <p><strong>Characteristics:</strong> Trendy, affluent, foodie culture, lifestyle focus</p>
+                    <p>Mumbai's trendsetting neighborhoods where food, fashion, and lifestyle brands thrive on Instagram. Food photography, restaurant reviews, fashion content, and wellness trends generate massive engagement. Influencer marketing works exceptionally well—Bandra has India's highest influencer concentration.</p>
+                </div>
+
+                <div class="area-card" data-aos="fade-up">
+                    <h4><i class="fas fa-home"></i> Powai & Vikhroli</h4>
+                    <p><strong>Characteristics:</strong> Residential, family-oriented, emerging middle class</p>
+                    <p>Community-focused social media works best. Facebook groups around neighborhoods, parenting, local services. Instagram for family-friendly activities, education, home services. WhatsApp community marketing reaches families effectively for local businesses.</p>
+                </div>
+
+                <div class="area-card" data-aos="fade-up">
+                    <h4><i class="fas fa-city"></i> Lower Parel & Worli</h4>
+                    <p><strong>Characteristics:</strong> Luxury residential, fine dining, upscale retail</p>
+                    <p>High-end consumer brands target this affluent demographic through Instagram luxury positioning. Fine dining, premium retail, luxury services, and real estate find responsive audiences. Content emphasizing exclusivity, quality, and sophisticated experiences performs best.</p>
+                </div>
+
+                <div class="area-card" data-aos="fade-up">
+                    <h4><i class="fas fa-train"></i> Thane & Navi Mumbai</h4>
+                    <p><strong>Characteristics:</strong> Suburban, value-conscious, growing economy</p>
+                    <p>Practical, value-focused social media resonates. Facebook reaches broad demographics. Local business directories, community groups, and neighborhood-specific content work well. WhatsApp marketing reaches families and local service seekers effectively.</p>
+                </div>
+
+                <div class="area-card" data-aos="fade-up">
+                    <h4><i class="fas fa-briefcase"></i> Nariman Point & Fort</h4>
+                    <p><strong>Characteristics:</strong> Financial district, corporate headquarters, business services</p>
+                    <p>LinkedIn dominates for B2B targeting financial professionals, legal services, and corporate decision-makers. Professional content, industry insights, and business networking drive engagement. Lunch-hour and evening commute timing optimizes visibility.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Industry-Specific Mumbai Social Media Strategies</h2>
+
+            <div class="industry-grid">
+                <div class="industry-card" data-aos="fade-up">
+                    <h4><i class="fas fa-chart-line"></i> Financial Services & Banking</h4>
+                    <p>Mumbai's financial capital status creates unmatched opportunities for finance sector social marketing. LinkedIn dominates for wealth management, insurance, investment advisory. We position financial professionals as thought leaders through market insights, economic analysis, and educational content. Compliance requirements demand careful content review—all claims backed, risk disclosures included, regulatory adherence maintained.</p>
+                    <p>Twitter serves for real-time market commentary and brand positioning. Instagram works for retail finance—simplified investing education, financial wellness tips, millennial-focused banking services. One wealth management firm generated ₹12 crore AUM from LinkedIn thought leadership establishing founder as trusted voice in Mumbai's finance community.</p>
+                </div>
+
+                <div class="industry-card" data-aos="fade-up">
+                    <h4><i class="fas fa-film"></i> Entertainment & Media</h4>
+                    <p>Bollywood's home creates unique social opportunities. Instagram dominates for celebrities, production houses, entertainment brands. Behind-the-scenes content, celebrity interactions, movie promotions, and fan engagement drive massive reach. We've managed campaigns generating 50+ million impressions for film releases through strategic influencer partnerships and viral content.</p>
+                    <p>Twitter serves real-time engagement during releases, awards, and industry events. YouTube captures long-form content—trailers, interviews, making-of documentaries. Entertainment social marketing requires understanding fan psychology, managing celebrity partnerships, and creating shareable moments that amplify organically beyond paid promotion.</p>
+                </div>
+
+                <div class="industry-card" data-aos="fade-up">
+                    <h4><i class="fas fa-utensils"></i> Restaurants & Food Services</h4>
+                    <p>Mumbai's passionate food culture makes Instagram essential for restaurants. Food photography, chef stories, dining experiences, and user-generated content drive discovery and traffic. Zomato and Swiggy integrate with social—reviews, ratings, and social shares influence dining decisions directly.</p>
+                    <p>We help Mumbai restaurants build Instagram presence that translates engagement into reservations. Location tagging, food blogger partnerships, trending audio usage, and Instagram Stories showing daily specials keep restaurants top-of-mind. One multi-location restaurant chain generated ₹1.8 crore additional revenue through Instagram driving direct reservations and reducing delivery app dependency.</p>
+                </div>
+
+                <div class="industry-card" data-aos="fade-up">
+                    <h4><i class="fas fa-tshirt"></i> Fashion & Retail</h4>
+                    <p>Mumbai fashion—from high-street brands to luxury boutiques—thrives on Instagram Shopping. Shoppable posts, influencer collaborations, styling content, and trend participation drive sales. We create content calendars balancing promotional posts with genuine style inspiration that provides value beyond "buy now" messaging.</p>
+                    <p>Fashion brands succeed through consistent aesthetic, authentic influencer partnerships, user-generated content campaigns, and strategic paid amplification. One D2C fashion brand grew Instagram following from 8,000 to 240,000 in 14 months, generating ₹4.2 crore in Instagram-attributed sales through systematic content strategy and influencer ecosystem development.</p>
+                </div>
+
+                <div class="industry-card" data-aos="fade-up">
+                    <h4><i class="fas fa-building"></i> Real Estate</h4>
+                    <p>Mumbai's premium real estate market uses Instagram for property showcases, virtual tours, and lifestyle positioning. LinkedIn targets high-net-worth individuals and corporate buyers. Facebook reaches broader demographics for mid-market properties. We create content emphasizing location advantages, lifestyle benefits, investment potential, and architectural distinctiveness.</p>
+                    <p>Real estate social marketing requires patience—purchase cycles extend 6-18 months. Content nurtures prospects through awareness, consideration, and decision stages. One luxury developer generated 340 qualified inquiries through LinkedIn thought leadership positioning founder as Mumbai real estate expert, leading to ₹85 crore in closed sales.</p>
+                </div>
+
+                <div class="industry-card" data-aos="fade-up">
+                    <h4><i class="fas fa-briefcase"></i> Professional Services</h4>
+                    <p>Legal, consulting, accounting, and advisory firms leverage LinkedIn for client acquisition and thought leadership. We position professionals through industry insights, case studies (where confidentiality permits), and expertise demonstration. Personal branding of partners and senior professionals significantly impacts firm perception and business development.</p>
+                    <p>Content strategy balances educational value with subtle credibility building. Direct promotion underperforms—providing genuine insights that demonstrate expertise works better. One boutique law firm generated 28 new clients through partner's LinkedIn thought leadership on regulatory changes affecting Mumbai businesses.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Platform-Specific Mumbai Strategies</h2>
+
+            <div class="platform-section" data-aos="fade-up">
+                <h3><i class="fab fa-instagram"></i> Instagram Marketing in Mumbai</h3>
+                <p>Instagram dominates Mumbai's social landscape, especially for lifestyle, fashion, food, and entertainment. The city's visual culture—from Marine Drive sunsets to street food, luxury shopping to celebrity sightings—creates endless content opportunities.</p>
+
+                <p><strong>What works specifically in Mumbai:</strong></p>
+                <ul>
+                    <li><strong>Location tagging dominance:</strong> Mumbai locations get massive search volume—Bandra, Juhu Beach, Colaba, BKC. Tagging strategically increases local discovery</li>
+                    <li><strong>Food content supremacy:</strong> Mumbai's food obsession makes restaurant, street food, and home cooking content viral-ready</li>
+                    <li><strong>Luxury positioning:</strong> Affluent Mumbai audiences respond to premium, exclusive, sophisticated content more than mass-market approaches</li>
+                    <li><strong>Influencer ecosystem maturity:</strong> Mumbai has India's most developed influencer market across all niches—fashion, food, lifestyle, fitness, tech</li>
+                    <li><strong>Reels trend adoption:</strong> Mumbai audiences quickly adopt trending formats, audio, and challenges—early trend participation captures maximum reach</li>
+                    <li><strong>Story engagement:</strong> High Instagram Stories usage—polls, questions, countdowns, and swipe-up links drive direct action</li>
+                </ul>
+
+                <p>We've grown Mumbai Instagram accounts from 5,000 to 180,000+ followers in 12-18 months through consistent strategy, quality content, influencer partnerships, and data-driven optimization. Instagram works when you commit to daily presence, genuine community engagement, and content that provides value beyond promotion.</p>
+            </div>
+
+            <div class="platform-section" data-aos="fade-up">
+                <h3><i class="fab fa-linkedin"></i> LinkedIn Marketing in Mumbai</h3>
+                <p>Mumbai's concentration of corporate headquarters, financial institutions, and professional services makes LinkedIn India's most active B2B platform. BKC, Nariman Point, and Lower Parel house decision-makers actively engaged on LinkedIn during commutes and lunch breaks.</p>
+
+                <p><strong>Mumbai LinkedIn success factors:</strong></p>
+                <ul>
+                    <li><strong>Thought leadership positioning:</strong> Industry insights, market analysis, and expertise demonstration build authority that translates to business opportunities</li>
+                    <li><strong>Timing optimization:</strong> Morning commute (8-10am), lunch hour (1-2pm), and evening commute (6-8pm) generate peak engagement from Mumbai professionals</li>
+                    <li><strong>Company page optimization:</strong> Complete profiles, regular updates, employee advocacy extend organic reach significantly</li>
+                    <li><strong>LinkedIn articles:</strong> Long-form content establishes expertise while getting indexed by Google for additional SEO benefit</li>
+                    <li><strong>Targeted advertising precision:</strong> LinkedIn's professional targeting (job titles, companies, industries) enables surgical B2B reach</li>
+                    <li><strong>Networking authenticity:</strong> Connection requests and engagement need genuine relationship-building intent—transactional approaches fail</li>
+                </ul>
+
+                <p>B2B companies often underinvest in LinkedIn relative to its ROI potential. We've helped Mumbai professional services generate 60-180 qualified leads monthly through systematic LinkedIn presence—founder thought leadership, company content, employee advocacy, and targeted advertising working together.</p>
+            </div>
+
+            <div class="platform-section" data-aos="fade-up">
+                <h3><i class="fab fa-facebook"></i> Facebook Marketing in Mumbai</h3>
+                <p>While younger Mumbaikars migrated to Instagram, Facebook maintains broad demographic reach—30+ audiences, suburban families, and community-oriented users. The platform excels for detailed targeting, community building, and conversion-focused advertising.</p>
+
+                <p><strong>Mumbai Facebook strategies:</strong></p>
+                <ul>
+                    <li><strong>Hyperlocal targeting:</strong> Facebook's location targeting reaches specific Mumbai neighborhoods with precision impossible on other platforms</li>
+                    <li><strong>Event promotion:</strong> Mumbai's active event scene—networking, cultural events, workshops—benefits from Facebook Events feature</li>
+                    <li><strong>Community groups:</strong> Neighborhood groups, parent communities, professional associations create engaged micro-audiences</li>
+                    <li><strong>Messenger marketing:</strong> Customer service, appointment booking, order updates through Messenger streamline communication</li>
+                    <li><strong>Video content priority:</strong> Facebook algorithm prioritizes native video—educational content, behind-the-scenes, customer stories perform well</li>
+                    <li><strong>Retargeting power:</strong> Facebook pixel enables sophisticated retargeting of website visitors with social proof and offers</li>
+                </ul>
+
+                <p>Facebook advertising in Mumbai requires creative testing—audience fatigue sets in quickly in competitive markets. We run continuous A/B tests of ad creative, audiences, and offers, optimizing toward lowest cost-per-conversion rather than vanity metrics like reach or engagement.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Case Studies: Mumbai Social Media Success</h2>
+
+            <div class="case-study" data-aos="fade-up">
+                <h3>Luxury Fashion Boutique, South Mumbai</h3>
+                <p><strong>Challenge:</strong> High-end fashion boutique in Colaba with exceptional products but limited brand awareness beyond walk-in traffic. Competing against established luxury brands with massive marketing budgets and celebrity endorsements. Needed to build aspirational brand positioning and drive foot traffic to boutique without diluting luxury positioning through discounting or mass marketing.</p>
+
+                <p style="margin-top: 15px;"><strong>Our Social Media Strategy:</strong></p>
+                <ul>
+                    <li>Instagram-first strategy showcasing curated collections through professional styling and photography</li>
+                    <li>Developed aesthetic consistency reflecting boutique's luxury positioning—muted tones, editorial quality, sophisticated composition</li>
+                    <li>Partnered with 12 Mumbai fashion micro-influencers (15K-80K followers) known for sophisticated style over mass appeal</li>
+                    <li>Created "Behind the Collection" Instagram Stories showing designer process, fabric sourcing, craftsmanship details</li>
+                    <li>Launched limited-edition drops announced exclusively to Instagram followers creating FOMO and urgency</li>
+                    <li>Implemented Instagram Shopping enabling seamless purchase without leaving platform</li>
+                    <li>Developed VIP customer WhatsApp community for exclusive previews and personalized styling advice</li>
+                    <li>Used geo-targeted Instagram ads reaching affluent South Mumbai and Bandra demographics</li>
+                </ul>
+
+                <p style="margin-top: 15px;"><strong>Results in 13 months:</strong></p>
+                <ul>
+                    <li><strong>Instagram following: 2,400 → 62,000</strong> with highly engaged luxury fashion audience</li>
+                    <li><strong>₹3.2 crore in sales</strong> directly attributed to Instagram (tracked through unique promo codes and Instagram Shopping)</li>
+                    <li><strong>Average transaction value: ₹28,400</strong> vs. boutique average ₹18,200 (Instagram customers purchased more premium items)</li>
+                    <li><strong>Boutique foot traffic increased 180%</strong> with customers specifically mentioning Instagram discovery</li>
+                    <li><strong>Customer lifetime value 2.4x higher</strong> for Instagram-sourced customers vs. walk-ins</li>
+                    <li><strong>VIP WhatsApp community: 840 members</strong> generating ₹1.4 crore annual revenue through exclusive offerings</li>
+                    <li><strong>Zero discounting required</strong>—strong brand positioning commanded full prices</li>
+                </ul>
+
+                <p style="margin-top: 15px;"><em>"Luxury brands traditionally avoided social media, fearing it would commoditize premium positioning. God Digital Marketing showed us Instagram could enhance luxury perception through editorial-quality content and exclusive community building. The micro-influencer strategy was genius—rather than one celebrity with millions of followers, we partnered with sophisticated style influencers whose audiences genuinely appreciated our aesthetic. Their endorsements carried more weight than any celebrity could provide. Instagram became our primary discovery channel while WhatsApp VIP community created unprecedented customer intimacy at scale."</em> — Owner, Fashion Boutique</p>
+            </div>
+
+            <div class="case-study" data-aos="fade-up">
+                <h3>B2B SaaS Company, BKC</h3>
+                <p><strong>Challenge:</strong> Enterprise software company targeting CFOs and finance teams in Mumbai's corporate sector. Product-market fit was strong but brand awareness was zero. Cold outbound and paid LinkedIn ads were expensive (₹12,000+ per qualified lead). Needed thought leadership positioning that attracted inbound inquiries from decision-makers already predisposed to trust the company.</p>
+
+                <p style="margin-top: 15px;"><strong>Our Social Media Strategy:</strong></p>
+                <ul>
+                    <li>Positioned CEO as financial technology thought leader on LinkedIn through consistent, valuable content</li>
+                    <li>Published weekly LinkedIn posts analyzing fintech trends, regulatory changes affecting CFOs, digital transformation challenges</li>
+                    <li>Created LinkedIn article series on "CFO's Guide to Digital Transformation" establishing comprehensive expertise</li>
+                    <li>Engaged actively in LinkedIn groups where Mumbai CFOs and finance professionals discussed challenges</li>
+                    <li>Developed customer success video series showcasing how Mumbai companies solved specific finance problems</li>
+                    <li>Implemented employee advocacy program—finance team sharing industry insights and company updates</li>
+                    <li>Used LinkedIn's ABM features targeting specific companies and decision-makers with relevant content</li>
+                    <li>Hosted virtual events on LinkedIn featuring customer panel discussions and expert insights</li>
+                </ul>
+
+                <p style="margin-top: 15px;"><strong>Results in 11 months:</strong></p>
+                <ul>
+                    <li><strong>CEO LinkedIn following: 1,800 → 42,000</strong> with 85% Mumbai-based finance professionals</li>
+                    <li><strong>420 qualified demo requests</strong> directly from LinkedIn engagement and thought leadership content</li>
+                    <li><strong>Lead conversion rate: 32%</strong> for LinkedIn-sourced leads vs. 11% from paid ads</li>
+                    <li><strong>Sales cycle reduced 38%</strong> as prospects arrived pre-educated and pre-sold on approach</li>
+                    <li><strong>₹8.4 crore in new ARR</strong> from customers who discovered company through LinkedIn</li>
+                    <li><strong>Customer acquisition cost: ₹2,100 per lead</strong> vs. ₹12,000 through paid channels</li>
+                    <li><strong>Speaking invitations to industry conferences</strong> further establishing thought leadership</li>
+                    <li><strong>Recruitment applications increased 12x</strong> from strong employer brand visibility</li>
+                </ul>
+
+                <p style="margin-top: 15px;"><em>"B2B software sales traditionally relied on cold outbound and expensive conferences. LinkedIn thought leadership transformed our approach completely. When the CEO's posts about CFO challenges started getting thousands of views and hundreds of engaged comments, inbound inquiries began flowing. These weren't cold leads requiring extensive education—they were warm prospects who already trusted our expertise and wanted to learn how we could help. The quality difference was night and day. LinkedIn sourced leads converted at 3x the rate of paid channels because thought leadership pre-sold our credibility."</em> — VP of Marketing</p>
+            </div>
+
+            <div class="case-study" data-aos="fade-up">
+                <h3>Cloud Kitchen Chain, Mumbai Suburbs</h3>
+                <p><strong>Challenge:</strong> Cloud kitchen operating 6 locations across Mumbai suburbs relying entirely on Swiggy and Zomato (paying 25-30% commissions). Needed to build direct customer relationships reducing dependency on delivery platforms. Limited budget prevented expensive advertising, requiring organic social growth and word-of-mouth multiplication.</p>
+
+                <p style="margin-top: 15px;"><strong>Our Social Media Strategy:</strong></p>
+                <ul>
+                    <li>Instagram strategy showcasing food quality, preparation process, and customer satisfaction</li>
+                    <li>Created daily Instagram Reels featuring chef preparations, new dish launches, behind-the-scenes kitchen operations</li>
+                    <li>Launched user-generated content campaign encouraging customers to share meal photos with branded hashtag</li>
+                    <li>Implemented Instagram Stories showing real-time order preparation, ingredient sourcing, quality standards</li>
+                    <li>Developed Facebook community groups for each Mumbai suburb served, fostering neighborhood connections</li>
+                    <li>Created WhatsApp broadcast lists enabling direct order communication and exclusive offers for loyal customers</li>
+                    <li>Used hyperlocal Facebook ads targeting 3km radius around each kitchen location</li>
+                    <li>Partnered with local food bloggers for authentic reviews and area-specific recommendations</li>
+                </ul>
+
+                <p style="margin-top: 15px;"><strong>Results in 9 months:</strong></p>
+                <ul>
+                    <li><strong>Instagram following: 3,200 → 68,000</strong> with engaged foodie audience across Mumbai</li>
+                    <li><strong>Direct orders: 12% → 38% of total revenue</strong> reducing delivery platform dependency</li>
+                    <li><strong>₹2.4 crore in direct order revenue</strong> through social media channels (WhatsApp, Instagram, Facebook)</li>
+                    <li><strong>Commission savings: ₹68 lakh annually</strong> from reduced delivery platform dependency</li>
+                    <li><strong>Customer lifetime value increased 85%</strong> as direct customers ordered more frequently</li>
+                    <li><strong>WhatsApp community: 14,000 members</strong> generating recurring revenue through exclusive offers</li>
+                    <li><strong>User-generated content: 4,800+ customer food photos</strong> providing authentic marketing</li>
+                    <li><strong>Average order value 22% higher</strong> for direct orders vs. platform orders</li>
+                </ul>
+
+                <p style="margin-top: 15px;"><em>"Delivery platforms were bleeding us dry with commissions while owning our customer relationships. Social media—especially WhatsApp and Instagram—allowed us to connect directly with customers and build community around our food. The behind-the-scenes kitchen content built trust; people saw our quality standards and preparation care. User-generated content created social proof more powerful than any advertising. Most impactfully, direct ordering through WhatsApp eliminated platform commissions while enabling personalization impossible through apps. Customers could customize orders, request special preparations, and develop relationships with our team. Social media didn't just save commission costs—it transformed transactional orders into ongoing customer relationships."</em> — Founder, Cloud Kitchen</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Mumbai-Specific Social Media Insights</h2>
+
+            <h3>Commute Time Optimization</h3>
+            <p>Mumbai's legendary commute patterns create unique social media consumption windows. Morning local train rides (7-10am) generate massive mobile social usage. Lunch breaks (1-2pm) in BKC and Nariman Point see engagement spikes. Evening commutes (6-9pm) provide second major consumption window. Smart content scheduling aligns with these patterns for maximum visibility.</p>
+
+            <h3>Festival & Cultural Marketing</h3>
+            <p>Mumbai's diverse cultural calendar provides endless content opportunities. Ganesh Chaturthi dominates September social feeds—brands successfully participate through authentic cultural engagement. Diwali, Christmas, Eid, and other festivals create engagement spikes. Smart brands plan festival campaigns months ahead, balancing commercial opportunity with genuine cultural celebration.</p>
+
+            <h3>Food Culture Obsession</h3>
+            <p>Mumbai's passionate food culture makes culinary content consistently high-performing. From street food (vada pav, pav bhaji) to fine dining, food content generates exceptional engagement. Food photography, restaurant reviews, recipe content, and chef stories resonate across demographics. Even non-food brands successfully incorporate Mumbai food culture into content strategies.</p>
+
+            <h3>Cricket & Entertainment Integration</h3>
+            <p>Mumbai Indians dominates social conversations during IPL season. Bollywood news, celebrity gossip, and entertainment content maintain year-round interest. Brands successfully leverage these cultural touchpoints through authentic participation—not opportunistic bandwagoning that Mumbai audiences immediately detect and reject.</p>
+
+            <h3>Language Dynamics</h3>
+            <p>English dominates Mumbai social media more than other Indian metros, but don't ignore Hindi and even Marathi for specific audiences. Multilingual content strategies work—English for cosmopolitan professional audiences, Hindi for broader reach, Marathi for local cultural connection. Code-switching (mixing languages naturally) reflects how Mumbaikars actually communicate.</p>
+        </section>
+
+        <section class="section">
+            <h2>Why Choose God Digital Marketing for Mumbai SMM?</h2>
+
+            <p><strong>20 Years of Mumbai Market Expertise:</strong> We've managed social media campaigns across every Mumbai neighborhood and industry—from South Mumbai luxury to suburban family businesses, finance to entertainment, B2B to consumer brands. This local knowledge ensures strategies resonate with Mumbai's unique cultural and economic dynamics.</p>
+
+            <p><strong>Platform-Specific Mastery:</strong> Each social platform requires different strategies, content types, and engagement approaches. We create platform-native content optimized for how Mumbai audiences use Instagram, LinkedIn, Facebook, Twitter, and emerging platforms.</p>
+
+            <p><strong>Content Production Excellence:</strong> Our Mumbai-based team handles complete content creation—professional photography, videography, copywriting, graphic design. You get consistent, quality output without coordinating multiple vendors.</p>
+
+            <p><strong>Data-Driven Optimization:</strong> We track every metric that matters—engagement rates, follower growth, website traffic, lead generation, sales attribution. Data directs continuous optimization ensuring social media investment delivers measurable business results.</p>
+
+            <p><strong>Community Management:</strong> Social media requires daily attention—responding to comments, engaging with followers, handling customer inquiries. We provide ongoing community management ensuring your Mumbai social presence stays active, responsive, and professional.</p>
+
+            <p><strong>ROI Accountability:</strong> Every campaign includes comprehensive tracking and transparent reporting. You'll always know exactly what business results—leads, sales, brand awareness—your social media generates relative to investment.</p>
+        </section>
+
+        <section class="section" style="text-align: center; padding: 3rem 0;">
+            <h2>Ready to Dominate Mumbai Social Media?</h2>
+            <p style="max-width: 800px; margin: 0 auto 2rem; font-size: 1.1rem;">Whether you're targeting South Mumbai's luxury market, BKC's corporate sector, or Mumbai's broader consumer base, we'll create social strategies that cut through the noise and drive real business growth.</p>
+            <a href="../../../contact-us.html" class="cta-button">Start Your Mumbai Campaign</a>
+            <p style="margin-top: 2rem; color: var(--text-secondary);">
+                <i class="fas fa-phone"></i> <a href="tel:+918708577598" style="color: var(--text-secondary); text-decoration: none;">+91 8708577598</a> |
+                <i class="fas fa-envelope"></i> <a href="mailto:nitin@goddigitalmarketing.com" style="color: var(--text-secondary); text-decoration: none;">nitin@goddigitalmarketing.com</a>
+            </p>
+        </section>
+    </div>
+
+    <footer style="background:rgba(15,23,42,0.5);backdrop-filter:blur(10px);border-top:1px solid rgba(255,255,255,0.1);padding:60px 20px 20px">
+        <div style="max-width:1400px;margin:0 auto">
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:40px;margin-bottom:40px">
+                <div><h3 style="color:#F8FAFC;margin-bottom:1rem;font-size:1.1rem">Digital Marketing Services</h3><ul style="list-style:none;margin:0;padding:0"><li style="margin-bottom:0.6rem"><a href="../../seo-services/index.html" style="color:#94A3B8;text-decoration:none">SEO Services</a></li><li style="margin-bottom:0.6rem"><a href="../../ppc/index.html" style="color:#94A3B8;text-decoration:none">PPC Advertising</a></li><li style="margin-bottom:0.6rem"><a href="../index.html" style="color:#94A3B8;text-decoration:none">Social Media Marketing</a></li><li style="margin-bottom:0.6rem"><a href="../../content-marketing/index.html" style="color:#94A3B8;text-decoration:none">Content Marketing</a></li><li style="margin-bottom:0.6rem"><a href="../../email-marketing/index.html" style="color:#94A3B8;text-decoration:none">Email Marketing</a></li><li style="margin-bottom:0.6rem"><a href="../../web-design-development/index.html" style="color:#94A3B8;text-decoration:none">Web Design</a></li><li style="margin-bottom:0.6rem"><a href="../../conversion-optimization/index.html" style="color:#94A3B8;text-decoration:none">Conversion Rate Optimization</a></li><li style="margin-bottom:0.6rem"><a href="../../online-reputation-management/index.html" style="color:#94A3B8;text-decoration:none">Reputation Management</a></li><li style="margin-bottom:0.6rem"><a href="../../video-marketing/index.html" style="color:#94A3B8;text-decoration:none">Video Marketing</a></li><li style="margin-bottom:0.6rem"><a href="../../influencer-marketing/index.html" style="color:#94A3B8;text-decoration:none">Influencer Marketing</a></li><li style="margin-bottom:0.6rem"><a href="../../marketing-automation/index.html" style="color:#94A3B8;text-decoration:none">Marketing Automation</a></li></ul></div>
+                <div><h3 style="color:#F8FAFC;margin-bottom:1rem;font-size:1.1rem">Industries We Serve</h3><ul style="list-style:none;margin:0;padding:0"><li style="margin-bottom:0.6rem"><a href="../../../industries/healthcare/index.html" style="color:#94A3B8;text-decoration:none">Healthcare</a></li><li style="margin-bottom:0.6rem"><a href="../../../industries/technology/index.html" style="color:#94A3B8;text-decoration:none">Technology</a></li><li style="margin-bottom:0.6rem"><a href="../../../industries/ecommerce/index.html" style="color:#94A3B8;text-decoration:none">E-commerce</a></li><li style="margin-bottom:0.6rem"><a href="../../../industries/education/index.html" style="color:#94A3B8;text-decoration:none">Education</a></li><li style="margin-bottom:0.6rem"><a href="../../../industries/real-estate/index.html" style="color:#94A3B8;text-decoration:none">Real Estate</a></li><li style="margin-bottom:0.6rem"><a href="../../../industries/finance/index.html" style="color:#94A3B8;text-decoration:none">Finance</a></li><li style="margin-bottom:0.6rem"><a href="../../../industries/automotive/index.html" style="color:#94A3B8;text-decoration:none">Automotive</a></li><li style="margin-bottom:0.6rem"><a href="../../../industries/manufacturing/index.html" style="color:#94A3B8;text-decoration:none">Manufacturing</a></li><li style="margin-bottom:0.6rem"><a href="../../../industries/hospitality/index.html" style="color:#94A3B8;text-decoration:none">Hospitality</a></li><li style="margin-bottom:0.6rem"><a href="../../../industries/legal/index.html" style="color:#94A3B8;text-decoration:none">Legal Services</a></li></ul></div>
+                <div><h3 style="color:#F8FAFC;margin-bottom:1rem;font-size:1.1rem">Social Media Marketing by City</h3><ul style="list-style:none;margin:0;padding:0"><li style="margin-bottom:0.6rem"><a href="index.html" style="color:#94A3B8;text-decoration:none">SMM Mumbai</a></li><li style="margin-bottom:0.6rem"><a href="../bangalore/index.html" style="color:#94A3B8;text-decoration:none">SMM Bangalore</a></li><li style="margin-bottom:0.6rem"><a href="../delhi/index.html" style="color:#94A3B8;text-decoration:none">SMM Delhi</a></li><li style="margin-bottom:0.6rem"><a href="../pune/index.html" style="color:#94A3B8;text-decoration:none">SMM Pune</a></li><li style="margin-bottom:0.6rem"><a href="../hyderabad/index.html" style="color:#94A3B8;text-decoration:none">SMM Hyderabad</a></li><li style="margin-bottom:0.6rem"><a href="../chennai/index.html" style="color:#94A3B8;text-decoration:none">SMM Chennai</a></li><li style="margin-bottom:0.6rem"><a href="../kolkata/index.html" style="color:#94A3B8;text-decoration:none">SMM Kolkata</a></li><li style="margin-bottom:0.6rem"><a href="../ahmedabad/index.html" style="color:#94A3B8;text-decoration:none">SMM Ahmedabad</a></li><li style="margin-bottom:0.6rem"><a href="../maharashtra/index.html" style="color:#94A3B8;text-decoration:none">SMM Maharashtra</a></li><li style="margin-bottom:0.6rem"><a href="../karnataka/index.html" style="color:#94A3B8;text-decoration:none">SMM Karnataka</a></li></ul></div>
+                <div><h3 style="color:#F8FAFC;margin-bottom:1rem;font-size:1.1rem">Email Marketing</h3><ul style="list-style:none;margin:0;padding:0"><li style="margin-bottom:0.6rem"><a href="../../email-marketing/index.html" style="color:#94A3B8;text-decoration:none">Email Marketing Services</a></li><li style="margin-bottom:0.6rem"><a href="../../email-marketing/strategy/index.html" style="color:#94A3B8;text-decoration:none">Email Strategy</a></li><li style="margin-bottom:0.6rem"><a href="../../email-marketing/automation/index.html" style="color:#94A3B8;text-decoration:none">Email Automation</a></li><li style="margin-bottom:0.6rem"><a href="../../email-marketing/newsletters/index.html" style="color:#94A3B8;text-decoration:none">Newsletter Design</a></li><li style="margin-bottom:0.6rem"><a href="../../email-marketing/campaigns/index.html" style="color:#94A3B8;text-decoration:none">Email Campaigns</a></li><li style="margin-bottom:0.6rem"><a href="../../email-marketing/drip-campaigns/index.html" style="color:#94A3B8;text-decoration:none">Drip Campaigns</a></li><li style="margin-bottom:0.6rem"><a href="../../email-marketing/segmentation/index.html" style="color:#94A3B8;text-decoration:none">List Segmentation</a></li><li style="margin-bottom:0.6rem"><a href="../../email-marketing/ab-testing/index.html" style="color:#94A3B8;text-decoration:none">A/B Testing</a></li><li style="margin-bottom:0.6rem"><a href="../../email-marketing/deliverability/index.html" style="color:#94A3B8;text-decoration:none">Deliverability Optimization</a></li><li style="margin-bottom:0.6rem"><a href="../../email-marketing/analytics/index.html" style="color:#94A3B8;text-decoration:none">Email Analytics</a></li></ul></div>
+                <div><h3 style="color:#F8FAFC;margin-bottom:1rem;font-size:1.1rem">Resources & Company</h3><ul style="list-style:none;margin:0;padding:0"><li style="margin-bottom:0.6rem"><a href="../../../blog/index.html" style="color:#94A3B8;text-decoration:none">Blog</a></li><li style="margin-bottom:0.6rem"><a href="../../../case-studies/index.html" style="color:#94A3B8;text-decoration:none">Case Studies</a></li><li style="margin-bottom:0.6rem"><a href="../../../resources/index.html" style="color:#94A3B8;text-decoration:none">Resources</a></li><li style="margin-bottom:0.6rem"><a href="../../../tools/index.html" style="color:#94A3B8;text-decoration:none">Free Tools</a></li><li style="margin-bottom:0.6rem"><a href="../../../about.html" style="color:#94A3B8;text-decoration:none">About Us</a></li><li style="margin-bottom:0.6rem"><a href="../../../contact-us.html" style="color:#94A3B8;text-decoration:none">Contact Us</a></li><li style="margin-bottom:0.6rem"><a href="../../../careers.html" style="color:#94A3B8;text-decoration:none">Careers</a></li><li style="margin-bottom:0.6rem"><a href="../../../privacy-policy.html" style="color:#94A3B8;text-decoration:none">Privacy Policy</a></li><li style="margin-bottom:0.6rem"><a href="../../../terms-of-service.html" style="color:#94A3B8;text-decoration:none">Terms of Service</a></li><li style="margin-bottom:0.6rem"><a href="../../../sitemap.html" style="color:#94A3B8;text-decoration:none">Sitemap</a></li></ul></div>
+            </div>
+            <div style="border-top:1px solid rgba(255,255,255,0.1);padding-top:30px;text-align:center">
+                <div style="display:flex;justify-content:center;gap:2rem;margin-bottom:1.5rem;flex-wrap:wrap">
+                    <a href="../../seo-services/index.html" style="color:#94A3B8;text-decoration:none;font-size:0.9rem">SEO</a>
+                    <a href="../../ppc/index.html" style="color:#94A3B8;text-decoration:none;font-size:0.9rem">PPC</a>
+                    <a href="../index.html" style="color:#94A3B8;text-decoration:none;font-size:0.9rem">Social Media</a>
+                    <a href="../../content-marketing/index.html" style="color:#94A3B8;text-decoration:none;font-size:0.9rem">Content Marketing</a>
+                    <a href="../../email-marketing/index.html" style="color:#94A3B8;text-decoration:none;font-size:0.9rem">Email Marketing</a>
+                    <a href="../../web-design-development/index.html" style="color:#94A3B8;text-decoration:none;font-size:0.9rem">Web Design</a>
+                </div>
+                <p style="color:#64748B;font-size:0.9rem;margin:0">&copy; 2025 God Digital Marketing. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEO Services in Maharashtra | Leading Digital Marketing Agency for Mumbai, Pune & Beyond</title>
+    <meta name="description" content="Top-rated SEO agency serving Maharashtra. Specialized search optimization for Mumbai, Pune, Nagpur, Nashik & Aurangabad businesses. Drive revenue through strategic SEO.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-purple: #7C3AED;
+            --secondary-blue: #2563EB;
+            --accent-amber: #F59E0B;
+            --dark-bg: #0F172A;
+            --card-bg: rgba(255, 255, 255, 0.05);
+            --text-primary: #F8FAFC;
+            --text-secondary: #94A3B8;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
+            color: var(--text-primary);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: rgba(15, 23, 42, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(124, 58, 237, 0.2);
+        }
+
+        nav {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--primary-purple), var(--secondary-blue));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-menu a {
+            color: var(--text-primary);
+            text-decoration: none;
+            transition: color 0.3s ease;
+            font-weight: 500;
+        }
+
+        .nav-menu a:hover {
+            color: var(--primary-purple);
+        }
+
+        .hero {
+            padding: 80px 2rem;
+            text-align: center;
+            background: radial-gradient(circle at 50% 50%, rgba(124, 58, 237, 0.15) 0%, transparent 50%);
+        }
+
+        .breadcrumb {
+            max-width: 1200px;
+            margin: 0 auto 2rem;
+            display: flex;
+            gap: 0.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        .breadcrumb a {
+            color: var(--primary-purple);
+            text-decoration: none;
+        }
+
+        .hero h1 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, #ffffff 0%, var(--primary-purple) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            max-width: 800px;
+            margin: 0 auto 2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        .content-section {
+            margin-bottom: 4rem;
+        }
+
+        .content-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, var(--primary-purple), var(--secondary-blue));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .content-section h3 {
+            font-size: 1.8rem;
+            margin: 2rem 0 1rem;
+            color: var(--accent-amber);
+        }
+
+        .content-section p {
+            font-size: 1.05rem;
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+
+        .content-section ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .content-section ul li {
+            padding: 0.8rem 0;
+            padding-left: 2rem;
+            position: relative;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+
+        .content-section ul li:before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: var(--accent-amber);
+            font-weight: bold;
+        }
+
+        .city-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .city-card {
+            background: var(--card-bg);
+            backdrop-filter: blur(10px);
+            padding: 2rem;
+            border-radius: 12px;
+            border: 1px solid rgba(124, 58, 237, 0.2);
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .city-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary-purple);
+        }
+
+        .city-card h4 {
+            color: var(--accent-amber);
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, var(--primary-purple), var(--secondary-blue));
+            padding: 3rem;
+            border-radius: 16px;
+            text-align: center;
+            margin: 4rem 0;
+        }
+
+        .cta-section h2 {
+            color: white;
+            margin-bottom: 1rem;
+            background: none;
+            -webkit-text-fill-color: white;
+        }
+
+        .cta-section p {
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: white;
+            color: var(--primary-purple);
+            padding: 1rem 2.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        footer {
+            background: rgba(15, 23, 42, 0.95);
+            padding: 3rem 2rem 1.5rem;
+            border-top: 1px solid rgba(124, 58, 237, 0.2);
+        }
+
+        .footer-grid {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h3 {
+            color: var(--primary-purple);
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-section ul li a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color 0.3s ease;
+            font-size: 0.95rem;
+        }
+
+        .footer-section ul li a:hover {
+            color: var(--primary-purple);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(124, 58, 237, 0.2);
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        a {
+            color: var(--primary-purple);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: var(--secondary-blue);
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+
+            .hero {
+                padding: 40px 1rem;
+            }
+
+            .container {
+                padding: 2rem 1rem;
+            }
+
+            .content-section h2 {
+                font-size: 2rem;
+            }
+
+            .content-section h3 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header style="background:rgba(15,23,42,0.95);backdrop-filter:blur(10px);padding:0;position:sticky;top:0;z-index:1000;border-bottom:1px solid rgba(124,58,237,0.2)">
+        <nav style="max-width:1400px;margin:0 auto;padding:1.2rem 2rem;display:flex;justify-content:space-between;align-items:center">
+            <a href="../../../index.html" style="font-size:1.5rem;font-weight:bold;background:linear-gradient(135deg,#7C3AED,#2563EB);-webkit-background-clip:text;-webkit-text-fill-color:transparent;text-decoration:none">God Digital</a>
+            <div style="display:flex;gap:2rem;align-items:center">
+                <a href="../index.html" style="color:#F8FAFC;text-decoration:none;transition:color 0.3s ease">SEO</a>
+                <a href="../../ppc-advertising/index.html" style="color:#F8FAFC;text-decoration:none;transition:color 0.3s ease">PPC</a>
+                <a href="../../social-media-marketing/index.html" style="color:#F8FAFC;text-decoration:none;transition:color 0.3s ease">Social Media</a>
+                <a href="../../content-marketing/index.html" style="color:#F8FAFC;text-decoration:none;transition:color 0.3s ease">Content Marketing</a>
+                <a href="../../email-marketing/index.html" style="color:#F8FAFC;text-decoration:none;transition:color 0.3s ease">Email Marketing</a>
+                <a href="../../web-design-development/index.html" style="color:#F8FAFC;text-decoration:none;transition:color 0.3s ease">Web Design</a>
+                <a href="../../conversion-optimization/index.html" style="color:#F8FAFC;text-decoration:none;transition:color 0.3s ease">CRO</a>
+                <a href="../../../contact-us.html" style="display:inline-block;padding:0.6rem 1.5rem;background:linear-gradient(135deg,#7C3AED,#2563EB);color:#fff;text-decoration:none;border-radius:6px;transition:transform 0.3s ease">Get Quote</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="breadcrumb">
+            <a href="../../../index.html">Home</a> /
+            <a href="../../index.html">Services</a> /
+            <a href="../index.html">SEO Services</a> /
+            <span>Maharashtra</span>
+        </div>
+        <h1>SEO Services Across Maharashtra That Drive Real Results</h1>
+        <p>Expert search engine optimization for businesses throughout Maharashtra. From Mumbai's financial district to Pune's IT corridor, Nagpur's manufacturing belt to Nashik's agro-industries—we help Maharashtra businesses dominate Google search.</p>
+    </section>
+
+    <div class="container">
+        <div class="content-section">
+            <h2>Why Maharashtra Businesses Need Specialized SEO</h2>
+            <p>Maharashtra isn't just India's economic powerhouse—it's the most digitally connected state with the highest internet penetration and online commerce activity. Your customers here research extensively before buying. They compare options on Google. They read reviews. They evaluate expertise. If your business isn't visible during these critical research moments, you're losing customers to competitors who rank higher.</p>
+
+            <p>We've worked with over 200+ Maharashtra businesses across Mumbai, Pune, Nagpur, Nashik, Aurangabad, Thane, and Kolhapur. From financial services firms in Mumbai's Nariman Point to IT companies in Pune's Hinjewadi, from manufacturing companies in Nagpur's MIHAN to wine tourism businesses in Nashik—we understand Maharashtra's diverse business landscape and what it takes to succeed in each market.</p>
+
+            <p>Maharashtra's economy is incredibly diverse. You have global financial headquarters in Mumbai, tech startups and IT services in Pune, automobile and manufacturing in Nagpur and Aurangabad, agribusiness and wine in Nashik, pharmaceutical manufacturing in multiple cities, and education institutions throughout. Each industry, each city requires tailored <a href="../index.html">SEO strategies</a> that account for local competition, customer behavior, and market dynamics.</p>
+
+            <p>What works for a <a href="../mumbai/index.html">Mumbai-based financial services firm</a> won't work for a <a href="../pune/index.html">Pune IT training institute</a> or a Nagpur manufacturing company. We develop city-specific, industry-specific strategies through our comprehensive <a href="../../index.html">digital marketing services</a> including <a href="../../ppc-advertising/index.html">PPC advertising</a>, <a href="../../social-media-marketing/index.html">social media marketing</a>, and <a href="../../content-marketing/index.html">content creation</a>.</p>
+        </div>
+
+        <div class="content-section">
+            <h2>Cities We Serve Across Maharashtra</h2>
+
+            <div class="city-grid">
+                <div class="city-card" data-aos="fade-up">
+                    <h4><i class="fas fa-city"></i> Mumbai SEO Services</h4>
+                    <p>India's financial capital and commercial hub. We help Mumbai businesses across finance, entertainment, real estate, retail, and professional services dominate search in the nation's most competitive market.</p>
+                    <p style="margin-top: 10px;"><a href="../mumbai/index.html">Learn more about Mumbai SEO →</a></p>
+                </div>
+
+                <div class="city-card" data-aos="fade-up">
+                    <h4><i class="fas fa-laptop-code"></i> Pune SEO Services</h4>
+                    <p>Maharashtra's education and IT hub. Specialized SEO for IT companies, educational institutions, automobile businesses, and the thriving startup ecosystem in Hinjewadi, Kharadi, and Viman Nagar.</p>
+                    <p style="margin-top: 10px;"><a href="../pune/index.html">Learn more about Pune SEO →</a></p>
+                </div>
+
+                <div class="city-card" data-aos="fade-up">
+                    <h4><i class="fas fa-industry"></i> Nagpur SEO Services</h4>
+                    <p>The Orange City and Central India's commercial center. SEO for manufacturing, logistics, agribusiness, and the growing MIHAN IT corridor. Strong B2B and industrial focus.</p>
+                    <p style="margin-top: 10px;"><a href="../index.html">Explore Nagpur SEO solutions →</a></p>
+                </div>
+
+                <div class="city-card" data-aos="fade-up">
+                    <h4><i class="fas fa-wine-glass"></i> Nashik SEO Services</h4>
+                    <p>Wine capital and agribusiness center. Specialized SEO for wine tourism, agricultural businesses, food processing, and the growing industrial sector around MIDC areas.</p>
+                    <p style="margin-top: 10px;"><a href="../index.html">Discover Nashik SEO →</a></p>
+                </div>
+
+                <div class="city-card" data-aos="fade-up">
+                    <h4><i class="fas fa-landmark"></i> Aurangabad SEO Services</h4>
+                    <p>Tourism and manufacturing hub. SEO for tourism businesses (leveraging Ajanta-Ellora proximity), automobile manufacturing, and MIDC industrial units. Heritage meets industry.</p>
+                    <p style="margin-top: 10px;"><a href="../index.html">View Aurangabad SEO →</a></p>
+                </div>
+
+                <div class="city-card" data-aos="fade-up">
+                    <h4><i class="fas fa-building"></i> Thane & MMR SEO</h4>
+                    <p>Mumbai Metropolitan Region's fastest-growing areas. Local SEO for retail, real estate, healthcare, education, and professional services targeting Thane, Navi Mumbai, Kalyan-Dombivli residents.</p>
+                    <p style="margin-top: 10px;"><a href="../index.html">Explore MMR SEO →</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>Industries We Serve Across Maharashtra</h2>
+            <p>Maharashtra's diverse economy means we work across virtually every major industry vertical. Here's how we approach some of the state's most prominent sectors:</p>
+
+            <h3>Financial Services & Fintech</h3>
+            <p>Mumbai is India's financial capital, home to RBI, NSE, BSE, and countless banks, insurance companies, wealth management firms, and fintech startups. We help financial services companies rank for competitive keywords, generate qualified leads, and build authority in a heavily regulated industry. Our <a href="../healthcare/index.html">compliance-focused approach</a> ensures your content meets regulatory standards while still driving results.</p>
+
+            <h3>Information Technology & Software</h3>
+            <p>Pune's IT corridor rivals Bangalore, with major tech companies, product startups, and IT services firms throughout Hinjewadi, Kharadi, and Magarpatta. We specialize in B2B tech SEO—helping you rank for service-specific keywords, generate enterprise leads, and establish thought leadership through strategic <a href="../../content-marketing/index.html">content marketing</a>.</p>
+
+            <h3>Manufacturing & Automobile</h3>
+            <p>Nagpur, Aurangabad, Pune, and surrounding MIDC areas are manufacturing powerhouses—automobiles, engineering, chemicals, textiles. We help manufacturers with B2B SEO that reaches procurement managers, distributors, and corporate buyers. Focus on technical specifications, certifications, and industrial buyer intent.</p>
+
+            <h3>Real Estate & Construction</h3>
+            <p>Maharashtra's real estate market is massive—luxury Mumbai projects, affordable Pune housing, commercial spaces throughout. Our <a href="../real-estate/index.html">real estate SEO</a> helps developers, brokers, and property consultants capture buyers at every stage of their journey, from initial research to project comparison to booking.</p>
+
+            <h3>Education & Training</h3>
+            <p>From Mumbai's professional courses to Pune's engineering colleges to training institutes throughout the state, education is a major sector. Our <a href="../education/index.html">education SEO</a> helps institutions attract quality students, showcase programs effectively, and dominate local education search during peak admission seasons.</p>
+
+            <h3>Healthcare & Pharmaceuticals</h3>
+            <p>Maharashtra has world-class hospitals in Mumbai and Pune, plus major pharmaceutical manufacturing throughout the state. Our <a href="../healthcare/index.html">healthcare SEO</a> helps hospitals attract patients, pharma companies reach B2B buyers, and medical practitioners build local authority—all while maintaining strict compliance with medical advertising regulations.</p>
+
+            <h3>Tourism & Hospitality</h3>
+            <p>From Mumbai's business hotels to Nashik's wine tourism, Aurangabad's heritage sites to coastal Konkan resorts—tourism is vital. We optimize for both domestic and international travelers, seasonal tourism patterns, and booking intent keywords that drive actual reservations and revenue.</p>
+
+            <h3>E-commerce & Retail</h3>
+            <p>Maharashtra has India's highest online shopping penetration. Our <a href="../e-commerce/index.html">e-commerce SEO</a> helps online retailers, D2C brands, and marketplaces compete effectively—from product page optimization to category structuring to content strategies that drive sustainable organic growth.</p>
+        </div>
+
+        <div class="content-section">
+            <h2>Our Maharashtra-Specific SEO Approach</h2>
+
+            <h3>1. Multi-City Optimization Strategy</h3>
+            <p>If you operate in multiple Maharashtra cities, we create location-specific pages and content for each market. A Mumbai financial advisor needs different content than a Nagpur manufacturer. We optimize for city-specific search behavior while maintaining brand consistency across locations.</p>
+
+            <h3>2. Multilingual Content for Diverse Audiences</h3>
+            <p>Maharashtra's business audience is bilingual—English for B2B and urban consumers, Marathi for local markets and mass consumers. We develop multilingual content strategies that reach all segments of your target market, particularly important for retail, education, healthcare, and local services.</p>
+
+            <h3>3. Industry-Specific Keyword Strategies</h3>
+            <p>Maharashtra's industrial diversity requires specialized keyword research for each sector. Financial services keywords differ completely from manufacturing terms, which differ from education searches. We build comprehensive keyword databases specific to your industry and target cities.</p>
+
+            <h3>4. Competitive Intelligence</h3>
+            <p>Maharashtra markets are highly competitive—especially Mumbai and Pune. We conduct thorough competitive analysis, identify gaps your competitors miss, and develop strategies that give you edge in crowded markets. Sometimes this means targeting underserved niches; sometimes it means directly challenging market leaders.</p>
+
+            <h3>5. Integration with Regional Marketing</h3>
+            <p>SEO doesn't work in isolation. We coordinate with your <a href="../../social-media-marketing/index.html">social media</a>, <a href="../../ppc-advertising/index.html">paid advertising</a>, <a href="../../email-marketing/index.html">email campaigns</a>, and offline marketing to create cohesive strategies that work across channels and touchpoints.</p>
+        </div>
+
+        <div class="content-section">
+            <h2>Why Maharashtra Businesses Choose Us</h2>
+
+            <h3>Deep Local Market Understanding</h3>
+            <p>We've worked extensively throughout Maharashtra for over 6 years. We understand Mumbai's pace and competitiveness, Pune's blend of tradition and innovation, Nagpur's industrial focus, and the unique characteristics of each city. This local knowledge informs every strategy we develop.</p>
+
+            <h3>Proven Track Record Across Industries</h3>
+            <p>We've delivered results across Maharashtra's major industries—finance, IT, manufacturing, real estate, education, healthcare, e-commerce, and more. This cross-industry experience means we bring insights from multiple sectors to your specific challenge.</p>
+
+            <h3>Transparent Communication in Marathi or English</h3>
+            <p>We work in whatever language you prefer—detailed English reporting for corporate clients, Marathi communication for local businesses, or seamless bilingual service. Clear communication ensures alignment and trust throughout our partnership.</p>
+
+            <h3>Results-Focused Approach</h3>
+            <p>We don't just report rankings and traffic—we track what matters to your business: qualified inquiries, sales conversations, actual revenue. You know exactly how SEO investment translates to business growth through our <a href="../../analytics-reporting/index.html">comprehensive analytics</a>.</p>
+
+            <h3>Long-Term Partnership Mindset</h3>
+            <p>Most of our Maharashtra clients work with us for 2+ years because we focus on sustainable growth, not quick wins. We build foundations that continue generating results year after year, adapt as your business evolves, and grow alongside you.</p>
+        </div>
+
+        <div class="cta-section" data-aos="fade-up">
+            <h2>Ready to Dominate Search Across Maharashtra?</h2>
+            <p>Let's discuss your business, target markets, and growth goals. We'll show you exactly how we'd approach your Maharashtra SEO and what results you can expect.</p>
+            <a href="../../../contact-us.html" class="cta-button">Schedule Your Free Maharashtra SEO Consultation</a>
+        </div>
+
+        <div class="content-section">
+            <h2>Contact Our Maharashtra SEO Team</h2>
+            <p>Serving businesses throughout Maharashtra with comprehensive SEO and digital marketing services.</p>
+
+            <p><strong>Phone:</strong> <a href="tel:+918708577598">+91 8708577598</a></p>
+            <p><strong>Email:</strong> <a href="mailto:nitin@goddigitalmarketing.com">nitin@goddigitalmarketing.com</a></p>
+            <p><strong>Office:</strong> EF-64 (Ground Floor), TDI Espania, Sector-19, Sonipat, Haryana, India</p>
+
+            <p style="margin-top: 2rem;">We serve Maharashtra businesses with full-service <a href="../../index.html">digital marketing</a> including <a href="../index.html">SEO</a>, <a href="../../ppc-advertising/index.html">PPC</a>, <a href="../../social-media-marketing/index.html">social media</a>, <a href="../../content-marketing/index.html">content</a>, <a href="../../web-design-development/index.html">web design</a>, and <a href="../../analytics-reporting/index.html">analytics</a>.</p>
+        </div>
+    </div>
+
+    <footer style="background:rgba(15,23,42,0.5);backdrop-filter:blur(10px);border-top:1px solid rgba(255,255,255,0.1);padding:60px 20px 20px">
+        <div style="max-width:1400px;margin:0 auto">
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:40px;margin-bottom:40px">
+                <div><h3 style="color:#F8FAFC;margin-bottom:1rem;font-size:1.1rem">Digital Marketing Services</h3><ul style="list-style:none;margin:0;padding:0"><li style="margin-bottom:0.6rem"><a href="../index.html" style="color:#94A3B8;text-decoration:none">SEO Services</a></li><li style="margin-bottom:0.6rem"><a href="../../ppc-advertising/index.html" style="color:#94A3B8;text-decoration:none">PPC Advertising</a></li><li style="margin-bottom:0.6rem"><a href="../../social-media-marketing/index.html" style="color:#94A3B8;text-decoration:none">Social Media Marketing</a></li><li style="margin-bottom:0.6rem"><a href="../../content-marketing/index.html" style="color:#94A3B8;text-decoration:none">Content Marketing</a></li><li style="margin-bottom:0.6rem"><a href="../../email-marketing/index.html" style="color:#94A3B8;text-decoration:none">Email Marketing</a></li><li style="margin-bottom:0.6rem"><a href="../../web-design-development/index.html" style="color:#94A3B8;text-decoration:none">Web Design</a></li><li style="margin-bottom:0.6rem"><a href="../../conversion-optimization/index.html" style="color:#94A3B8;text-decoration:none">Conversion Optimization</a></li><li style="margin-bottom:0.6rem"><a href="../../analytics-reporting/index.html" style="color:#94A3B8;text-decoration:none">Analytics & Reporting</a></li><li style="margin-bottom:0.6rem"><a href="../../brand-strategy/index.html" style="color:#94A3B8;text-decoration:none">Brand Strategy</a></li><li style="margin-bottom:0.6rem"><a href="../../video-marketing/index.html" style="color:#94A3B8;text-decoration:none">Video Marketing</a></li><li style="margin-bottom:0.6rem"><a href="../../local-seo/index.html" style="color:#94A3B8;text-decoration:none">Local SEO</a></li></ul></div>
+                <div><h3 style="color:#F8FAFC;margin-bottom:1rem;font-size:1.1rem">Industries We Serve</h3><ul style="list-style:none;margin:0;padding:0"><li style="margin-bottom:0.6rem"><a href="../../../industries/healthcare/index.html" style="color:#94A3B8;text-decoration:none">Healthcare</a></li><li style="margin-bottom:0.6rem"><a href="../../../industries/e-commerce/index.html" style="color:#94A3B8;text-decoration:none">E-commerce</a></li><li style="margin-bottom:0.6rem"><a href="../../../industries/real-estate/index.html" style="color:#94A3B8;text-decoration:none">Real Estate</a></li><li style="margin-bottom:0.6rem"><a href="../../../industries/education/index.html" style="color:#94A3B8;text-decoration:none">Education</a></li><li style="margin-bottom:0.6rem"><a href="../../../industries/legal-services/index.html" style="color:#94A3B8;text-decoration:none">Legal Services</a></li><li style="margin-bottom:0.6rem"><a href="../../../industries/hospitality/index.html" style="color:#94A3B8;text-decoration:none">Hospitality</a></li><li style="margin-bottom:0.6rem"><a href="../../../industries/technology/index.html" style="color:#94A3B8;text-decoration:none">Technology</a></li><li style="margin-bottom:0.6rem"><a href="../../../industries/manufacturing/index.html" style="color:#94A3B8;text-decoration:none">Manufacturing</a></li><li style="margin-bottom:0.6rem"><a href="../../../industries/retail/index.html" style="color:#94A3B8;text-decoration:none">Retail</a></li><li style="margin-bottom:0.6rem"><a href="../../../industries/professional-services/index.html" style="color:#94A3B8;text-decoration:none">Professional Services</a></li></ul></div>
+                <div><h3 style="color:#F8FAFC;margin-bottom:1rem;font-size:1.1rem">SEO Services by City</h3><ul style="list-style:none;margin:0;padding:0"><li style="margin-bottom:0.6rem"><a href="../mumbai/index.html" style="color:#94A3B8;text-decoration:none">Mumbai</a></li><li style="margin-bottom:0.6rem"><a href="../bangalore/index.html" style="color:#94A3B8;text-decoration:none">Bangalore</a></li><li style="margin-bottom:0.6rem"><a href="../delhi/index.html" style="color:#94A3B8;text-decoration:none">Delhi</a></li><li style="margin-bottom:0.6rem"><a href="../pune/index.html" style="color:#94A3B8;text-decoration:none">Pune</a></li><li style="margin-bottom:0.6rem"><a href="../hyderabad/index.html" style="color:#94A3B8;text-decoration:none">Hyderabad</a></li><li style="margin-bottom:0.6rem"><a href="../chennai/index.html" style="color:#94A3B8;text-decoration:none">Chennai</a></li><li style="margin-bottom:0.6rem"><a href="../kolkata/index.html" style="color:#94A3B8;text-decoration:none">Kolkata</a></li><li style="margin-bottom:0.6rem"><a href="../ahmedabad/index.html" style="color:#94A3B8;text-decoration:none">Ahmedabad</a></li><li style="margin-bottom:0.6rem"><a href="../maharashtra/index.html" style="color:#94A3B8;text-decoration:none">Maharashtra</a></li><li style="margin-bottom:0.6rem"><a href="../karnataka/index.html" style="color:#94A3B8;text-decoration:none">Karnataka</a></li></ul></div>
+                <div><h3 style="color:#F8FAFC;margin-bottom:1rem;font-size:1.1rem">Email Marketing</h3><ul style="list-style:none;margin:0;padding:0"><li style="margin-bottom:0.6rem"><a href="../../email-marketing/automation/index.html" style="color:#94A3B8;text-decoration:none">Email Automation</a></li><li style="margin-bottom:0.6rem"><a href="../../email-marketing/campaigns/index.html" style="color:#94A3B8;text-decoration:none">Email Campaigns</a></li><li style="margin-bottom:0.6rem"><a href="../../email-marketing/newsletters/index.html" style="color:#94A3B8;text-decoration:none">Newsletters</a></li><li style="margin-bottom:0.6rem"><a href="../../email-marketing/drip-campaigns/index.html" style="color:#94A3B8;text-decoration:none">Drip Campaigns</a></li><li style="margin-bottom:0.6rem"><a href="../../email-marketing/lead-nurturing/index.html" style="color:#94A3B8;text-decoration:none">Lead Nurturing</a></li><li style="margin-bottom:0.6rem"><a href="../../email-marketing/segmentation/index.html" style="color:#94A3B8;text-decoration:none">List Segmentation</a></li><li style="margin-bottom:0.6rem"><a href="../../email-marketing/ab-testing/index.html" style="color:#94A3B8;text-decoration:none">A/B Testing</a></li><li style="margin-bottom:0.6rem"><a href="../../email-marketing/templates/index.html" style="color:#94A3B8;text-decoration:none">Email Templates</a></li><li style="margin-bottom:0.6rem"><a href="../../email-marketing/analytics/index.html" style="color:#94A3B8;text-decoration:none">Email Analytics</a></li><li style="margin-bottom:0.6rem"><a href="../../email-marketing/deliverability/index.html" style="color:#94A3B8;text-decoration:none">Deliverability</a></li></ul></div>
+                <div><h3 style="color:#F8FAFC;margin-bottom:1rem;font-size:1.1rem">Resources & Company</h3><ul style="list-style:none;margin:0;padding:0"><li style="margin-bottom:0.6rem"><a href="../../../about-us.html" style="color:#94A3B8;text-decoration:none">About Us</a></li><li style="margin-bottom:0.6rem"><a href="../../../blog/index.html" style="color:#94A3B8;text-decoration:none">Blog</a></li><li style="margin-bottom:0.6rem"><a href="../../../case-studies/index.html" style="color:#94A3B8;text-decoration:none">Case Studies</a></li><li style="margin-bottom:0.6rem"><a href="../../../testimonials/index.html" style="color:#94A3B8;text-decoration:none">Testimonials</a></li><li style="margin-bottom:0.6rem"><a href="../../../faq/index.html" style="color:#94A3B8;text-decoration:none">FAQ</a></li><li style="margin-bottom:0.6rem"><a href="../../../careers/index.html" style="color:#94A3B8;text-decoration:none">Careers</a></li><li style="margin-bottom:0.6rem"><a href="../../../contact-us.html" style="color:#94A3B8;text-decoration:none">Contact</a></li><li style="margin-bottom:0.6rem"><a href="../../../privacy-policy.html" style="color:#94A3B8;text-decoration:none">Privacy Policy</a></li><li style="margin-bottom:0.6rem"><a href="../../../terms-and-conditions.html" style="color:#94A3B8;text-decoration:none">Terms & Conditions</a></li><li style="margin-bottom:0.6rem"><a href="../../../sitemap.html" style="color:#94A3B8;text-decoration:none">Sitemap</a></li></ul></div>
+            </div>
+            <div style="border-top:1px solid rgba(255,255,255,0.1);padding-top:30px;text-align:center">
+                <div style="display:flex;justify-content:center;gap:2rem;margin-bottom:1.5rem;flex-wrap:wrap">
+                    <a href="../index.html" style="color:#94A3B8;text-decoration:none;font-size:0.9rem">SEO</a>
+                    <a href="../../ppc-advertising/index.html" style="color:#94A3B8;text-decoration:none;font-size:0.9rem">PPC</a>
+                    <a href="../../social-media-marketing/index.html" style="color:#94A3B8;text-decoration:none;font-size:0.9rem">Social Media</a>
+                    <a href="../../content-marketing/index.html" style="color:#94A3B8;text-decoration:none;font-size:0.9rem">Content Marketing</a>
+                    <a href="../../email-marketing/index.html" style="color:#94A3B8;text-decoration:none;font-size:0.9rem">Email Marketing</a>
+                    <a href="../../web-design-development/index.html" style="color:#94A3B8;text-decoration:none;font-size:0.9rem">Web Design</a>
+                </div>
+                <p style="color:#64748B;font-size:0.9rem;margin:0">&copy; 2025 God Digital Marketing. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
+</body>
+</html>

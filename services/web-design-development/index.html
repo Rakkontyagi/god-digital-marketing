@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Web Design & Development Services India - Beautiful, fast, conversion-optimized websites. Responsive design, modern tech stacks, SEO-ready. Build websites that drive business growth.">
+    <meta name="keywords" content="web design, web development, website design, responsive design, UI/UX design, website development, landing pages">
+    <title>Web Design & Development Services India | Website Design | God Digital</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --primary-purple: #6B46C1;
+            --secondary-blue: #2563EB;
+            --accent-amber: #F59E0B;
+            --dark-slate: #0F172A;
+            --light-cloud: #F8FAFC;
+            --gradient-main: linear-gradient(135deg, #6B46C1 0%, #2563EB 100%);
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--dark-slate);
+            color: var(--light-cloud);
+            line-height: 1.7;
+        }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        nav {
+            background: rgba(15, 23, 42, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .logo {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 28px;
+            font-weight: 700;
+            background: var(--gradient-main);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-decoration: none;
+        }
+        .breadcrumb {
+            padding: 20px 0;
+            font-size: 14px;
+        }
+        .breadcrumb a {
+            color: var(--accent-amber);
+            text-decoration: none;
+        }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .gradient-text {
+            background: var(--gradient-main);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero {
+            padding: 80px 20px 60px;
+            text-align: center;
+            background: linear-gradient(135deg, rgba(107, 70, 193, 0.1) 0%, rgba(37, 99, 235, 0.1) 100%);
+        }
+        .hero h1 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: clamp(36px, 6vw, 56px);
+            margin-bottom: 20px;
+            font-weight: 800;
+        }
+        section { padding: 80px 20px; }
+        .section-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: clamp(32px, 4vw, 42px);
+            margin-bottom: 30px;
+            font-weight: 700;
+        }
+        .content-section {
+            max-width: 900px;
+            margin: 0 auto 60px;
+        }
+        .content-section p {
+            margin-bottom: 20px;
+            font-size: 18px;
+            line-height: 1.8;
+            color: rgba(248, 250, 252, 0.9);
+        }
+        .content-section ul, .content-section ol {
+            margin: 20px 0 20px 30px;
+        }
+        .content-section li {
+            margin-bottom: 12px;
+            font-size: 17px;
+            line-height: 1.7;
+        }
+        .highlight-box {
+            background: rgba(245, 158, 11, 0.1);
+            border-left: 4px solid var(--accent-amber);
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 8px;
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        .service-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 35px;
+            transition: all 0.3s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+            border-color: rgba(107, 70, 193, 0.5);
+            box-shadow: 0 20px 60px rgba(107, 70, 193, 0.3);
+        }
+        .service-icon {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background: var(--gradient-main);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+        .case-study {
+            background: rgba(37, 99, 235, 0.1);
+            border-left: 4px solid var(--secondary-blue);
+            padding: 30px;
+            margin: 30px 0;
+            border-radius: 8px;
+        }
+        .case-study h3 {
+            color: var(--accent-amber);
+            margin-bottom: 15px;
+            font-size: 22px;
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 25px;
+            margin: 40px 0;
+        }
+        .stat-card {
+            text-align: center;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .stat-number {
+            font-size: 42px;
+            font-weight: 800;
+            background: var(--gradient-main);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
+        }
+        .cta-section {
+            background: linear-gradient(135deg, rgba(107, 70, 193, 0.2) 0%, rgba(37, 99, 235, 0.2) 100%);
+            padding: 60px 20px;
+            text-align: center;
+            border-radius: 20px;
+            margin: 40px 0;
+        }
+        .cta-button {
+            display: inline-block;
+            padding: 18px 45px;
+            background: var(--gradient-main);
+            border-radius: 50px;
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 18px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(107, 70, 193, 0.4);
+        }
+        footer {
+            background: rgba(15, 23, 42, 0.5);
+            backdrop-filter: blur(10px);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 40px 20px 20px;
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            .services-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="../../index.html" class="logo">God Digital</a>
+            <ul class="nav-menu" style="display:flex;list-style:none;gap:30px;align-items:center">
+                <li><a href="../seo-services/index.html" style="color:var(--light-cloud);text-decoration:none;font-weight:500">SEO</a></li>
+                <li><a href="../ppc-advertising/index.html" style="color:var(--light-cloud);text-decoration:none;font-weight:500">PPC</a></li>
+                <li><a href="../social-media-marketing/index.html" style="color:var(--light-cloud);text-decoration:none;font-weight:500">Social Media</a></li>
+                <li><a href="../content-marketing/index.html" style="color:var(--light-cloud);text-decoration:none;font-weight:500">Content Marketing</a></li>
+                <li><a href="../email-marketing/index.html" style="color:var(--light-cloud);text-decoration:none;font-weight:500">Email Marketing</a></li>
+                <li><a href="../web-design-development/index.html" style="color:var(--light-cloud);text-decoration:none;font-weight:500">Web Design</a></li>
+                <li><a href="../conversion-optimization/index.html" style="color:var(--light-cloud);text-decoration:none;font-weight:500">CRO</a></li>
+                <li><a href="../../contact-us.html" style="color:var(--light-cloud);text-decoration:none;font-weight:500">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="breadcrumb">
+            <a href="../../index.html">Home</a> &gt;
+            <a href="../index.html">Services</a> &gt;
+            Web Design & Development
+        </div>
+    </div>
+
+    <section class="hero">
+        <div class="container">
+            <h1 data-aos="fade-up"><span class="gradient-text">Web Design & Development</span></h1>
+            <p style="font-size: 20px; color: rgba(248, 250, 252, 0.8); max-width: 800px; margin: 20px auto;" data-aos="fade-up" data-aos-delay="100">Beautiful, fast, conversion-optimized websites built on modern tech stacks. Your website should be your best salesperson—working 24/7 to turn visitors into customers.</p>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="content-section">
+                <h2 class="section-title" data-aos="fade-up">Your Website Is Your Digital Storefront</h2>
+
+                <p>Imagine walking into a physical store with broken lights, cluttered aisles, and a cashier who ignores you. You'd leave immediately, right?</p>
+
+                <p>That's exactly what happens when visitors land on a slow, confusing, or outdated website. Except online, they leave even faster—in about 3 seconds.</p>
+
+                <p>Your website isn't just online brochure. It's your 24/7 salesperson, your brand ambassador, your lead generation machine. It needs to look incredible, load instantly, work perfectly on every device, and guide visitors toward taking action.</p>
+
+                <p>We've seen businesses transform completely with the right website. A consulting firm that went from 2-3 monthly leads to 40+ leads. An e-commerce brand that tripled conversion rates just by fixing their mobile experience. A SaaS company that cut their sales cycle in half with better website messaging.</p>
+
+                <div class="highlight-box">
+                    <strong>Our approach is simple:</strong> We build websites that balance three critical elements—stunning design that reflects your brand, lightning-fast performance that keeps visitors engaged, and conversion optimization that turns traffic into revenue. Pretty but slow? Useless. Fast but confusing? Pointless. We deliver all three.
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h2 class="section-title" data-aos="fade-up">Our Web Design & Development Services</h2>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up">
+                    <div class="service-icon"><i class="fas fa-desktop"></i></div>
+                    <h3>Custom Website Design</h3>
+                    <p>No templates. No cookie-cutter designs. We create custom websites tailored to your brand, audience, and business goals.</p>
+                    <ul style="margin-top: 15px; text-align: left; font-size: 15px;">
+                        <li>Brand-aligned design systems</li>
+                        <li>User experience (UX) design</li>
+                        <li>User interface (UI) design</li>
+                        <li>Wireframing and prototyping</li>
+                        <li>Responsive mobile design</li>
+                        <li>Accessibility compliance</li>
+                    </ul>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon"><i class="fas fa-code"></i></div>
+                    <h3>Web Development</h3>
+                    <p>Clean, modern, maintainable code built on the latest technologies. Fast, secure, and scalable.</p>
+                    <ul style="margin-top: 15px; text-align: left; font-size: 15px;">
+                        <li>HTML5, CSS3, JavaScript</li>
+                        <li>React, Next.js, Vue.js</li>
+                        <li>WordPress, Shopify, Webflow</li>
+                        <li>Custom CMS development</li>
+                        <li>API integrations</li>
+                        <li>Database design and development</li>
+                    </ul>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon"><i class="fas fa-shopping-bag"></i></div>
+                    <h3>E-commerce Development</h3>
+                    <p>Online stores that convert browsers into buyers. Seamless checkout experiences and powerful backend systems.</p>
+                    <ul style="margin-top: 15px; text-align: left; font-size: 15px;">
+                        <li>Shopify store development</li>
+                        <li>WooCommerce websites</li>
+                        <li>Custom e-commerce platforms</li>
+                        <li>Payment gateway integration</li>
+                        <li>Inventory management systems</li>
+                        <li>Multi-vendor marketplaces</li>
+                    </ul>
+                </div>
+
+                <div class="service-card" data-aos="fade-up">
+                    <div class="service-icon"><i class="fas fa-rocket"></i></div>
+                    <h3>Landing Page Design</h3>
+                    <p>High-converting landing pages for campaigns, product launches, and lead generation. Built for one purpose: conversions.</p>
+                    <ul style="margin-top: 15px; text-align: left; font-size: 15px;">
+                        <li>PPC campaign landing pages</li>
+                        <li>Lead generation pages</li>
+                        <li>Product launch pages</li>
+                        <li>Event registration pages</li>
+                        <li>A/B testing setup</li>
+                        <li>Conversion rate optimization</li>
+                    </ul>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon"><i class="fas fa-mobile-alt"></i></div>
+                    <h3>Mobile-First Design</h3>
+                    <p>60%+ of web traffic is mobile. We design for mobile first, then scale up to desktop—not the other way around.</p>
+                    <ul style="margin-top: 15px; text-align: left; font-size: 15px;">
+                        <li>Responsive design across all devices</li>
+                        <li>Touch-optimized interfaces</li>
+                        <li>Mobile speed optimization</li>
+                        <li>Progressive web apps (PWAs)</li>
+                        <li>AMP (Accelerated Mobile Pages)</li>
+                        <li>Mobile UX best practices</li>
+                    </ul>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon"><i class="fas fa-sync-alt"></i></div>
+                    <h3>Website Redesign</h3>
+                    <p>Outdated website holding you back? We redesign and rebuild while preserving SEO value and improving performance.</p>
+                    <ul style="margin-top: 15px; text-align: left; font-size: 15px;">
+                        <li>Comprehensive site audit</li>
+                        <li>SEO-safe migration planning</li>
+                        <li>Content strategy and migration</li>
+                        <li>URL structure preservation</li>
+                        <li>Performance optimization</li>
+                        <li>Conversion rate improvements</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="content-section" style="margin-top: 80px;">
+                <h2 class="section-title" data-aos="fade-up">The 3 Pillars of Effective Web Design</h2>
+
+                <h3 style="font-size: 26px; margin: 40px 0 20px;">1. Design: It Needs to Look Incredible</h3>
+                <p>First impressions form in 50 milliseconds. Your website's design immediately communicates professionalism, trust, and credibility—or the lack thereof.</p>
+                <p>We create visually stunning designs that:</p>
+                <ul>
+                    <li>Reflect your brand personality and values</li>
+                    <li>Use modern design trends without looking trendy</li>
+                    <li>Create clear visual hierarchy guiding users' eyes</li>
+                    <li>Use whitespace effectively (cluttered = overwhelming)</li>
+                    <li>Incorporate high-quality imagery and graphics</li>
+                    <li>Maintain consistency across every page</li>
+                </ul>
+
+                <h3 style="font-size: 26px; margin: 40px 0 20px;">2. Performance: Speed Is Non-Negotiable</h3>
+                <p>A 1-second delay in page load time reduces conversions by 7%. That's real money left on the table.</p>
+                <p>We optimize relentlessly for speed:</p>
+                <ul>
+                    <li>Image optimization and lazy loading</li>
+                    <li>Code minification and compression</li>
+                    <li>CDN (Content Delivery Network) setup</li>
+                    <li>Browser caching implementation</li>
+                    <li>Database query optimization</li>
+                    <li>Server response time reduction</li>
+                </ul>
+                <p><strong>Target:</strong> Under 2 seconds load time on 4G, under 3 seconds on 3G.</p>
+
+                <h3 style="font-size: 26px; margin: 40px 0 20px;">3. Conversion: Every Element Has a Purpose</h3>
+                <p>Beautiful and fast means nothing if your website doesn't convert visitors into leads or customers.</p>
+                <p>We design for conversions through:</p>
+                <ul>
+                    <li>Clear value propositions above the fold</li>
+                    <li>Strategic placement of calls-to-action (CTAs)</li>
+                    <li>Trust signals (testimonials, reviews, credentials)</li>
+                    <li>Reduced friction in conversion flows</li>
+                    <li>A/B testing of key elements</li>
+                    <li>Heatmaps and user behavior analysis</li>
+                </ul>
+            </div>
+
+            <div class="content-section" style="margin-top: 80px;">
+                <h2 class="section-title" data-aos="fade-up">Real Results From Strategic Web Design</h2>
+
+                <div class="case-study">
+                    <h3>B2B SaaS Company, Bangalore</h3>
+                    <p><strong>Challenge:</strong> A project management SaaS had a confusing website that failed to communicate their value proposition. Bounce rate was 78%, and trial signup conversion was only 1.2%.</p>
+
+                    <p style="margin-top: 15px;"><strong>Our Solution:</strong></p>
+                    <ul style="font-size: 16px;">
+                        <li>Redesigned homepage with clear messaging and value props</li>
+                        <li>Created interactive product demos showing key features</li>
+                        <li>Simplified navigation from 12 menu items to 6</li>
+                        <li>Built dedicated landing pages for each use case</li>
+                        <li>Implemented social proof throughout (logos, testimonials)</li>
+                        <li>Optimized trial signup flow from 7 fields to 3</li>
+                    </ul>
+
+                    <p style="margin-top: 15px;"><strong>Results after redesign:</strong></p>
+                    <ul style="font-size: 16px;">
+                        <li><strong>42% bounce rate</strong> (down from 78%)</li>
+                        <li><strong>4.8% trial signup conversion</strong> (up from 1.2%—4x improvement)</li>
+                        <li><strong>2.3x increase in qualified leads</strong></li>
+                        <li><strong>68% faster page load times</strong></li>
+                        <li><strong>280+ new trial signups monthly</strong> (vs 70 previously)</li>
+                    </ul>
+                </div>
+
+                <div class="case-study">
+                    <h3>E-commerce Fashion Brand, Mumbai</h3>
+                    <p><strong>Challenge:</strong> A women's clothing e-commerce site had 65% mobile traffic but terrible mobile experience. Cart abandonment rate was 82%, killing their growth.</p>
+
+                    <p style="margin-top: 15px;"><strong>Our Solution:</strong></p>
+                    <ul style="font-size: 16px;">
+                        <li>Complete mobile redesign with thumb-friendly navigation</li>
+                        <li>One-click checkout with digital wallets</li>
+                        <li>Product images optimized for mobile (faster load)</li>
+                        <li>Simplified product filters and search</li>
+                        <li>Added size guide with visual fit recommendations</li>
+                        <li>Implemented progressive web app (PWA) features</li>
+                    </ul>
+
+                    <p style="margin-top: 15px;"><strong>Results in 3 months:</strong></p>
+                    <ul style="font-size: 16px;">
+                        <li><strong>54% cart abandonment rate</strong> (down from 82%)</li>
+                        <li><strong>3.2x increase in mobile conversions</strong></li>
+                        <li><strong>₹28 lakhs additional monthly revenue</strong> from improved mobile UX</li>
+                        <li><strong>42% increase in average order value</strong></li>
+                        <li><strong>1.8 seconds average mobile load time</strong> (down from 6.2 seconds)</li>
+                    </ul>
+                </div>
+
+                <div class="case-study">
+                    <h3>Legal Services Firm, Delhi</h3>
+                    <p><strong>Challenge:</strong> A corporate law firm had an outdated website that looked like it was built in 2005. They were losing clients to competitors with more modern online presence.</p>
+
+                    <p style="margin-top: 15px;"><strong>Our Solution:</strong></p>
+                    <ul style="font-size: 16px;">
+                        <li>Complete website redesign with premium, trustworthy aesthetic</li>
+                        <li>Created practice area pages with case studies</li>
+                        <li>Built resource library with downloadable legal guides</li>
+                        <li>Implemented consultation booking system</li>
+                        <li>Added attorney profiles showcasing expertise</li>
+                        <li>Created blog for thought leadership content</li>
+                    </ul>
+
+                    <p style="margin-top: 15px;"><strong>Results in 6 months:</strong></p>
+                    <ul style="font-size: 16px;">
+                        <li><strong>165 consultation requests</strong> (up from 18 in previous 6 months)</li>
+                        <li><strong>32 new corporate clients</strong> directly from website inquiries</li>
+                        <li><strong>₹1.8 crore in new business</strong> attributed to website</li>
+                        <li><strong>4.2 minutes average time on site</strong> (up from 1.1 minutes)</li>
+                        <li><strong>Positioned as industry thought leader</strong> through content</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="stats-grid" style="margin-top: 80px;">
+                <div class="stat-card" data-aos="fade-up">
+                    <div class="stat-number">280+</div>
+                    <p>Websites Built</p>
+                </div>
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat-number">92%</div>
+                    <p>Client Satisfaction Rate</p>
+                </div>
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-number">1.8s</div>
+                    <p>Average Load Time</p>
+                </div>
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat-number">185%</div>
+                    <p>Avg Conversion Increase</p>
+                </div>
+            </div>
+
+            <div class="content-section" style="margin-top: 80px;">
+                <h2 class="section-title" data-aos="fade-up">Frequently Asked Questions</h2>
+
+                <h3 style="font-size: 22px; margin: 30px 0 15px;">How long does it take to build a website?</h3>
+                <p>Simple business websites: 3-4 weeks. Complex e-commerce or custom platforms: 8-12 weeks. Landing pages: 1-2 weeks. Timeline depends on project scope, number of pages, custom features, and content readiness. We provide detailed timelines during initial consultation.</p>
+
+                <h3 style="font-size: 22px; margin: 30px 0 15px;">What platform do you recommend?</h3>
+                <p>It depends on your needs. WordPress for content-heavy sites and blogs. Shopify for e-commerce. Webflow for marketing sites. Custom React/Next.js for complex applications. We're platform-agnostic and recommend what's best for your specific requirements, not what's easiest for us.</p>
+
+                <h3 style="font-size: 22px; margin: 30px 0 15px;">Will my website be mobile-friendly?</h3>
+                <p>Absolutely. Every website we build is fully responsive and optimized for mobile devices. We design mobile-first, ensuring perfect experiences on smartphones and tablets. We test on real devices, not just desktop browsers.</p>
+
+                <h3 style="font-size: 22px; margin: 30px 0 15px;">Do you provide website hosting and maintenance?</h3>
+                <p>Yes. We offer managed hosting packages with regular backups, security updates, uptime monitoring, and technical support. Or we can build on your existing hosting. We also offer monthly maintenance plans for updates, content changes, and ongoing optimization.</p>
+
+                <h3 style="font-size: 22px; margin: 30px 0 15px;">Will my website be SEO-friendly?</h3>
+                <p>Every website we build follows SEO best practices: clean code, fast loading speeds, mobile optimization, proper heading structure, optimized images, schema markup, and SEO-friendly URLs. However, ongoing SEO (content, link building) is a separate service that requires continuous effort.</p>
+
+                <h3 style="font-size: 22px; margin: 30px 0 15px;">Can you redesign my existing website?</h3>
+                <p>Yes! We specialize in website redesigns and migrations. We conduct thorough audits, plan SEO-safe migrations, preserve valuable content and rankings, and dramatically improve design and conversion rates. We've successfully redesigned 150+ websites without losing SEO value.</p>
+
+                <h3 style="font-size: 22px; margin: 30px 0 15px;">What if I need changes after launch?</h3>
+                <p>We include 30 days of post-launch support with every project for minor adjustments and bug fixes. After that, you can choose our monthly maintenance plan or request changes on a per-project basis. We never disappear after launch—we're invested in your long-term success.</p>
+            </div>
+
+            <div class="cta-section" style="margin-top: 80px;">
+                <h2 style="font-size: 38px; margin-bottom: 20px;" data-aos="fade-up">Ready to Build a Website That Actually Drives Business?</h2>
+                <p style="font-size: 19px; max-width: 700px; margin: 0 auto 35px;" data-aos="fade-up" data-aos-delay="100">Let's discuss your website goals and create a design that turns visitors into customers. Free consultation, honest advice.</p>
+                <a href="../../contact-us.html" class="cta-button" data-aos="fade-up" data-aos-delay="200">Get Your Free Website Consultation</a>
+            </div>
+
+            <div class="content-section" style="margin-top: 80px;">
+                <h2 class="section-title">Related Services</h2>
+                <p>Websites work best as part of a complete digital strategy:</p>
+                <ul style="font-size: 17px; margin-top: 20px;">
+                    <li><a href="../seo-services/index.html" style="color: var(--accent-amber);">SEO Services</a> - Drive organic traffic to your new website</li>
+                    <li><a href="../ppc-advertising/index.html" style="color: var(--accent-amber);">PPC Advertising</a> - Send paid traffic to optimized landing pages</li>
+                    <li><a href="../content-marketing/index.html" style="color: var(--accent-amber);">Content Marketing</a> - Fill your website with valuable content</li>
+                    <li><a href="../brand-strategy/index.html" style="color: var(--accent-amber);">Brand Strategy</a> - Develop brand identity before design</li>
+                    <li><a href="../analytics-reporting/index.html" style="color: var(--accent-amber);">Analytics Setup</a> - Track website performance and conversions</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer style="background:rgba(15,23,42,0.5);backdrop-filter:blur(10px);border-top:1px solid rgba(255,255,255,0.1);padding:60px 20px 20px">
+        <div class="container" style="max-width:1400px">
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:40px;margin-bottom:40px">
+                <div><h3 style="font-size:20px;margin-bottom:20px">Digital Marketing Services</h3><ul style="list-style:none;padding:0"><li style="margin-bottom:12px"><a href="../seo-services/index.html" style="color:rgba(248,250,252,0.7);text-decoration:none">SEO Services</a></li><li style="margin-bottom:12px"><a href="../ppc-advertising/index.html" style="color:rgba(248,250,252,0.7);text-decoration:none">PPC Advertising</a></li><li style="margin-bottom:12px"><a href="../social-media-marketing/index.html" style="color:rgba(248,250,252,0.7);text-decoration:none">Social Media Marketing</a></li><li style="margin-bottom:12px"><a href="../content-marketing/index.html" style="color:rgba(248,250,252,0.7);text-decoration:none">Content Marketing</a></li><li style="margin-bottom:12px"><a href="../email-marketing/index.html" style="color:rgba(248,250,252,0.7);text-decoration:none">Email Marketing</a></li><li style="margin-bottom:12px"><a href="../web-design-development/index.html" style="color:rgba(248,250,252,0.7);text-decoration:none">Web Design</a></li><li style="margin-bottom:12px"><a href="../conversion-optimization/index.html" style="color:rgba(248,250,252,0.7);text-decoration:none">Conversion Optimization</a></li><li style="margin-bottom:12px"><a href="../analytics-reporting/index.html" style="color:rgba(248,250,252,0.7);text-decoration:none">Analytics & Reporting</a></li><li style="margin-bottom:12px"><a href="../influencer-marketing/index.html" style="color:rgba(248,250,252,0.7);text-decoration:none">Influencer Marketing</a></li><li style="margin-bottom:12px"><a href="../online-reputation-management/index.html" style="color:rgba(248,250,252,0.7);text-decoration:none">Online Reputation Management</a></li></ul></div>
+                <div><h3 style="font-size:20px;margin-bottom:20px">Industries We Serve</h3><ul style="list-style:none;padding:0"><li style="margin-bottom:12px"><a href="../../industries/ecommerce/index.html" style="color:rgba(248,250,252,0.7);text-decoration:none">E-commerce</a></li><li style="margin-bottom:12px"><a href="../../industries/healthcare/index.html" style="color:rgba(248,250,252,0.7);text-decoration:none">Healthcare</a></li><li style="margin-bottom:12px"><a href="../../industries/real-estate/index.html" style="color:rgba(248,250,252,0.7);text-decoration:none">Real Estate</a></li><li style="margin-bottom:12px"><a href="../../industries/education/index.html" style="color:rgba(248,250,252,0.7);text-decoration:none">Education</a></li><li style="margin-bottom:12px"><a href="../../industries/legal-services/index.html" style="color:rgba(248,250,252,0.7);text-decoration:none">Legal Services</a></li><li style="margin-bottom:12px"><a href="../../industries/hospitality/index.html" style="color:rgba(248,250,252,0.7);text-decoration:none">Hospitality</a></li><li style="margin-bottom:12px"><a href="../../industries/technology/index.html" style="color:rgba(248,250,252,0.7);text-decoration:none">Technology</a></li><li style="margin-bottom:12px"><a href="../../industries/manufacturing/index.html" style="color:rgba(248,250,252,0.7);text-decoration:none">Manufacturing</a></li><li style="margin-bottom:12px"><a href="../../industries/retail/index.html" style="color:rgba(248,250,252,0.7);text-decoration:none">Retail</a></li><li style="margin-bottom:12px"><a href="../../industries/professional-services/index.html" style="color:rgba(248,250,252,0.7);text-decoration:none">Professional Services</a></li></ul></div>
+                <div><h3 style="font-size:20px;margin-bottom:20px">Major Cities SEO</h3><ul style="list-style:none;padding:0"><li style="margin-bottom:12px"><a href="../seo/mumbai/index.html" style="color:rgba(248,250,252,0.7);text-decoration:none">Mumbai SEO Services</a></li><li style="margin-bottom:12px"><a href="../seo/bangalore/index.html" style="color:rgba(248,250,252,0.7);text-decoration:none">Bangalore SEO</a></li><li style="margin-bottom:12px"><a href="../seo/delhi/index.html" style="color:rgba(248,250,252,0.7);text-decoration:none">Delhi SEO</a></li><li style="margin-bottom:12px"><a href="../seo/pune/index.html" style="color:rgba(248,250,252,0.7);text-decoration:none">Pune SEO</a></li><li style="margin-bottom:12px"><a href="../seo/hyderabad/index.html" style="color:rgba(248,250,252,0.7);text-decoration:none">Hyderabad SEO</a></li><li style="margin-bottom:12px"><a href="../seo/chennai/index.html" style="color:rgba(248,250,252,0.7);text-decoration:none">Chennai SEO</a></li><li style="margin-bottom:12px"><a href="../seo/kolkata/index.html" style="color:rgba(248,250,252,0.7);text-decoration:none">Kolkata SEO</a></li><li style="margin-bottom:12px"><a href="../seo/ahmedabad/index.html" style="color:rgba(248,250,252,0.7);text-decoration:none">Ahmedabad SEO</a></li><li style="margin-bottom:12px"><a href="../email-marketing/kochi/index.html" style="color:rgba(248,250,252,0.7);text-decoration:none">Kochi Email Marketing</a></li><li style="margin-bottom:12px"><a href="../email-marketing/bangalore/index.html" style="color:rgba(248,250,252,0.7);text-decoration:none">Bangalore Email Marketing</a></li></ul></div>
+                <div><h3 style="font-size:20px;margin-bottom:20px">Email Marketing</h3><ul style="list-style:none;padding:0"><li style="margin-bottom:12px"><a href="../email-marketing/index.html" style="color:rgba(248,250,252,0.7);text-decoration:none">Email Marketing Services</a></li><li style="margin-bottom:12px"><a href="../email-marketing/email-automation/index.html" style="color:rgba(248,250,252,0.7);text-decoration:none">Email Automation</a></li><li style="margin-bottom:12px"><a href="../email-marketing/drip-campaigns/index.html" style="color:rgba(248,250,252,0.7);text-decoration:none">Drip Campaigns</a></li><li style="margin-bottom:12px"><a href="../email-marketing/newsletter-marketing/index.html" style="color:rgba(248,250,252,0.7);text-decoration:none">Newsletter Marketing</a></li><li style="margin-bottom:12px"><a href="../email-marketing/lead-nurturing/index.html" style="color:rgba(248,250,252,0.7);text-decoration:none">Lead Nurturing</a></li><li style="margin-bottom:12px"><a href="../email-marketing/segmentation/index.html" style="color:rgba(248,250,252,0.7);text-decoration:none">List Segmentation</a></li><li style="margin-bottom:12px"><a href="../email-marketing/personalization/index.html" style="color:rgba(248,250,252,0.7);text-decoration:none">Personalization</a></li><li style="margin-bottom:12px"><a href="../email-marketing/ab-testing/index.html" style="color:rgba(248,250,252,0.7);text-decoration:none">A/B Testing</a></li><li style="margin-bottom:12px"><a href="../email-marketing/abandoned-cart/index.html" style="color:rgba(248,250,252,0.7);text-decoration:none">Cart Recovery</a></li><li style="margin-bottom:12px"><a href="../email-marketing/deliverability-optimization/index.html" style="color:rgba(248,250,252,0.7);text-decoration:none">Deliverability</a></li></ul></div>
+                <div><h3 style="font-size:20px;margin-bottom:20px">Resources & Company</h3><ul style="list-style:none;padding:0"><li style="margin-bottom:12px"><a href="../../about-us.html" style="color:rgba(248,250,252,0.7);text-decoration:none">About Us</a></li><li style="margin-bottom:12px"><a href="../../contact-us.html" style="color:rgba(248,250,252,0.7);text-decoration:none">Contact</a></li><li style="margin-bottom:12px"><a href="../../blog/index.html" style="color:rgba(248,250,252,0.7);text-decoration:none">Blog</a></li><li style="margin-bottom:12px"><a href="../../case-studies/index.html" style="color:rgba(248,250,252,0.7);text-decoration:none">Case Studies</a></li><li style="margin-bottom:12px"><a href="../../resources/index.html" style="color:rgba(248,250,252,0.7);text-decoration:none">Resources</a></li><li style="margin-bottom:12px"><a href="../../careers/index.html" style="color:rgba(248,250,252,0.7);text-decoration:none">Careers</a></li><li style="margin-bottom:12px"><a href="../seo/maharashtra/index.html" style="color:rgba(248,250,252,0.7);text-decoration:none">Maharashtra SEO</a></li><li style="margin-bottom:12px"><a href="../seo/karnataka/index.html" style="color:rgba(248,250,252,0.7);text-decoration:none">Karnataka SEO</a></li><li style="margin-bottom:12px"><a href="../../privacy-policy.html" style="color:rgba(248,250,252,0.7);text-decoration:none">Privacy Policy</a></li><li style="margin-bottom:12px"><a href="../../terms-and-conditions.html" style="color:rgba(248,250,252,0.7);text-decoration:none">Terms of Service</a></li></ul></div>
+            </div>
+            <div style="text-align:center;padding-top:30px;border-top:1px solid rgba(255,255,255,0.1);color:rgba(248,250,252,0.6);font-size:14px"><p>&copy; 2024 God Digital Marketing. All rights reserved. | <a href="../seo-services/index.html" style="color:rgba(248,250,252,0.6);text-decoration:none">SEO</a> | <a href="../ppc-advertising/index.html" style="color:rgba(248,250,252,0.6);text-decoration:none">PPC</a> | <a href="../social-media-marketing/index.html" style="color:rgba(248,250,252,0.6);text-decoration:none">Social Media</a> | <a href="../content-marketing/index.html" style="color:rgba(248,250,252,0.6);text-decoration:none">Content Marketing</a> | <a href="../email-marketing/index.html" style="color:rgba(248,250,252,0.6);text-decoration:none">Email Marketing</a> | <a href="../web-design-development/index.html" style="color:rgba(248,250,252,0.6);text-decoration:none">Web Design</a></p></div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({ duration: 1000, once: true });</script>
+</body>
+</html>

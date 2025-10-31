@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PPC Advertising Services India - Google Ads, Facebook Ads, Display Advertising. Expert pay-per-click management that maximizes ROI. Only pay for results with data-driven PPC campaigns.">
+    <meta name="keywords" content="PPC advertising, Google Ads, Facebook Ads, pay per click, paid search, display advertising, remarketing, PPC management">
+    <title>PPC Advertising Services | Google Ads Management India | God Digital</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --primary-purple: #6B46C1;
+            --secondary-blue: #2563EB;
+            --accent-amber: #F59E0B;
+            --dark-slate: #0F172A;
+            --light-cloud: #F8FAFC;
+            --gradient-main: linear-gradient(135deg, #6B46C1 0%, #2563EB 100%);
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--dark-slate);
+            color: var(--light-cloud);
+            line-height: 1.7;
+        }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        nav {
+            background: rgba(15, 23, 42, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .logo {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 28px;
+            font-weight: 700;
+            background: var(--gradient-main);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-decoration: none;
+        }
+        .breadcrumb {
+            padding: 20px 0;
+            font-size: 14px;
+        }
+        .breadcrumb a {
+            color: var(--accent-amber);
+            text-decoration: none;
+        }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .gradient-text {
+            background: var(--gradient-main);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero {
+            padding: 80px 20px 60px;
+            text-align: center;
+            background: linear-gradient(135deg, rgba(107, 70, 193, 0.1) 0%, rgba(37, 99, 235, 0.1) 100%);
+        }
+        .hero h1 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: clamp(36px, 6vw, 56px);
+            margin-bottom: 20px;
+            font-weight: 800;
+        }
+        section { padding: 80px 20px; }
+        .section-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: clamp(32px, 4vw, 42px);
+            margin-bottom: 30px;
+            font-weight: 700;
+        }
+        .content-section {
+            max-width: 900px;
+            margin: 0 auto 60px;
+        }
+        .content-section p {
+            margin-bottom: 20px;
+            font-size: 18px;
+            line-height: 1.8;
+            color: rgba(248, 250, 252, 0.9);
+        }
+        .content-section ul, .content-section ol {
+            margin: 20px 0 20px 30px;
+        }
+        .content-section li {
+            margin-bottom: 12px;
+            font-size: 17px;
+            line-height: 1.7;
+        }
+        .highlight-box {
+            background: rgba(245, 158, 11, 0.1);
+            border-left: 4px solid var(--accent-amber);
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 8px;
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        .service-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 35px;
+            transition: all 0.3s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+            border-color: rgba(107, 70, 193, 0.5);
+            box-shadow: 0 20px 60px rgba(107, 70, 193, 0.3);
+        }
+        .service-icon {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background: var(--gradient-main);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        .process-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 35px;
+        }
+        .process-number {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: var(--gradient-main);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        .case-study {
+            background: rgba(37, 99, 235, 0.1);
+            border-left: 4px solid var(--secondary-blue);
+            padding: 30px;
+            margin: 30px 0;
+            border-radius: 8px;
+        }
+        .case-study h3 {
+            color: var(--accent-amber);
+            margin-bottom: 15px;
+            font-size: 22px;
+        }
+        .comparison-table {
+            width: 100%;
+            margin: 40px 0;
+            border-collapse: collapse;
+        }
+        .comparison-table th {
+            background: var(--gradient-main);
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+        }
+        .comparison-table td {
+            padding: 15px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .comparison-table tr:hover {
+            background: rgba(255, 255, 255, 0.05);
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 25px;
+            margin: 40px 0;
+        }
+        .stat-card {
+            text-align: center;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .stat-number {
+            font-size: 42px;
+            font-weight: 800;
+            background: var(--gradient-main);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
+        }
+        .cta-section {
+            background: linear-gradient(135deg, rgba(107, 70, 193, 0.2) 0%, rgba(37, 99, 235, 0.2) 100%);
+            padding: 60px 20px;
+            text-align: center;
+            border-radius: 20px;
+            margin: 40px 0;
+        }
+        .cta-button {
+            display: inline-block;
+            padding: 18px 45px;
+            background: var(--gradient-main);
+            border-radius: 50px;
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 18px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(107, 70, 193, 0.4);
+        }
+        footer {
+            background: rgba(15, 23, 42, 0.5);
+            backdrop-filter: blur(10px);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 40px 20px 20px;
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            .services-grid, .process-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="../../index.html" class="logo">God Digital</a>
+            <ul class="nav-menu" style="display:flex;list-style:none;gap:30px;align-items:center">
+                <li><a href="../seo-services/index.html" style="color:var(--light-cloud);text-decoration:none;font-weight:500">SEO</a></li>
+                <li><a href="../ppc-advertising/index.html" style="color:var(--light-cloud);text-decoration:none;font-weight:500">PPC</a></li>
+                <li><a href="../social-media-marketing/index.html" style="color:var(--light-cloud);text-decoration:none;font-weight:500">Social Media</a></li>
+                <li><a href="../content-marketing/index.html" style="color:var(--light-cloud);text-decoration:none;font-weight:500">Content Marketing</a></li>
+                <li><a href="../email-marketing/index.html" style="color:var(--light-cloud);text-decoration:none;font-weight:500">Email Marketing</a></li>
+                <li><a href="../web-design-development/index.html" style="color:var(--light-cloud);text-decoration:none;font-weight:500">Web Design</a></li>
+                <li><a href="../conversion-optimization/index.html" style="color:var(--light-cloud);text-decoration:none;font-weight:500">CRO</a></li>
+                <li><a href="../../contact-us.html" style="color:var(--light-cloud);text-decoration:none;font-weight:500">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="breadcrumb">
+            <a href="../../index.html">Home</a> &gt;
+            <a href="../index.html">Services</a> &gt;
+            PPC Advertising
+        </div>
+    </div>
+
+    <section class="hero">
+        <div class="container">
+            <h1 data-aos="fade-up"><span class="gradient-text">PPC Advertising</span> That Delivers ROI</h1>
+            <p style="font-size: 20px; color: rgba(248, 250, 252, 0.8); max-width: 800px; margin: 20px auto;" data-aos="fade-up" data-aos-delay="100">Stop wasting ad spend on clicks that don't convert. Get precision-targeted Google Ads and Facebook campaigns managed by certified experts. Pay only for results.</p>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="content-section">
+                <h2 class="section-title" data-aos="fade-up">The Truth About PPC Advertising</h2>
+
+                <p>Here's something most PPC agencies won't tell you: Running Google Ads is easy. Running <em>profitable</em> Google Ads? That's the hard part.</p>
+
+                <p>I can't count how many times I've reviewed a business's PPC account and found the same issues. Hundreds of thousands spent. Lots of clicks. But when we dig into the numbers? Hardly any actual customers. Sky-high cost per acquisition. Campaigns hemorrhaging money on irrelevant searches.</p>
+
+                <p>The problem isn't PPC itself. It's exceptionally powerful when done right. The problem is treating it like a "set it and forget it" channel. Or worse, letting Google's automated recommendations drain your budget on low-intent traffic.</p>
+
+                <p>At God Digital Marketing, we manage PPC campaigns like your money is our money—because your success is our success. Every rupee you spend should generate a positive return. Period.</p>
+
+                <div class="highlight-box">
+                    <strong>Our philosophy is simple:</strong> PPC isn't about getting traffic. It's about getting <em>the right</em> traffic at <em>the right cost</em> that converts into <em>actual revenue</em>. We optimize ruthlessly for ROI, not vanity metrics like impressions or clicks.
+                </div>
+
+                <h2 class="section-title" style="margin-top: 60px;" data-aos="fade-up">Our PPC Advertising Services</h2>
+                <p>We specialize in the platforms that drive real business results. No experimental platforms with your budget—just proven channels that work.</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up">
+                    <div class="service-icon"><i class="fab fa-google"></i></div>
+                    <h3>Google Ads (Search)</h3>
+                    <p>Capture high-intent customers actively searching for what you offer. The most profitable PPC channel for most businesses.</p>
+                    <ul style="margin-top: 15px; text-align: left; font-size: 15px;">
+                        <li>Keyword research and selection</li>
+                        <li>Ad copy creation and A/B testing</li>
+                        <li>Bid strategy optimization</li>
+                        <li>Negative keyword management</li>
+                        <li>Ad extensions implementation</li>
+                        <li>Quality Score improvement</li>
+                        <li>Conversion tracking setup</li>
+                    </ul>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon"><i class="fas fa-image"></i></div>
+                    <h3>Display Advertising</h3>
+                    <p>Build brand awareness and remarketing campaigns across Google's 2+ million websites and apps.</p>
+                    <ul style="margin-top: 15px; text-align: left; font-size: 15px;">
+                        <li>Display ad design and creation</li>
+                        <li>Audience targeting strategies</li>
+                        <li>Placement targeting</li>
+                        <li>Responsive display ads</li>
+                        <li>Remarketing campaigns</li>
+                        <li>Banner ad optimization</li>
+                        <li>Frequency capping</li>
+                    </ul>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon"><i class="fab fa-youtube"></i></div>
+                    <h3>YouTube Advertising</h3>
+                    <p>Video ads on the world's second-largest search engine. Perfect for brand awareness and consideration stages.</p>
+                    <ul style="margin-top: 15px; text-align: left; font-size: 15px;">
+                        <li>TrueView in-stream ads</li>
+                        <li>Discovery ads</li>
+                        <li>Bumper ads (6-second spots)</li>
+                        <li>Video remarketing</li>
+                        <li>Audience targeting</li>
+                        <li>Video ad creative consultation</li>
+                        <li>View-through conversion tracking</li>
+                    </ul>
+                </div>
+
+                <div class="service-card" data-aos="fade-up">
+                    <div class="service-icon"><i class="fab fa-facebook"></i></div>
+                    <h3>Facebook & Instagram Ads</h3>
+                    <p>Precision targeting based on demographics, interests, and behaviors. Exceptional for e-commerce and lead generation.</p>
+                    <ul style="margin-top: 15px; text-align: left; font-size: 15px;">
+                        <li>Campaign strategy and setup</li>
+                        <li>Audience research and targeting</li>
+                        <li>Creative development (images, video, carousel)</li>
+                        <li>A/B testing and optimization</li>
+                        <li>Retargeting campaigns</li>
+                        <li>Lookalike audience creation</li>
+                        <li>Conversion API implementation</li>
+                    </ul>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon"><i class="fab fa-linkedin"></i></div>
+                    <h3>LinkedIn Ads</h3>
+                    <p>B2B targeting at its finest. Reach decision-makers by job title, company, industry, and seniority.</p>
+                    <ul style="margin-top: 15px; text-align: left; font-size: 15px;">
+                        <li>Sponsored Content campaigns</li>
+                        <li>Sponsored InMail</li>
+                        <li>Text and dynamic ads</li>
+                        <li>Lead Gen Forms</li>
+                        <li>Account-Based Marketing (ABM)</li>
+                        <li>Job title and company targeting</li>
+                        <li>Conversion tracking and attribution</li>
+                    </ul>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon"><i class="fas fa-shopping-cart"></i></div>
+                    <h3>Google Shopping Ads</h3>
+                    <p>Product-focused ads for e-commerce businesses. Show your products directly in search results with images and prices.</p>
+                    <ul style="margin-top: 15px; text-align: left; font-size: 15px;">
+                        <li>Google Merchant Center setup</li>
+                        <li>Product feed optimization</li>
+                        <li>Shopping campaign structure</li>
+                        <li>Bid optimization by product</li>
+                        <li>Smart Shopping campaigns</li>
+                        <li>Product review integration</li>
+                        <li>Performance Max campaigns</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="content-section" style="margin-top: 80px;">
+                <h2 class="section-title" data-aos="fade-up">Our 8-Phase PPC Management Process</h2>
+                <p>Profitable PPC campaigns don't happen by accident. They're built methodically, tested rigorously, and optimized continuously.</p>
+            </div>
+
+            <div class="process-grid">
+                <div class="process-card" data-aos="fade-up">
+                    <div class="process-number">1</div>
+                    <h3>Discovery & Goal Setting</h3>
+                    <p>Before we spend a single rupee, we need crystal clarity on your business model, customer journey, and success metrics.</p>
+                    <p style="margin-top: 15px;"><strong>What we define:</strong></p>
+                    <ul style="font-size: 15px; margin-top: 10px;">
+                        <li>Target audience and buyer personas</li>
+                        <li>Primary and secondary conversion goals</li>
+                        <li>Maximum cost per acquisition (CPA) targets</li>
+                        <li>Budget allocation across platforms</li>
+                        <li>Competitive landscape</li>
+                        <li>Timeline and expectations</li>
+                    </ul>
+                </div>
+
+                <div class="process-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="process-number">2</div>
+                    <h3>Account Audit (If Existing)</h3>
+                    <p>If you're already running PPC campaigns, we conduct a comprehensive audit to identify what's working, what's not, and where opportunities lie.</p>
+                    <p style="margin-top: 15px;"><strong>Audit areas:</strong></p>
+                    <ul style="font-size: 15px; margin-top: 10px;">
+                        <li>Campaign structure and organization</li>
+                        <li>Keyword selection and match types</li>
+                        <li>Ad copy performance</li>
+                        <li>Bid strategies and budget pacing</li>
+                        <li>Conversion tracking accuracy</li>
+                        <li>Wasted spend opportunities</li>
+                    </ul>
+                </div>
+
+                <div class="process-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="process-number">3</div>
+                    <h3>Keyword Research & Strategy</h3>
+                    <p>We identify high-intent keywords that your customers actually use—not just high-volume terms that eat budget without converting.</p>
+                    <p style="margin-top: 15px;"><strong>Research includes:</strong></p>
+                    <ul style="font-size: 15px; margin-top: 10px;">
+                        <li>Competitor keyword analysis</li>
+                        <li>Search intent classification</li>
+                        <li>Long-tail opportunity identification</li>
+                        <li>Negative keyword list development</li>
+                        <li>Match type strategy</li>
+                        <li>Budget forecasting by keyword group</li>
+                    </ul>
+                </div>
+
+                <div class="process-card" data-aos="fade-up">
+                    <div class="process-number">4</div>
+                    <h3>Campaign Structure & Setup</h3>
+                    <p>We build campaigns with granular control that allows for precise optimization and budget allocation.</p>
+                    <p style="margin-top: 15px;"><strong>Setup includes:</strong></p>
+                    <ul style="font-size: 15px; margin-top: 10px;">
+                        <li>Campaign and ad group architecture</li>
+                        <li>Conversion tracking implementation</li>
+                        <li>Remarketing audience creation</li>
+                        <li>Location and device targeting</li>
+                        <li>Ad scheduling setup</li>
+                        <li>Budget allocation and bid strategies</li>
+                    </ul>
+                </div>
+
+                <div class="process-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="process-number">5</div>
+                    <h3>Ad Creative Development</h3>
+                    <p>We write ad copy and design creatives that speak directly to your audience's pain points and desires.</p>
+                    <p style="margin-top: 15px;"><strong>Creative work:</strong></p>
+                    <ul style="font-size: 15px; margin-top: 10px;">
+                        <li>Search ad copy (headlines, descriptions)</li>
+                        <li>Responsive search ads</li>
+                        <li>Display ad design</li>
+                        <li>Video ad scripting</li>
+                        <li>Social media ad creative</li>
+                        <li>Landing page recommendations</li>
+                    </ul>
+                </div>
+
+                <div class="process-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="process-number">6</div>
+                    <h3>Launch & Initial Testing</h3>
+                    <p>We launch campaigns with multiple variations to quickly identify winning combinations of keywords, ads, and targeting.</p>
+                    <p style="margin-top: 15px;"><strong>Testing focus:</strong></p>
+                    <ul style="font-size: 15px; margin-top: 10px;">
+                        <li>Ad copy variations</li>
+                        <li>Landing page experiences</li>
+                        <li>Audience segments</li>
+                        <li>Bid strategies</li>
+                        <li>Ad formats</li>
+                        <li>Day-parting and scheduling</li>
+                    </ul>
+                </div>
+
+                <div class="process-card" data-aos="fade-up">
+                    <div class="process-number">7</div>
+                    <h3>Continuous Optimization</h3>
+                    <p>We monitor campaigns daily and make data-driven optimizations to improve performance and reduce wasted spend.</p>
+                    <p style="margin-top: 15px;"><strong>Optimization activities:</strong></p>
+                    <ul style="font-size: 15px; margin-top: 10px;">
+                        <li>Bid adjustments based on performance</li>
+                        <li>Negative keyword additions</li>
+                        <li>Ad copy refinement</li>
+                        <li>Budget reallocation to top performers</li>
+                        <li>Quality Score improvements</li>
+                        <li>Audience refinement</li>
+                    </ul>
+                </div>
+
+                <div class="process-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="process-number">8</div>
+                    <h3>Reporting & Strategy Refinement</h3>
+                    <p>We provide transparent reporting and strategic recommendations based on what the data is telling us.</p>
+                    <p style="margin-top: 15px;"><strong>Reporting includes:</strong></p>
+                    <ul style="font-size: 15px; margin-top: 10px;">
+                        <li>Performance metrics (clicks, conversions, ROI)</li>
+                        <li>Spend analysis and pacing</li>
+                        <li>Conversion path analysis</li>
+                        <li>Competitive insights</li>
+                        <li>Strategic recommendations</li>
+                        <li>Next month's strategy</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="content-section" style="margin-top: 80px;">
+                <h2 class="section-title" data-aos="fade-up">Case Studies: ROI That Speaks for Itself</h2>
+                <p>Here's what happens when PPC campaigns are managed by people who actually care about your bottom line:</p>
+
+                <div class="case-study">
+                    <h3>SaaS Company, Bangalore (B2B)</h3>
+                    <p><strong>Challenge:</strong> A project management SaaS company was spending ₹2.5 lakhs/month on Google Ads with a cost per lead of ₹4,200. They needed 80+ leads monthly to hit their targets but were getting only 60, and lead quality was poor.</p>
+
+                    <p style="margin-top: 15px;"><strong>Our Strategy:</strong></p>
+                    <ul style="font-size: 16px;">
+                        <li>Rebuilt campaign structure around customer intent stages</li>
+                        <li>Added negative keywords aggressively (eliminated 40% of wasted spend)</li>
+                        <li>Created separate campaigns for different company sizes</li>
+                        <li>Implemented LinkedIn Ads targeting specific job titles</li>
+                        <li>Developed landing pages for each customer segment</li>
+                        <li>Set up remarketing for trial signups who didn't convert</li>
+                    </ul>
+
+                    <p style="margin-top: 15px;"><strong>Results in 4 months:</strong></p>
+                    <ul style="font-size: 16px;">
+                        <li><strong>128 qualified leads monthly</strong> (up from 60)</li>
+                        <li><strong>₹1,850 cost per lead</strong> (down from ₹4,200 - 56% reduction)</li>
+                        <li><strong>18 new customers</strong> from PPC (up from 6-7/month)</li>
+                        <li><strong>4.2x ROI</strong> on ad spend</li>
+                        <li><strong>62% higher lead quality score</strong> from sales team feedback</li>
+                    </ul>
+                </div>
+
+                <div class="case-study">
+                    <h3>E-commerce Fashion Brand, Delhi</h3>
+                    <p><strong>Challenge:</strong> A women's ethnic wear e-commerce brand was running Facebook and Instagram ads but barely breaking even. ROAS (Return on Ad Spend) was 1.8x—not profitable after product and fulfillment costs.</p>
+
+                    <p style="margin-top: 15px;"><strong>Our Strategy:</strong></p>
+                    <ul style="font-size: 16px;">
+                        <li>Implemented Facebook Conversion API for better tracking</li>
+                        <li>Created lookalike audiences from high-LTV customers</li>
+                        <li>Segmented campaigns by product category and price point</li>
+                        <li>Set up dynamic product ads for cart abandoners</li>
+                        <li>Created seasonal campaign calendar tied to festivals</li>
+                        <li>Optimized ad creative based on top-performing organic posts</li>
+                    </ul>
+
+                    <p style="margin-top: 15px;"><strong>Results in 6 months:</strong></p>
+                    <ul style="font-size: 16px;">
+                        <li><strong>5.4x ROAS</strong> (up from 1.8x)</li>
+                        <li><strong>₹42 lakhs in revenue</strong> from paid social</li>
+                        <li><strong>38% lower cost per purchase</strong></li>
+                        <li><strong>2,840 new customers acquired</strong> through ads</li>
+                        <li><strong>Seasonal campaigns generated 6.8x ROAS</strong> during Diwali and wedding season</li>
+                    </ul>
+                </div>
+
+                <div class="case-study">
+                    <h3>Dental Clinic Chain, Mumbai</h3>
+                    <p><strong>Challenge:</strong> A 4-location dental clinic chain wanted more appointment bookings but found Google Ads costs too high. Previous agency delivered clicks but few actual bookings.</p>
+
+                    <p style="margin-top: 15px;"><strong>Our Strategy:</strong></p>
+                    <ul style="font-size: 16px;">
+                        <li>Created location-specific campaigns for each clinic</li>
+                        <li>Used call-only ads during business hours</li>
+                        <li>Implemented call tracking and conversion tracking</li>
+                        <li>Bid higher for high-value services (implants, orthodontics)</li>
+                        <li>Created remarketing campaigns for website visitors</li>
+                        <li>Added ad extensions (reviews, location, call)</li>
+                    </ul>
+
+                    <p style="margin-top: 15px;"><strong>Results in 5 months:</strong></p>
+                    <ul style="font-size: 16px;">
+                        <li><strong>287 booked appointments</strong> from Google Ads</li>
+                        <li><strong>₹1,240 average cost per appointment</strong></li>
+                        <li><strong>₹35.6 lakhs in treatment revenue</strong> attributed to PPC</li>
+                        <li><strong>28.7x ROI</strong> (high-value treatments drive this)</li>
+                        <li><strong>68% of appointments booked via phone calls</strong> from ads</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="content-section" style="margin-top: 80px;">
+                <h2 class="section-title" data-aos="fade-up">PPC vs SEO: When to Use Each</h2>
+                <p>Both are valuable, but they serve different purposes. Here's when each makes sense:</p>
+
+                <table class="comparison-table" style="margin-top: 30px;">
+                    <thead>
+                        <tr>
+                            <th>Factor</th>
+                            <th>PPC Advertising</th>
+                            <th>SEO</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Speed to Results</strong></td>
+                            <td>Immediate (hours to days)</td>
+                            <td>Slower (3-6 months typically)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Cost Model</strong></td>
+                            <td>Pay per click (ongoing cost)</td>
+                            <td>Upfront investment, long-term asset</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Targeting Precision</strong></td>
+                            <td>Highly precise (demographics, interests, behaviors)</td>
+                            <td>Intent-based (keywords only)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Predictability</strong></td>
+                            <td>Highly predictable (can forecast ROI)</td>
+                            <td>Less predictable (algorithm changes)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Scalability</strong></td>
+                            <td>Easy to scale (increase budget)</td>
+                            <td>Harder to scale (content limits)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Best For</strong></td>
+                            <td>Product launches, promotions, immediate results, testing</td>
+                            <td>Long-term growth, brand authority, compounding returns</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="highlight-box" style="margin-top: 40px;">
+                    <strong>Our recommendation:</strong> The best strategy combines both. Use PPC for immediate results and to test messaging, then invest in SEO for long-term sustainable growth. They reinforce each other—PPC data informs SEO strategy, and SEO rankings reduce your reliance on paid ads over time.
+                </div>
+            </div>
+
+            <div class="stats-grid" style="margin-top: 80px;">
+                <div class="stat-card" data-aos="fade-up">
+                    <div class="stat-number">₹8.2Cr+</div>
+                    <p>Ad Spend Managed</p>
+                </div>
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat-number">4.6x</div>
+                    <p>Average Client ROAS</p>
+                </div>
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-number">140+</div>
+                    <p>Active PPC Clients</p>
+                </div>
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat-number">89%</div>
+                    <p>Client Retention Rate</p>
+                </div>
+            </div>
+
+            <div class="content-section" style="margin-top: 80px;">
+                <h2 class="section-title" data-aos="fade-up">What Makes Our PPC Management Different?</h2>
+
+                <h3 style="font-size: 26px; margin: 40px 0 20px;">We're Certified, Not Experimenting</h3>
+                <p>Our team holds Google Ads certifications, Facebook Blueprint certifications, and has managed millions in ad spend. Your budget isn't our training ground.</p>
+
+                <h3 style="font-size: 26px; margin: 40px 0 20px;">We Optimize for Revenue, Not Clicks</h3>
+                <p>Lots of clicks mean nothing if they don't convert. We focus ruthlessly on metrics that matter: cost per acquisition, return on ad spend, and customer lifetime value.</p>
+
+                <h3 style="font-size: 26px; margin: 40px 0 20px;">We're Platform Agnostic</h3>
+                <p>We'll tell you if Google Ads isn't the right channel for your business. If LinkedIn will deliver better ROI for your B2B product, that's where your budget goes. Our loyalty is to your results, not to any platform.</p>
+
+                <h3 style="font-size: 26px; margin: 40px 0 20px;">We Test Aggressively</h3>
+                <p>Every campaign includes systematic A/B testing of ad copy, landing pages, audiences, and bid strategies. We don't guess—we test, measure, and scale what works.</p>
+
+                <h3 style="font-size: 26px; margin: 40px 0 20px;">We Integrate with Your Sales Process</h3>
+                <p>PPC doesn't end when someone clicks your ad. We work with your sales team to understand lead quality, close rates, and customer LTV so we can optimize the entire funnel, not just the click.</p>
+
+                <h3 style="font-size: 26px; margin: 40px 0 20px;">Transparent Reporting, Always</h3>
+                <p>You own your ad accounts. You see every rupee spent. We provide detailed monthly reports showing exactly what's working, what's not, and why. No smoke and mirrors.</p>
+            </div>
+
+            <div class="content-section" style="margin-top: 60px;">
+                <h2 class="section-title" data-aos="fade-up">Frequently Asked Questions</h2>
+
+                <h3 style="font-size: 22px; margin: 30px 0 15px;">How much should I budget for PPC advertising?</h3>
+                <p>It depends on your industry, competition, and goals. For Google Ads, we typically recommend starting with at least ₹50,000-₹75,000/month to gather enough data for optimization. For highly competitive industries (legal, finance, real estate), budgets of ₹1.5-3 lakhs/month are more realistic. We'll provide a customized recommendation based on your specific situation.</p>
+
+                <h3 style="font-size: 22px; margin: 30px 0 15px;">How quickly will I see results from PPC?</h3>
+                <p>You'll start getting traffic within days of launching campaigns. However, meaningful optimization requires 2-4 weeks of data collection. Most clients see optimal performance around the 60-90 day mark once we've tested and refined targeting, ad copy, and bidding strategies.</p>
+
+                <h3 style="font-size: 22px; margin: 30px 0 15px;">What's a good ROI for PPC campaigns?</h3>
+                <p>It varies by industry and business model. E-commerce typically targets 3-5x ROAS (Return on Ad Spend). Lead generation businesses should aim for customer acquisition costs below their customer lifetime value. B2B with high-ticket products can be profitable at 2-3x ROAS. We'll establish realistic targets based on your unit economics.</p>
+
+                <h3 style="font-size: 22px; margin: 30px 0 15px;">Do you require long-term contracts?</h3>
+                <p>No. While we recommend at least 3 months for proper optimization, we work month-to-month. If we're not delivering results, you can leave anytime. Our retention rate speaks for itself—clients stay because the campaigns work.</p>
+
+                <h3 style="font-size: 22px; margin: 30px 0 15px;">Can you work with my existing Google Ads account?</h3>
+                <p>Absolutely. We can take over management of existing accounts. We'll start with a comprehensive audit to identify quick wins and optimization opportunities, then implement improvements systematically.</p>
+
+                <h3 style="font-size: 22px; margin: 30px 0 15px;">What if my landing pages need improvement?</h3>
+                <p>Great question. Landing page quality dramatically impacts PPC performance. We provide detailed recommendations for landing page improvements and can coordinate with your web development team. For an additional fee, we can also design and develop high-converting landing pages specifically for your campaigns.</p>
+
+                <h3 style="font-size: 22px; margin: 30px 0 15px;">How do you prevent click fraud and wasted spend?</h3>
+                <p>We implement aggressive negative keyword lists, use placement exclusions, monitor for suspicious activity, and constantly review search term reports. We also set up IP exclusions for known bad actors and use Google's automated invalid click detection.</p>
+            </div>
+
+            <div class="cta-section" style="margin-top: 80px;">
+                <h2 style="font-size: 38px; margin-bottom: 20px;" data-aos="fade-up">Ready for PPC Campaigns That Actually Deliver ROI?</h2>
+                <p style="font-size: 19px; max-width: 700px; margin: 0 auto 35px;" data-aos="fade-up" data-aos-delay="100">Let's audit your current campaigns (or plan new ones) and show you exactly how we'd improve results. Free consultation, zero pressure.</p>
+                <a href="../../contact-us.html" class="cta-button" data-aos="fade-up" data-aos-delay="200">Get Your Free PPC Audit</a>
+            </div>
+
+            <div class="content-section" style="margin-top: 80px;">
+                <h2 class="section-title">Related Services</h2>
+                <p>PPC works best as part of a comprehensive digital strategy:</p>
+                <ul style="font-size: 17px; margin-top: 20px;">
+                    <li><a href="../seo-services/index.html" style="color: var(--accent-amber);">SEO Services</a> - Build long-term organic traffic to reduce PPC dependency</li>
+                    <li><a href="../web-design-development/index.html" style="color: var(--accent-amber);">Landing Page Development</a> - High-converting pages that maximize your ad spend</li>
+                    <li><a href="../analytics-reporting/index.html" style="color: var(--accent-amber);">Analytics & Conversion Tracking</a> - Proper tracking is essential for PPC success</li>
+                    <li><a href="../social-media-marketing/index.html" style="color: var(--accent-amber);">Social Media Marketing</a> - Coordinate organic and paid social strategies</li>
+                    <li><a href="../content-marketing/index.html" style="color: var(--accent-amber);">Content Marketing</a> - Create content that supports your paid campaigns</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer style="background:rgba(15,23,42,0.5);backdrop-filter:blur(10px);border-top:1px solid rgba(255,255,255,0.1);padding:60px 20px 20px">
+        <div class="container" style="max-width:1400px">
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:40px;margin-bottom:40px">
+                <div><h3 style="font-size:20px;margin-bottom:20px">Digital Marketing Services</h3><ul style="list-style:none;padding:0"><li style="margin-bottom:12px"><a href="../seo-services/index.html" style="color:rgba(248,250,252,0.7);text-decoration:none">SEO Services</a></li><li style="margin-bottom:12px"><a href="../ppc-advertising/index.html" style="color:rgba(248,250,252,0.7);text-decoration:none">PPC Advertising</a></li><li style="margin-bottom:12px"><a href="../social-media-marketing/index.html" style="color:rgba(248,250,252,0.7);text-decoration:none">Social Media Marketing</a></li><li style="margin-bottom:12px"><a href="../content-marketing/index.html" style="color:rgba(248,250,252,0.7);text-decoration:none">Content Marketing</a></li><li style="margin-bottom:12px"><a href="../email-marketing/index.html" style="color:rgba(248,250,252,0.7);text-decoration:none">Email Marketing</a></li><li style="margin-bottom:12px"><a href="../web-design-development/index.html" style="color:rgba(248,250,252,0.7);text-decoration:none">Web Design</a></li><li style="margin-bottom:12px"><a href="../conversion-optimization/index.html" style="color:rgba(248,250,252,0.7);text-decoration:none">Conversion Optimization</a></li><li style="margin-bottom:12px"><a href="../analytics-reporting/index.html" style="color:rgba(248,250,252,0.7);text-decoration:none">Analytics & Reporting</a></li><li style="margin-bottom:12px"><a href="../influencer-marketing/index.html" style="color:rgba(248,250,252,0.7);text-decoration:none">Influencer Marketing</a></li><li style="margin-bottom:12px"><a href="../online-reputation-management/index.html" style="color:rgba(248,250,252,0.7);text-decoration:none">Online Reputation Management</a></li></ul></div>
+                <div><h3 style="font-size:20px;margin-bottom:20px">Industries We Serve</h3><ul style="list-style:none;padding:0"><li style="margin-bottom:12px"><a href="../../industries/ecommerce/index.html" style="color:rgba(248,250,252,0.7);text-decoration:none">E-commerce</a></li><li style="margin-bottom:12px"><a href="../../industries/healthcare/index.html" style="color:rgba(248,250,252,0.7);text-decoration:none">Healthcare</a></li><li style="margin-bottom:12px"><a href="../../industries/real-estate/index.html" style="color:rgba(248,250,252,0.7);text-decoration:none">Real Estate</a></li><li style="margin-bottom:12px"><a href="../../industries/education/index.html" style="color:rgba(248,250,252,0.7);text-decoration:none">Education</a></li><li style="margin-bottom:12px"><a href="../../industries/legal-services/index.html" style="color:rgba(248,250,252,0.7);text-decoration:none">Legal Services</a></li><li style="margin-bottom:12px"><a href="../../industries/hospitality/index.html" style="color:rgba(248,250,252,0.7);text-decoration:none">Hospitality</a></li><li style="margin-bottom:12px"><a href="../../industries/technology/index.html" style="color:rgba(248,250,252,0.7);text-decoration:none">Technology</a></li><li style="margin-bottom:12px"><a href="../../industries/manufacturing/index.html" style="color:rgba(248,250,252,0.7);text-decoration:none">Manufacturing</a></li><li style="margin-bottom:12px"><a href="../../industries/retail/index.html" style="color:rgba(248,250,252,0.7);text-decoration:none">Retail</a></li><li style="margin-bottom:12px"><a href="../../industries/professional-services/index.html" style="color:rgba(248,250,252,0.7);text-decoration:none">Professional Services</a></li></ul></div>
+                <div><h3 style="font-size:20px;margin-bottom:20px">Major Cities SEO</h3><ul style="list-style:none;padding:0"><li style="margin-bottom:12px"><a href="../seo/mumbai/index.html" style="color:rgba(248,250,252,0.7);text-decoration:none">Mumbai SEO Services</a></li><li style="margin-bottom:12px"><a href="../seo/bangalore/index.html" style="color:rgba(248,250,252,0.7);text-decoration:none">Bangalore SEO</a></li><li style="margin-bottom:12px"><a href="../seo/delhi/index.html" style="color:rgba(248,250,252,0.7);text-decoration:none">Delhi SEO</a></li><li style="margin-bottom:12px"><a href="../seo/pune/index.html" style="color:rgba(248,250,252,0.7);text-decoration:none">Pune SEO</a></li><li style="margin-bottom:12px"><a href="../seo/hyderabad/index.html" style="color:rgba(248,250,252,0.7);text-decoration:none">Hyderabad SEO</a></li><li style="margin-bottom:12px"><a href="../seo/chennai/index.html" style="color:rgba(248,250,252,0.7);text-decoration:none">Chennai SEO</a></li><li style="margin-bottom:12px"><a href="../seo/kolkata/index.html" style="color:rgba(248,250,252,0.7);text-decoration:none">Kolkata SEO</a></li><li style="margin-bottom:12px"><a href="../seo/ahmedabad/index.html" style="color:rgba(248,250,252,0.7);text-decoration:none">Ahmedabad SEO</a></li><li style="margin-bottom:12px"><a href="../email-marketing/kochi/index.html" style="color:rgba(248,250,252,0.7);text-decoration:none">Kochi Email Marketing</a></li><li style="margin-bottom:12px"><a href="../email-marketing/bangalore/index.html" style="color:rgba(248,250,252,0.7);text-decoration:none">Bangalore Email Marketing</a></li></ul></div>
+                <div><h3 style="font-size:20px;margin-bottom:20px">Email Marketing</h3><ul style="list-style:none;padding:0"><li style="margin-bottom:12px"><a href="../email-marketing/index.html" style="color:rgba(248,250,252,0.7);text-decoration:none">Email Marketing Services</a></li><li style="margin-bottom:12px"><a href="../email-marketing/email-automation/index.html" style="color:rgba(248,250,252,0.7);text-decoration:none">Email Automation</a></li><li style="margin-bottom:12px"><a href="../email-marketing/drip-campaigns/index.html" style="color:rgba(248,250,252,0.7);text-decoration:none">Drip Campaigns</a></li><li style="margin-bottom:12px"><a href="../email-marketing/newsletter-marketing/index.html" style="color:rgba(248,250,252,0.7);text-decoration:none">Newsletter Marketing</a></li><li style="margin-bottom:12px"><a href="../email-marketing/lead-nurturing/index.html" style="color:rgba(248,250,252,0.7);text-decoration:none">Lead Nurturing</a></li><li style="margin-bottom:12px"><a href="../email-marketing/segmentation/index.html" style="color:rgba(248,250,252,0.7);text-decoration:none">List Segmentation</a></li><li style="margin-bottom:12px"><a href="../email-marketing/personalization/index.html" style="color:rgba(248,250,252,0.7);text-decoration:none">Personalization</a></li><li style="margin-bottom:12px"><a href="../email-marketing/ab-testing/index.html" style="color:rgba(248,250,252,0.7);text-decoration:none">A/B Testing</a></li><li style="margin-bottom:12px"><a href="../email-marketing/abandoned-cart/index.html" style="color:rgba(248,250,252,0.7);text-decoration:none">Cart Recovery</a></li><li style="margin-bottom:12px"><a href="../email-marketing/deliverability-optimization/index.html" style="color:rgba(248,250,252,0.7);text-decoration:none">Deliverability</a></li></ul></div>
+                <div><h3 style="font-size:20px;margin-bottom:20px">Resources & Company</h3><ul style="list-style:none;padding:0"><li style="margin-bottom:12px"><a href="../../about-us.html" style="color:rgba(248,250,252,0.7);text-decoration:none">About Us</a></li><li style="margin-bottom:12px"><a href="../../contact-us.html" style="color:rgba(248,250,252,0.7);text-decoration:none">Contact</a></li><li style="margin-bottom:12px"><a href="../../blog/index.html" style="color:rgba(248,250,252,0.7);text-decoration:none">Blog</a></li><li style="margin-bottom:12px"><a href="../../case-studies/index.html" style="color:rgba(248,250,252,0.7);text-decoration:none">Case Studies</a></li><li style="margin-bottom:12px"><a href="../../resources/index.html" style="color:rgba(248,250,252,0.7);text-decoration:none">Resources</a></li><li style="margin-bottom:12px"><a href="../../careers/index.html" style="color:rgba(248,250,252,0.7);text-decoration:none">Careers</a></li><li style="margin-bottom:12px"><a href="../seo/maharashtra/index.html" style="color:rgba(248,250,252,0.7);text-decoration:none">Maharashtra SEO</a></li><li style="margin-bottom:12px"><a href="../seo/karnataka/index.html" style="color:rgba(248,250,252,0.7);text-decoration:none">Karnataka SEO</a></li><li style="margin-bottom:12px"><a href="../../privacy-policy.html" style="color:rgba(248,250,252,0.7);text-decoration:none">Privacy Policy</a></li><li style="margin-bottom:12px"><a href="../../terms-and-conditions.html" style="color:rgba(248,250,252,0.7);text-decoration:none">Terms of Service</a></li></ul></div>
+            </div>
+            <div style="text-align:center;padding-top:30px;border-top:1px solid rgba(255,255,255,0.1);color:rgba(248,250,252,0.6);font-size:14px"><p>&copy; 2024 God Digital Marketing. All rights reserved. | <a href="../seo-services/index.html" style="color:rgba(248,250,252,0.6);text-decoration:none">SEO</a> | <a href="../ppc-advertising/index.html" style="color:rgba(248,250,252,0.6);text-decoration:none">PPC</a> | <a href="../social-media-marketing/index.html" style="color:rgba(248,250,252,0.6);text-decoration:none">Social Media</a> | <a href="../content-marketing/index.html" style="color:rgba(248,250,252,0.6);text-decoration:none">Content Marketing</a> | <a href="../email-marketing/index.html" style="color:rgba(248,250,252,0.6);text-decoration:none">Email Marketing</a> | <a href="../web-design-development/index.html" style="color:rgba(248,250,252,0.6);text-decoration:none">Web Design</a></p></div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({ duration: 1000, once: true });</script>
+</body>
+</html>
