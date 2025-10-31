@@ -239,21 +239,223 @@
     </style>
 </head>
 <body>
-    <nav>
+                    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
         <div class="nav-container">
-            <a href="../../index.html" class="logo">God Digital</a>
-            <ul class="nav-menu" style="display:flex;list-style:none;gap:30px;align-items:center">
-                <li><a href="../seo-services/index.html" style="color:var(--light-cloud);text-decoration:none;font-weight:500">SEO</a></li>
-                <li><a href="../ppc-advertising/index.html" style="color:var(--light-cloud);text-decoration:none;font-weight:500">PPC</a></li>
-                <li><a href="../social-media-marketing/index.html" style="color:var(--light-cloud);text-decoration:none;font-weight:500">Social Media</a></li>
-                <li><a href="../content-marketing/index.html" style="color:var(--light-cloud);text-decoration:none;font-weight:500">Content Marketing</a></li>
-                <li><a href="../email-marketing/index.html" style="color:var(--light-cloud);text-decoration:none;font-weight:500">Email Marketing</a></li>
-                <li><a href="../web-design-development/index.html" style="color:var(--light-cloud);text-decoration:none;font-weight:500">Web Design</a></li>
-                <li><a href="../conversion-optimization/index.html" style="color:var(--light-cloud);text-decoration:none;font-weight:500">CRO</a></li>
-                <li><a href="../../contact-us.html" style="color:var(--light-cloud);text-decoration:none;font-weight:500">Contact</a></li>
+            <a href="../../index.html" class="logo">
+                <span class="logo-highlight">God</span> Digital Marketing
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li class="has-dropdown">
+                    <a href="../../services/seo-services/index.html">SEO Services <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-section">
+                            <h4>By State</h4>
+                            <div class="dropdown-grid">
+                                <a href="../../services/seo-services/maharashtra/index.html">Maharashtra</a>
+                                <a href="../../services/seo-services/karnataka/index.html">Karnataka</a>
+                                <a href="../../services/seo-services/tamil-nadu/index.html">Tamil Nadu</a>
+                                <a href="../../services/seo-services/gujarat/index.html">Gujarat</a>
+                                <a href="../../services/seo-services/delhi/index.html">Delhi</a>
+                                <a href="../../services/seo-services/uttar-pradesh/index.html">Uttar Pradesh</a>
+                                <a href="../../services/seo-services/west-bengal/index.html">West Bengal</a>
+                                <a href="../../services/seo-services/telangana/index.html">Telangana</a>
+                                <a href="../../services/seo-services/kerala/index.html">Kerala</a>
+                                <a href="../../services/seo-services/rajasthan/index.html">Rajasthan</a>
+                                <a href="../../services/seo-services/punjab/index.html">Punjab</a>
+                                <a href="../../services/seo-services/haryana/index.html">Haryana</a>
+                            </div>
+                        </div>
+                        <div class="dropdown-section">
+                            <h4>Top Cities</h4>
+                            <div class="dropdown-grid">
+                                <a href="../../services/seo-services/mumbai/index.html">Mumbai</a>
+                                <a href="../../services/seo-services/bangalore/index.html">Bangalore</a>
+                                <a href="../../services/seo-services/delhi/index.html">Delhi NCR</a>
+                                <a href="../../services/seo-services/hyderabad/index.html">Hyderabad</a>
+                                <a href="../../services/seo-services/chennai/index.html">Chennai</a>
+                                <a href="../../services/seo-services/kolkata/index.html">Kolkata</a>
+                                <a href="../../services/seo-services/pune/index.html">Pune</a>
+                                <a href="../../services/seo-services/ahmedabad/index.html">Ahmedabad</a>
+                                <a href="../../services/seo-services/jaipur/index.html">Jaipur</a>
+                                <a href="../../services/seo-services/lucknow/index.html">Lucknow</a>
+                                <a href="../../services/seo-services/kanpur/index.html">Kanpur</a>
+                                <a href="../../services/seo-services/nagpur/index.html">Nagpur</a>
+                            </div>
+                        </div>
+                        <div class="dropdown-section">
+                            <h4>By Industry</h4>
+                            <div class="dropdown-grid">
+                                <a href="../../industries/ecommerce/index.html">E-commerce</a>
+                                <a href="../../industries/saas/index.html">SaaS</a>
+                                <a href="../../industries/healthcare/index.html">Healthcare</a>
+                                <a href="../../industries/finance/index.html">Finance</a>
+                                <a href="../../industries/real-estate/index.html">Real Estate</a>
+                                <a href="../../industries/education/index.html">Education</a>
+                                <a href="../../industries/hospitality/index.html">Hospitality</a>
+                                <a href="../../industries/automotive/index.html">Automotive</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="has-dropdown">
+                    <a href="../../services/ppc/index.html">PPC Advertising <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-section">
+                            <h4>Top Cities</h4>
+                            <div class="dropdown-grid">
+                                <a href="../../services/ppc/jaipur/index.html">Jaipur</a>
+                                <a href="../../services/ppc/lucknow/index.html">Lucknow</a>
+                                <a href="../../services/ppc/ahmedabad/index.html">Ahmedabad</a>
+                                <a href="../../services/ppc/surat/index.html">Surat</a>
+                                <a href="../../services/ppc/indore/index.html">Indore</a>
+                                <a href="../../services/ppc/coimbatore/index.html">Coimbatore</a>
+                                <a href="../../services/ppc/kochi/index.html">Kochi</a>
+                                <a href="../../services/ppc/visakhapatnam/index.html">Visakhapatnam</a>
+                                <a href="../../services/ppc/ludhiana/index.html">Ludhiana</a>
+                                <a href="../../services/ppc/patna/index.html">Patna</a>
+                                <a href="../../services/ppc/vadodara/index.html">Vadodara</a>
+                                <a href="../../services/ppc/nashik/index.html">Nashik</a>
+                            </div>
+                        </div>
+                        <div class="dropdown-section">
+                            <h4>PPC Types</h4>
+                            <div class="dropdown-grid">
+                                <a href="../../services/ppc/google-ads/index.html">Google Ads</a>
+                                <a href="../../services/ppc/facebook-ads/index.html">Facebook Ads</a>
+                                <a href="../../services/ppc/index.html">Display Ads</a>
+                                <a href="../../services/ppc/index.html">Shopping Ads</a>
+                            </div>
+                        </div>
+                        <div class="dropdown-section">
+                            <h4>By Industry</h4>
+                            <div class="dropdown-grid">
+                                <a href="../../industries/ecommerce/index.html">E-commerce</a>
+                                <a href="../../industries/saas/index.html">SaaS</a>
+                                <a href="../../industries/healthcare/index.html">Healthcare</a>
+                                <a href="../../industries/finance/index.html">Finance</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="has-dropdown">
+                    <a href="../../services/social-media-marketing/index.html">Social Media <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-section">
+                            <h4>Top Cities</h4>
+                            <div class="dropdown-grid">
+                                <a href="../../services/social-media-marketing/ahmedabad/index.html">Ahmedabad</a>
+                                <a href="../../services/social-media-marketing/jaipur/index.html">Jaipur</a>
+                                <a href="../../services/social-media-marketing/lucknow/index.html">Lucknow</a>
+                                <a href="../../services/social-media-marketing/indore/index.html">Indore</a>
+                                <a href="../../services/social-media-marketing/nagpur/index.html">Nagpur</a>
+                                <a href="../../services/social-media-marketing/coimbatore/index.html">Coimbatore</a>
+                                <a href="../../services/social-media-marketing/kochi/index.html">Kochi</a>
+                                <a href="../../services/social-media-marketing/chandigarh/index.html">Chandigarh</a>
+                            </div>
+                        </div>
+                        <div class="dropdown-section">
+                            <h4>By Industry</h4>
+                            <div class="dropdown-grid">
+                                <a href="../../industries/ecommerce/index.html">E-commerce</a>
+                                <a href="../../industries/healthcare/index.html">Healthcare</a>
+                                <a href="../../industries/hospitality/index.html">Hospitality</a>
+                                <a href="../../industries/real-estate/index.html">Real Estate</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="has-dropdown">
+                    <a href="../../services/content-marketing/index.html">Content Marketing <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-section">
+                            <h4>Top Cities</h4>
+                            <div class="dropdown-grid">
+                                <a href="../../services/content-marketing/mumbai/index.html">Mumbai</a>
+                                <a href="../../services/content-marketing/bangalore/index.html">Bangalore</a>
+                                <a href="../../services/content-marketing/delhi/index.html">Delhi</a>
+                                <a href="../../services/content-marketing/pune/index.html">Pune</a>
+                                <a href="../../services/content-marketing/hyderabad/index.html">Hyderabad</a>
+                                <a href="../../services/content-marketing/chennai/index.html">Chennai</a>
+                                <a href="../../services/content-marketing/jaipur/index.html">Jaipur</a>
+                                <a href="../../services/content-marketing/ahmedabad/index.html">Ahmedabad</a>
+                            </div>
+                        </div>
+                        <div class="dropdown-section">
+                            <h4>By Industry</h4>
+                            <div class="dropdown-grid">
+                                <a href="../../industries/saas/index.html">SaaS</a>
+                                <a href="../../industries/healthcare/index.html">Healthcare</a>
+                                <a href="../../industries/finance/index.html">Finance</a>
+                                <a href="../../industries/education/index.html">Education</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="has-dropdown">
+                    <a href="../../services/web-design-development/index.html">Web Design <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-section">
+                            <h4>Services</h4>
+                            <div class="dropdown-grid">
+                                <a href="../../services/web-design-development/index.html">Web Design</a>
+                                <a href="../../services/web-design-development/index.html">Web Development</a>
+                                <a href="../../services/web-design-development/index.html">E-commerce</a>
+                                <a href="../../services/web-design-development/index.html">UI/UX Design</a>
+                            </div>
+                        </div>
+                        <div class="dropdown-section">
+                            <h4>By Industry</h4>
+                            <div class="dropdown-grid">
+                                <a href="../../industries/ecommerce/index.html">E-commerce</a>
+                                <a href="../../industries/saas/index.html">SaaS</a>
+                                <a href="../../industries/healthcare/index.html">Healthcare</a>
+                                <a href="../../industries/hospitality/index.html">Hospitality</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="has-dropdown">
+                    <a href="../../services/marketing-automation/index.html">AI Automation <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-section">
+                            <h4>Services</h4>
+                            <div class="dropdown-grid">
+                                <a href="../../services/marketing-automation/index.html">Marketing Automation</a>
+                                <a href="../../services/marketing-automation/index.html">AI Chatbots</a>
+                                <a href="../../services/marketing-automation/index.html">AI Content</a>
+                                <a href="../../services/marketing-automation/index.html">Workflow Automation</a>
+                            </div>
+                        </div>
+                        <div class="dropdown-section">
+                            <h4>By Industry</h4>
+                            <div class="dropdown-grid">
+                                <a href="../../industries/ecommerce/index.html">E-commerce</a>
+                                <a href="../../industries/saas/index.html">SaaS</a>
+                                <a href="../../industries/finance/index.html">Finance</a>
+                                <a href="../../industries/healthcare/index.html">Healthcare</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="../../about-us.html">About</a></li>
+                <li><a href="../../contact-us.html">Contact</a></li>
             </ul>
+            <a href="#contact" class="nav-cta">Get Quote</a>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </nav>
+
+
+
+
 
     <div class="container">
         <div class="breadcrumb">
@@ -674,5 +876,666 @@
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>AOS.init({ duration: 1000, once: true });</script>
+
+                <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Digital Marketing Services</h3>
+                <ul>
+                    <li><a href="../../services/seo-services/index.html">SEO Services</a></li>
+                    <li><a href="../../services/ppc/index.html">PPC Advertising</a></li>
+                    <li><a href="../../services/social-media-marketing/index.html">Social Media Marketing</a></li>
+                    <li><a href="../../services/content-marketing/index.html">Content Marketing</a></li>
+                    <li><a href="../../services/email-marketing/index.html">Email Marketing</a></li>
+                    <li><a href="../../services/web-design-development/index.html">Web Design</a></li>
+                    <li><a href="../../services/conversion-optimization/index.html">Conversion Optimization</a></li>
+                    <li><a href="../../services/analytics-reporting/index.html">Analytics & Reporting</a></li>
+                    <li><a href="../../services/online-reputation-management/index.html">Reputation Management</a></li>
+                    <li><a href="../../services/marketing-automation/index.html">Marketing Automation</a></li>
+                    <li><a href="../../services/local-seo/index.html">Local SEO</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>SEO Services - States</h3>
+                <ul>
+                    <li><a href="../../services/seo-services/maharashtra/index.html">Maharashtra</a></li>
+                    <li><a href="../../services/seo-services/karnataka/index.html">Karnataka</a></li>
+                    <li><a href="../../services/seo-services/tamil-nadu/index.html">Tamil Nadu</a></li>
+                    <li><a href="../../services/seo-services/gujarat/index.html">Gujarat</a></li>
+                    <li><a href="../../services/seo-services/delhi/index.html">Delhi</a></li>
+                    <li><a href="../../services/seo-services/uttar-pradesh/index.html">Uttar Pradesh</a></li>
+                    <li><a href="../../services/seo-services/west-bengal/index.html">West Bengal</a></li>
+                    <li><a href="../../services/seo-services/telangana/index.html">Telangana</a></li>
+                    <li><a href="../../services/seo-services/kerala/index.html">Kerala</a></li>
+                    <li><a href="../../services/seo-services/rajasthan/index.html">Rajasthan</a></li>
+                    <li><a href="../../services/seo-services/punjab/index.html">Punjab</a></li>
+                    <li><a href="../../services/seo-services/haryana/index.html">Haryana</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>SEO Services - Top Cities</h3>
+                <ul>
+                    <li><a href="../../services/seo-services/mumbai/index.html">Mumbai</a></li>
+                    <li><a href="../../services/seo-services/bangalore/index.html">Bangalore</a></li>
+                    <li><a href="../../services/seo-services/delhi/index.html">Delhi NCR</a></li>
+                    <li><a href="../../services/seo-services/hyderabad/index.html">Hyderabad</a></li>
+                    <li><a href="../../services/seo-services/chennai/index.html">Chennai</a></li>
+                    <li><a href="../../services/seo-services/kolkata/index.html">Kolkata</a></li>
+                    <li><a href="../../services/seo-services/pune/index.html">Pune</a></li>
+                    <li><a href="../../services/seo-services/ahmedabad/index.html">Ahmedabad</a></li>
+                    <li><a href="../../services/seo-services/jaipur/index.html">Jaipur</a></li>
+                    <li><a href="../../services/seo-services/lucknow/index.html">Lucknow</a></li>
+                    <li><a href="../../services/seo-services/kanpur/index.html">Kanpur</a></li>
+                    <li><a href="../../services/seo-services/nagpur/index.html">Nagpur</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>PPC Advertising - Cities</h3>
+                <ul>
+                    <li><a href="../../services/ppc/jaipur/index.html">Jaipur PPC</a></li>
+                    <li><a href="../../services/ppc/lucknow/index.html">Lucknow PPC</a></li>
+                    <li><a href="../../services/ppc/ahmedabad/index.html">Ahmedabad PPC</a></li>
+                    <li><a href="../../services/ppc/surat/index.html">Surat PPC</a></li>
+                    <li><a href="../../services/ppc/indore/index.html">Indore PPC</a></li>
+                    <li><a href="../../services/ppc/coimbatore/index.html">Coimbatore PPC</a></li>
+                    <li><a href="../../services/ppc/kochi/index.html">Kochi PPC</a></li>
+                    <li><a href="../../services/ppc/visakhapatnam/index.html">Visakhapatnam PPC</a></li>
+                    <li><a href="../../services/ppc/ludhiana/index.html">Ludhiana PPC</a></li>
+                    <li><a href="../../services/ppc/patna/index.html">Patna PPC</a></li>
+                    <li><a href="../../services/ppc/vadodara/index.html">Vadodara PPC</a></li>
+                    <li><a href="../../services/ppc/nashik/index.html">Nashik PPC</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Social Media Marketing</h3>
+                <ul>
+                    <li><a href="../../services/social-media-marketing/ahmedabad/index.html">Ahmedabad SMM</a></li>
+                    <li><a href="../../services/social-media-marketing/jaipur/index.html">Jaipur SMM</a></li>
+                    <li><a href="../../services/social-media-marketing/lucknow/index.html">Lucknow SMM</a></li>
+                    <li><a href="../../services/social-media-marketing/kanpur/index.html">Kanpur SMM</a></li>
+                    <li><a href="../../services/social-media-marketing/indore/index.html">Indore SMM</a></li>
+                    <li><a href="../../services/social-media-marketing/nagpur/index.html">Nagpur SMM</a></li>
+                    <li><a href="../../services/social-media-marketing/coimbatore/index.html">Coimbatore SMM</a></li>
+                    <li><a href="../../services/social-media-marketing/kochi/index.html">Kochi SMM</a></li>
+                    <li><a href="../../services/social-media-marketing/chandigarh/index.html">Chandigarh SMM</a></li>
+                    <li><a href="../../services/social-media-marketing/surat/index.html">Surat SMM</a></li>
+                    <li><a href="../../services/social-media-marketing/vadodara/index.html">Vadodara SMM</a></li>
+                    <li><a href="../../services/social-media-marketing/ludhiana/index.html">Ludhiana SMM</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Content Marketing - Top Cities</h3>
+                <ul>
+                    <li><a href="../../services/content-marketing/mumbai/index.html">Mumbai</a></li>
+                    <li><a href="../../services/content-marketing/bangalore/index.html">Bangalore</a></li>
+                    <li><a href="../../services/content-marketing/delhi/index.html">Delhi</a></li>
+                    <li><a href="../../services/content-marketing/pune/index.html">Pune</a></li>
+                    <li><a href="../../services/content-marketing/hyderabad/index.html">Hyderabad</a></li>
+                    <li><a href="../../services/content-marketing/chennai/index.html">Chennai</a></li>
+                    <li><a href="../../services/content-marketing/jaipur/index.html">Jaipur</a></li>
+                    <li><a href="../../services/content-marketing/ahmedabad/index.html">Ahmedabad</a></li>
+                    <li><a href="../../services/content-marketing/surat/index.html">Surat</a></li>
+                    <li><a href="../../services/content-marketing/lucknow/index.html">Lucknow</a></li>
+                    <li><a href="../../services/content-marketing/kanpur/index.html">Kanpur</a></li>
+                    <li><a href="../../services/content-marketing/indore/index.html">Indore</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Email Marketing - Cities</h3>
+                <ul>
+                    <li><a href="../../services/email-marketing/mumbai/index.html">Mumbai</a></li>
+                    <li><a href="../../services/email-marketing/bangalore/index.html">Bangalore</a></li>
+                    <li><a href="../../services/email-marketing/delhi/index.html">Delhi</a></li>
+                    <li><a href="../../services/email-marketing/hyderabad/index.html">Hyderabad</a></li>
+                    <li><a href="../../services/email-marketing/chennai/index.html">Chennai</a></li>
+                    <li><a href="../../services/email-marketing/kolkata/index.html">Kolkata</a></li>
+                    <li><a href="../../services/email-marketing/pune/index.html">Pune</a></li>
+                    <li><a href="../../services/email-marketing/ahmedabad/index.html">Ahmedabad</a></li>
+                    <li><a href="../../services/email-marketing/jaipur/index.html">Jaipur</a></li>
+                    <li><a href="../../services/email-marketing/lucknow/index.html">Lucknow</a></li>
+                    <li><a href="../../services/email-marketing/kanpur/index.html">Kanpur</a></li>
+                    <li><a href="../../services/email-marketing/indore/index.html">Indore</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Industries We Serve</h3>
+                <ul>
+                    <li><a href="../../industries/ecommerce/index.html">E-commerce</a></li>
+                    <li><a href="../../industries/saas/index.html">SaaS & Technology</a></li>
+                    <li><a href="../../industries/healthcare/index.html">Healthcare</a></li>
+                    <li><a href="../../industries/finance/index.html">Finance & Banking</a></li>
+                    <li><a href="../../industries/real-estate/index.html">Real Estate</a></li>
+                    <li><a href="../../industries/education/index.html">Education</a></li>
+                    <li><a href="../../industries/hospitality/index.html">Hospitality & Travel</a></li>
+                    <li><a href="../../industries/automotive/index.html">Automotive</a></li>
+                    <li><a href="../../industries/legal/index.html">Legal Services</a></li>
+                    <li><a href="../../industries/manufacturing/index.html">Manufacturing</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Resources & Company</h3>
+                <ul>
+                    <li><a href="../../about-us.html">About Us</a></li>
+                    <li><a href="../../contact-us.html">Contact</a></li>
+                    <li><a href="../../blog.html">Blog & Insights</a></li>
+                    <li><a href="../../case-studies.html">Case Studies</a></li>
+                    <li><a href="../../resources.html">Resources</a></li>
+                    <li><a href="../../tools.html">Free Tools</a></li>
+                    <li><a href="../../careers.html">Careers</a></li>
+                    <li><a href="../../privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="../../terms-of-service.html">Terms of Service</a></li>
+                    <li><a href="../../sitemap.html">Sitemap</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 God Digital Marketing. All rights reserved. | <a href="../../services/seo-services/index.html">SEO</a> | <a href="../../services/ppc/index.html">PPC</a> | <a href="../../services/social-media-marketing/index.html">Social</a> | <a href="../../services/content-marketing/index.html">Content</a> | <a href="../../services/email-marketing/index.html">Email</a> | <a href="../../services/web-design-development/index.html">Web Design</a> | <a href="../../services/analytics-reporting/index.html">Analytics</a></p>
+            <div>
+                <a href="../../privacy-policy.html">Privacy</a>
+                <a href="../../terms-of-service.html">Terms</a>
+                <a href="../../contact-us.html">Contact</a>
+                <a href="../../sitemap.html">Sitemap</a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({ duration: 1000, once: true });</script>
+
+            <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Digital Marketing Services</h3>
+                <ul>
+                    <li><a href="../../services/seo-services/index.html">SEO Services</a></li>
+                    <li><a href="../../services/ppc/index.html">PPC Advertising</a></li>
+                    <li><a href="../../services/social-media-marketing/index.html">Social Media Marketing</a></li>
+                    <li><a href="../../services/content-marketing/index.html">Content Marketing</a></li>
+                    <li><a href="../../services/email-marketing/index.html">Email Marketing</a></li>
+                    <li><a href="../../services/web-design-development/index.html">Web Design</a></li>
+                    <li><a href="../../services/conversion-optimization/index.html">Conversion Optimization</a></li>
+                    <li><a href="../../services/analytics-reporting/index.html">Analytics & Reporting</a></li>
+                    <li><a href="../../services/online-reputation-management/index.html">Reputation Management</a></li>
+                    <li><a href="../../services/marketing-automation/index.html">Marketing Automation</a></li>
+                    <li><a href="../../services/local-seo/index.html">Local SEO</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>SEO Services - States</h3>
+                <ul>
+                    <li><a href="../../services/seo-services/maharashtra/index.html">Maharashtra</a></li>
+                    <li><a href="../../services/seo-services/karnataka/index.html">Karnataka</a></li>
+                    <li><a href="../../services/seo-services/tamil-nadu/index.html">Tamil Nadu</a></li>
+                    <li><a href="../../services/seo-services/gujarat/index.html">Gujarat</a></li>
+                    <li><a href="../../services/seo-services/delhi/index.html">Delhi</a></li>
+                    <li><a href="../../services/seo-services/uttar-pradesh/index.html">Uttar Pradesh</a></li>
+                    <li><a href="../../services/seo-services/west-bengal/index.html">West Bengal</a></li>
+                    <li><a href="../../services/seo-services/telangana/index.html">Telangana</a></li>
+                    <li><a href="../../services/seo-services/kerala/index.html">Kerala</a></li>
+                    <li><a href="../../services/seo-services/rajasthan/index.html">Rajasthan</a></li>
+                    <li><a href="../../services/seo-services/punjab/index.html">Punjab</a></li>
+                    <li><a href="../../services/seo-services/haryana/index.html">Haryana</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>SEO Services - Top Cities</h3>
+                <ul>
+                    <li><a href="../../services/seo-services/mumbai/index.html">Mumbai</a></li>
+                    <li><a href="../../services/seo-services/bangalore/index.html">Bangalore</a></li>
+                    <li><a href="../../services/seo-services/delhi/index.html">Delhi NCR</a></li>
+                    <li><a href="../../services/seo-services/hyderabad/index.html">Hyderabad</a></li>
+                    <li><a href="../../services/seo-services/chennai/index.html">Chennai</a></li>
+                    <li><a href="../../services/seo-services/kolkata/index.html">Kolkata</a></li>
+                    <li><a href="../../services/seo-services/pune/index.html">Pune</a></li>
+                    <li><a href="../../services/seo-services/ahmedabad/index.html">Ahmedabad</a></li>
+                    <li><a href="../../services/seo-services/jaipur/index.html">Jaipur</a></li>
+                    <li><a href="../../services/seo-services/lucknow/index.html">Lucknow</a></li>
+                    <li><a href="../../services/seo-services/kanpur/index.html">Kanpur</a></li>
+                    <li><a href="../../services/seo-services/nagpur/index.html">Nagpur</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>PPC Advertising - Cities</h3>
+                <ul>
+                    <li><a href="../../services/ppc/jaipur/index.html">Jaipur PPC</a></li>
+                    <li><a href="../../services/ppc/lucknow/index.html">Lucknow PPC</a></li>
+                    <li><a href="../../services/ppc/ahmedabad/index.html">Ahmedabad PPC</a></li>
+                    <li><a href="../../services/ppc/surat/index.html">Surat PPC</a></li>
+                    <li><a href="../../services/ppc/indore/index.html">Indore PPC</a></li>
+                    <li><a href="../../services/ppc/coimbatore/index.html">Coimbatore PPC</a></li>
+                    <li><a href="../../services/ppc/kochi/index.html">Kochi PPC</a></li>
+                    <li><a href="../../services/ppc/visakhapatnam/index.html">Visakhapatnam PPC</a></li>
+                    <li><a href="../../services/ppc/ludhiana/index.html">Ludhiana PPC</a></li>
+                    <li><a href="../../services/ppc/patna/index.html">Patna PPC</a></li>
+                    <li><a href="../../services/ppc/vadodara/index.html">Vadodara PPC</a></li>
+                    <li><a href="../../services/ppc/nashik/index.html">Nashik PPC</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Social Media Marketing</h3>
+                <ul>
+                    <li><a href="../../services/social-media-marketing/ahmedabad/index.html">Ahmedabad SMM</a></li>
+                    <li><a href="../../services/social-media-marketing/jaipur/index.html">Jaipur SMM</a></li>
+                    <li><a href="../../services/social-media-marketing/lucknow/index.html">Lucknow SMM</a></li>
+                    <li><a href="../../services/social-media-marketing/kanpur/index.html">Kanpur SMM</a></li>
+                    <li><a href="../../services/social-media-marketing/indore/index.html">Indore SMM</a></li>
+                    <li><a href="../../services/social-media-marketing/nagpur/index.html">Nagpur SMM</a></li>
+                    <li><a href="../../services/social-media-marketing/coimbatore/index.html">Coimbatore SMM</a></li>
+                    <li><a href="../../services/social-media-marketing/kochi/index.html">Kochi SMM</a></li>
+                    <li><a href="../../services/social-media-marketing/chandigarh/index.html">Chandigarh SMM</a></li>
+                    <li><a href="../../services/social-media-marketing/surat/index.html">Surat SMM</a></li>
+                    <li><a href="../../services/social-media-marketing/vadodara/index.html">Vadodara SMM</a></li>
+                    <li><a href="../../services/social-media-marketing/ludhiana/index.html">Ludhiana SMM</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Content Marketing - Top Cities</h3>
+                <ul>
+                    <li><a href="../../services/content-marketing/mumbai/index.html">Mumbai</a></li>
+                    <li><a href="../../services/content-marketing/bangalore/index.html">Bangalore</a></li>
+                    <li><a href="../../services/content-marketing/delhi/index.html">Delhi</a></li>
+                    <li><a href="../../services/content-marketing/pune/index.html">Pune</a></li>
+                    <li><a href="../../services/content-marketing/hyderabad/index.html">Hyderabad</a></li>
+                    <li><a href="../../services/content-marketing/chennai/index.html">Chennai</a></li>
+                    <li><a href="../../services/content-marketing/jaipur/index.html">Jaipur</a></li>
+                    <li><a href="../../services/content-marketing/ahmedabad/index.html">Ahmedabad</a></li>
+                    <li><a href="../../services/content-marketing/surat/index.html">Surat</a></li>
+                    <li><a href="../../services/content-marketing/lucknow/index.html">Lucknow</a></li>
+                    <li><a href="../../services/content-marketing/kanpur/index.html">Kanpur</a></li>
+                    <li><a href="../../services/content-marketing/indore/index.html">Indore</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Email Marketing - Cities</h3>
+                <ul>
+                    <li><a href="../../services/email-marketing/mumbai/index.html">Mumbai</a></li>
+                    <li><a href="../../services/email-marketing/bangalore/index.html">Bangalore</a></li>
+                    <li><a href="../../services/email-marketing/delhi/index.html">Delhi</a></li>
+                    <li><a href="../../services/email-marketing/hyderabad/index.html">Hyderabad</a></li>
+                    <li><a href="../../services/email-marketing/chennai/index.html">Chennai</a></li>
+                    <li><a href="../../services/email-marketing/kolkata/index.html">Kolkata</a></li>
+                    <li><a href="../../services/email-marketing/pune/index.html">Pune</a></li>
+                    <li><a href="../../services/email-marketing/ahmedabad/index.html">Ahmedabad</a></li>
+                    <li><a href="../../services/email-marketing/jaipur/index.html">Jaipur</a></li>
+                    <li><a href="../../services/email-marketing/lucknow/index.html">Lucknow</a></li>
+                    <li><a href="../../services/email-marketing/kanpur/index.html">Kanpur</a></li>
+                    <li><a href="../../services/email-marketing/indore/index.html">Indore</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Industries We Serve</h3>
+                <ul>
+                    <li><a href="../../industries/ecommerce/index.html">E-commerce</a></li>
+                    <li><a href="../../industries/saas/index.html">SaaS & Technology</a></li>
+                    <li><a href="../../industries/healthcare/index.html">Healthcare</a></li>
+                    <li><a href="../../industries/finance/index.html">Finance & Banking</a></li>
+                    <li><a href="../../industries/real-estate/index.html">Real Estate</a></li>
+                    <li><a href="../../industries/education/index.html">Education</a></li>
+                    <li><a href="../../industries/hospitality/index.html">Hospitality & Travel</a></li>
+                    <li><a href="../../industries/automotive/index.html">Automotive</a></li>
+                    <li><a href="../../industries/legal/index.html">Legal Services</a></li>
+                    <li><a href="../../industries/manufacturing/index.html">Manufacturing</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Resources & Company</h3>
+                <ul>
+                    <li><a href="../../about-us.html">About Us</a></li>
+                    <li><a href="../../contact-us.html">Contact</a></li>
+                    <li><a href="../../blog.html">Blog & Insights</a></li>
+                    <li><a href="../../case-studies.html">Case Studies</a></li>
+                    <li><a href="../../resources.html">Resources</a></li>
+                    <li><a href="../../tools.html">Free Tools</a></li>
+                    <li><a href="../../careers.html">Careers</a></li>
+                    <li><a href="../../privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="../../terms-of-service.html">Terms of Service</a></li>
+                    <li><a href="../../sitemap.html">Sitemap</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 God Digital Marketing. All rights reserved. | <a href="../../services/seo-services/index.html">SEO</a> | <a href="../../services/ppc/index.html">PPC</a> | <a href="../../services/social-media-marketing/index.html">Social</a> | <a href="../../services/content-marketing/index.html">Content</a> | <a href="../../services/email-marketing/index.html">Email</a> | <a href="../../services/web-design-development/index.html">Web Design</a> | <a href="../../services/analytics-reporting/index.html">Analytics</a></p>
+            <div>
+                <a href="../../privacy-policy.html">Privacy</a>
+                <a href="../../terms-of-service.html">Terms</a>
+                <a href="../../contact-us.html">Contact</a>
+                <a href="../../sitemap.html">Sitemap</a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({ duration: 1000, once: true });</script>
+
+        <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Digital Marketing Services</h3>
+                <ul>
+                    <li><a href="../../services/seo-services/index.html">SEO Services</a></li>
+                    <li><a href="../../services/ppc/index.html">PPC Advertising</a></li>
+                    <li><a href="../../services/social-media-marketing/index.html">Social Media Marketing</a></li>
+                    <li><a href="../../services/content-marketing/index.html">Content Marketing</a></li>
+                    <li><a href="../../services/email-marketing/index.html">Email Marketing</a></li>
+                    <li><a href="../../services/web-design-development/index.html">Web Design</a></li>
+                    <li><a href="../../services/conversion-optimization/index.html">Conversion Optimization</a></li>
+                    <li><a href="../../services/analytics-reporting/index.html">Analytics & Reporting</a></li>
+                    <li><a href="../../services/online-reputation-management/index.html">Reputation Management</a></li>
+                    <li><a href="../../services/marketing-automation/index.html">Marketing Automation</a></li>
+                    <li><a href="../../services/local-seo/index.html">Local SEO</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>SEO Services - States</h3>
+                <ul>
+                    <li><a href="../../services/seo-services/maharashtra/index.html">Maharashtra</a></li>
+                    <li><a href="../../services/seo-services/karnataka/index.html">Karnataka</a></li>
+                    <li><a href="../../services/seo-services/tamil-nadu/index.html">Tamil Nadu</a></li>
+                    <li><a href="../../services/seo-services/gujarat/index.html">Gujarat</a></li>
+                    <li><a href="../../services/seo-services/delhi/index.html">Delhi</a></li>
+                    <li><a href="../../services/seo-services/uttar-pradesh/index.html">Uttar Pradesh</a></li>
+                    <li><a href="../../services/seo-services/west-bengal/index.html">West Bengal</a></li>
+                    <li><a href="../../services/seo-services/telangana/index.html">Telangana</a></li>
+                    <li><a href="../../services/seo-services/kerala/index.html">Kerala</a></li>
+                    <li><a href="../../services/seo-services/rajasthan/index.html">Rajasthan</a></li>
+                    <li><a href="../../services/seo-services/punjab/index.html">Punjab</a></li>
+                    <li><a href="../../services/seo-services/haryana/index.html">Haryana</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>SEO Services - Top Cities</h3>
+                <ul>
+                    <li><a href="../../services/seo-services/mumbai/index.html">Mumbai</a></li>
+                    <li><a href="../../services/seo-services/bangalore/index.html">Bangalore</a></li>
+                    <li><a href="../../services/seo-services/delhi/index.html">Delhi NCR</a></li>
+                    <li><a href="../../services/seo-services/hyderabad/index.html">Hyderabad</a></li>
+                    <li><a href="../../services/seo-services/chennai/index.html">Chennai</a></li>
+                    <li><a href="../../services/seo-services/kolkata/index.html">Kolkata</a></li>
+                    <li><a href="../../services/seo-services/pune/index.html">Pune</a></li>
+                    <li><a href="../../services/seo-services/ahmedabad/index.html">Ahmedabad</a></li>
+                    <li><a href="../../services/seo-services/jaipur/index.html">Jaipur</a></li>
+                    <li><a href="../../services/seo-services/lucknow/index.html">Lucknow</a></li>
+                    <li><a href="../../services/seo-services/kanpur/index.html">Kanpur</a></li>
+                    <li><a href="../../services/seo-services/nagpur/index.html">Nagpur</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>PPC Advertising - Cities</h3>
+                <ul>
+                    <li><a href="../../services/ppc/jaipur/index.html">Jaipur PPC</a></li>
+                    <li><a href="../../services/ppc/lucknow/index.html">Lucknow PPC</a></li>
+                    <li><a href="../../services/ppc/ahmedabad/index.html">Ahmedabad PPC</a></li>
+                    <li><a href="../../services/ppc/surat/index.html">Surat PPC</a></li>
+                    <li><a href="../../services/ppc/indore/index.html">Indore PPC</a></li>
+                    <li><a href="../../services/ppc/coimbatore/index.html">Coimbatore PPC</a></li>
+                    <li><a href="../../services/ppc/kochi/index.html">Kochi PPC</a></li>
+                    <li><a href="../../services/ppc/visakhapatnam/index.html">Visakhapatnam PPC</a></li>
+                    <li><a href="../../services/ppc/ludhiana/index.html">Ludhiana PPC</a></li>
+                    <li><a href="../../services/ppc/patna/index.html">Patna PPC</a></li>
+                    <li><a href="../../services/ppc/vadodara/index.html">Vadodara PPC</a></li>
+                    <li><a href="../../services/ppc/nashik/index.html">Nashik PPC</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Social Media Marketing</h3>
+                <ul>
+                    <li><a href="../../services/social-media-marketing/ahmedabad/index.html">Ahmedabad SMM</a></li>
+                    <li><a href="../../services/social-media-marketing/jaipur/index.html">Jaipur SMM</a></li>
+                    <li><a href="../../services/social-media-marketing/lucknow/index.html">Lucknow SMM</a></li>
+                    <li><a href="../../services/social-media-marketing/kanpur/index.html">Kanpur SMM</a></li>
+                    <li><a href="../../services/social-media-marketing/indore/index.html">Indore SMM</a></li>
+                    <li><a href="../../services/social-media-marketing/nagpur/index.html">Nagpur SMM</a></li>
+                    <li><a href="../../services/social-media-marketing/coimbatore/index.html">Coimbatore SMM</a></li>
+                    <li><a href="../../services/social-media-marketing/kochi/index.html">Kochi SMM</a></li>
+                    <li><a href="../../services/social-media-marketing/chandigarh/index.html">Chandigarh SMM</a></li>
+                    <li><a href="../../services/social-media-marketing/surat/index.html">Surat SMM</a></li>
+                    <li><a href="../../services/social-media-marketing/vadodara/index.html">Vadodara SMM</a></li>
+                    <li><a href="../../services/social-media-marketing/ludhiana/index.html">Ludhiana SMM</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Content Marketing - Top Cities</h3>
+                <ul>
+                    <li><a href="../../services/content-marketing/mumbai/index.html">Mumbai</a></li>
+                    <li><a href="../../services/content-marketing/bangalore/index.html">Bangalore</a></li>
+                    <li><a href="../../services/content-marketing/delhi/index.html">Delhi</a></li>
+                    <li><a href="../../services/content-marketing/pune/index.html">Pune</a></li>
+                    <li><a href="../../services/content-marketing/hyderabad/index.html">Hyderabad</a></li>
+                    <li><a href="../../services/content-marketing/chennai/index.html">Chennai</a></li>
+                    <li><a href="../../services/content-marketing/jaipur/index.html">Jaipur</a></li>
+                    <li><a href="../../services/content-marketing/ahmedabad/index.html">Ahmedabad</a></li>
+                    <li><a href="../../services/content-marketing/surat/index.html">Surat</a></li>
+                    <li><a href="../../services/content-marketing/lucknow/index.html">Lucknow</a></li>
+                    <li><a href="../../services/content-marketing/kanpur/index.html">Kanpur</a></li>
+                    <li><a href="../../services/content-marketing/indore/index.html">Indore</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Email Marketing - Cities</h3>
+                <ul>
+                    <li><a href="../../services/email-marketing/mumbai/index.html">Mumbai</a></li>
+                    <li><a href="../../services/email-marketing/bangalore/index.html">Bangalore</a></li>
+                    <li><a href="../../services/email-marketing/delhi/index.html">Delhi</a></li>
+                    <li><a href="../../services/email-marketing/hyderabad/index.html">Hyderabad</a></li>
+                    <li><a href="../../services/email-marketing/chennai/index.html">Chennai</a></li>
+                    <li><a href="../../services/email-marketing/kolkata/index.html">Kolkata</a></li>
+                    <li><a href="../../services/email-marketing/pune/index.html">Pune</a></li>
+                    <li><a href="../../services/email-marketing/ahmedabad/index.html">Ahmedabad</a></li>
+                    <li><a href="../../services/email-marketing/jaipur/index.html">Jaipur</a></li>
+                    <li><a href="../../services/email-marketing/lucknow/index.html">Lucknow</a></li>
+                    <li><a href="../../services/email-marketing/kanpur/index.html">Kanpur</a></li>
+                    <li><a href="../../services/email-marketing/indore/index.html">Indore</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Industries We Serve</h3>
+                <ul>
+                    <li><a href="../../industries/ecommerce/index.html">E-commerce</a></li>
+                    <li><a href="../../industries/saas/index.html">SaaS & Technology</a></li>
+                    <li><a href="../../industries/healthcare/index.html">Healthcare</a></li>
+                    <li><a href="../../industries/finance/index.html">Finance & Banking</a></li>
+                    <li><a href="../../industries/real-estate/index.html">Real Estate</a></li>
+                    <li><a href="../../industries/education/index.html">Education</a></li>
+                    <li><a href="../../industries/hospitality/index.html">Hospitality & Travel</a></li>
+                    <li><a href="../../industries/automotive/index.html">Automotive</a></li>
+                    <li><a href="../../industries/legal/index.html">Legal Services</a></li>
+                    <li><a href="../../industries/manufacturing/index.html">Manufacturing</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Resources & Company</h3>
+                <ul>
+                    <li><a href="../../about-us.html">About Us</a></li>
+                    <li><a href="../../contact-us.html">Contact</a></li>
+                    <li><a href="../../blog.html">Blog & Insights</a></li>
+                    <li><a href="../../case-studies.html">Case Studies</a></li>
+                    <li><a href="../../resources.html">Resources</a></li>
+                    <li><a href="../../tools.html">Free Tools</a></li>
+                    <li><a href="../../careers.html">Careers</a></li>
+                    <li><a href="../../privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="../../terms-of-service.html">Terms of Service</a></li>
+                    <li><a href="../../sitemap.html">Sitemap</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 God Digital Marketing. All rights reserved. | <a href="../../services/seo-services/index.html">SEO</a> | <a href="../../services/ppc/index.html">PPC</a> | <a href="../../services/social-media-marketing/index.html">Social</a> | <a href="../../services/content-marketing/index.html">Content</a> | <a href="../../services/email-marketing/index.html">Email</a> | <a href="../../services/web-design-development/index.html">Web Design</a> | <a href="../../services/analytics-reporting/index.html">Analytics</a></p>
+            <div>
+                <a href="../../privacy-policy.html">Privacy</a>
+                <a href="../../terms-of-service.html">Terms</a>
+                <a href="../../contact-us.html">Contact</a>
+                <a href="../../sitemap.html">Sitemap</a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({ duration: 1000, once: true });</script>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Digital Marketing Services</h3>
+                <ul>
+                    <li><a href="../../services/seo-services/index.html">SEO Services</a></li>
+                    <li><a href="../../services/ppc/index.html">PPC Advertising</a></li>
+                    <li><a href="../../services/social-media-marketing/index.html">Social Media Marketing</a></li>
+                    <li><a href="../../services/content-marketing/index.html">Content Marketing</a></li>
+                    <li><a href="../../services/email-marketing/index.html">Email Marketing</a></li>
+                    <li><a href="../../services/web-design-development/index.html">Web Design</a></li>
+                    <li><a href="../../services/conversion-optimization/index.html">Conversion Optimization</a></li>
+                    <li><a href="../../services/analytics-reporting/index.html">Analytics & Reporting</a></li>
+                    <li><a href="../../services/online-reputation-management/index.html">Reputation Management</a></li>
+                    <li><a href="../../services/marketing-automation/index.html">Marketing Automation</a></li>
+                    <li><a href="../../services/local-seo/index.html">Local SEO</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>SEO Services - States</h3>
+                <ul>
+                    <li><a href="../../services/seo-services/maharashtra/index.html">Maharashtra</a></li>
+                    <li><a href="../../services/seo-services/karnataka/index.html">Karnataka</a></li>
+                    <li><a href="../../services/seo-services/tamil-nadu/index.html">Tamil Nadu</a></li>
+                    <li><a href="../../services/seo-services/gujarat/index.html">Gujarat</a></li>
+                    <li><a href="../../services/seo-services/delhi/index.html">Delhi</a></li>
+                    <li><a href="../../services/seo-services/uttar-pradesh/index.html">Uttar Pradesh</a></li>
+                    <li><a href="../../services/seo-services/west-bengal/index.html">West Bengal</a></li>
+                    <li><a href="../../services/seo-services/telangana/index.html">Telangana</a></li>
+                    <li><a href="../../services/seo-services/kerala/index.html">Kerala</a></li>
+                    <li><a href="../../services/seo-services/rajasthan/index.html">Rajasthan</a></li>
+                    <li><a href="../../services/seo-services/punjab/index.html">Punjab</a></li>
+                    <li><a href="../../services/seo-services/haryana/index.html">Haryana</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>SEO Services - Top Cities</h3>
+                <ul>
+                    <li><a href="../../services/seo-services/mumbai/index.html">Mumbai</a></li>
+                    <li><a href="../../services/seo-services/bangalore/index.html">Bangalore</a></li>
+                    <li><a href="../../services/seo-services/delhi/index.html">Delhi NCR</a></li>
+                    <li><a href="../../services/seo-services/hyderabad/index.html">Hyderabad</a></li>
+                    <li><a href="../../services/seo-services/chennai/index.html">Chennai</a></li>
+                    <li><a href="../../services/seo-services/kolkata/index.html">Kolkata</a></li>
+                    <li><a href="../../services/seo-services/pune/index.html">Pune</a></li>
+                    <li><a href="../../services/seo-services/ahmedabad/index.html">Ahmedabad</a></li>
+                    <li><a href="../../services/seo-services/jaipur/index.html">Jaipur</a></li>
+                    <li><a href="../../services/seo-services/lucknow/index.html">Lucknow</a></li>
+                    <li><a href="../../services/seo-services/kanpur/index.html">Kanpur</a></li>
+                    <li><a href="../../services/seo-services/nagpur/index.html">Nagpur</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>PPC Advertising - Cities</h3>
+                <ul>
+                    <li><a href="../../services/ppc/jaipur/index.html">Jaipur PPC</a></li>
+                    <li><a href="../../services/ppc/lucknow/index.html">Lucknow PPC</a></li>
+                    <li><a href="../../services/ppc/ahmedabad/index.html">Ahmedabad PPC</a></li>
+                    <li><a href="../../services/ppc/surat/index.html">Surat PPC</a></li>
+                    <li><a href="../../services/ppc/indore/index.html">Indore PPC</a></li>
+                    <li><a href="../../services/ppc/coimbatore/index.html">Coimbatore PPC</a></li>
+                    <li><a href="../../services/ppc/kochi/index.html">Kochi PPC</a></li>
+                    <li><a href="../../services/ppc/visakhapatnam/index.html">Visakhapatnam PPC</a></li>
+                    <li><a href="../../services/ppc/ludhiana/index.html">Ludhiana PPC</a></li>
+                    <li><a href="../../services/ppc/patna/index.html">Patna PPC</a></li>
+                    <li><a href="../../services/ppc/vadodara/index.html">Vadodara PPC</a></li>
+                    <li><a href="../../services/ppc/nashik/index.html">Nashik PPC</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Social Media Marketing</h3>
+                <ul>
+                    <li><a href="../../services/social-media-marketing/ahmedabad/index.html">Ahmedabad SMM</a></li>
+                    <li><a href="../../services/social-media-marketing/jaipur/index.html">Jaipur SMM</a></li>
+                    <li><a href="../../services/social-media-marketing/lucknow/index.html">Lucknow SMM</a></li>
+                    <li><a href="../../services/social-media-marketing/kanpur/index.html">Kanpur SMM</a></li>
+                    <li><a href="../../services/social-media-marketing/indore/index.html">Indore SMM</a></li>
+                    <li><a href="../../services/social-media-marketing/nagpur/index.html">Nagpur SMM</a></li>
+                    <li><a href="../../services/social-media-marketing/coimbatore/index.html">Coimbatore SMM</a></li>
+                    <li><a href="../../services/social-media-marketing/kochi/index.html">Kochi SMM</a></li>
+                    <li><a href="../../services/social-media-marketing/chandigarh/index.html">Chandigarh SMM</a></li>
+                    <li><a href="../../services/social-media-marketing/surat/index.html">Surat SMM</a></li>
+                    <li><a href="../../services/social-media-marketing/vadodara/index.html">Vadodara SMM</a></li>
+                    <li><a href="../../services/social-media-marketing/ludhiana/index.html">Ludhiana SMM</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Content Marketing - Top Cities</h3>
+                <ul>
+                    <li><a href="../../services/content-marketing/mumbai/index.html">Mumbai</a></li>
+                    <li><a href="../../services/content-marketing/bangalore/index.html">Bangalore</a></li>
+                    <li><a href="../../services/content-marketing/delhi/index.html">Delhi</a></li>
+                    <li><a href="../../services/content-marketing/pune/index.html">Pune</a></li>
+                    <li><a href="../../services/content-marketing/hyderabad/index.html">Hyderabad</a></li>
+                    <li><a href="../../services/content-marketing/chennai/index.html">Chennai</a></li>
+                    <li><a href="../../services/content-marketing/jaipur/index.html">Jaipur</a></li>
+                    <li><a href="../../services/content-marketing/ahmedabad/index.html">Ahmedabad</a></li>
+                    <li><a href="../../services/content-marketing/surat/index.html">Surat</a></li>
+                    <li><a href="../../services/content-marketing/lucknow/index.html">Lucknow</a></li>
+                    <li><a href="../../services/content-marketing/kanpur/index.html">Kanpur</a></li>
+                    <li><a href="../../services/content-marketing/indore/index.html">Indore</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Email Marketing - Cities</h3>
+                <ul>
+                    <li><a href="../../services/email-marketing/mumbai/index.html">Mumbai</a></li>
+                    <li><a href="../../services/email-marketing/bangalore/index.html">Bangalore</a></li>
+                    <li><a href="../../services/email-marketing/delhi/index.html">Delhi</a></li>
+                    <li><a href="../../services/email-marketing/hyderabad/index.html">Hyderabad</a></li>
+                    <li><a href="../../services/email-marketing/chennai/index.html">Chennai</a></li>
+                    <li><a href="../../services/email-marketing/kolkata/index.html">Kolkata</a></li>
+                    <li><a href="../../services/email-marketing/pune/index.html">Pune</a></li>
+                    <li><a href="../../services/email-marketing/ahmedabad/index.html">Ahmedabad</a></li>
+                    <li><a href="../../services/email-marketing/jaipur/index.html">Jaipur</a></li>
+                    <li><a href="../../services/email-marketing/lucknow/index.html">Lucknow</a></li>
+                    <li><a href="../../services/email-marketing/kanpur/index.html">Kanpur</a></li>
+                    <li><a href="../../services/email-marketing/indore/index.html">Indore</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Industries We Serve</h3>
+                <ul>
+                    <li><a href="../../industries/ecommerce/index.html">E-commerce</a></li>
+                    <li><a href="../../industries/saas/index.html">SaaS & Technology</a></li>
+                    <li><a href="../../industries/healthcare/index.html">Healthcare</a></li>
+                    <li><a href="../../industries/finance/index.html">Finance & Banking</a></li>
+                    <li><a href="../../industries/real-estate/index.html">Real Estate</a></li>
+                    <li><a href="../../industries/education/index.html">Education</a></li>
+                    <li><a href="../../industries/hospitality/index.html">Hospitality & Travel</a></li>
+                    <li><a href="../../industries/automotive/index.html">Automotive</a></li>
+                    <li><a href="../../industries/legal/index.html">Legal Services</a></li>
+                    <li><a href="../../industries/manufacturing/index.html">Manufacturing</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Resources & Company</h3>
+                <ul>
+                    <li><a href="../../about-us.html">About Us</a></li>
+                    <li><a href="../../contact-us.html">Contact</a></li>
+                    <li><a href="../../blog.html">Blog & Insights</a></li>
+                    <li><a href="../../case-studies.html">Case Studies</a></li>
+                    <li><a href="../../resources.html">Resources</a></li>
+                    <li><a href="../../tools.html">Free Tools</a></li>
+                    <li><a href="../../careers.html">Careers</a></li>
+                    <li><a href="../../privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="../../terms-of-service.html">Terms of Service</a></li>
+                    <li><a href="../../sitemap.html">Sitemap</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 God Digital Marketing. All rights reserved. | <a href="../../services/seo-services/index.html">SEO</a> | <a href="../../services/ppc/index.html">PPC</a> | <a href="../../services/social-media-marketing/index.html">Social</a> | <a href="../../services/content-marketing/index.html">Content</a> | <a href="../../services/email-marketing/index.html">Email</a> | <a href="../../services/web-design-development/index.html">Web Design</a> | <a href="../../services/analytics-reporting/index.html">Analytics</a></p>
+            <div>
+                <a href="../../privacy-policy.html">Privacy</a>
+                <a href="../../terms-of-service.html">Terms</a>
+                <a href="../../contact-us.html">Contact</a>
+                <a href="../../sitemap.html">Sitemap</a>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>
